@@ -16,4 +16,6 @@ git commit -m 'deploy部署'
 # 格式为：git push -f git@github.com:'用户名'/'仓库名'.git master
 git push -f https://gitee.com/nyhxiaoning/vuepressNoteNet.git master
 
+git push -f https://github.com/nyhxiaoning/nyhxiaoning.github.io.git master
+
 cd -

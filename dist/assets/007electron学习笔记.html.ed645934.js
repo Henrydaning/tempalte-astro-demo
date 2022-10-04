@@ -1,0 +1,1 @@
+import{_ as t}from"./home.d4d9b4a0.js";import{_,o,c as s,a as e}from"./app.dc3baf66.js";const c={},n=e("p",null,[e("img",{src:t,alt:"\u6210\u957F"})],-1),r=e("nav",{class:"table-of-contents"},[e("ul")],-1),a=[n,r];function l(i,m){return o(),s("div",null,a)}var p=_(c,[["render",l],["__file","007electron\u5B66\u4E60\u7B14\u8BB0.html.vue"]]);export{p as default};
