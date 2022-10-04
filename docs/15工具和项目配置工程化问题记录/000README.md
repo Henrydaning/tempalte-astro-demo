@@ -48,7 +48,7 @@
 [010packages文件中字段作用汇总](./010packages%E6%96%87%E4%BB%B6%E4%B8%AD%E5%AD%97%E6%AE%B5%E4%BD%9C%E7%94%A8%E6%B1%87%E6%80%BB.md)
 
 ## 011webpack和vite工程化开发功能汇总
-[011webpack和vite工程化开发功能汇总](./011webpack%E5%92%8Cvite%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%BC%80%E5%8F%91%E5%8A%9F%E8%83%BD%E6%B1%87%E6%80%BB.md)
+[011webpack和vite工程化插件和开发功能汇总](./011webpack%E5%92%8Cvite%E5%B7%A5%E7%A8%8B%E5%8C%96%E6%8F%92%E4%BB%B6%E5%92%8C%E5%BC%80%E5%8F%91%E5%8A%9F%E8%83%BD%E6%B1%87%E6%80%BB.md)
 
 
 ## 012webpack中那些性能优化的方案配置汇总
