@@ -166,6 +166,8 @@ export default defineUserConfig({
     // docsearchPlugin({
 
     // }),
+    // 全文搜索
+    '@peteretelej/fulltext-search',
     // 简单搜索
     searchPlugin({
 

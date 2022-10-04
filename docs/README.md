@@ -186,6 +186,10 @@ vuepress版本：2.0.0-beta.46
 
 ```
 
+记住每一次完成md修改，马上进行
+npm  run  buildDoc避免修改太多无法定位问题。
+
+
 ## 常用符号
 :heavy_check_mark:	
 :x:	
