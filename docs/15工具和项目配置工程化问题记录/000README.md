@@ -33,6 +33,9 @@
 [006调试源码相关工具方法](./006%E8%B0%83%E8%AF%95%E6%BA%90%E7%A0%81%E7%9B%B8%E5%85%B3%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95.md)
 
 
+## 006React和Chrome插件项目文件夹目录结构说明
+[006React和Chrome插件项目文件夹目录结构说明](./006React%E5%92%8CChrome%E6%8F%92%E4%BB%B6%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E.md)
+
 ## 007babal学习记录原理掘金
 [007babal学习记录原理掘金](./007babal%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E5%8E%9F%E7%90%86%E6%8E%98%E9%87%91.md)
 
@@ -61,6 +64,9 @@
 
 ## 013vite框架中那些性能优化的方案汇总
 [013vite框架中那些性能优化的方案汇总](./013vite%E6%A1%86%E6%9E%B6%E4%B8%AD%E9%82%A3%E4%BA%9B%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%9A%84%E6%96%B9%E6%A1%88%E6%B1%87%E6%80%BB.md)
+
+## 014docker部署mysql，nginx,mongo记录
+[014docker部署mysql，nginx,mongo记录](./014docker%E9%83%A8%E7%BD%B2mysql%EF%BC%8Cnginx%2Cmongo%E8%AE%B0%E5%BD%95.md)
 
 ## 015脚手架常见命令统一配置使用
 [015脚手架常见命令统一配置使用](./015%E8%84%9A%E6%89%8B%E6%9E%B6%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4%E7%BB%9F%E4%B8%80%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8.md)

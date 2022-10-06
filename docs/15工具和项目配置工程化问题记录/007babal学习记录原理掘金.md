@@ -121,4 +121,92 @@ babel 的 AST 最外层节点是 File，它有 program、comments、tokens 等�
 
 > 注意，我们学习的 api 是 babel 7.x 的，babel 6 的 api 还没有按照scope 来划分，是 babel-parser 这种，
 > 而 babel 7 变成了@babel/parser 这种。但具体 api 差不多，我们学的是一些原理性的东西，这些东西在版本迭代中是不会变的。
-> 
+
+
+
+
+## 1.babel不是万能的转换工具
+
+### 一些场景，无法对于Proxy,next的API进行转换
+~~~
+可以看到，只要一个数据结构具有符合要求的 Symbol.iterator 属性，就可以通过 for…of 遍历（事实上，解构赋值、扩展运算符、yield* 等 ES6 特性也是调用该属性接口）。
+ 
+现在，我们回过头来看 Babel 转换 for…of 循环的代码，其本质上还是通过调用 Iterator 接口（注意第 9 行），将 for…of 转换为传统的 for 循环，并在每次循环中调用遍历器的 next 方法来吐出数组中的值。如果在循环调用过程中出现错误，遍历器中如含有预定义的 return 函数（参见 ES6 文档中遍历器对象的规范 ），则调用之，否则直接抛出错误。
+ 
+即使调用 Babel 对 for…of 循环进行转码，我们实际上还是无法完全摆脱 ES6 的特性——在不支持 Symbol 的环境下，代码仍然会报错。因为 Babel 默认只转换新的 JavaScript 句法（syntax）,而不转换 Proxy、Set、Promise、Symbol 等新的 API。
+
+实际上，要想完全抹平 ES6 特性带来的新 API 也是可行的，只要在项目中引入 babel-polyfill 并配置好即可，但是这样带来的另一个问题就是因为 babel-polyfill 本身的体积，我们的代码也会变庞大不少。所以此举有利有弊，需要根据实际情况进行权衡。
+
+
+~~~
+
+#### ES在线转换网站
+https://es6console.com/
+
+[个人化项目代码转换记录git分支](https://gitee.com/nyhxiaoning/zkwqcompany-node-webpack-babel-cli)
+
+#### 如何使用 Babel
+下面我们写出在命令行使用 Babel 的过程，让你清楚转译过程的全部内容。
+
+##### 1. 在项目中安装 Babel 的命令行工具
+
+  ~~~
+  npm install -D babel-cli
+  ~~~
+
+##### 2. 准备 ES6 代码
+  通常我们把源代码放在 src 目录下，如果你没有现成的 ES6 代码，那就在 src 目录下创建一个：
+
+~~~
+// src/example.js
+class Hello {
+  static world() {
+    console.log('Hello, World!');
+  }
+}
+Hello.world();
+~~~
+
+
+
+##### 3. 配置 Babel
+Babel 是通过插件和预设值（preset）来转译代码（因此它可以转译的不只是 ES6）。为了转译 ES6 为 ES5，我们只需要配置 env 预设值就可以了，安装这个插件：
+
+~~~
+npm install -D babel-preset-env
+~~~
+
+
+
+我们还需要一个配置文件，在项目根目录下创建文件：.babelrc，内容如下：
+
+
+
+~~~
+// .babelrc
+{
+  "presets": ["env"]
+}
+~~~
+
+
+
+##### 4. 创建 npm 命令
+这一步不是必须的，因为前面已经配置好了，你可以直接执行命令：
+
+
+~~~
+babel src -d build
+~~~
+
+
+这样就会把 src 目录下的 Javascript 代码转译成 ES5，并存放在 build 目录下。
+
+习惯上，我们将上门的命令放到 npm 命令中。在项目的 package.json 中，输入下面的内容：
+
+~~~
+"scripts": {
+  "build": "babel src -d build",
+},
+~~~
+
