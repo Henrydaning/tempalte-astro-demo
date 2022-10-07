@@ -739,3 +739,33 @@ teleport(新增)
 总体来说，`vue3`在尽可能的兼容`vue2`的同时，又引入了全新的组合式 API 的编程方式，这种新的模式有点类似 react 的思想，解决了之前版本对于业务代码难复用的问题，而且对一个页面来说，不同的功能代码可以更好的去区分，不会有以前各种变量和方法挤在一堆，后期难于维护的问题。加上良好的`ts`支持，很好很强大。  
 周边的一些组件`vue Router4.0`, `vuex4.0`也都提供了`vue3`支持。组件库这块，`ant design vue`和`vant`已经支持了`vue3`。  
 不过正如官方文档中建议的，目前还不建议把一些重要的项目迁移到 vue3 当中，因为 vue3 还有很多需要完善的地方，而且目前还不支持 ie，等兼容的工作完成，还是只能兼容到 ie11。
+
+
+### 不支持IE11的vue3
+~~~
+
+不支持 IE11 的原因
+所以我硬着头皮看了下英文，总结一下原因有三：
+1.Proxy 更香，Vue 团队想用
+2.Vue 团队想为干掉 IE 贡献一份力量
+3.若支持，开发和维护成本都太高。
+Vue 2 基于 ES5 getter/setters，Vue 3 基于 Proxy，若实现他们要逻辑双写。
+Vue 团队不想因为 IE11 做更多的牺牲, 如果未来再出个 Super Proxy 我就太难了。
+
+我们想着，使用babel转换vue3，Babel 的 transpiled 和 polyfilled 都没办法支持 Proxy
+ 的功能特性。
+
+~~~
+
+### vue2.x支持ie11的代码
+~~~
+在vue.config.js中的配置
+ chainWebpack: (config) => {
+    // 在chainWebpack中添加下面的代码
+    config.entry.app = ['babel-polyfill', './src/main.js'];
+};
+
+
+~~~
+
+
