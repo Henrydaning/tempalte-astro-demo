@@ -142,6 +142,7 @@ webpack打包是一种事件流的机制，它的原理是将各个插件串联�
 
 ## 004开发webpack和vite插件的模板
 
+## 开发插件
 上面写了原生开发webpack和vite插件功能的代码和脚手架，有没有模板，真的有。
 
 https://github.com/nyhxiaoning/gogocode.git
