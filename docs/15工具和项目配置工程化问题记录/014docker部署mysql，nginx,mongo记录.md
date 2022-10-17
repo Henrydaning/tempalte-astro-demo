@@ -271,3 +271,34 @@ mysql:5.7
 ## 查看当前的 ip
 
 此时电脑的 ip 地址，这里内容无线局域网适配器 WALN 的内容对应
+
+
+## docker上面的nginx配置记录，部署前端项目
+注意：前端打包的文件夹目录，不要自己指定，如果后台配置好了名称，那么直接将打包完成的放入里面
+
+### 方案1：
+[实现地址方案gitee地址](https://gitee.com/nyhxiaoning/zkwq-mini-program-platform-api.git)
+配置vuepress内容部署文件记录
+1.第一步
+配置相关的dist放入的文件夹名称，注意只有dist里面的内容，不要有dist,
+~~~
+比如nginx文件夹放入为apidist,
+如右边：root /var/www/html/apidist;
+
+
+~~~
+2.第二步
+~~~
+配置打包vuepress,配置地址为：./
+base:"./"
+~~~
+3.第三步
+其他的img地址内容，配置正确，可以正常展示。
+
+
+### 方案2：如果想要用打包的文件夹，那么
+nginx配置，比如自己想要apidist2,那么配置一下apidist2
+~~~
+最后vuepress的base配置
+base:"/apidist2/"
+~~~
