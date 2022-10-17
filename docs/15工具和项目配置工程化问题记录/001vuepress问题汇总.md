@@ -202,7 +202,7 @@ markdown拓展中，默认所有的标题（无论是几级标题都可以），
 base配置打包的时候相对地址配置，dest配置输出根文件夹目录，如果不配置，默认是.vuepress下的内容
 
 
-  base: process.argv[2]==='dev'?"/apidist/":"/apidist2/",//如果是本地dev使用/如果是打包，使用dist
+  base: process.argv[2]==='dev'?"/apidist/":"./",//如果是本地dev使用/如果是打包，使用dist
   dest:"apidist2",
 
 
