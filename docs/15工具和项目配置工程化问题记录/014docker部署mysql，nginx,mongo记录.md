@@ -271,3 +271,112 @@ mysql:5.7
 ## 查看当前的 ip
 
 此时电脑的 ip 地址，这里内容无线局域网适配器 WALN 的内容对应
+
+## 4.超快启动 docker-common 使用记录文档和项目地址
+
+[项目地址 docker](https://gitee.com/nyhxiaoning/zkwq-mini-program-platform-api.git)
+
+### 以运行 nginx 为例
+
+- 进入 docker-nginx 目录，直接运行 `docker-compose up -d` , 好了，一键运行完毕
+
+### 启动 docker 服务后，然后启动 docker-compose up -d 后
+
+然后使用看文件的映射端口：添加映射端口的内容
+docker-compose.yml
+
+```
+docker-nginx文件夹中，配置docker-compose.yml配置文件
+
+version: '3'
+services:
+    web:
+        image: nginx:alpine
+        container_name: docker-nginx
+        volumes:
+            - "./etc/nginx:/etc/nginx/conf.d"
+            - "./etc/ssl:/etc/ssl"
+            - "./web:/var/www/html"
+        ports: # 设置转发的端口，将后面的端口监听配置后，转发给前面端口，文件夹nigix中含有配置
+            - "8000:80" # nigix服务器配置地址
+            - "1333:16533" # 个人博客部署网站
+            - "12389:19999" # 映射个人api，小应用平台
+            - "3443:443"
+        environment: # 设置变量地址的使用，全局变量.env使用
+            - NGINX_HOST=${NGINX_HOST}
+        # command: /bin/sh -c "envsubst '$$NGINX_HOST' < /etc/nginx/conf.d/default.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+        restart: always
+
+
+```
+
+### 使用文件后，然后启动映射的端口
+
+来介绍下 docker-nginx 的目录
+
+etc
+
+- ngxin nginx 配置
+- ssl https 配置
+  web---防止前端项目的目录
+- public nginx 默认页面
+- demo-a 普通 html 服务配置
+- demo-b 单页面（vue、react 之类的）项目服务配置
+
+docker-compose.yml docker-compose 配置，用于配置端口和数据挂载等
+
+虽然里面的配置都很简单，但是我决定还是简单介绍一下添加项目
+
+##### 如何添加一个新项目
+
+比如增加一个商城项目，项目名称叫"mall"
+
+- 在 etc/nginx 目录下增加一个 nginx 配置文件，那么对应增加一个 mall.conf，里面配置的内容可以参考 demo-a.conf 和 demo-b.conf
+
+- 上面三步做完，就可以重启了
+
+```
+docker-compose up -d
+```
+
+## 5.docker 上面的 nginx 配置记录，部署前端项目
+
+注意：前端打包的文件夹目录，不要自己指定，如果后台配置好了名称，那么直接将打包完成的放入里面
+
+### 方案 1：
+
+[实现地址方案 gitee 地址](https://gitee.com/nyhxiaoning/zkwq-mini-program-platform-api.git)
+配置 vuepress 内容部署文件记录 1.第一步
+配置相关的 dist 放入的文件夹名称，注意只有 dist 里面的内容，不要有 dist,
+
+```
+比如nginx文件夹放入为apidist,
+如右边：root /var/www/html/apidist;
+
+
+```
+
+2.第二步
+
+```
+配置打包vuepress,配置地址为：./
+base:"./"
+```
+
+3.第三步
+其他的 img 地址内容，配置正确，可以正常展示。
+
+### 方案 2：如果想要用打包的文件夹，那么增加输出文件夹名称自定义
+如下面dest文件夹名称
+
+nginx 配置，比如自己想要 apidist2,那么配置一下 apidist2
+
+```
+最后vuepress的base配置
+base:"./"
+dest:"apidist2"
+```
+
+```
+
+```
