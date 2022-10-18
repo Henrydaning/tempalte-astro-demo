@@ -2,6 +2,15 @@ package.json 是我们前端工程化开发中必须要了解的知识，也是�
 
 [package 官方网站地址](https://docs.npmjs.com/cli/v8/configuring-npm/package-json/)
 
+## package中锁定版本
+~~~
+线上锁定版本，不变版本
+npm install --save-exact <package_name>
+或者npm install --save <package_name>@1.2.3
+
+
+
+~~~
 ## package.json 中包版本的管理
 
 name 的名称会作为参数传递给 require,因此应该是唯一的，简短的。
