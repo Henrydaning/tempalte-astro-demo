@@ -1,21 +1,18 @@
-[[toc]] 
+[[toc]]
 
+## 第一部分：centos 系统
 
+记录 docker,和 jenkins 下安装 docker 的过程。
 
-## 第一部分：centos系统
-记录docker,和jenkins下安装docker的过程。
+## centos 环境下学习 docker 安装和部署 jenkins 的相关问题
 
-## centos环境下学习docker安装和部署jenkins的相关问题
+### centos 的安装启动命令
 
-### centos的安装启动命令
+大多数 Linux 发行版本使用`systemctl`启动服务，如果不是那就尝试使用下`service`来启动
 
-大多数Linux发行版本使用`systemctl`启动服务，如果不是那就尝试使用下`service`来启动
+#### 此时我的电脑使用 systemctl ,
 
-
-
-#### 此时我的电脑使用systemctl ,
-
-~~~
+```
 systemctl restart docker
 启动docker：systemctl start docker
 
@@ -24,15 +21,11 @@ systemctl restart docker
 重启docker：systemctl restart docker
 
 查看下ps -ef | grep "docker" docker启动了
-~~~
+```
 
+### 安装 jenkins 前，关闭防火墙
 
-
-
-
-### 安装jenkins前，关闭防火墙
-
-~~~
+```
 查看防火墙状态： systemctl status firewalld.service
 
 绿的running表示防火墙开启
@@ -43,17 +36,11 @@ systemctl restart docker
 
 执行开机禁用防火墙自启命令 ： systemctl disable firewalld.service
 
-~~~
+```
 
+### docker pull jenkins/jenkins 镜像太慢解决方案
 
-
-
-
-
-
-### docker pull jenkins/jenkins镜像太慢解决方案
-
-~~~
+```
 
 加速Docker镜像源
 
@@ -65,21 +52,18 @@ vi /etc/docker/daemon.json
   "registry-mirrors": ["https://xxx.mirror.aliyuncs.com"]
 }
 
-[root@km docker]# systemctl daemon-reload 
+[root@km docker]# systemctl daemon-reload
 [root@km docker]# systemctl restart docker
 
-~~~
+```
 
+docker 安装好后，用 docker 安装 jenkins 相关的镜像
 
-docker安装好后，用docker安装jenkins相关的镜像
+[CentOS7 环境下使用 docker 安装 jenkins_EricXiao666 的博客-CSDN 博客\_centos7 docker 安装 jenkins](https://blog.csdn.net/qq_39387856/article/details/115496100)
 
-[CentOS7 环境下使用docker安装jenkins_EricXiao666的博客-CSDN博客_centos7 docker安装jenkins](https://blog.csdn.net/qq_39387856/article/details/115496100)
-
-
-
-~~~
+```
 --- 查看所有的拉取的镜像
-docker images 
+docker images
 （注意没有docker images ls不是这个）
 --- 启动jenkins镜像容器，利用images的名称
 
@@ -87,17 +71,15 @@ docker images
 mkdir -p /var/jenkins_home
 
 授予权限
-~~~
+```
 
+### 启动 jenkins/jenkins
 
+最后再次执行 docker pull jenkins/jenkins
 
-### 启动jenkins/jenkins
+- 创建未来放置 jenkins 配置的文件，
 
-最后再次执行docker pull jenkins/jenkins
-
-- 创建未来放置jenkins配置的文件，
-
-新建一个菜单：home下面，jenkins_home
+新建一个菜单：home 下面，jenkins_home
 
 - 权限菜单放开
 
@@ -105,30 +87,28 @@ chown -R 1000:1000 /home/jenkins_home
 
 - 根据新建的菜单内容，进行的相关的启动命令和说明
 
-docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins_home   jenkins/jenkins 
+docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins_home jenkins/jenkins
 
-~~~
+```
 8080 端口是访问 jenkins 网页的端口，如果你想在 80 端口访问，就改成 -p 80:8080
 50000 端口与 slave 有关，参考 jnlp-slave 这个镜像，里面使用的 port。
 -v 参数挂载了宿主机一个指定目录到 /home/jenkins_home ，相当于设置了自定义的 JENKINS_HOME
 最后一个参数是镜像名称，这里是jenkins/jenkins
-~~~
+```
 
-对了docker下启动jenkins在su后，管理员模式启动
+对了 docker 下启动 jenkins 在 su 后，管理员模式启动
 
-~~~
+```
 
-docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins_home   jenkins/jenkins 
+docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins_home   jenkins/jenkins
 
-~~~
+```
 
-### 安装安装docker-compose
+### 安装安装 docker-compose
 
+#### centos 安装后，日期时间显示错误
 
-
-#### centos安装后，日期时间显示错误
-
-~~~
+```
 1.安装时间同步插件
 
 yum install ntpdate
@@ -152,42 +132,38 @@ ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 Tue Feb 26 15:35:54 CST 2019
 
 
-~~~
+```
 
-
-
-### 安装好之后，然后启动docker下的
+### 安装好之后，然后启动 docker 下的
 
 localhost:8080
 
-jenkins的安装密钥
+jenkins 的安装密钥
 
-~~~
+```
 dda2569e0f164b7a975f7d1525119767
-~~~
+```
 
 安装界面出现一些插件的报错，可以替换或是稍后再次安装
-~~~
+
+```
 
 [image-20220618233107693]
-~~~
+```
 
-## 第二部分：ubuntu部分
-## ubuntu环境学习docker和部署
+## 第二部分：ubuntu 部分
 
+## ubuntu 环境学习 docker 和部署
 
+第一步安装 docker(ubuntu)
 
-第一步安装docker(ubuntu)
+第二部安装 jenkins
 
+[ubuntu 16.04 安装 Jenkins（使用 apt install 安装）\_weixin_34375054 的博客-CSDN 博客](https://blog.csdn.net/weixin_34375054/article/details/92056200)
 
+注意 jenkins 运行需要支持 java 环境，所以安装 openjdk 包
 
-第二部安装jenkins
-
-[ubuntu 16.04安装Jenkins（使用apt install安装）_weixin_34375054的博客-CSDN博客](https://blog.csdn.net/weixin_34375054/article/details/92056200)
-
-注意jenkins运行需要支持java环境，所以安装openjdk包
-
-~~~
+```
 sudo apt install openjdk-11-jdk
 //或是通过命令
 
@@ -195,19 +171,17 @@ sudo apt-get install openjdk-11-jdk
 
 案例中不需要输入systemctl  status jenkins这个命令
 
-~~~
+```
 
 第三步：设置访问允许的环境
 
 sudo ufw allow 8080
 
-如果需要任意地方都可以i访问到jenkins，那么使用这个命令
+如果需要任意地方都可以 i 访问到 jenkins，那么使用这个命令
 
+第四步：设置 jenkins 环境
 
-
-第四步：设置jenkins环境
-
-~~~
+```
 这里只是个人通过wsl的过程。
 执行jenkins后，出现
 Please use the following password to proceed to installation:
@@ -217,9 +191,7 @@ b2682866419442c78d854ac9e89c217d
 This may also be found at: /root/.jenkins/secrets/initialAdminPassword
 猪猪。
 
-~~~
-
-
+```
 
 启动重启
 
@@ -234,9 +206,9 @@ sudo ufw allow 8088
 
 ## 防火墙相关
 
-最简单的一个操作：sudo ufw status可检查防火墙的状态，我的返回的是：不活动
+最简单的一个操作：sudo ufw status 可检查防火墙的状态，我的返回的是：不活动
 
-~~~
+```
 
 
 root@daning:/home/daning# sudo ufw status
@@ -265,29 +237,27 @@ sudo ufw default deny
 
 
 
-~~~
+```
 
 确定防火墙的没有问题之后，开启启动
 
 service jenkins start
 
-~~~
+```
 service jenkins start
-~~~
+```
 
+## 启动 jenkins 报错，
 
-
-## 启动jenkins报错，
-
-~~~
+```
 Setting up max open files limit to 8192
 或是
 bash: ulimit: open files: cannot modify limit: Operation not permitted
-~~~
+```
 
 那么需要开启增加启动文件数量。
 
-~~~
+```
 修改
 /etc/security/limits.conf
 
@@ -310,92 +280,82 @@ ulimit -n 65535
 
 
 
-~~~
+```
 
-
-## 启动docker
+## 启动 docker
 
 sudo service docker start
 
-### 安装安装docker-compose
+### 安装安装 docker-compose
 
+## zx 脚本工具的学习
 
-
-
-
-
-
-
-
-
-## zx脚本工具的学习
 Google 的 zx.js 提供了封装子进程的创建以及从这些进程处理 stdout 和 stderr 的函数。
 
 下面将使用的主要函数是 $ 函数，使用 zx.js 规定脚本写入扩展名为 .mjs 的文件中，以便能够在顶层使用 await。
 如果习惯于 .js 扩展名，请将脚本包装在类似 void async function () {...}() 中。
 
+## zx 脚本使用方法
 
-## zx脚本使用方法
 然后我们需要在我们的脚本文件开头（顶部）添加特殊注释标记为 zx 脚本
 
 #！/usr/bin/env zx
 
 执行： zx ./index.mjs
- 
-### linux系统使用
+
+### linux 系统使用
 
 ####给文件加权限
 chmod +x index.mjs
 
 #### 执行文件
+
 ./index.mjs
 
-
 ### 常用的函数
+
 zx 提供了其他几个实用函数来简化 shell 脚本编写，例如：
 
 cd(). 这允许我们更改当前的工作目录
-question(). 这是 Node.js readline模块的包装器，它可以直接提示用户输入
+question(). 这是 Node.js readline 模块的包装器，它可以直接提示用户输入
 sleep(). setTimeout 包装器
 
 chalk：允许为脚本的输出添加颜色。fetch：可以使用它来发出 HTTP 请求。fs-extra：公开了 Node.js 核心 fs 模块，以及许多其他方法，可以更轻松地使用文件系统。
 
 minimist：解析命令行参数的库，将它们暴露在 argv 对象下。
 
-### zx支持ts执行库
+### zx 支持 ts 执行库
 
-#### 1.第一步将package.json中引入模块
-第一步引入typescript和ts-node两个模块
-第二步增加type:"module"模块化.(js支持模块化)
-第三步增加build脚本和运行命令：build和start
+#### 1.第一步将 package.json 中引入模块
 
-#### ts模块化
+第一步引入 typescript 和 ts-node 两个模块
+第二步增加 type:"module"模块化.(js 支持模块化)
+第三步增加 build 脚本和运行命令：build 和 start
+
+#### ts 模块化
 
 mjs 是 EcmaScript 模块的扩展
 
-Node.js 会将.cjs文件视为 CommonJS 模块，将.mjs文件视为 ECMAScript 模块。 
-它会将.js文件视为项目的默认模块系统（这是 CommonJS，除非package.json说"type": "module", ）。
+Node.js 会将.cjs 文件视为 CommonJS 模块，将.mjs 文件视为 ECMAScript 模块。
+它会将.js 文件视为项目的默认模块系统（这是 CommonJS，除非 package.json 说"type": "module", ）。
 
+#### ts 中引入后，没有这个模块
 
-#### ts中引入后，没有这个模块
-
-有时候import 一个模块
+有时候 import 一个模块
 error TS1192: Module ‘“fs“‘ has no default export.
 
 使用
-import * as fs from 'fs'
+import \* as fs from 'fs'
 
 {
-  "compilerOptions": {
-  	"esModuleInterop": true
-  }
+"compilerOptions": {
+"esModuleInterop": true
+}
 }
 
+### jenkins 使用记录命令
 
-
-### jenkins使用记录命令
-
-~~~
+```
 windows系统的使用jenkins的内容
 
 C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\test-sh-deploy-jenkins
@@ -403,4 +363,47 @@ C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspac
 
 
 
-~~~
+```
+
+## git 配置多个 ssh-key 方法
+
+### 补充快速配置 ssh-key
+
+### 进入.ssh 文件夹
+
+打开 bash，然后输入自己当前的密码一路回车，生成后面的文件
+ssh-keygen -t rsa -C 'ningyongheng@jeejio' -f ~/.ssh/gitlab_id_rsa
+
+### 打开.ssh 下面的 config
+
+添加一个当前的网站和地址，比如 gitlab
+
+```
+# gitlab
+Host gitlab.com
+HostName gitlab.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/gitlab_id_rsa
+
+# github
+Host github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_github
+
+# gerrit.jeejio
+Host gerrit.jeejio.com
+HostName gerrit.jeejio.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_ed25519
+ProxyCommand connect -H 127.0.0.1:15732 %h %p
+
+```
+
+### 打开的 gitlab 中配置 sshkey 内容
+
+```
+[xxx]_rsa.pub文件内容复制一下
+
+
+```
