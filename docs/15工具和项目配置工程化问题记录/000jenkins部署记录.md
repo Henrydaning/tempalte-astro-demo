@@ -249,3 +249,10 @@ cd $JENKINS_HOME
 进入当前的jenkins安装目录，ls -a
 
 
+
+
+## 8.jenkins中部署源码管理方式
+如何设置不同分支和代码
+安装ssh插件后，这里两处注意：比如ssh网站的地址，第二个构建的分支名称：about-rc分支
+如下图
+jenkinsAddr
