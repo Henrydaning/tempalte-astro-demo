@@ -260,3 +260,31 @@ base配置打包的时候相对地址配置，dest配置输出根文件夹目录
 
 
 ```
+
+
+
+## 5.vuepress样式修改
+默认修改原html标签样式汇总
+
+### vuepress1.x修改样式
+~~~
+1、.vuepress 文件夹下创建 styles/palette.styl （这里使用 stylus）
+2、重置取消 max-width 设置，classname 直接从 开发者工具 中复制 即可
+
+
+~~~
+
+
+### vuepress2.x方案
+~~~
+- 使用插件
+调色板系统提取到了 @vuepress/plugin-palette 当中。
+
+
+- 调色板和样式
+该插件会提供一个 @vuepress/plugin-palette/palette （调色板文件）和一个 @vuepress/plugin-palette/style （样式文件），
+用于在你的主题样式中引入。
+
+
+
+~~~
