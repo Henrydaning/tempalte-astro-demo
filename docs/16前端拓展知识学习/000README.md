@@ -71,6 +71,10 @@ https://app.yinxiang.com/shard/s37/nl/24388549/689040c6-7de0-4ba0-9262-4dddcd08c
 
 
 
+## 011java知识简单入门
+[011java知识简单入门](./011java%E7%9F%A5%E8%AF%86%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8.md)
+
+
 ## 017异常npm报错问题汇总
 [017异常npm报错问题汇总](./017%E5%BC%82%E5%B8%B8npm%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.md)
 
