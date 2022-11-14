@@ -1,5 +1,20 @@
 [[toc]]
 
+
+## 1.Chrome相关开发记录插件
+
+### （1）ajax插件拦截器
+#### 项目架构
+
+
+
+### （2）
+#### 
+
+
+
+
+
 ## React和Chrome插件项目文件夹目录结构
 
 ~~~
@@ -222,3 +237,4 @@ plasmo0.42.0
 ## vue框架开发chrome插件的结构
 
 [vueChrome代码记录](https://gitee.com/nyhxiaoning/chrome-tools-vue-create-plugins-cli.git)
+

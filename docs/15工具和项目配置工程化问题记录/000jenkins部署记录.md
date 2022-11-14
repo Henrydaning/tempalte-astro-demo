@@ -154,7 +154,7 @@ https://oapi.dingtalk.com/robot/send?access_token=be5a98346ebaa005997e95a7180c89
 
 # linux环境下部署记录
 linux下ubuntu利用docker-compose部署jenkins
-## jenkins部署到指定服务器docker
+## 1.jenkins部署到指定服务器docker
 这里第一步
 ### （1）Docker-compose构建jenkins环境
 1、创建docker在主机的jenkins数据映射目录
