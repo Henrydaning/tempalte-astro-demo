@@ -1,5 +1,63 @@
 [[toc]]
 
+## 6.工程化锁定版本修改：某一个版本出现问题，如何修改代码和锁定版本
+
+### npm ci 锁定版本
+
+npm ci 可以在开发完成后，锁定版本，避免版本功能出现问题
+
+### 某一个包进行修改后，如何打补丁 package-modules
+
+### 利用 server 机制，锁定一个版本的更新
+
+## 0.工程化发布版本记录使用 release 工具发布包自动版本机制
+
+工程化版本发布
+
+### （1）项目安装 release
+
+npm i release-it
+配置 package 中增加 release:
+"release": "release-it"
+
+### （2）增加相关项目记录内容 log 记录
+
+npm i @release-it/keep-a-changelog
+因为我们 npm run release 后，会有相关的日志记录
+
+### （3）为了更好的记录 diff，我们需要执行一下 npm init release-it
+
+初始化整个项目，更好的形成记录
+这里需要执行两次
+
+```
+第一次：npm init release-it后package选择后，会在package中增加一个字段  "release-it": {}
+
+第二次：npm init release-it形成一个 .release-it.json配置文件，增加下面的配置内容钩子
+
+{
+    "github": {
+        "release": true
+    },
+    "git": {
+        "commitMessage": "release: v${version}"
+    },
+    "npm": {
+        "publish": false
+    },
+    "hooks": {
+        "after:bump": "echo 更新版本成功"
+    },
+    "plugins": {
+        "@release-it/conventional-changelog": {
+            "preset": "angular",
+            "infile": "CHANGELOG.md"
+        }
+    }
+}
+
+```
+
 ## 第一部分：centos 系统
 
 记录 docker,和 jenkins 下安装 docker 的过程。
