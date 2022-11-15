@@ -58,7 +58,7 @@ npm i @release-it/keep-a-changelog
 
 ```
 
-## 第一部分：centos 系统
+## 1.第一部分：centos 系统：docker和jenkins安装使用
 
 记录 docker,和 jenkins 下安装 docker 的过程。
 
@@ -209,7 +209,7 @@ dda2569e0f164b7a975f7d1525119767
 [image-20220618233107693]
 ```
 
-## 第二部分：ubuntu 部分
+## 2.第二部分：ubuntu 部分：jenkins和docker安装使用
 
 ## ubuntu 环境学习 docker 和部署
 
