@@ -1,16 +1,18 @@
-许多软件包都具有一个或多个要安装到 PATH 中的可执行文件package.json 是我们前端工程化开发中必须要了解的知识，也是前端工程化深入的必经之路。
+许多软件包都具有一个或多个要安装到 PATH 中的可执行文件 package.json 是我们前端工程化开发中必须要了解的知识，也是前端工程化深入的必经之路。
 
 [package 官方网站地址](https://docs.npmjs.com/cli/v8/configuring-npm/package-json/)
 
-## package中锁定版本
-~~~
+## package 中锁定版本
+
+```
 线上锁定版本，不变版本
 npm install --save-exact <package_name>
 或者npm install --save <package_name>@1.2.3
 
 
 
-~~~
+```
+
 ## package.json 中包版本的管理
 
 name 的名称会作为参数传递给 require,因此应该是唯一的，简短的。
@@ -171,9 +173,12 @@ module.exports = function (string) {
 
 
 ```
-### 一个ES包，如何快速直接浏览器环境
-#### 快速将一个包，变成标准化浏览器支持，利用script卡引入
-~~~
+
+### 一个 ES 包，如何快速直接浏览器环境
+
+#### 快速将一个包，变成标准化浏览器支持，利用 script 卡引入
+
+```
 使用npm install -g browserify
 
 
@@ -184,7 +189,7 @@ browserify main.js > bundle.js
 如果使用原来的包ES引入，但是相当于增加了defer延迟加载
 <script type="module" src="main.js">
 
-~~~
+```
 
 #### Browserify 和 Webpack 都定义了一个叫 process.browser 的字段
 
@@ -213,18 +218,16 @@ if (process.browser) {
 ```
 
 ## bin 字段：指定各个内部命令指向的执行文件位置。
-### 注意：并不是配置了bin字段，就可以执行执行一些内容代码。
 
-### 弄清楚bin和可执行文件路径关系
+### 注意：并不是配置了 bin 字段，就可以执行执行一些内容代码。
+
+### 弄清楚 bin 和可执行文件路径关系
+
 许多软件包都具有一个或多个要安装到 PATH 中的可执行文件。
 
 （1）bin 字段是命令到本地文件名的映射。
-（2）在安装时，npm 会将文件符号链接到 bin文件夹 以进行全局安装或./node_modules/.bin/本地安装。（bin里面就是一些可执行文件）
+（2）在安装时，npm 会将文件符号链接到 bin 文件夹 以进行全局安装或./node_modules/.bin/本地安装。（bin 里面就是一些可执行文件）
 （3）当我们使用 npm 或者 yarn 命令安装包时，如果该包的 package.json 文件有 bin 字段，就会在 node_modules 文件夹下面的 .bin 目录中复制了 bin 字段链接的执行文件。我们在调用执行文件时，可以不带路径，直接使用命令名来执行相对应的执行文件。
-
-
-
-
 
 可以指定一些内部指令，比如
 
@@ -243,9 +246,9 @@ node_modules/.bin/mybuild,而 node_modules/.bin/目录会在运行时加入到�
 注意：bin 中引用的文件需要在文件头部加入一行开头编辑这是执行脚本
 #!/usr/bin/envnode
 
-根据上面内置完成的命令，在运行时候bin目录会加入PATH,这样我们脚本可以增加这种执行文件，简化命令每次输入
-  start: 'node node_modules/.bin/my-app-cli'
----npm run start执行这个文件my-app-cli
+根据上面内置完成的命令，在运行时候 bin 目录会加入 PATH,这样我们脚本可以增加这种执行文件，简化命令每次输入
+start: 'node node_modules/.bin/my-app-cli'
+---npm run start 执行这个文件 my-app-cli
 
 ## browser，module 和 main 字段使用场景。
 
@@ -262,7 +265,6 @@ browser : 定义 npm 包在 browser 环境下的入口文件。
 如果 npm 包只在 web 端使用，并且严禁在 server 端使用，使用 browser。
 如果 npm 包只在 server 端使用，使用 main
 如果 npm 包在 web 端和 server 端都允许使用，使用 browser 和 main
-
 
 ## scripts 指定了运行脚本的命令行缩写
 
@@ -297,8 +299,9 @@ bundledDependencies是一个数组，指定发布时将定义的模块一起打�
 
 ```
 
-## optionaldependencies：一个包安装失败的时候，不希望影响npm正常运行。
-~~~
+## optionaldependencies：一个包安装失败的时候，不希望影响 npm 正常运行。
+
+```
 比如echarts安装失败，不要影响正常项目运行。那么忽略一个npm包
 如果出现包找不到或者安装失败时，但又不影响npm继续运行，可将该包放在optionalDependencies对象中。
 
@@ -311,41 +314,59 @@ bundledDependencies是一个数组，指定发布时将定义的模块一起打�
         "vue-cli-plugin-electron-builder": "~2.1.1"
     },
     这个包是否安装，不影响运行。
-    
+
+
+```
+
+## "optionalDependencies": 配置解决一个 peer 以来经典问题
+
+### 比如我使用 react-new-rewired 后，安装
+~~~
+
+npm i customize-cra -D
+总是出现 electron 依赖报错，我可以将这个依赖配置一下，将 package.json 配置添加一下，然后增加配置即可。
+
+"optionalDependencies": {
+"electron": "^20.0.1"
+},
 
 ~~~
 
 ## engines：指定包的运行平台
-有时候我们开发了一个严格依赖node版本环境的版本包，需要给包增加一个标志：
+
+有时候我们开发了一个严格依赖 node 版本环境的版本包，需要给包增加一个标志：
 "engines": {"node" : ">=8.9.0 <12.x", "npm" : "~6.14.12" }
 
-
 ## os:指定包运行操作系统
-~~~
+
+```
 一般都可以
 "os" : [ "win32", "darwin", "linux" ],
 
 
 
-~~~
+```
 
-## priviate指定包是否可以被发布，如果true,npm会拒绝发布
-~~~
+## priviate 指定包是否可以被发布，如果 true,npm 会拒绝发布
+
+```
 决定我们的项目是否会发布，如果设置为true,那么npm会拒绝发布
 
 "private": true
 
-~~~
+```
 
+## 如果是一个 ts 包，那么增加 typing 字段，指定打包后声明文件
 
-## 如果是一个ts包，那么增加typing字段，指定打包后声明文件
-  "typings": "index.d.ts",
+"typings": "index.d.ts",
 
+## 将一个包 ES 引入和直接 script 引入方式区别
 
-## 将一个包ES引入和直接script引入方式区别
-script标签上是否加type=module
-### 快速将一个包，变成标准化浏览器支持，利用script卡引入
-~~~
+script 标签上是否加 type=module
+
+### 快速将一个包，变成标准化浏览器支持，利用 script 卡引入
+
+```
 使用npm install -g browserify
 
 
@@ -356,4 +377,4 @@ browserify main.js > bundle.js
 如果使用原来的包ES引入
 <script type="module" src="main.js">
 
-~~~
+```
