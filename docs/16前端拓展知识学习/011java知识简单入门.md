@@ -41,3 +41,31 @@ Java版本的蜜汁操作
 记住啦，一个Java版本对应着一个JDK版本！
 
 
+
+## 2.jar包部署
+
+### （1）mvn是什么
+Maven 是一个项目管理工具，可以对 Java 项目进行自动化的构建和依赖管理。
+
+
+
+### （2）mvn 将java项目打包成jar包后。
+部署
+
+### （3）window部署方案
+cmd命令行：
+~~~
+ java -jar manager.jar运行jar包
+
+ ~~~
+
+sh脚本部署
+~~~
+@echo off
+start javaw -jar F:\manager\manager.jar  //jar包的路径
+exit
+
+~~~
+
+### （4）相关内容说明：
+文件里面配置了相关端口和相关配置：application.yml
