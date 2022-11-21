@@ -82,7 +82,7 @@
 
 ## 04 掘金 Uniapp 课程学习笔记
 
-[04 掘金 Uniapp 课程学习笔记](./04掘金Uniapp课程学习笔记/000README.md)
+[04 掘金 Uniapp 课程和Taro或原生小程序学习笔记](./04%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%93%E9%A2%98/000README.md)
 
 ## 05leetcode 刷题记录每周
 

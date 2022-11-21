@@ -74,3 +74,9 @@ kubectl apply -f kubernetes.yaml
 访问[`node节点ip:30180`](http://xn--nodeip-6f8nh25i:30180/)，默认**用户名密码**为`admin/123456`，使用详见 hello 项目使用。
 
 
+
+
+# 遇到一个大坑，前端
+sass中出现weight报错
+
+TODO:
