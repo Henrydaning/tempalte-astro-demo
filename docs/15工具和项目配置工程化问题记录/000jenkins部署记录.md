@@ -256,3 +256,4 @@ cd $JENKINS_HOME
 安装ssh插件后，这里两处注意：比如ssh网站的地址，第二个构建的分支名称：about-rc分支
 如下图
 jenkinsAddr
+[引用图jenkinsAddr](./jenkinsAddr.png)
