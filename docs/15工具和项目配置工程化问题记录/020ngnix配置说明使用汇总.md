@@ -384,3 +384,27 @@ location ~* # 正则匹配（不区分大小写）
 location /a # 普通前缀匹配，优先级低于带参数前缀匹配。
 location / # 任何没有匹配成功的，都会匹配这里处理
 ```
+
+## 6.gzip 配置压缩相关 nginx 配置内容：压缩版本和http版本
+
+```
+server {
+    listen 12089;
+    index index.php index.html;
+    error_log  /var/log/nginx/error.log;
+    access_log /var/log/nginx/access.log;
+    root /var/www/html/gzip;
+    gzip on;
+    # http请求版本
+    gzip_http_version 1.0;
+    # 设置什么类型的文件需要压缩
+    gzip_types text/css text/javascript application/javascript image/png image/jpeg image/gif;
+    location / {
+          index  index.html index.htm index.php;
+          autoindex  off;
+    }
+
+}
+
+
+```
