@@ -1,5 +1,23 @@
 [[toc]]
 
+## docker+jenins+gitlab部署记录
+
+### （1）第一步：linux系统部署文件下面放置一个docker-compose.yml文件
+这里放在
+
+
+
+
+
+
+### 一步一步来：对于地址~/docker-nginx
+这里配置一个ngigx服务地址内容
+
+启动.sh文件启动nginx服务
+
+
+
+
 ## docker学习
 ---docker原理说明
 实际上docker只能在linux系统下运行，Windows下运行必要要支持Hyper-v
@@ -245,37 +263,62 @@ sudo docker info
 测试拉取
 jdk安装
 docker pull jenkins/jenkins
+//最新的镜像拉取加你：docker pull jenkinsci/blueocean
 Using default tag: latest出现报错
 增加sudo
 ~~~
 
+##### 配置相关的地址https地址国内进行配置
+不然安装初始化后，没办法内容下载更新
+可以在jenkins下面的内容：Plugin Manager最下面的内容
+
 
 
 #### 注意如果拉去jenkins注意，安装jdk，jre
+查看docker相关信息 docker info
 
-~~~
-2.1 wsl上安装Jenkins及简单配置
+
+##### 2.1 wsl上安装Jenkins及简单配置（ubuntu系统配置）
 在Windows下比较推荐使用wsl的方式安装Jenkins，这样切换到Linux时也会比较熟悉，如果资源等可以的话，更推荐使用docker方式。这里以wsl+Ubuntu简单说明下wsl安装Jenkins，后续的go程序编译也是在wsl上的。
 
-#安装jdk、jre
+###### 安装jdk、jre
 sudo apt install default-jdk default-jre
 
-#docker安装安装Jenkins
+###### docker安装安装Jenkins
 sudo apt update
 使用下面的命令进行安装
 docker pull jenkins/jenkins
 
+-----或是docker pull jenkinsci/blueocean
+
 docker启动jenkins/jenkins
 
-- 新建一个菜单：home下面，jenkins_home
+- 新建一个菜单：home下面，jenkins_home（创建 Jenkins 工作目录，将容器内目录挂载到此目录上，这样我们可以在宿主机上对文件的修改同步到容器内。）
 mkdir -p /home/jenkins_home
 - 权限菜单放开
 
 chown -R 1000:1000 /home/jenkins_home
+或是使用：chmod 777 /home/jenkins_home
+
 
 - 根据新建的菜单内容，进行的相关的启动命令和说明
-
+最后一个参数是jenkins镜像的名称，倒数第二个参数是想要部署的地址。
 docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins_home   jenkins/jenkins 
+
+
+补充一个启动解释
+~~~
+# -d 后台方式启动
+# -p 映射端口，宿主机端口:容器内端口
+# -v 挂载卷，将容器Jenkins工作目录/var/jenkins_home挂载到宿主机目录/usr/local/jenkins
+# -name 给容器起个别名
+docker run -d -p 8099:8080 -p 50099:50000 -v /usr/local/jenkins:/var/jenkins_home --name myjenkins jenkinsci/blueocean
+
+
+
+
+~~~
+注意将后面8080的端口映射到前面8080这个上面
 
 此时的jenkins的密码
 429815fca1c24890841a4f2f62021dc9
@@ -283,7 +326,13 @@ docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins_home   jenkins/jenkins
 - 默认访问localhost:8080
 这里稍后进行配置修改
 
-~~~
+这里假设账号密码：admin账号，密码是123456
+
+
+
+
+
+
 
 
 
