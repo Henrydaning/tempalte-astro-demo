@@ -986,7 +986,7 @@ ENV TOMCAT_VERSION 8.0.53
 
 
 
-### 安装 Docker Compose
+### linux安装 Docker Compose:docker-compose安装
 
 Docker Compose 是一个由 Python 编写的软件，在拥有 Python 运行环境的机器上，我们可以直接运行它，不需要其它的操作。
 
