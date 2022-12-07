@@ -272,7 +272,8 @@ mysql:5.7
 
 此时电脑的 ip 地址，这里内容无线局域网适配器 WALN 的内容对应
 
-## 4.超快启动 docker-common 使用记录文档和项目地址
+## 4.超快启动 docker-common 使用记录文档和项目地址:docker-compose项目
+
 
 [项目地址 docker](https://gitee.com/nyhxiaoning/zkwq-mini-program-platform-api.git)
 
@@ -280,6 +281,7 @@ mysql:5.7
 
 - 进入 docker-nginx 目录，直接运行 `docker-compose up -d` , 好了，一键运行完毕
 
+- 重启 docker-compose restart
 ### 启动 docker 服务后，然后启动 docker-compose up -d 后
 
 然后使用看文件的映射端口：添加映射端口的内容
