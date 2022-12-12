@@ -1,3 +1,197 @@
+## 000 工程化相关的配置文件汇总
+
+[前端工程化配置系统汇总文件内容](https://www.processon.com/mindmap/617781871efad44894fbe29d)
+
+汇总了各种常见的配置情况：最优化说明：
+
+### webpack4.x+babel+eslint
+
+```
+
+
+```
+
+### webpack5.x+babel+eslint
+
+```
+
+
+```
+
+### vite2.x+babel+eslint
+
+```
+import { defineConfig } from "vite";
+const path = require("path");
+import vue from "@vitejs/plugin-vue";
+import Components from "unplugin-vue-components/vite";
+import { VantResolver } from "unplugin-vue-components/resolvers";
+import AutoImport from "unplugin-auto-import/vite";
+import { visualizer } from "rollup-plugin-visualizer";
+// const BASE_API = import.meta.env.VITE_APP_BASE_API
+import copy from 'rollup-plugin-copy'; // 引入插件
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    vue(),
+    // visualizer({  //    build后的视图
+    //   open: true,
+    //   gzipSize: true,
+    //   brotliSize: true
+    // }),
+    copy({
+      targets: [
+        { src: ['./src/lib/index.js'], dest: './public' }, // 执行拷贝，注意public目标
+
+      ]
+    }),
+    Components({
+      resolvers: [VantResolver()]
+    }),
+    AutoImport({
+      imports: ["vue", "vue-router"] // 自动导入vue和vue-router相关函数
+    })
+  ],
+  css: {
+    preprocessorOptions: {
+      // define global scss variable
+      scss: {
+        additionalData: `@import '@/common/styles/mixin.scss';`
+      }
+    }
+  },
+  server: {
+    host: "0.0.0.0",
+    port: 81,
+    open: true
+  },
+  base: "./",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      components: path.resolve(__dirname, "src/components"),
+      views: path.resolve(__dirname, "src/views"),
+      utils: path.resolve(__dirname, "src/utils")
+    }
+  },
+  // 配置生产环境，不生成soureceMap-vite2.x配置
+  build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_debugger: true,
+        pure_funcs: ['console.log'] // 移除console
+      },
+    },
+    sourcemap: false,
+    outDir: 'dist', // 指定输出路径,构建从public中设置
+    // assetsDir: "wap", //指定生成静态资源的存放路径
+    // rollupOptions: {
+    //   output: {
+    //     chunkFileNames: 'assets/js/[name]-[hash].js',
+    //     entryFileNames: 'assets/js/[name]-[hash].js',
+    //     assetFileNames: 'assets/[ext]/[name]-[hash].[ext]'
+    //   }
+    // }
+  }
+});
+
+
+
+vite项目学习补充--------------------------
+（1）   /**
+   * 在生产中服务时的基本公共路径。
+   * @default '/'
+   */
+  base: '/huangbiao',
+  /**
+   * 与“根”相关的目录，构建输出将放在其中。如果目录存在，它将在构建之前被删除。
+   * @default 'dist'
+   */
+  outDir: 'target',
+  port: 3000,
+  // 是否自动在浏览器打开
+  open: true,
+  // 是否开启 https
+  https: false,
+  // 服务端渲染
+  ssr: false,
+  // 引入第三方的配置
+  optimizeDeps: {<!-- -->
+    include: ["moment", "echarts", "axios", "mockjs"]
+  },
+
+  （2）copy复制的vite插件生效的前提，默认设置了outDir是dist
+  但是需要了解一下vite,打包从public复制，所以，我们打包的copy文件目的地一般是public
+ 正确的配置如下
+     copy({
+      targets: [
+        { src: ['./src/lib/index.js'], dest: './public' }, // 执行拷贝
+
+      ]
+    }),
+项目中的 public 目录中的文件会全訁贝到打包文件中
+
+(3)其他配置补充
+ // 是否自动在浏览器打开
+  open: true,
+  // 是否开启 https
+  https: false,
+  // 服务端渲染
+  ssr: false,
+  // 引入第三方的配置
+  optimizeDeps: {<!-- -->
+    include: ["moment", "echarts", "axios", "mockjs"]
+  },
+
+  （4）保留部分console.info只是删除console.log
+  一些重要信息可以特殊化打印console.info留下
+  compress: {
+     drop_console: true, // 清除 console 语句
+     drop_debugger: false, // 清除 debugger 语句
+     pure_funcs: ['console.log'] // 移除console
+   }
+
+```
+
+### vite3.x+babel+eslint
+
+```
+vite 3.x 已经将 esbuild 作为默认构建选项，你可以通过如下配置在构建时移除代码中的 console.log、debugger。
+
+(1)配置vite.config.ts,移除打印信息
+vite 3.x 已经将 esbuild 作为默认构建选项，
+你可以通过如下配置在构建时移除代码中的 console.log、debugger。
+// vite.config.ts
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+    build：{
+      minify: 'esbuild', // 默认
+    }，
+    esbuild: {
+      drop: ['console', 'debugger'],
+    },
+});
+
+但是vite3.x支持vue2.x配置
+如果你仍然使用 terser 作为构建工具，可以通过如下配置实现此目的。
+ build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+  }
+
+
+```
+
+- 待补充
+
 ## 001es module 中使用\_\_dirname
 
 因为 path 是 Node 模块，一些方法无法直接使用。
