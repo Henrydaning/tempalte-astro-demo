@@ -21,6 +21,56 @@
 
 ### vite2.x+babel+eslint
 
+package.json
+
+```
+{
+  "name": "my-vue-app",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite serve --mode dev",
+    "build:staging": "vite build --mode staging",
+    "build:prod": "vite build --mode prod",
+    "build": "vite build --mode prod",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^8.2.6",
+    "echarts": "^5.4.0",
+    "vant": "^3.6.4",
+    "vconsole": "^3.14.6",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git",
+      "useEmoji": true
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "cz-git": "^1.3.11",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.3.0",
+    "prettier": "^2.4.1",
+    "rollup-plugin-visualizer": "^5.7.1",
+    "sass": "^1.45.1",
+    "unplugin-auto-import": "^0.11.1",
+    "unplugin-vue-components": "^0.22.4",
+    "vite": "^2.7.2",
+    "vite-plugin-style-import": "^1.4.1",
+    "vue-eslint-parser": "^8.0.0"
+  }
+}
+
+
+```
+
+vite.config
+
 ```
 import { defineConfig } from "vite";
 const path = require("path");

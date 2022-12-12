@@ -1,6 +1,10 @@
 [[toc]]
 
+## windows下安装docker记录
+[windows安装docker问题和解决](https://app.yinxiang.com/shard/s37/nl/24388549/bd97969d-2c17-40c7-8ef2-92704cfd3876)
 
+报错信息：WSL 2 installation is incomplete.
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 ## 自动化测试docker-copmose部署测试
 ### dockerfile文件测试
