@@ -2,6 +2,14 @@
 
 
 
+## 自动化测试docker-copmose部署测试
+### dockerfile文件测试
+
+### docker-compose.yml测试
+
+代码实现
+[docker-compose-cli实现代码](https://gitee.com/classic-case-project/full-stack-testing-framework.git)
+
 
 ## 1.使用 Docker 部署前端之简单版
 在我们开发过程中需要安装很多环境，有些环境安装起来甚是麻烦，好不容易安装好了，有时候需要换电脑或者是给小伙伴也装一个环境的时候，重复性工作就很多了，又或者压根就不想在自己电脑上安装一大堆可能并不常用的环境，那么用docker无疑是最好的选择，***一键运行***

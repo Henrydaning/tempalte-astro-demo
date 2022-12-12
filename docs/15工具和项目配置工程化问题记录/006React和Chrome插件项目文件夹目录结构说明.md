@@ -1,23 +1,18 @@
 [[toc]]
 
+## 1.Chrome 相关开发记录插件
 
-## 1.Chrome相关开发记录插件
+### （1）ajax 插件拦截器
 
-### （1）ajax插件拦截器
 #### 项目架构
 
-
-
 ### （2）
-#### 
 
+####
 
+## React 和 Chrome 插件项目文件夹目录结构
 
-
-
-## React和Chrome插件项目文件夹目录结构
-
-~~~
+```
 
 - `manifest.json` 是整个插件的功能和文件配置清单，非常重要
 - `images` 存放的为插件的图标文件
@@ -26,11 +21,11 @@
 - `styles`存放的为样式文件
 - `html`存放的`html`文件
 
-~~~
+```
 
 ## **`manifest.json` 文件**
 
-~~~
+```
 {
  // 清单文件的版本，这个必须写，而且必须是2
  "manifest_version": 2,
@@ -127,19 +122,11 @@
  // devtools页面入口，注意只能指向一个HTML文件，不能是JS文件
  "devtools_page": "devtools.html"
 }
-~~~
+```
 
+配置 manifest.jsonwenjian neirogn
 
-
-
-
-
-
-
-
-配置manifest.jsonwenjian neirogn 
-
-~~~
+```
 {
   "name": "Chrome插件Demo",
   "version": "1.0",
@@ -203,23 +190,15 @@
   // 如果向目标页面插入js，需要在这里声明下才能获得执行的权限
   "web_accessible_resources": ["insert.js"]
 }
-~~~
+```
 
-
-
-
-
-## plasmo版本
+## plasmo 版本
 
 Plasmo v0.42.0
 
 此时内容输出
 
-
-
-
-
-~~~
+```
 内置了各种
 npm create plasmo -- --with-env
 
@@ -230,11 +209,32 @@ npm create plasmo -- --with-env
 
 plasmo0.42.0
 
-~~~
+```
+
+## vue 框架开发 chrome 插件的结构
+
+[vueChrome 代码记录](https://gitee.com/nyhxiaoning/chrome-tools-vue-create-plugins-cli.git)
+
+## 3.plasmo 插件 react 项目插件开发
+
+[plasmo-react 项目](https://gitee.com/front-end-tool-development/plasma-react-browser-plugin.git)
+
+### 实时开发预览方法
+
+pnpm dev --target=chrome-mv3-dev
+在 build 下面生成一个：chrome-mv3-dev-dev 文件夹，这样导入浏览器，然后可以实时修改
+此时，不可以将 dev 的启动关闭
+
+### 打包不同版本的内容
+
+plasmo build --target=chrome-mv3-dev
+
+### （1）问题开发：CHROME 扩展笔记之拒绝 unsafe-eval 求值
+
+```
+这是浏览器自带的"网页安全政策"（Content Security Policy）导致的；浏览器默认的Content-Security-Policy的安全政策时“ default-src ‘self’ ”。我们可以通过manifest.json重新配置Content Security Policy的配置开启eval功能;
+
+,"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 
 
-
-## vue框架开发chrome插件的结构
-
-[vueChrome代码记录](https://gitee.com/nyhxiaoning/chrome-tools-vue-create-plugins-cli.git)
-
+```
