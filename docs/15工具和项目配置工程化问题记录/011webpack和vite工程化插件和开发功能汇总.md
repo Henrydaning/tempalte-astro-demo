@@ -2,6 +2,7 @@
 
 [前端工程化配置系统汇总文件内容](https://www.processon.com/mindmap/617781871efad44894fbe29d)
 
+[核心脚手架项目配置地址](https://gitee.com/front-end-tool-development/cli-scaffold-local-down-sets.git)
 汇总了各种常见的配置情况：最优化说明：
 
 ### webpack4.x+babel+eslint
