@@ -28,8 +28,8 @@ https://gitee.com/nyhxiaoning/toy-react
 [002相关项目安装React问题排查](./002%E7%9B%B8%E5%85%B3%E9%A1%B9%E7%9B%AE%E5%AE%89%E8%A3%85React%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5.md)
 
 
-### 003React版本和插件的相关升级问题记录
-[003React版本和插件的相关升级问题记录](./003React%E7%89%88%E6%9C%AC%E5%92%8C%E6%8F%92%E4%BB%B6%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8D%87%E7%BA%A7%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95.md)
+### 003React路由和其他核心插件的相关升级问题记录
+[003React路由和其他核心插件的相关升级问题记录](./003React%E8%B7%AF%E7%94%B1%E5%92%8C%E5%85%B6%E4%BB%96%E6%A0%B8%E5%BF%83%E6%8F%92%E4%BB%B6%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8D%87%E7%BA%A7%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95.md)
 
 
 ### 004React生命周期和性能优化的问题记录
