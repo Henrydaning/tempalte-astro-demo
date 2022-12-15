@@ -15,6 +15,13 @@ npm ci 可以在开发完成后，锁定版本，避免版本功能出现问题
 工程化版本发布
 
 ### （1）项目安装 release
+~~~
+快捷版本
+ npm  i release-it @release-it/keep-a-changelog -D
+ 接着：npm init release-it
+ 最后
+
+~~~
 
 npm i release-it
 配置 package 中增加 release:
