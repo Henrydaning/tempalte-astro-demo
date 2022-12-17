@@ -115,7 +115,12 @@ ls -a
 
 
 
+## 7.ubuntu上面eht0是本地ip，但是无法本机浏览器访问。
+如何关闭当前ubuntu中的防火墙
+sudo ufw status 查看是否关闭了
+或是进入管理员模式，su后，进入ufw status查看
 
+关闭防火墙：sudo ufw disable
 
 
 # centos 系统模块
