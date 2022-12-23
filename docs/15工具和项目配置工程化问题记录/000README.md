@@ -14,7 +14,7 @@
 [001vuepress问题汇总](./001vuepress%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.md)
 
 ## 001vitevue3开发一个组件库
-[001vitevue3开发一个组件库](./001vitevue3%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E5%BA%93.md)
+[001vitevue3开发一个组件库和私有npm包](./001vitevue3%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E5%BA%93%E5%92%8C%E7%A7%81%E6%9C%89npm%E5%8C%85.md)
 ## 002Docker部署前端简单实现
 [002Docker部署前端简单实现](./002Docker%E9%83%A8%E7%BD%B2%E5%89%8D%E7%AB%AF%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0.md)
 

@@ -110,8 +110,9 @@ npm ERR! This operation requires a one-time password from your authenticator.
 npm publish后，发现错误说，你不能发布名为lib的包，意思是重名了。
 
 
+## 私有化部署npm服务支持
 
-### 创建npm私有服务器，公司内部访问
+## 创建npm私有服务器，公司内部访问
 因为npm上面的包都是公共，不能私有化。
 
 -npm install -g verdaccio --unsafe-perm
