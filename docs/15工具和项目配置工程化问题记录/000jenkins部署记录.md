@@ -1,5 +1,7 @@
 # 初始化配置 jenkins 步骤
 
+## jenkins的配置系统化内容
+[Jenkins+Docker自动化部署vue项目](https://juejin.cn/post/6844903984419831815#heading-16)
 ## 安装 Gitee Plugin
 
 安装后，找到全局配置和全局凭证，配置后全局凭证后，然后再全局配置配置一下 Gitee 即可。
