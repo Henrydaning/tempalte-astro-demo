@@ -1,5 +1,20 @@
 # 初始化配置 jenkins 步骤
 
+## jenkins 的配置系统化内容
+
+[Jenkins+Docker 自动化部署 vue 项目](https://juejin.cn/post/6844903984419831815#heading-16)
+
+```
+如果要发布在服务器上，我们还需要配置一下 远程服务器信息。
+
+此处还需要下载两个插件
+
+SSH ： SSH 连接工具
+Publish Over SSH ：SSH 发布工具
+
+
+```
+
 ## 安装 Gitee Plugin
 
 安装后，找到全局配置和全局凭证，配置后全局凭证后，然后再全局配置配置一下 Gitee 即可。
