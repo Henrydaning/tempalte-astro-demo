@@ -346,3 +346,30 @@ ssh -i /home/jenkins/.ssh/open_cloud_id_rsa cloud@$SVR_NAME1  /opt/nginx/sbin/ng
 
 mongoAPI 部分使用了 api 接口 ip 地址，所以这里 ui 部分访问的时候，这里必须用类似于：
 mongoAPIUrl: "http://172.16.1.11:50001"，不要用那种域名，这个具体看自己部署的mongoAPI服务的时候，自己写的地址。
+
+## 3.jenkins 部署脚本相关内容
+
+jenkins 部署的时候，需要的脚本如下
+[引用图 jenkins 部署脚本](./jenkins部署脚本.png)
+
+```
+SVR_NAME1="10.30.9.130"
+PROJECT_NAME="h5_jeejio-operatePlatform"
+
+#rm -fr $JENKINS_HOME/workspace/$JOB_NAME/node_modules
+
+source /etc/profile
+#cnpm install
+npm install
+npm run build:qa
+
+JENKINS_WORKSPACE="$JENKINS_HOME/workspace/$JOB_NAME/dist"
+
+#ssh cloud@$SVR_NAME1 /opt/www/deploy.sh platform      /opt/soft/nginx/root/open_platform/
+
+ssh -i /home/jenkins/.ssh/h5_cloud_id_rsa cloud@$SVR_NAME1 /opt/www/backup.sh operatePlatform
+scp -i /home/jenkins/.ssh/h5_cloud_id_rsa -r $JENKINS_WORKSPACE cloud@$SVR_NAME1:/opt/www/h5-operatePlatform/
+ssh -i /home/jenkins/.ssh/h5_cloud_id_rsa cloud@$SVR_NAME1  /opt/nginx/sbin/nginx -s reload
+
+
+```
