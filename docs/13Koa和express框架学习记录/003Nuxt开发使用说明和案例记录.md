@@ -13,3 +13,10 @@ https://juejin.cn/post/7106397233905401864
 https://blog.csdn.net/m0_48489737/article/details/127796979
 
 
+## 3.nuxt3中新增elementplus插件教程。
+[nuxt3-elementplus实际gitee项目代码内容](https://gitee.com/node-project-summary/nuxt3-elementplus-vue3-demo.git)
+
+[nuxt3按需引入elmentplus内容](https://app.yinxiang.com/shard/s37/nl/24388549/1debe0f4-1fd7-4947-899e-b74867282a54)
+
+
+## 4.nuxt3中配置增加路由，自动新建一个pages中，文件夹就是路由名称。
