@@ -20,3 +20,11 @@ https://blog.csdn.net/m0_48489737/article/details/127796979
 
 
 ## 4.nuxt3中配置增加路由，自动新建一个pages中，文件夹就是路由名称。
+
+
+## 5.自动导入elementplus组件
+[指导自动导入elementplus](https://juejin.cn/post/7108916330153115655)
+
+
+## 6.nuxt从0-1开发记录
+[nuxt记录从0-1](https://juejin.cn/post/6844903833840123912#heading-34)
