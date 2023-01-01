@@ -253,6 +253,54 @@ app.vue 文件是 Nuxt 3 应用程序中的入口组件。
 在 Nuxt 3 中如果没有 pages/目录，则表示不会包含 vue-router 依赖。
 当我们完成一个落地页或者是不需要路由就可以这样做。
 
+
+
+## 6.useState内容API
+Nuxt 提供可组合的 useState 来创建跨组件的并且对 SSR 友好的响应式状态。
+useState 是一个 SSR 友好的 ref 替代品。它的值将会在服务端渲染（客户端渲染期间）后保留，并且使用唯一的键在所有组件之间共享。
+
+通过配置：用自动导入 composables，我们可以定义全局的安全类型状态并且在整个应用中导入
+
+
+
+
+
+## 7.nuxt渲染模式
+目前前端渲染模式，大致分为 3 种：
+
+（1）客户端渲染 CSR (Croswer Side Render)
+（2）服务端渲染 SSR (Server Side Render)
+（3）静态网站生成 SSG (Static Site Generation)
+
+### universal
+Universal（SSR / SSG）
+您选择后，就包含（内置）了服务端渲染（SSR）与静态网站生成（SSG）两种渲染模式。
+
+服务端渲染是指客户端向服务器发出请求，然后运行时动态生成 html
+
+
+
+## 8.nuxt.config.js配置
+### srcDir
+定义 Nuxt 应用程序的源文件目录。
+
+如果指定了相对路径，它将相对于 rootDir。
+如果使用 ~ 别名，将从项目 srcDir 解析
+
+
+### ssr
+默认使用ssr，表示true
+
+
+
+
+## 9.nuxt缓存
+nuxt的缓存可以分为组件级别缓存, API级别缓存以及页面级别缓存
+
+
+
+
+
 ### 出口路由
 
 如果需要使用 pages/显示相关页面的话，需要使用 路由出口组件:<NuxtPage>
