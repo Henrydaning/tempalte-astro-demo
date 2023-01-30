@@ -45,7 +45,8 @@ API 可分成 Media Stream API、 RTCPeerConnection、Peer-to-peer Data API 三�
 
 
 
-
+## 5.移动端使用WebRTC功能
+注意：安卓端使用WebRTC没有问题，ios端因为webkit这个开发功能支持的不是很好，如果使用注意一下。（看看最新版本是否已经做了兼容）
 
 
 ## 拓展RTMP和WebRTC开发对比
