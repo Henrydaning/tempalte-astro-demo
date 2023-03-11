@@ -1,0 +1,126 @@
+import{_ as d,r,o as t,c as l,a as e,b as a,e as n,d as s}from"./app.5805b0e6.js";const u={},c=e("h2",{id:"nuxtapi",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#nuxtapi","aria-hidden":"true"},"#"),n(" NuxtAPI")],-1),v={href:"https://www.nuxtjs.org.cn/getting-started/installation.html#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE",target:"_blank",rel:"noopener noreferrer"},o=n("\u4E2D\u6587 NuxtAPI"),h=s('<h2 id="nuxt3-\u7248\u672C\u7684-node-\u6700\u4F4E\u652F\u6301\u662F-node14" tabindex="-1"><a class="header-anchor" href="#nuxt3-\u7248\u672C\u7684-node-\u6700\u4F4E\u652F\u6301\u662F-node14" aria-hidden="true">#</a> Nuxt3 \u7248\u672C\u7684 Node \u6700\u4F4E\u652F\u6301\u662F Node14</h2><h2 id="nuxt-\u6846\u67B6\u7684\u642D\u5EFA\u3001\u914D\u7F6E\u8BB0\u5F55" tabindex="-1"><a class="header-anchor" href="#nuxt-\u6846\u67B6\u7684\u642D\u5EFA\u3001\u914D\u7F6E\u8BB0\u5F55" aria-hidden="true">#</a> nuxt \u6846\u67B6\u7684\u642D\u5EFA\u3001\u914D\u7F6E\u8BB0\u5F55</h2><p>https://juejin.cn/post/7106397233905401864</p><h2 id="_1-nuxt3-\u5DF2\u7ECF\u53EF\u4EE5\u53C2\u8003\u7684-demo-\u5730\u5740" tabindex="-1"><a class="header-anchor" href="#_1-nuxt3-\u5DF2\u7ECF\u53EF\u4EE5\u53C2\u8003\u7684-demo-\u5730\u5740" aria-hidden="true">#</a> 1.Nuxt3 \u5DF2\u7ECF\u53EF\u4EE5\u53C2\u8003\u7684 demo \u5730\u5740</h2><h2 id="_2-nuxt-\u6253\u5305\u90E8\u7F72-pm2" tabindex="-1"><a class="header-anchor" href="#_2-nuxt-\u6253\u5305\u90E8\u7F72-pm2" aria-hidden="true">#</a> 2.nuxt \u6253\u5305\u90E8\u7F72 pm2</h2><p>https://blog.csdn.net/m0_48489737/article/details/127796979</p><h2 id="_3-nuxt3-\u4E2D\u65B0\u589E-elementplus-\u63D2\u4EF6\u6559\u7A0B\u3002" tabindex="-1"><a class="header-anchor" href="#_3-nuxt3-\u4E2D\u65B0\u589E-elementplus-\u63D2\u4EF6\u6559\u7A0B\u3002" aria-hidden="true">#</a> 3.nuxt3 \u4E2D\u65B0\u589E elementplus \u63D2\u4EF6\u6559\u7A0B\u3002</h2>',7),m={href:"https://gitee.com/node-project-summary/nuxt3-elementplus-vue3-demo.git",target:"_blank",rel:"noopener noreferrer"},p=n("nuxt3-elementplus \u5B9E\u9645 gitee \u9879\u76EE\u4EE3\u7801\u5185\u5BB9"),b={href:"https://app.yinxiang.com/shard/s37/nl/24388549/1debe0f4-1fd7-4947-899e-b74867282a54",target:"_blank",rel:"noopener noreferrer"},x=n("nuxt3 \u6309\u9700\u5F15\u5165 elmentplus \u5185\u5BB9"),g=s(`<h2 id="_4-nuxt3-\u4E2D\u914D\u7F6E\u589E\u52A0\u8DEF\u7531-\u81EA\u52A8\u65B0\u5EFA\u4E00\u4E2A-pages-\u4E2D-\u6587\u4EF6\u5939\u5C31\u662F\u8DEF\u7531\u540D\u79F0\u3002" tabindex="-1"><a class="header-anchor" href="#_4-nuxt3-\u4E2D\u914D\u7F6E\u589E\u52A0\u8DEF\u7531-\u81EA\u52A8\u65B0\u5EFA\u4E00\u4E2A-pages-\u4E2D-\u6587\u4EF6\u5939\u5C31\u662F\u8DEF\u7531\u540D\u79F0\u3002" aria-hidden="true">#</a> 4.nuxt3 \u4E2D\u914D\u7F6E\u589E\u52A0\u8DEF\u7531\uFF0C\u81EA\u52A8\u65B0\u5EFA\u4E00\u4E2A pages \u4E2D\uFF0C\u6587\u4EF6\u5939\u5C31\u662F\u8DEF\u7531\u540D\u79F0\u3002</h2><h2 id="_5-\u81EA\u52A8\u5BFC\u5165-elementplus-\u7EC4\u4EF6" tabindex="-1"><a class="header-anchor" href="#_5-\u81EA\u52A8\u5BFC\u5165-elementplus-\u7EC4\u4EF6" aria-hidden="true">#</a> 5.\u81EA\u52A8\u5BFC\u5165 elementplus \u7EC4\u4EF6</h2><p>\u975E\u5E38\u7B80\u5355\u7684\u5B9E\u73B0\u3002\u4E24\u6B65\u6CD5</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>\u7B2C\u4E00\u6B65\uFF1Aplugins\u589E\u52A0\u5185\u5BB9
+plugins\u4E2D\u589E\u52A0\u4E00\u4E2A\u5F53\u524D\u7684\u6837\u5F0F\u6587\u4EF6\uFF1Aelement-plus.ts
+import * as ElementPlus from &#39;element-plus/dist/index.full&#39;
+import zhCn from &#39;element-plus/es/locale/lang/zh-cn&#39;
+
+export default defineNuxtPlugin((nuxtApp) =&gt; {
+  nuxtApp.vueApp.use(ElementPlus, {
+    locale: zhCn,
+  })
+})
+
+
+
+---------------
+\u7B2C\u4E8C\u6B65\uFF1Anuxt.config.ts\u914D\u7F6E\u6837\u5F0F
+  css: [
+    &#39;element-plus/dist/index.css&#39;
+  ],
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,4),_={href:"https://juejin.cn/post/7108916330153115655",target:"_blank",rel:"noopener noreferrer"},f=n("\u6307\u5BFC\u81EA\u52A8\u5BFC\u5165 elementplus"),S=e("h2",{id:"_6-nuxt-\u4ECE-0-1-\u5F00\u53D1\u8BB0\u5F55",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_6-nuxt-\u4ECE-0-1-\u5F00\u53D1\u8BB0\u5F55","aria-hidden":"true"},"#"),n(" 6.nuxt \u4ECE 0-1 \u5F00\u53D1\u8BB0\u5F55")],-1),N={href:"https://juejin.cn/post/6844903833840123912#heading-34",target:"_blank",rel:"noopener noreferrer"},w=n("nuxt \u8BB0\u5F55\u4ECE 0-1"),A=s(`<h1 id="nuxt3-\u6307\u5BFC-api-\u7F51\u7AD9\u5B66\u4E60" tabindex="-1"><a class="header-anchor" href="#nuxt3-\u6307\u5BFC-api-\u7F51\u7AD9\u5B66\u4E60" aria-hidden="true">#</a> Nuxt3 \u6307\u5BFC API \u7F51\u7AD9\u5B66\u4E60</h1><h2 id="_1-nuxt-\u81EA\u5E26\u76F8\u5173-autoimport-\u7684-api" tabindex="-1"><a class="header-anchor" href="#_1-nuxt-\u81EA\u5E26\u76F8\u5173-autoimport-\u7684-api" aria-hidden="true">#</a> 1.nuxt \u81EA\u5E26\u76F8\u5173 autoImport \u7684 API</h2><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>Nuxt \u81EA\u52A8\u5BFC\u5165\u8F85\u52A9\u51FD\u6570\u3001\u53EF\u7EC4\u5408\u51FD\u6570\u548C Vue API.
+imports: {
+    autoImport: false
+  }
+
+\u5F53\u7136\u53EF\u4EE5\u663E\u5F0F\u5BFC\u5165\uFF0C
+Nuxt\u4F7F\u7528\u522B\u540D\u516C\u5F00\u6BCF\u4E2A\u81EA\u52A8\u5BFC\u5165\uFF0C\u5982\u679C\u9700\u8981\uFF0C\u522B\u540D\u53EF\u7528\u4E8E\u663E\u5F0F\u5BFC\u5165\uFF1A#imports
+  import { ref, computed } from &#39;#imports&#39;
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-\u6E32\u67D3\u6A21\u5F0F" tabindex="-1"><a class="header-anchor" href="#_2-\u6E32\u67D3\u6A21\u5F0F" aria-hidden="true">#</a> 2.\u6E32\u67D3\u6A21\u5F0F</h2><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>redirect- \u5B9A\u4E49\u670D\u52A1\u5668\u7AEF\u91CD\u5B9A\u5411\u3002
+ssr- \u7981\u7528\u5E94\u7528\u5404\u90E8\u5206\u7684\u670D\u52A1\u5668\u7AEF\u5448\u73B0\uFF0C\u5E76\u4F7F\u5176\u4EC5\u4F7F\u7528 SPAssr: false
+cors- \u81EA\u52A8\u6DFB\u52A0 cors \u6807\u5934 - \u60A8\u53EF\u4EE5\u901A\u8FC7\u8986\u76D6\u6765\u81EA\u5B9A\u4E49\u8F93\u51FAcors: trueheaders
+headers- \u5C06\u7279\u5B9A\u6807\u9898\u6DFB\u52A0\u5230\u7F51\u7AD9\u7684\u5404\u4E2A\u90E8\u5206 - \u4F8B\u5982\uFF0C\u60A8\u7684\u8D44\u4EA7
+static\u548C - \u542F\u7528\u5355\u4E2A\uFF08\u6309\u9700\uFF09\u6784\u5EFA; \u542F\u7528\u9759\u6001\u6784\u5EFA\uFF0C\u8BE5\u6784\u5EFA\u6301\u7EED\u53EF\u914D\u7F6E\u7684 TTL\u3002\uFF08\u76EE\u524D\u5728Netlify\u4E0A\u652F\u6301\u5B8C\u5168\u589E\u91CF\u9759\u6001\u751F\u6210\uFF0CVercel\u5373\u5C06\u63A8\u51FA\uFF09swrstaticswr
+
+export default defineNuxtConfig({
+  routeRules: {
+    // Static page generated on-demand, revalidates in background
+    &#39;/blog/**&#39;: { swr: true },
+    // Static page generated on-demand once
+    &#39;/articles/**&#39;: { static: true },
+    // Set custom headers matching paths
+    &#39;/_nuxt/**&#39;: { headers: { &#39;cache-control&#39;: &#39;s-maxage=0&#39; } },
+    // Render these routes with SPA
+    &#39;/admin/**&#39;: { ssr: false },
+    // Add cors headers
+    &#39;/api/v1/**&#39;: { cors: true },
+    // Add redirect headers
+    &#39;/old-page&#39;: { redirect: &#39;/new-page&#39; },
+    &#39;/old-page2&#39;: { redirect: { to: &#39;/new-page&#39;, statusCode: 302 } }
+  }
+})
+
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3-public-\u6587\u4EF6\u5939" tabindex="-1"><a class="header-anchor" href="#_3-public-\u6587\u4EF6\u5939" aria-hidden="true">#</a> 3.public \u6587\u4EF6\u5939</h2><p>\u5305\u542B\u9759\u6001\u6587\u4EF6\u7684\u76EE\u5F55\uFF0C\u53EF\u901A\u8FC7 Nuxt \u670D\u52A1\u5668\u76F4\u63A5\u8BBF\u95EE\uFF0C\u5E76\u5728\u751F\u6210\u5E94\u7528\u7A0B\u5E8F\u65F6\u81EA\u52A8\u590D\u5236\u5230 dist \u6587\u4EF6\u5939\u4E2D\u3002</p><h2 id="_4-pages-\u5B58\u653E\u5F53\u524D\u7684\u8DEF\u7531\u81EA\u52A8\u751F\u6210" tabindex="-1"><a class="header-anchor" href="#_4-pages-\u5B58\u653E\u5F53\u524D\u7684\u8DEF\u7531\u81EA\u52A8\u751F\u6210" aria-hidden="true">#</a> 4.pages \u5B58\u653E\u5F53\u524D\u7684\u8DEF\u7531\u81EA\u52A8\u751F\u6210</h2><h2 id="_5-\u8FD0\u884C\u65F6\u914D\u7F6E\u5141\u8BB8\u5411-nuxt-\u5E94\u7528\u4E0A\u4E0B\u6587\u4F20\u9012\u52A8\u6001\u914D\u7F6E\u548C\u73AF\u5883\u53D8\u91CF\u3002" tabindex="-1"><a class="header-anchor" href="#_5-\u8FD0\u884C\u65F6\u914D\u7F6E\u5141\u8BB8\u5411-nuxt-\u5E94\u7528\u4E0A\u4E0B\u6587\u4F20\u9012\u52A8\u6001\u914D\u7F6E\u548C\u73AF\u5883\u53D8\u91CF\u3002" aria-hidden="true">#</a> 5.\u8FD0\u884C\u65F6\u914D\u7F6E\u5141\u8BB8\u5411 Nuxt \u5E94\u7528\u4E0A\u4E0B\u6587\u4F20\u9012\u52A8\u6001\u914D\u7F6E\u548C\u73AF\u5883\u53D8\u91CF\u3002</h2><p>\u5B83\u5C06\u5728\u670D\u52A1\u5668\u7AEF\u8986\u76D6 publicRuntimeConfig \u5185\u76F8\u540C\u5185\u5BB9\u3002\u5B83\u5E94\u8BE5\u7528\u6765\u4FDD\u5B58\u79C1\u6709\u73AF\u5883\u53D8\u91CF(\u4E0D\u5E94\u8BE5\u5728\u524D\u7AEF\u516C\u5F00)\u3002\u8FD9\u53EF\u80FD\u5305\u62EC\u5BF9\u60A8\u7684 API \u79D8\u5BC6\u6807\u8BB0\u7684\u5F15\u7528\u3002 \u914D\u7F6E\u4F20\u5165\u5168\u5C40\u53D8\u91CF</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>export default {
+  privateRuntimeConfig: {
+    apiSecret: p<wbr>rocess.env.API_SECRET,
+  },
+}
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>publicRuntimeConfig \u914D\u7F6E\u76F8\u5173\u7684\u5168\u5C40\u53D8\u91CF\u3002</p><h2 id="_6-nuxt-\u914D\u7F6E-vite-\u914D\u7F6E\u548C-webpack" tabindex="-1"><a class="header-anchor" href="#_6-nuxt-\u914D\u7F6E-vite-\u914D\u7F6E\u548C-webpack" aria-hidden="true">#</a> 6.nuxt \u914D\u7F6E vite \u914D\u7F6E\u548C webpack</h2><h3 id="vite" tabindex="-1"><a class="header-anchor" href="#vite" aria-hidden="true">#</a> vite</h3><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>vite
+\u5C06\u76F4\u63A5\u4F20\u9012\u7ED9 Vite \u7684\u914D\u7F6E\u3002
+
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="webpack" tabindex="-1"><a class="header-anchor" href="#webpack" aria-hidden="true">#</a> webpack</h3><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>webpack
+watchOptions \u76F4\u63A5\u4F20\u9012\u7ED9 webpack\u3002
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="_2-\u76EE\u5F55\u7ED3\u6784" tabindex="-1"><a class="header-anchor" href="#_2-\u76EE\u5F55\u7ED3\u6784" aria-hidden="true">#</a> 2.\u76EE\u5F55\u7ED3\u6784</h1><h2 id="_1-\u7EC4\u4EF6\u547D\u540D-\u5982\u4E0B\u5D4C\u5957\u7EC4\u4EF6" tabindex="-1"><a class="header-anchor" href="#_1-\u7EC4\u4EF6\u547D\u540D-\u5982\u4E0B\u5D4C\u5957\u7EC4\u4EF6" aria-hidden="true">#</a> \uFF081\uFF09\u7EC4\u4EF6\u547D\u540D\uFF1A\u5982\u4E0B\u5D4C\u5957\u7EC4\u4EF6</h2><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>| components/
+--| base/
+----| foo/
+------| Button.vue
+\u5B9E\u9645\u4F7F\u7528\uFF1A&lt;BaseFooButton /&gt;
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-\u5E93\u6A21\u5F0F\u4F7F\u7528" tabindex="-1"><a class="header-anchor" href="#_2-\u5E93\u6A21\u5F0F\u4F7F\u7528" aria-hidden="true">#</a> \uFF082\uFF09\u5E93\u6A21\u5F0F\u4F7F\u7528</h2><p>\u5236\u4F5C\u5177\u6709\u81EA\u52A8\u6447\u6811\u4F18\u5316\u548C\u7EC4\u4EF6\u6CE8\u518C\u529F\u80FD\u7684 Vue \u7EC4\u4EF6\u5E93\u975E\u5E38\u7B80\u5355 \u2728</p><p>\u4F60\u53EF\u4EE5\u4F7F\u7528 components:dirs \u94A9\u5B50\uFF0C\u8F7B\u677E\u6269\u5C55\u76EE\u5F55\u5217\u8868\uFF0C\u800C\u65E0\u9700\u7528\u6237\u5728 Nuxt \u6A21\u5757\u4E2D\u8FDB\u884C\u914D\u7F6E\u3002</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>\u6BD4\u5982\uFF1Aawesome-ui\u7684ui
+| node_modules/
+---| awesome-ui/
+------| components/
+---------| Alert.vue
+---------| Button.vue
+------| nuxt.js
+| pages/
+---| index.vue
+| nuxt.config.js
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u7B2C\u4E8C\u6B65</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>import { join } from &#39;pathe&#39;
+import { defineNuxtModule } from &#39;@nuxt/kit&#39;
+
+export default defineNuxtModule({
+  hooks: {
+    &#39;components:dirs&#39;(dirs) {
+      // Add ./components dir to the list
+      dirs.push({
+        path: join(__dirname, &#39;components&#39;),
+        prefix: &#39;awesome&#39;,
+      })
+    },
+  },
+})
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u7B2C\u4E09\u6B65\uFF1Anuxt.config.js \u4F7F\u7528</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>export default {
+  buildModules: [&#39;awesome-ui/nuxt&#39;],
+}
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u7B2C\u56DB\u6B65\uFF1A pages/index.vue \u4E2D\uFF0C\u4F7F\u7528\u6A21\u5757\u7EC4\u4EF6 (\u5E26 awesome- \u524D\u7F00):</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>    &lt;awesome-alert&gt;Here&#39;s an alert!&lt;/awesome-alert&gt;
+\u5B83\u4EC5\u5728\u4F7F\u7528\u65F6\u81EA\u52A8\u5BFC\u5165\u7EC4\u4EF6\uFF0C\u5E76\u4E14\u5728\u66F4\u65B0\u4F60\u5728 node_modules/awesome-ui/components/ \u7684\u7EC4\u4EF6\u65F6\u652F\u6301\u70ED\u66F4\u65B0\u3002
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3-\u53EF\u590D\u7528\u7EC4\u5408\u903B\u8F91-composables" tabindex="-1"><a class="header-anchor" href="#_3-\u53EF\u590D\u7528\u7EC4\u5408\u903B\u8F91-composables" aria-hidden="true">#</a> 3.\u53EF\u590D\u7528\u7EC4\u5408\u903B\u8F91 composables</h2><p>\u7528\u6237\u5728 composables \u76EE\u5F55\u4E0B\u521B\u5EFA\u7684\u7EC4\u5408\u903B\u8F91\u6587\u4EF6\u5C06\u4F1A\u88AB\u7CFB\u7EDF\u81EA\u52A8\u8BC6\u522B\u5BFC\u5165\u5230\u5E94\u7528\u7A0B\u5E8F\uFF0C\u4EE5\u4F9B\u5168\u5C40\u4F7F\u7528\u3002</p><h3 id="_1-\u521B\u5EFA-usefoo-ts" tabindex="-1"><a class="header-anchor" href="#_1-\u521B\u5EFA-usefoo-ts" aria-hidden="true">#</a> \uFF081\uFF09\u521B\u5EFA useFoo.ts</h3><p>\u5728 composables \u6587\u4EF6\u5939\u4E0B\u65B0\u5EFA useFoo.ts \u6587\u4EF6,\u7F16\u5199\u7EC4\u5408\u903B\u8F91\u4EE3\u7801\u3002</p><h3 id="_2-\u586B\u5145\u6587\u4EF6\u5185\u5BB9-usefoo-ts-\u4E2D" tabindex="-1"><a class="header-anchor" href="#_2-\u586B\u5145\u6587\u4EF6\u5185\u5BB9-usefoo-ts-\u4E2D" aria-hidden="true">#</a> (2)\u586B\u5145\u6587\u4EF6\u5185\u5BB9\uFF1AuseFoo.ts \u4E2D</h3><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>import { useState } from &#39;#app&#39;
+
+export const useFoo = () =&gt; {
+  return useState(&#39;foo&#39;, () =&gt; &#39;bar&#39;)
+}
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-\u6CE8\u610F-nuxt3-\u4E2D\u81EA\u52A8\u4F7F\u7528" tabindex="-1"><a class="header-anchor" href="#_3-\u6CE8\u610F-nuxt3-\u4E2D\u81EA\u52A8\u4F7F\u7528" aria-hidden="true">#</a> \uFF083\uFF09\u6CE8\u610F nuxt3 \u4E2D\u81EA\u52A8\u4F7F\u7528</h3><p>\u7F16\u5199\u597D\u7EC4\u5408\u903B\u8F91\u6587\u4EF6\u540E\uFF0CNuxt3 \u5C31\u4F1A\u81EA\u52A8\u7684\u5BFC\u5165\uFF0C\u60A8\u53EF\u4EE5\u5728\u5E94\u7528\u7A0B\u5E8F\u4E2D\u4F7F\u7528\u5B83\u800C\u65E0\u9700\u624B\u52A8\u5BFC\u5165\u3002 const foo = useFoo()</p><h2 id="_4-layouts-\u81EA\u5B9A\u4E49\u5E03\u5C40" tabindex="-1"><a class="header-anchor" href="#_4-layouts-\u81EA\u5B9A\u4E49\u5E03\u5C40" aria-hidden="true">#</a> 4.layouts \u81EA\u5B9A\u4E49\u5E03\u5C40</h2><p>\u9875\u9762\u5E03\u5C40\u653E\u7F6E\u5728 \u76EE\u5F55\u4E2D\uFF0C\u4F7F\u7528\u65F6\u4F1A\u901A\u8FC7\u5F02\u6B65\u5BFC\u5165\u81EA\u52A8\u52A0\u8F7D\u3002 \u5982\u679C\u4F60\u521B\u5EFA\u4E86\u4E00\u4E2A \u8FD9\u5C06\u7528\u4E8E\u4F60\u5E94\u7528\u4E2D\u7684\u6240\u6709\u9875\u9762\u3002 \u901A\u8FC7\u5C06 \u5C5E\u6027\u8BBE\u7F6E\u4E3A\u7EC4\u4EF6\u9009\u9879\u7684\u4E00\u90E8\u5206\u6765\u4F7F\u7528\u5176\u4ED6\u5E03\u5C40\u3002</p><h2 id="_5-app-vue-\u5165\u53E3\u6587\u4EF6-nuxtpage-\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#_5-app-vue-\u5165\u53E3\u6587\u4EF6-nuxtpage-\u914D\u7F6E" aria-hidden="true">#</a> 5.app.vue \u5165\u53E3\u6587\u4EF6+NuxtPage \u914D\u7F6E</h2><p>app.vue \u6587\u4EF6\u662F Nuxt 3 \u5E94\u7528\u7A0B\u5E8F\u4E2D\u7684\u5165\u53E3\u7EC4\u4EF6\u3002</p><p>\u5728 Nuxt 3 \u4E2D\u5982\u679C\u6CA1\u6709 pages/\u76EE\u5F55\uFF0C\u5219\u8868\u793A\u4E0D\u4F1A\u5305\u542B vue-router \u4F9D\u8D56\u3002 \u5F53\u6211\u4EEC\u5B8C\u6210\u4E00\u4E2A\u843D\u5730\u9875\u6216\u8005\u662F\u4E0D\u9700\u8981\u8DEF\u7531\u5C31\u53EF\u4EE5\u8FD9\u6837\u505A\u3002</p><h2 id="_6-usestate\u5185\u5BB9api" tabindex="-1"><a class="header-anchor" href="#_6-usestate\u5185\u5BB9api" aria-hidden="true">#</a> 6.useState\u5185\u5BB9API</h2><p>Nuxt \u63D0\u4F9B\u53EF\u7EC4\u5408\u7684 useState \u6765\u521B\u5EFA\u8DE8\u7EC4\u4EF6\u7684\u5E76\u4E14\u5BF9 SSR \u53CB\u597D\u7684\u54CD\u5E94\u5F0F\u72B6\u6001\u3002 useState \u662F\u4E00\u4E2A SSR \u53CB\u597D\u7684 ref \u66FF\u4EE3\u54C1\u3002\u5B83\u7684\u503C\u5C06\u4F1A\u5728\u670D\u52A1\u7AEF\u6E32\u67D3\uFF08\u5BA2\u6237\u7AEF\u6E32\u67D3\u671F\u95F4\uFF09\u540E\u4FDD\u7559\uFF0C\u5E76\u4E14\u4F7F\u7528\u552F\u4E00\u7684\u952E\u5728\u6240\u6709\u7EC4\u4EF6\u4E4B\u95F4\u5171\u4EAB\u3002</p><p>\u901A\u8FC7\u914D\u7F6E\uFF1A\u7528\u81EA\u52A8\u5BFC\u5165 composables\uFF0C\u6211\u4EEC\u53EF\u4EE5\u5B9A\u4E49\u5168\u5C40\u7684\u5B89\u5168\u7C7B\u578B\u72B6\u6001\u5E76\u4E14\u5728\u6574\u4E2A\u5E94\u7528\u4E2D\u5BFC\u5165</p><h2 id="_7-nuxt\u6E32\u67D3\u6A21\u5F0F" tabindex="-1"><a class="header-anchor" href="#_7-nuxt\u6E32\u67D3\u6A21\u5F0F" aria-hidden="true">#</a> 7.nuxt\u6E32\u67D3\u6A21\u5F0F</h2><p>\u76EE\u524D\u524D\u7AEF\u6E32\u67D3\u6A21\u5F0F\uFF0C\u5927\u81F4\u5206\u4E3A 3 \u79CD\uFF1A</p><p>\uFF081\uFF09\u5BA2\u6237\u7AEF\u6E32\u67D3 CSR (Croswer Side Render) \uFF082\uFF09\u670D\u52A1\u7AEF\u6E32\u67D3 SSR (Server Side Render) \uFF083\uFF09\u9759\u6001\u7F51\u7AD9\u751F\u6210 SSG (Static Site Generation)</p><h3 id="universal" tabindex="-1"><a class="header-anchor" href="#universal" aria-hidden="true">#</a> universal</h3><p>Universal\uFF08SSR / SSG\uFF09 \u60A8\u9009\u62E9\u540E\uFF0C\u5C31\u5305\u542B\uFF08\u5185\u7F6E\uFF09\u4E86\u670D\u52A1\u7AEF\u6E32\u67D3\uFF08SSR\uFF09\u4E0E\u9759\u6001\u7F51\u7AD9\u751F\u6210\uFF08SSG\uFF09\u4E24\u79CD\u6E32\u67D3\u6A21\u5F0F\u3002</p><p>\u670D\u52A1\u7AEF\u6E32\u67D3\u662F\u6307\u5BA2\u6237\u7AEF\u5411\u670D\u52A1\u5668\u53D1\u51FA\u8BF7\u6C42\uFF0C\u7136\u540E\u8FD0\u884C\u65F6\u52A8\u6001\u751F\u6210 html</p><h2 id="_8-nuxt-config-js\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#_8-nuxt-config-js\u914D\u7F6E" aria-hidden="true">#</a> 8.nuxt.config.js\u914D\u7F6E</h2><h3 id="srcdir" tabindex="-1"><a class="header-anchor" href="#srcdir" aria-hidden="true">#</a> srcDir</h3><p>\u5B9A\u4E49 Nuxt \u5E94\u7528\u7A0B\u5E8F\u7684\u6E90\u6587\u4EF6\u76EE\u5F55\u3002</p><p>\u5982\u679C\u6307\u5B9A\u4E86\u76F8\u5BF9\u8DEF\u5F84\uFF0C\u5B83\u5C06\u76F8\u5BF9\u4E8E rootDir\u3002 \u5982\u679C\u4F7F\u7528 ~ \u522B\u540D\uFF0C\u5C06\u4ECE\u9879\u76EE srcDir \u89E3\u6790</p><h3 id="ssr" tabindex="-1"><a class="header-anchor" href="#ssr" aria-hidden="true">#</a> ssr</h3><p>\u9ED8\u8BA4\u4F7F\u7528ssr\uFF0C\u8868\u793Atrue</p><h2 id="_9-nuxt\u7F13\u5B58" tabindex="-1"><a class="header-anchor" href="#_9-nuxt\u7F13\u5B58" aria-hidden="true">#</a> 9.nuxt\u7F13\u5B58</h2><p>nuxt\u7684\u7F13\u5B58\u53EF\u4EE5\u5206\u4E3A\u7EC4\u4EF6\u7EA7\u522B\u7F13\u5B58, API\u7EA7\u522B\u7F13\u5B58\u4EE5\u53CA\u9875\u9762\u7EA7\u522B\u7F13\u5B58</p><h3 id="\u51FA\u53E3\u8DEF\u7531" tabindex="-1"><a class="header-anchor" href="#\u51FA\u53E3\u8DEF\u7531" aria-hidden="true">#</a> \u51FA\u53E3\u8DEF\u7531</h3><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>\u5982\u679C\u9700\u8981\u4F7F\u7528 pages/\u663E\u793A\u76F8\u5173\u9875\u9762\u7684\u8BDD\uFF0C\u9700\u8981\u4F7F\u7528 \u8DEF\u7531\u51FA\u53E3\u7EC4\u4EF6:&lt;NuxtPage&gt;
+
+&lt;template&gt;
+  &lt;div&gt;
+    &lt;!-- \u8DEF\u7531\u51FA\u53E3 --&gt;
+    &lt;NuxtPage /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="_3-nuxt-\u5B89\u88C5\u5B8C\u6210\u540E-\u4E0D\u652F\u6301-require-\u65B9\u5F0F-\u6838\u5FC3\u95EE\u9898-vite-\u4E0D\u652F\u6301-require" tabindex="-1"><a class="header-anchor" href="#_3-nuxt-\u5B89\u88C5\u5B8C\u6210\u540E-\u4E0D\u652F\u6301-require-\u65B9\u5F0F-\u6838\u5FC3\u95EE\u9898-vite-\u4E0D\u652F\u6301-require" aria-hidden="true">#</a> 3.nuxt \u5B89\u88C5\u5B8C\u6210\u540E\uFF0C\u4E0D\u652F\u6301 require \u65B9\u5F0F\uFF08\u6838\u5FC3\u95EE\u9898 vite \u4E0D\u652F\u6301 require\uFF09</h1><p>\u89E3\u51B3\u5B89\u88C5 babel-node \u7248\u672C\uFF0C\u7248\u672C\u662F 1.22.19</p><p>\u8FD9\u4E2A\u5982\u679C\u4E0D\u80FD\u89E3\u51B3\uFF0C\u5176\u5B9E\u95EE\u9898\u662F vite \u4E0D\u652F\u6301 require \u95EE\u9898</p><p>vite-plugin-require-transform</p>`,66);function k(P,j){const i=r("ExternalLinkIcon");return t(),l("div",null,[c,e("p",null,[e("a",v,[o,a(i)])]),h,e("p",null,[e("a",m,[p,a(i)])]),e("p",null,[e("a",b,[x,a(i)])]),g,e("p",null,[e("a",_,[f,a(i)])]),S,e("p",null,[e("a",N,[w,a(i)])]),A])}var B=d(u,[["render",k],["__file","003Nuxt\u5F00\u53D1\u4F7F\u7528\u8BF4\u660E\u548C\u6848\u4F8B\u8BB0\u5F55.html.vue"]]);export{B as default};

@@ -1,0 +1,1 @@
+import{_,o as e,c}from"./app.5805b0e6.js";const o={};function r(t,s){return e(),c("div")}var n=_(o,[["render",r],["__file","018vscode\u63D2\u4EF6\u5F00\u53D1\u6848\u4F8B.html.vue"]]);export{n as default};

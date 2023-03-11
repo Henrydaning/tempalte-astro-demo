@@ -1,7 +1,7 @@
 ![成长](/images/home.png)
 [[toc]]
 
-# 全栈学习之旅
+# 全栈学习之旅: 记录知识学习的开始。
 
 (oneNote 笔记，有道云笔记，印象笔记，飞书笔记转移中。。。。。。。。。)
 （先记录新的内容，旧的笔记按照关系进行对应整理）
@@ -14,21 +14,21 @@
 
 :yellow_square: ─ 01React 课程学习和问题笔记（:seven::zero:%）
 
-:white_check_mark: ─ 02 极客时间 Vue 课程学习和问题笔记
+:white_check_mark: ─ 02 极客时间 Vue 课程学习和问题笔记（:seven::zero:%）
 
 :yellow_square: ─ 03 掘金算法课程学习和问题笔记（:eight::zero:%）
 
-:white_check_mark: ─ 04 掘金 Uniapp 课程学习笔记
+:white_check_mark: ─ 04 掘金 Uniapp 课程学习笔记（:five::zero:%）
 
 :yellow_square: ─ 05leetcode 刷题记录每周（:four::zero:%）
 
-:white_check_mark: ─ 06 极客时间 Node 全栈记录
+:white_check_mark: ─ 06 极客时间 Node 全栈记录（:five::zero:%）
 
 :yellow_square: ─ 07React 学习常见问题和笔记记录（:two::zero:%）
 
 :yellow_square: ─ 07React 常见问题和学习记录（:two::zero:%）
 
-:white_check_mark: ─ 08vue 常见问题和学习记录
+:white_check_mark: ─ 08vue 常见问题和学习记录（:five::zero:%）
 
 :yellow_square: ─ 09book 前端进阶知识学习图书笔记（:five::zero:%）
 
@@ -40,13 +40,13 @@
 
 :white_check_mark: ─ 13Koa 和 express 框架学习记录
 
-:yellow_square: ─ 14 前端图形化学习（:two::zero:%）
+:yellow_square: ─ 14 前端图形化学习（:four::zero:%）
 
 :white_check_mark: ─ 15 工具和项目配置工程化问题记录（:eight::zero:%）
 
-:yellow_square: ─ 16 前端拓展知识学习（:two::zero:%）
+:yellow_square: ─ 16 前端拓展知识学习（:five::zero:%）
 
-:yellow_square: ─ 17 低代码学习和总结（:two::zero:%）
+:yellow_square: ─ 17 低代码学习和总结（:six::zero:%）
 
 ## 指导方针政策
 
