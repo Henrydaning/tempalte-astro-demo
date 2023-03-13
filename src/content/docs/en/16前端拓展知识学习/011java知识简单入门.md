@@ -1,12 +1,12 @@
 
 
-## jdk和jre区别
+### jdk和jre区别
 
 JRE(Java Runtime Enviroment)是Java的运行环境。面向Java程序的使用者，而不是开发者。如果你仅下载并安装了JRE，那么你的系统只能运行Java程序。JRE是运行Java程序所必须环境的集合，包含JVM标准实现及 Java核心类库。它包括Java虚拟机、Java平台核心类和支持文件。它不包含开发工具(编译器、调试器等)。
 JDK(Java Development Kit)又称J2SDK(Java2 Software Development Kit)，是Java开发工具包，它提供了Java的开发环境(提供了编译器javac等工具，用于将java文件编译为class文件)和运行环境(提 供了JVM和Runtime辅助包，用于解析class文件使其得到运行)。如果你下载并安装了JDK，那么你不仅可以开发Java程序，也同时拥有了运 行Java程序的平台。JDK是整个Java的核心，包括了Java运行环境(JRE)，一堆Java工具tools.jar和Java标准类库 (rt.jar)。
 
 
-### Java版本和JDK版本
+#### Java版本和JDK版本
 要搞懂这些令人疑惑的人命名，那理解的一个关键就是Java版本和JDK版本了，首先啊，咱们常说Java有三个版本，对吧，分别是：
 
 JavaSE（Java Platform，Standard Edition）Java标准版
@@ -42,17 +42,17 @@ Java版本的蜜汁操作
 
 
 
-## 2.jar包部署
+### 2.jar包部署
 
-### （1）mvn是什么
+#### （1）mvn是什么
 Maven 是一个项目管理工具，可以对 Java 项目进行自动化的构建和依赖管理。
 
 
 
-### （2）mvn 将java项目打包成jar包后。
+#### （2）mvn 将java项目打包成jar包后。
 部署
 
-### （3）window部署方案:必须用cmd，
+#### （3）window部署方案:必须用cmd，
 因为可能出现乱码，所以cmd部署
 java -Dfile.encoding=utf-8 -jar 
 cmd命令行：
@@ -69,14 +69,14 @@ exit
 
 ~~~
 
-### （4）相关内容说明：
+#### （4）相关内容说明：
 文件里面配置了相关端口和相关配置：application.yml
 
 
 
 
-## 10.java相关基础知识学习
-### （1）java中运算符
+### 10.java相关基础知识学习
+#### （1）java中运算符
 ~~~
 / 表示当前的是除法，但是java的除法表示的是当前的只要一个参与运算的是整数，结果就是整数。
 

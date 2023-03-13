@@ -1,4 +1,4 @@
-## 1.lerna 实现 monorepo 架构实现
+### 1.lerna 实现 monorepo 架构实现
 
 - lerna-monorepo 架构实战
 
@@ -6,16 +6,16 @@
 如果某一个项目 yarn 安装不上，删除目录，重新创建子项目，重新安装
 快速创建脚手架命令
 
-### 1.创建 Lerna 工程：
+#### 1.创建 Lerna 工程：
 
 git init lerna-demo && cd lerna-demo && lerna init
 
-### 2.创建两个 package：
+#### 2.创建两个 package：
 
 lerna create lerna-module1
 lerna create lerna-module2
 
-### 3.package 中互相引用，怎么创建链接
+#### 3.package 中互相引用，怎么创建链接
 
 比如 module2 使用了 module1 的包
 
@@ -28,9 +28,9 @@ lerna run  test  --scope lerna-module1或是
 lerna run  test  packages/lerna-module1
 ```
 
-## 2.pnpm 创建步骤 monrepo 项目方式
+### 2.pnpm 创建步骤 monrepo 项目方式
 
-#### 新建根目录
+###### 新建根目录
 
 首先 Monorepo 需要一个根项目，所以我们先创建一个根项目，他相当于一个容器，用来存放我们的子项目，所以这个根项目并不需要安装太多的依赖
 
@@ -46,7 +46,7 @@ Preact
 
 ```
 
-#### 创建 pnpm-workspace.yaml
+###### 创建 pnpm-workspace.yaml
 
 新建 pnpm-workspace.yaml 文件，他的作用是：指定工作空间 workspace 的目录，里面的内容为：
 
@@ -65,7 +65,7 @@ packages:
 
 ```
 
-#### 创建公用目录（建议是一个只含有脚手架的容器）
+###### 创建公用目录（建议是一个只含有脚手架的容器）
 
 ```
 npm create vite
@@ -92,7 +92,7 @@ Eslint -> Yes
 
 ```
 
-#### 子项目如何使用库：例如请求 api 库
+###### 子项目如何使用库：例如请求 api 库
 
 https://mp.weixin.qq.com/s/y0cHuMxc7bC9Lhh5q2j5zQ
 
@@ -117,7 +117,7 @@ user.ts---api的封装接口
 
 创建好之后，然后
 
-#### 项目引用这个包的时候
+###### 项目引用这个包的时候
 
 ```
 首先进入某一个项:这里的package.json中的name就是这里的api-nyh名称
@@ -171,7 +171,7 @@ import { getUser，createUser } from '@api-ts'
 
 ```
 
-#### 加快执行构建速度的 vue3 框架命令--skipLibCheck
+###### 加快执行构建速度的 vue3 框架命令--skipLibCheck
 
 ```
 一般项目vue3安装后，有一个脚本build，如下，但是有时候执行检查总是报错，那么可以跳过
@@ -185,7 +185,7 @@ scripts.build 字段，原来里面执行了两条命令 vue-tsc --noEmit && vit
 
 ```
 
-#### 包安装操作
+###### 包安装操作
 
 ```
  把包安装在哪里
@@ -217,7 +217,7 @@ pnpm i @test/utils -r --filter web-vite-client
 pnpm up apis-ts -r --filter vue3-components
 ```
 
-### pnpm 项目配置需要增加配置全局 ts.config.json:注意第一点
+#### pnpm 项目配置需要增加配置全局 ts.config.json:注意第一点
 
 ```
 全局的tsconfig.json
@@ -248,7 +248,7 @@ pnpm up apis-ts -r --filter vue3-components
 
 ```
 
-### 注意第二点：作为 utils 请求库，如果进行打包，配置 tsconfig 和 package
+#### 注意第二点：作为 utils 请求库，如果进行打包，配置 tsconfig 和 package
 
 ```
 tsconfig.json
@@ -276,14 +276,14 @@ package.json中配置：最后打包的类型（同时得益于全局tsconfig配
 
 ```
 
-## 3.lerna 实现 monorepo 和 pnpm 实现 monorepo 区别
+### 3.lerna 实现 monorepo 和 pnpm 实现 monorepo 区别
 
 （1）leran
 yarn + lerna 的组合已经是现在 monorepo 的通用方案，也是功能最多，最火的方案，使用这套方案绝对是正确的。
 
 但是其上手存在一定的门槛，相比 pnpm 这种自带 workspace 的方案，在效率上不能匹敌。
 
-### lerna 架构老版本缺点，
+#### lerna 架构老版本缺点，
 
 （1）新入门 monorepo 的小白来说，光搞清单独使用 lerna 和 yarn + workspace + lerna 的区别，就足够吃一壶的了。
 同时 package.json 明确指明 workspace 位置
@@ -292,7 +292,7 @@ yarn + lerna 的组合已经是现在 monorepo 的通用方案，也是功能最
 
 （2）yarn + lerna 中的方案是配置自动抬升，这种方案会存在依赖滥用的问题
 
-### pnpm 架构 monorepo
+#### pnpm 架构 monorepo
 
 先在项目根目录建立一个 pnpm 的 workspcae 配置文件 pnpm-workspace.yaml。
 
@@ -310,7 +310,7 @@ yarn + lerna 的组合已经是现在 monorepo 的通用方案，也是功能最
 
 ```
 
-## 4.项目强制只可以使用某一个安装包。---使用一个脚本 preinstall 
+### 4.项目强制只可以使用某一个安装包。---使用一个脚本 preinstall 
 
 强制检查当前的包管理工具：only-allow配置检查package.json中preInstall钩子
 only-allow 安装后，

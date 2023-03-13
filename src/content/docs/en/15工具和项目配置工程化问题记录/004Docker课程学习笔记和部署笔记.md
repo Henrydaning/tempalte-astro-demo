@@ -1,8 +1,8 @@
 
 
-## docker+jenins+gitlab部署记录
+### docker+jenins+gitlab部署记录
 
-### （1）第一步：linux系统部署文件下面放置一个docker-compose.yml文件
+#### （1）第一步：linux系统部署文件下面放置一个docker-compose.yml文件
 这里放在
 
 
@@ -10,7 +10,7 @@
 
 
 
-### 一步一步来：对于地址~/docker-nginx
+#### 一步一步来：对于地址~/docker-nginx
 这里配置一个ngigx服务地址内容
 
 启动.sh文件启动nginx服务
@@ -18,7 +18,7 @@
 
 
 
-## docker学习
+### docker学习
 ---docker原理说明
 实际上docker只能在linux系统下运行，Windows下运行必要要支持Hyper-v
 ( 注：windows专业版本才有这个功能)。安装docker的时候会自动创建一个虚拟的linux系统，
@@ -37,7 +37,7 @@ docker 其实真正想做的事情是把资源隔离的接口标准化（最新�
 参考
 [开发者必备的 Docker 实践指南](https://juejin.cn/book/6844733746462064654/section/6844733746562727950]
 
-## 1.Docker简历
+### 1.Docker简历
 
 使用背景
 
@@ -54,23 +54,23 @@ docker 其实真正想做的事情是把资源隔离的接口标准化（最新�
 
 
 
-### 为什么docker这么快
+#### 为什么docker这么快
 
 - 容器技术支持，应用就是容器的方案。容器技术剔除了hypervisior层，又干掉了虚拟操作系统的概念。
 - 基于联合文件系统的底层文件系统支持，容器可以容易和真实系统共享存储资源，带来了存储空间的低消耗。
 - docker自身就是跨平台的，docker支持在容器中同时运行多种程序，但是这样会降低docker效率。
 - 综上： CI持续集成( Continuous Integration ) 和持续交付 ( Continuous Delivery )。
 
-## 2.Docker核心组成
+### 2.Docker核心组成
 
-### 四大组成对象。
+#### 四大组成对象。
 
 - 镜像image
 - 容器Container
 - 网络Network
 - 数据卷Volume
 
-### 镜像
+#### 镜像
 
 镜像可以理解为一个只读文件包，包含了虚拟环境运行最原始文件系统的内容。
 
@@ -82,7 +82,7 @@ Dokcer的创新，利用了AUFS作为底层文件系统实现，通过这种方�
 
 
 
-### 容器（核心namepace和group）
+#### 容器（核心namepace和group）
 
 容器就是用来隔离虚拟环境基础设施。
 
@@ -94,7 +94,7 @@ Dokcer的创新，利用了AUFS作为底层文件系统实现，通过这种方�
 
 
 
-### 网络(cgroup)
+#### 网络(cgroup)
 
 网络通讯是最常用的程序之间数据交换方式。
 
@@ -104,7 +104,7 @@ Dokcer能够利用技术，在容器中营造独立域名解析环境，让我�
 
 
 
-### 数据卷
+#### 数据卷
 
 文件是进行数据交换的资源。一般在虚拟机中，挂载文件是繁琐的，因为序号搞定不同文件系统的兼容性。
 
@@ -112,15 +112,15 @@ Dokcer能够利用技术，在容器中营造独立域名解析环境，让我�
 
 
 
-### Docker Engine
+#### Docker Engine
 
-#### 容器化的实现
+###### 容器化的实现
 
 实现容器化的工作通过Docker官方维护，DOkcer命名为Dokcer Engine.
 
 其中其实通过各种独立软件包组成，其中最核心的两个部分：docker daemon和dockerCli
 
-### docker daemon和docker CLI
+#### docker daemon和docker CLI
 
 docker daemon功能：容器管理，应用编排，镜像分发等功能
 
@@ -134,7 +134,7 @@ docker daemon和docker CLI组成的正式一个标准C/S(client-Server)结构应
 
 
 
-## 3.Dokcer运行环境搭建
+### 3.Dokcer运行环境搭建
 
 
 
@@ -149,7 +149,7 @@ Docker Engine迭代分为稳定版（Stable release）和预览版（Edge Releas
 
 Docker Engine稳定版每三个月更新一次。
 
-### Dokcer环境依赖版本要求
+#### Dokcer环境依赖版本要求
 
 
 
@@ -160,9 +160,9 @@ Docker Engine稳定版每三个月更新一次。
 | Fedora   | Fedora 26 Fedora 27                                          |
 | Ubuntu   | Ubuntu Trusty 14.04 (LTS) Ubuntu Xenial 16.04 (LTS) Ubuntu Artful 17.10 |
 
-### linux系统中安装Docker
+#### linux系统中安装Docker
 
-#### 必须是： * Docker is running才能表明docker
+###### 必须是： * Docker is running才能表明docker
 
 注意如果使用windows下的unbutu使用20.4版本。docker正常，unbutu22有docker的running问题。慎用，解决了一天，各种官方方法解决不了unbutu22的报错，个人放弃了最新版本。
 
@@ -172,7 +172,7 @@ Docker Engine稳定版每三个月更新一次。
 
 Docker本身基于linux核心能力。目前主流的linux系统拥有软件包管理功能，那么细节我们不去关心。
 
-### Ubuntu
+#### Ubuntu
 
 ```
 $ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
@@ -208,9 +208,9 @@ sudo service docker status
 必须是： * Docker is running才能表明docker
 ```
 
-#### 解决docker is not runing
+###### 解决docker is not runing
 
-### docker正确安装和可用的标记
+#### docker正确安装和可用的标记
 
 
 
@@ -226,7 +226,7 @@ docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is t
 
 
 
-### 将子系统作为docker client端连接远程docker damaen服务
+#### 将子系统作为docker client端连接远程docker damaen服务
 
 ~~~
 我们知道docker是cs架构的，即分为client端和server端，本地都是通过socket协议通讯的，如果本地client要连接远程的docker服务，则需要在client上导出以下环境变量
@@ -242,7 +242,7 @@ export DOCKER_HOST=tcp://<your docker server ip>:2375
 
 
 
-#### 修改镜像docker源头，加快镜像拉取
+###### 修改镜像docker源头，加快镜像拉取
 
 vi /etc/docker/daemon.json
 
@@ -268,23 +268,23 @@ Using default tag: latest出现报错
 增加sudo
 ~~~
 
-##### 配置相关的地址https地址国内进行配置
+####### 配置相关的地址https地址国内进行配置
 不然安装初始化后，没办法内容下载更新
 可以在jenkins下面的内容：Plugin Manager最下面的内容
 
 
 
-#### 注意如果拉去jenkins注意，安装jdk，jre
+###### 注意如果拉去jenkins注意，安装jdk，jre
 查看docker相关信息 docker info
 
 
-##### 2.1 wsl上安装Jenkins及简单配置（ubuntu系统配置）
+####### 2.1 wsl上安装Jenkins及简单配置（ubuntu系统配置）
 在Windows下比较推荐使用wsl的方式安装Jenkins，这样切换到Linux时也会比较熟悉，如果资源等可以的话，更推荐使用docker方式。这里以wsl+Ubuntu简单说明下wsl安装Jenkins，后续的go程序编译也是在wsl上的。
 
-###### 安装jdk、jre
+######### 安装jdk、jre
 sudo apt install default-jdk default-jre
 
-###### docker安装安装Jenkins
+######### docker安装安装Jenkins
 sudo apt update
 使用下面的命令进行安装
 docker pull jenkins/jenkins
@@ -344,7 +344,7 @@ docker run -d -p 8099:8080 -p 50099:50000 -v /usr/local/jenkins:/var/jenkins_hom
 
 
 
-## windows中使用Docker原理
+### windows中使用Docker原理
 
 其实 Docker Desktop 的实现逻辑很简单：既然 Windows 和 macOS 中没有 Docker 能够利用的 Linux 环境，那么我们生造一个 Linux 环境就行啦！Docker for Windows 和 Docker for Mac 正是这么实现的
 
@@ -352,9 +352,9 @@ docker run -d -p 8099:8080 -p 50099:50000 -v /usr/local/jenkins:/var/jenkins_hom
 
 
 
-## 6.镜像与容器
+### 6.镜像与容器
 
-### Docker镜像
+#### Docker镜像
 
 镜像包含应用程序和相关依赖的一个基础文件系统。镜像是对于容器运行环境的持久化存储结果。
 
@@ -364,13 +364,13 @@ docker run -d -p 8099:8080 -p 50099:50000 -v /usr/local/jenkins:/var/jenkins_hom
 
 
 
-### 查看镜像
+#### 查看镜像
 
 查看docker daemon中存放和管理了那些镜像，可以看docker images命令。
 
 
 
-### 镜像命令
+#### 镜像命令
 
 docker images命令打印的内容中，两个有关镜像的数据：REPOSITORY和TAG，这两者就是docker对于镜像的命名规范。
 
@@ -378,7 +378,7 @@ docker images命令打印的内容中，两个有关镜像的数据：REPOSITORY
 - **repository**：主要用于识别进行的内容，形成对镜像的表意描述。
 - **tag**：主要用户表示镜像的版本，方便区分进行内容的不同细节:`redis:3.2` 和 `redis:4.0`。因为前面说过导出镜像重新修改后，会重新生成一个。
 
-### 容器的生命周期
+#### 容器的生命周期
 
 我们只需要关系几个核心的容器状态。
 
@@ -388,7 +388,7 @@ docker images命令打印的内容中，两个有关镜像的数据：REPOSITORY
 
 
 
-### 主进程
+#### 主进程
 
 当容器中的主进程主动关闭时 ( 正常结束或出错停止 )，也会让容器随之停止
 
@@ -398,7 +398,7 @@ docker images命令打印的内容中，两个有关镜像的数据：REPOSITORY
 
 
 
-### 写时复制机制
+#### 写时复制机制
 
 采用写时复制机制来设计的 Docker，既保证了镜像在生成为容器时，以及容器在运行过程中，不会对自身造成修改。又借助剔除常见虚拟化在初始化时需要从镜像中拷贝整个文件系统的过程，大幅提高了容器的创建和启动速度。可以说，Docker 容器能够实现秒级启动速度，写时复制机制在其中发挥了举足轻重的作用。
 
@@ -410,9 +410,9 @@ docker images命令打印的内容中，两个有关镜像的数据：REPOSITORY
 
 
 
-## 7.从镜像仓库获得镜像
+### 7.从镜像仓库获得镜像
 
-### 镜像仓库
+#### 镜像仓库
 
 如果说我们把镜像的结构用 Git 项目的结构做类比，那么镜像仓库就可以看似 GitLab、GitHub 等的托管平台，只不过 Docker 的镜像仓库托管的不是代码项目，而是镜像。
 
@@ -422,7 +422,7 @@ docker images命令打印的内容中，两个有关镜像的数据：REPOSITORY
 
 
 
-### 获取镜像
+#### 获取镜像
 
 docker pull或是sudo docker pull
 
@@ -430,7 +430,7 @@ docker pull或是sudo docker pull
 
 `docker images` 命令看到它们
 
-### Dokcer Hub镜像仓库
+#### Dokcer Hub镜像仓库
 
 Docker Hub是Docker是官方中央镜像仓库，除了基础镜像功能，还支持权限管理，构建钩子和自动构建机制。
 
@@ -440,7 +440,7 @@ Docker Hub 的地址是：[hub.docker.com/](https://link.juejin.cn/?target=https
 
 
 
-### Docker Hub搜索镜像
+#### Docker Hub搜索镜像
 
 在 Docker Hub 的搜索结果中，有几项关键的信息有助于我们选择合适的镜像：
 
@@ -452,19 +452,19 @@ Docker Hub 的地址是：[hub.docker.com/](https://link.juejin.cn/?target=https
 
 sudo docker search ubuntu
 
-### 管理镜像
+#### 管理镜像
 
 docker images可以看到镜像基本信息。但是如果看到更加完整信息，
 
 命令：sudo docker inspect  redis1.1页支持通过容器ID查看
 
-### Docker的参数识别
+#### Docker的参数识别
 
 镜像ID是64个字符，但是docker images后，只有12个字符。
 
 其实docker本身做了匹配，根据当前的镜像tag中的内容或是id进行查找。
 
-### 删除镜像
+#### 删除镜像
 
  sudo docker rmi ubuntu:latest
 
@@ -472,11 +472,11 @@ docker images可以看到镜像基本信息。但是如果看到更加完整信�
 
 
 
-## 8.运行和管理容器
+### 8.运行和管理容器
 
-### 容器的创建和启动。
+#### 容器的创建和启动。
 
-#### 创建容器
+###### 创建容器
 
 ~~~
 $ sudo docker create nginx:1.12
@@ -487,7 +487,7 @@ $ sudo docker create nginx:1.12
  
 ~~~
 
-#### 启动容器
+###### 启动容器
 
 sudo docker start nginx
 
@@ -495,13 +495,13 @@ sudo docker start nginx
 
 
 
-#### 创建和启动进行合并的docker命令
+###### 创建和启动进行合并的docker命令
 
 sudo docker run --name nginx -d nginx:1.12
 
 docker  run等于创建容器和启动容器。
 
-#### 管理容器
+###### 管理容器
 
 docker  ps
 
@@ -511,7 +511,7 @@ docker  ps
 
 
 
-#### 停止和删除容器
+###### 停止和删除容器
 
 sudo  docker stop  nginx
 
@@ -519,7 +519,7 @@ sudo  docker rm nginx ;//默认情况不可以删除，-f或是--force
 
 
 
-#### 进入容器内部
+###### 进入容器内部
 
 高级阶段学习
 
@@ -529,9 +529,9 @@ sudo  docker rm nginx ;//默认情况不可以删除，-f或是--force
 
 
 
-## 9.为容器配置网络
+### 9.为容器配置网络
 
-### 容器网络
+#### 容器网络
 
 Dokcer的网络，存在三个核心的概念，
 
@@ -539,7 +539,7 @@ Dokcer的网络，存在三个核心的概念，
 - 网络network：docker内部虚拟网络，实现容器内部通讯
 - 端点endponit：行程封闭环境的出入口管理，进行数据传输的管理
 
-### 容器Docker的网络实现
+#### 容器Docker的网络实现
 
 容器网络模型为容器引擎提供了一套标准的网络对接范式，而在 Docker 中，实现这套范式的是 Docker 所封装的 libnetwork 模块
 
@@ -549,7 +549,7 @@ Dokcer的网络，存在三个核心的概念，
 
 
 
-### ！！！容器互联（重点：打通nigixH和web应用通信）
+#### ！！！容器互联（重点：打通nigixH和web应用通信）
 
 **docker已经不推荐用link了，用自定义网络来实现容器互联**
 
@@ -557,7 +557,7 @@ Dokcer的网络，存在三个核心的概念，
 
 运行容器时添加 --net host 参数，docker run --net host
 
-##### 还有一个根本好办法：点到后面看了下，可以用Docker Compose
+####### 还有一个根本好办法：点到后面看了下，可以用Docker Compose
 
 如果要设置5个容器之间网络互通，有什么好的方式呢？
 
@@ -578,7 +578,7 @@ $ sudo docker run -d --name webapp --link mysql webapp:latest
 
 
 
-### ！！！暴露端口
+#### ！！！暴露端口
 
 docker ps查看port部分内容
 
@@ -606,7 +606,7 @@ $ sudo docker run -d --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=yes --expose 133
 
 
 
-#### 通过别名连接
+###### 通过别名连接
 
 ```
 sudo docker run -d --name webapp --link mysql:database webapp:latest
@@ -616,11 +616,11 @@ sudo docker run -d --name webapp --link mysql:database webapp:latest
 
 
 
-#### 管理网络
+###### 管理网络
 
 我们刚才之所以能够把 webapp 容器连接到 mysql 容器上，其原因是两者都处于 bridge 这个网络上。
 
-#### ！！！创建网络和指定网络加入容器
+###### ！！！创建网络和指定网络加入容器
 
 在 Docker 里，我们也能够创建网络，形成自己定义虚拟子网的目的。
 
@@ -642,7 +642,7 @@ $ sudo docker run -d --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=yes --network br
 
 
 
-#### ！！！端口映射
+###### ！！！端口映射
 
 我们需要容器外可以通过网络访问容器中的应用。
 
@@ -660,7 +660,7 @@ $ sudo docker run -d --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=yes --network br
 
 要映射端口，我们可以在创建容器时使用 `-p` 或者是 `--publish` 选项。
 
-##### 还有一个根本好办法：点到后面看了下，可以用Docker Compose
+####### 还有一个根本好办法：点到后面看了下，可以用Docker Compose
 
 如果要设置5个容器之间网络互通，有什么好的方式呢？
 
@@ -682,9 +682,9 @@ $ sudo docker run -d --name nginx -p 80:80 -p 443:443 nginx:1.12
 
 
 
-## 10.管理和存储数据
+### 10.管理和存储数据
 
-### 数据管理方式的实现。
+#### 数据管理方式的实现。
 
 容器运行文件处于沙盒环境，和外界隔离了，如何与外界进行交换。
 
@@ -695,7 +695,7 @@ Docker 很好的解决了这些问题，这主要还是归功于 Docker 容器�
 
 
 
-### 挂载方式：
+#### 挂载方式：
 
 Docker三种挂载方式：**Bind Mount**、**Volume** 和 **Tmpfs Mount**。
 
@@ -703,7 +703,7 @@ Docker三种挂载方式：**Bind Mount**、**Volume** 和 **Tmpfs Mount**。
 - **Volume** 数据卷的本质其实依然是宿主操作系统上的一个目录，只不过这个目录存放在 Docker 内部，接受 Docker 的管理。
 - **Tmpfs Mount** 它主要利用内存来存储数据
 
-### 挂载文件到容器
+#### 挂载文件到容器
 
 --volume或是-v两个参数，可以挂载。
 
@@ -715,7 +715,7 @@ $ sudo docker run -d --name nginx -v /webapp/html:/usr/share/nginx/html nginx:1.
 
 
 
-#### 注意挂载数据卷
+###### 注意挂载数据卷
 
 ~~~
 由于 -v 选项既承载了 Bind Mount 的定义，又参与了 Volume 的定义，所以其传参方式需要特别留意。前面提到了，-v 在定义绑定挂载时必须使用绝对路径，其目的主要是为了避免与数据卷挂载中命名这种形式的冲突。
@@ -748,13 +748,13 @@ $ sudo docker volume create appdata
 
 
 
-## 11.保存和共享镜像
+### 11.保存和共享镜像
 
  sudo docker commit -m "Upgrade" webapp webapp：2.0
 
 
 
-### 提交容器更新
+#### 提交容器更新
 
 镜像的结构很像代码仓库里的修改记录，而记录容器修改的过程又像是在提交代码，
 
@@ -762,7 +762,7 @@ $ sudo docker commit webapp
 
 
 
-### 为镜像命名
+#### 为镜像命名
 
 注意每一个镜像名称：当前的repository仓库和tag合集
 
@@ -783,13 +783,13 @@ docker tag  jenkins/jenkins:latest jenkins
 
 
 
-## 12.Dockerfile创建镜像？？
+### 12.Dockerfile创建镜像？？
 
 通过docker特有的镜像定义文件，Dockerfile可以体验秒级迁移的乐趣。
 
 
 
-### Dockerfile
+#### Dockerfile
 
 Dockerfile 中，包含了构建镜像过程中需要执行的命令和其他操作.
 
@@ -802,7 +802,7 @@ INSTRUCTION arguments
 
 
 
-### 环境搭建与镜像构建
+#### 环境搭建与镜像构建
 
  Dockerfile 就很像这样一个环境搭建手册，因为其中包含的就是一个构建容器的过程。
 
@@ -819,23 +819,23 @@ Docker实用的开发者的必备是Dockerfile文件能力。
 
 
 
-### 常见 Dockerfile 指令
+#### 常见 Dockerfile 指令
 
 
 
-#### FROM
+###### FROM
 
 通常来说，我们不会从零开始搭建一个镜像，而是会选择一个已经存在的镜像作为我们新镜像的基础，这种方式能够大幅减少我们的时间
 
-#### RUN
+###### RUN
 
 RUN 指令就是用于向控制台发送命令的指令
 
-#### ENTRYPOINT 和 CMD
+###### ENTRYPOINT 和 CMD
 
 基于镜像启动的容器，在容器启动时会根据镜像所定义的一条命令来启动容器中进程号为 1 的进程。
 
-#### COPY 和 ADD
+###### COPY 和 ADD
 
 在制作新的镜像的时候，我们可能需要将一些软件配置、程序代码、执行脚本等直接导入到镜像内的文件系统里，使用 COPY 或 ADD 指令能够帮助我们直接从宿主机的文件系统里拷贝内容到镜像里的文件系统中。
 
@@ -853,7 +853,7 @@ RUN 指令就是用于向控制台发送命令的指令
 
 
 
-### 构建镜像
+#### 构建镜像
 
 [使用 Dockerfile 定制镜像 - Docker — 从入门到实践 (gitbook.io)](https://yeasy.gitbook.io/docker_practice/image/build)
 
@@ -879,16 +879,16 @@ $ sudo docker build -t webapp:latest -f ./webapp/a.Dockerfile ./webapp
 
 
 
-## 13.Dockerfile的使用技巧
+### 13.Dockerfile的使用技巧
 
-### 构建中使用变量
+#### 构建中使用变量
 
 我们希望通过参数变量控制 Dockerfile 中某个程序的版本，在构建时安装我们指定版本的软件，我们可以通过 ARG 定义的参数作为占位符，替换版本定义的部分。
 
 ~~~
 FROM debian:stretch-slim
 
-## ......
+### ......
 
 ARG TOMCAT_MAJOR
 ARG TOMCAT_VERSION
@@ -899,7 +899,7 @@ $ sudo docker build --build-arg TOMCAT_MAJOR=8 --build-arg TOMCAT_VERSION=8.0.53
 
 ~~~
 
-### 环境变量
+#### 环境变量
 
 环境变量不是通过docker构建指令传入，而是通过Dockerfile编写的。
 
@@ -908,7 +908,7 @@ $ sudo docker build --build-arg TOMCAT_MAJOR=8 --build-arg TOMCAT_VERSION=8.0.53
 ~~~
 FROM debian:stretch-slim
 
-## ......
+### ......
 
 ENV TOMCAT_MAJOR 8
 ENV TOMCAT_VERSION 8.0.53
@@ -923,7 +923,7 @@ ENV TOMCAT_VERSION 8.0.53
 
 [开发者必备的 Docker 实践指南 - 有明 - 掘金课程 (juejin.cn)](https://juejin.cn/book/6844733746462064654/section/6844733746554355720)
 
-#### 临摹案例
+###### 临摹案例
 
 进入中央仓库docker hub或是
 
@@ -939,9 +939,9 @@ ENV TOMCAT_VERSION 8.0.53
 
 
 
-## 14.常见的docker hub的镜像
+### 14.常见的docker hub的镜像
 
-### 选择镜像和程序版本
+#### 选择镜像和程序版本
 
 
 
@@ -962,9 +962,9 @@ ENV TOMCAT_VERSION 8.0.53
 
 
 
-## 15.使用Docker Compose管理容器
+### 15.使用Docker Compose管理容器
 
-### 解决容器管理的问题
+#### 解决容器管理的问题
 
 如果简单的内容
 
@@ -976,7 +976,7 @@ ENV TOMCAT_VERSION 8.0.53
 
 
 
-### Docker Compose
+#### Docker Compose
 
 针对这种情况，我们就不得不引出在我们开发中最常使用的多容器定义和运行软件，也就是 Docker Compose 了。
 
@@ -986,7 +986,7 @@ ENV TOMCAT_VERSION 8.0.53
 
 
 
-### linux安装 Docker Compose:docker-compose安装
+#### linux安装 Docker Compose:docker-compose安装
 
 Docker Compose 是一个由 Python 编写的软件，在拥有 Python 运行环境的机器上，我们可以直接运行它，不需要其它的操作。
 
@@ -1025,7 +1025,7 @@ cker-compose version 1.24.1, build 4667896b
 
 
 
-### 在 Windows 和 macOS 中的 Docker Compose
+#### 在 Windows 和 macOS 中的 Docker Compose
 
 在我们更常用于开发的 Windows 和 macOS 中，使用 Docker Compose 会来得更加方便。不论你是使用 Docker for Win 还是 Docker for Mac，亦或是 Docker Toolbox 来搭建 Docker 运行环境，你都可以直接使用 `docker-compose` 这个命令。这三款软件都已经将 Docker Compose 内置在其中，供我们使用。
 
@@ -1033,7 +1033,7 @@ cker-compose version 1.24.1, build 4667896b
 
 
 
-### Docker Compose 的基本使用逻辑
+#### Docker Compose 的基本使用逻辑
 
 如果将使用 Docker Compose 的步骤简化来说，可以分成三步。
 
@@ -1084,7 +1084,7 @@ volumes:
 
 
 
-#### 启动和停止
+###### 启动和停止
 
 对于开发来说，最常使用的 Docker Compose 命令就是 `docker-compose up` 和 `docker-compose down` 了。
 
@@ -1108,7 +1108,7 @@ $ sudo docker-compose -f ./compose/docker-compose.yml -p myapp up -d
 
 
 
-#### 容器命令
+###### 容器命令
 
 **docker-compose前提是有yml文件**
 
@@ -1133,7 +1133,7 @@ $ sudo docker-compose stop webapp
 
 
 
-### 注意开机启动WSL配置
+#### 注意开机启动WSL配置
 
 
 
@@ -1141,11 +1141,11 @@ docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins_home   jenkins
 
 
 
-## 16.！！！常用的 Docker Compose 配置项
+### 16.！！！常用的 Docker Compose 配置项
 
 dockerfile和dockercompose一样，都是配置docker的学习必须。
 
-### 首先
+#### 首先
 
 1. 创建一个项目目录：
 
@@ -1176,9 +1176,9 @@ vim docker-compose.yml
 
 
 
-## 17.编写 Docker Compose 项目
+### 17.编写 Docker Compose 项目
 
-### 设置项目的目录结构。
+#### 设置项目的目录结构。
 
 我们要准备四个容器分别来运行它们。而为了更好地管理这四个容器所组成的环境，我们这里还会使用到 Docker Compose。
 

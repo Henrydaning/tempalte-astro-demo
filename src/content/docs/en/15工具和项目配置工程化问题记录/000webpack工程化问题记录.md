@@ -1,7 +1,7 @@
-## 0.webpack 打包原理
+### 0.webpack 打包原理
 
 [webpack 打包原理](https://juejin.cn/post/6844904038543130637)
-### webpack 构建流程
+#### webpack 构建流程
 Webpack 的运行流程是一个串行的过程,从启动到结束会依次执行以下流程 :
 
 - 初始化参数：从配置文件和 Shell 语句中读取与合并参数,得出最终的参数。
@@ -12,26 +12,26 @@ Webpack 的运行流程是一个串行的过程,从启动到结束会依次执�
 - 输出资源：根据入口和模块之间的依赖关系,组装成一个个包含多个模块的 Chunk,再把每个 Chunk 转换成一个单独的文件加入到输出列表,这步是可以修改输出内容的最后机会。
 - 输出完成：在确定好输出内容后,根据配置确定输出的路径和文件名,把文件内容写入到文件系统。
 
-## 1.webpack 模块联邦
+### 1.webpack 模块联邦
 
-## 2.webpack 热更新原理
+### 2.webpack 热更新原理
 
-## 3.webpack 的 mode 模式
+### 3.webpack 的 mode 模式
 
-### 3 种 mode 模式。
+#### 3 种 mode 模式。
 
 没有设置，自动 webapck 的 mode 模式是 production。经过压缩和混淆优化。
 [webpack 的 mode 模式](./webpackmode.png)
 
-## 4.webpack 的插件开发
+### 4.webpack 的插件开发
 
-## 5.webpack 的缓存策略
+### 5.webpack 的缓存策略
 
-## 6.webpack 的打包配置：解决支持 umd 格式，解决通用配置 node 和前端 this 环境。
+### 6.webpack 的打包配置：解决支持 umd 格式，解决通用配置 node 和前端 this 环境。
 
 打包成 umd 格式，注意一个大坑，比如 js 端的 this 是 self，但是 node 端不识别。
 
-### 解决方案
+#### 解决方案
 
 输出的时候配置
 大概意思就是，默认值为 self 当 output.libraryTarget 为 umd.
@@ -49,9 +49,9 @@ output: {
 
 ```
 
-## 7.webpack 的 devtool 的配置不同打包代码生成。devtool 里的 7 种 SourceMap 模式。
+### 7.webpack 的 devtool 的配置不同打包代码生成。devtool 里的 7 种 SourceMap 模式。
 
-### 几种内容说明
+#### 几种内容说明
 
 eval：webpack 的 sourcemap 的配置就利用了浏览器对 eval 代码的调试支持。
 
@@ -81,11 +81,11 @@ cheap：只映射到源代码的某一行，不精确到列，可以提升 sourc
 
 module： sourcemap 生成时会关联每一步 loader 生成的 sourcemap，配合 sourcemap-loader 可以映射回最初的源码
 
-### 2.webpack 不仅支持这 7 种，而且它们还是可以任意组合
+#### 2.webpack 不仅支持这 7 种，而且它们还是可以任意组合
 
 上面的 eval、inline、hidden 关键字，就如文档所说，你可以设置 souremap 选项为 cheap-module-inline-source-map。
 
-### 3.使用哪一种模式好？
+#### 3.使用哪一种模式好？
 
 开发环境推荐：cheap-module-eval-source-map
 
@@ -102,4 +102,4 @@ module： sourcemap 生成时会关联每一步 loader 生成的 sourcemap，配
 
 一般 dev 环境下，使用 eval,pro 使用普通模式。
 
-### 
+#### 

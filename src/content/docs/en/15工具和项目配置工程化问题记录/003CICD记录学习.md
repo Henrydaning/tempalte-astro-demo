@@ -1,20 +1,20 @@
 
 
-## 6.工程化锁定版本修改：某一个版本出现问题，如何修改代码和锁定版本
+### 6.工程化锁定版本修改：某一个版本出现问题，如何修改代码和锁定版本
 
-### npm ci 锁定版本
+#### npm ci 锁定版本
 
 npm ci 可以在开发完成后，锁定版本，避免版本功能出现问题
 
-### 某一个包进行修改后，如何打补丁 package-modules
+#### 某一个包进行修改后，如何打补丁 package-modules
 
-### 利用 server 机制，锁定一个版本的更新
+#### 利用 server 机制，锁定一个版本的更新
 
-## 0.工程化发布版本记录使用 release 工具发布包自动版本机制
+### 0.工程化发布版本记录使用 release 工具发布包自动版本机制
 
 工程化版本发布
 
-### （1）项目安装 release
+#### （1）项目安装 release
 ~~~
 快捷版本
  npm  i release-it @release-it/keep-a-changelog -D
@@ -27,12 +27,12 @@ npm i release-it
 配置 package 中增加 release:
 "release": "release-it"
 
-### （2）增加相关项目记录内容 log 记录
+#### （2）增加相关项目记录内容 log 记录
 
 npm i @release-it/keep-a-changelog
 因为我们 npm run release 后，会有相关的日志记录
 
-### （3）为了更好的记录 diff，我们需要执行一下 npm init release-it
+#### （3）为了更好的记录 diff，我们需要执行一下 npm init release-it
 
 初始化整个项目，更好的形成记录
 这里需要执行两次
@@ -65,17 +65,17 @@ npm i @release-it/keep-a-changelog
 
 ```
 
-## 1.第一部分：centos 系统：docker和jenkins安装使用
+### 1.第一部分：centos 系统：docker和jenkins安装使用
 
 记录 docker,和 jenkins 下安装 docker 的过程。
 
-## centos 环境下学习 docker 安装和部署 jenkins 的相关问题
+### centos 环境下学习 docker 安装和部署 jenkins 的相关问题
 
-### centos 的安装启动命令
+#### centos 的安装启动命令
 
 大多数 Linux 发行版本使用`systemctl`启动服务，如果不是那就尝试使用下`service`来启动
 
-#### 此时我的电脑使用 systemctl ,
+###### 此时我的电脑使用 systemctl ,
 
 ```
 systemctl restart docker
@@ -88,7 +88,7 @@ systemctl restart docker
 查看下ps -ef | grep "docker" docker启动了
 ```
 
-### 安装 jenkins 前，关闭防火墙
+#### 安装 jenkins 前，关闭防火墙
 
 ```
 查看防火墙状态： systemctl status firewalld.service
@@ -103,7 +103,7 @@ systemctl restart docker
 
 ```
 
-### docker pull jenkins/jenkins 镜像太慢解决方案
+#### docker pull jenkins/jenkins 镜像太慢解决方案
 
 ```
 
@@ -138,7 +138,7 @@ mkdir -p /var/jenkins_home
 授予权限
 ```
 
-### 启动 jenkins/jenkins
+#### 启动 jenkins/jenkins
 
 最后再次执行 docker pull jenkins/jenkins
 
@@ -169,9 +169,9 @@ docker run -p 8080:8080 -p 50000:50000 -v /home/jenkins_home   jenkins/jenkins
 
 ```
 
-### 安装安装 docker-compose
+#### 安装安装 docker-compose
 
-#### centos 安装后，日期时间显示错误
+###### centos 安装后，日期时间显示错误
 
 ```
 1.安装时间同步插件
@@ -199,7 +199,7 @@ Tue Feb 26 15:35:54 CST 2019
 
 ```
 
-### 安装好之后，然后启动 docker 下的
+#### 安装好之后，然后启动 docker 下的
 
 localhost:8080
 
@@ -216,9 +216,9 @@ dda2569e0f164b7a975f7d1525119767
 [image-20220618233107693]
 ```
 
-## 2.第二部分：ubuntu 部分：jenkins和docker安装使用
+### 2.第二部分：ubuntu 部分：jenkins和docker安装使用
 
-## ubuntu 环境学习 docker 和部署
+### ubuntu 环境学习 docker 和部署
 
 第一步安装 docker(ubuntu)
 
@@ -269,7 +269,7 @@ sudo ufw allow 8088
 
 ```
 
-## 防火墙相关
+### 防火墙相关
 
 最简单的一个操作：sudo ufw status 可检查防火墙的状态，我的返回的是：不活动
 
@@ -312,7 +312,7 @@ service jenkins start
 service jenkins start
 ```
 
-## 启动 jenkins 报错，
+### 启动 jenkins 报错，
 
 ```
 Setting up max open files limit to 8192
@@ -347,20 +347,20 @@ ulimit -n 65535
 
 ```
 
-## 启动 docker
+### 启动 docker
 
 sudo service docker start
 
-### 安装安装 docker-compose
+#### 安装安装 docker-compose
 
-## zx 脚本工具的学习
+### zx 脚本工具的学习
 
 Google 的 zx.js 提供了封装子进程的创建以及从这些进程处理 stdout 和 stderr 的函数。
 
 下面将使用的主要函数是 $ 函数，使用 zx.js 规定脚本写入扩展名为 .mjs 的文件中，以便能够在顶层使用 await。
 如果习惯于 .js 扩展名，请将脚本包装在类似 void async function () {...}() 中。
 
-## zx 脚本使用方法
+### zx 脚本使用方法
 
 然后我们需要在我们的脚本文件开头（顶部）添加特殊注释标记为 zx 脚本
 
@@ -368,16 +368,16 @@ Google 的 zx.js 提供了封装子进程的创建以及从这些进程处理 st
 
 执行： zx ./index.mjs
 
-### linux 系统使用
+#### linux 系统使用
 
-####给文件加权限
+######给文件加权限
 chmod +x index.mjs
 
-#### 执行文件
+###### 执行文件
 
 ./index.mjs
 
-### 常用的函数
+#### 常用的函数
 
 zx 提供了其他几个实用函数来简化 shell 脚本编写，例如：
 
@@ -389,22 +389,22 @@ chalk：允许为脚本的输出添加颜色。fetch：可以使用它来发出 
 
 minimist：解析命令行参数的库，将它们暴露在 argv 对象下。
 
-### zx 支持 ts 执行库
+#### zx 支持 ts 执行库
 
-#### 1.第一步将 package.json 中引入模块
+###### 1.第一步将 package.json 中引入模块
 
 第一步引入 typescript 和 ts-node 两个模块
 第二步增加 type:"module"模块化.(js 支持模块化)
 第三步增加 build 脚本和运行命令：build 和 start
 
-#### ts 模块化
+###### ts 模块化
 
 mjs 是 EcmaScript 模块的扩展
 
 Node.js 会将.cjs 文件视为 CommonJS 模块，将.mjs 文件视为 ECMAScript 模块。
 它会将.js 文件视为项目的默认模块系统（这是 CommonJS，除非 package.json 说"type": "module", ）。
 
-#### ts 中引入后，没有这个模块
+###### ts 中引入后，没有这个模块
 
 有时候 import 一个模块
 error TS1192: Module ‘“fs“‘ has no default export.
@@ -418,7 +418,7 @@ import \* as fs from 'fs'
 }
 }
 
-### jenkins 使用记录命令
+#### jenkins 使用记录命令
 
 ```
 windows系统的使用jenkins的内容
@@ -430,16 +430,16 @@ C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspac
 
 ```
 
-## git 配置多个 ssh-key 方法
+### git 配置多个 ssh-key 方法
 
-### 补充快速配置 ssh-key
+#### 补充快速配置 ssh-key
 
-### 进入.ssh 文件夹
+#### 进入.ssh 文件夹
 
 打开 bash，然后输入自己当前的密码一路回车，生成后面的文件
 ssh-keygen -t rsa -C 'ningyongheng@jeejio' -f ~/.ssh/gitlab_id_rsa
 
-### 打开.ssh 下面的 config
+#### 打开.ssh 下面的 config
 
 添加一个当前的网站和地址，比如 gitlab
 
@@ -465,7 +465,7 @@ ProxyCommand connect -H 127.0.0.1:15732 %h %p
 
 ```
 
-### 打开的 gitlab 中配置 sshkey 内容
+#### 打开的 gitlab 中配置 sshkey 内容
 
 ```
 [xxx]_rsa.pub文件内容复制一下

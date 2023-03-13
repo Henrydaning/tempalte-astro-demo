@@ -1,14 +1,14 @@
-# Taro 小程序 代码规范
+## Taro 小程序 代码规范
 
 <h3 >1. 项目目录结构</h3>
 
-<img src="./images/目录结构.png" width = "465" height = auto alt="图片名称" align=top /><br> 
+<img src="/images/目录结构.png" width = "465" height = auto alt="图片名称" align=top /><br> 
 
 <h3 >2. 各类型命名规范</h3>
 
 注意：在命名时尽量简洁明了，用英文表达（禁止使用首字母缩写、拼音或数字）
 
-<img src="./images/94AC4CCC-B1F2-4B98-8127-D66B19A4EE29.png" width = "555" height = auto alt="图片名称" align=top /><br> 
+<img src="/images/94AC4CCC-B1F2-4B98-8127-D66B19A4EE29.png" width = "555" height = auto alt="图片名称" align=top /><br> 
 
 <h3 >3. 函数与类的命名</h3>
 
@@ -16,7 +16,7 @@
 名字应该明确表达改类的作用<br> 
 前缀为动词，前缀词如下表所示<br> 
 
-<img src="./images/FCF77CD9-78FF-4697-A011-36B2CC3D1BD1.png" width = "555" height = auto alt="图片名称" align=top /><br> 
+<img src="/images/FCF77CD9-78FF-4697-A011-36B2CC3D1BD1.png" width = "555" height = auto alt="图片名称" align=top /><br> 
 
 <h3 >4. 文件命名规范</h3>
 

@@ -1,8 +1,8 @@
 
 
-## Window 的 WSL2 安装 docker
+### Window 的 WSL2 安装 docker
 
-## 1.安装 docker
+### 1.安装 docker
 
 设置子系统免密
 
@@ -12,7 +12,7 @@
 
 ```
 
-### 设置 ununtu 的 api 安装装
+#### 设置 ununtu 的 api 安装装
 
 ```
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
@@ -35,9 +35,9 @@ apt update && apt upgrade -y
 
 ```
 
-## 2.docker 安装和启动
+### 2.docker 安装和启动
 
-### （1）启动 docker: sudo service docker start
+#### （1）启动 docker: sudo service docker start
 
 （注意 windows 内置的 ubuntu 没有命令 systemctl 命令）
 
@@ -56,7 +56,7 @@ apt update && apt upgrade -y
 其实质是利用docker的C/S架构，将windows模式下的docker对应docker.sock，docker客户端二进制和docker的数据目录挂载到WSL2里面的linux机器，在此linux机器下执行docker命令(docker命令为docker客户端)，实质为客户端通过 挂载的/var/run/docker.sock文件与windows里面的dockerd服务端进程通信。如下图，我们在linux下重新启动linux下dockerd进程
 ```
 
-### （2）检查 docker 是否正常
+#### （2）检查 docker 是否正常
 
 ```
 # 检查dockerd进程启动
@@ -81,7 +81,7 @@ docker images
 
 ```
 
-## Dccker 常见几个启动命令
+### Dccker 常见几个启动命令
 
 - 删除 docker 镜像
 
@@ -112,11 +112,11 @@ docker  image  prune
 
 Docker 安装哪一个版本小，
 
-### alpine 版本镜像大小是普通版本的 1/5 左右
+#### alpine 版本镜像大小是普通版本的 1/5 左右
 
-### Docker 部署 ngiix 环境
+#### Docker 部署 ngiix 环境
 
-#### 创建容器
+###### 创建容器
 
 ```
 $ sudo docker create nginx:1.12
@@ -127,19 +127,19 @@ $ sudo docker create nginx:1.12
 
 ```
 
-#### 启动容器
+###### 启动容器
 
 sudo docker start nginx
 
 根据起的名字进行运行。
 
-#### 创建和启动进行合并的 docker 命令
+###### 创建和启动进行合并的 docker 命令
 
 sudo docker run --name nginx -d nginx:1.12
 
 docker run 等于创建容器和启动容器。
 
-#### 管理容器
+###### 管理容器
 
 ```
 docker  ps
@@ -149,7 +149,7 @@ docker  ps
 如果看容器状态：docker ps -a
 ```
 
-#### 停止和删除容器
+###### 停止和删除容器
 
 ```
 sudo  docker stop  nginx
@@ -157,7 +157,7 @@ sudo  docker stop  nginx
 sudo  docker rm nginx ;//默认情况不可以删除，-f或是--force
 ```
 
-### docker 安装 monog
+#### docker 安装 monog
 
 ```
 Digest: sha256:c57e511ce78d6847e2605db8e374611492f588e24f93c80e0c6baba9d6c029c3
@@ -165,7 +165,7 @@ Status: Downloaded newer image for mongo:latest
 docker.io/library/mongo:latest
 ```
 
-### docker 安装 redis
+#### docker 安装 redis
 
 ```
 - 安装redis
@@ -182,7 +182,7 @@ docker pull redis:alpine
 
 ```
 
-### docker 安装 mongo
+#### docker 安装 mongo
 
 - 安装 mongo
 
@@ -217,13 +217,13 @@ db.createUser({ user: 'admin', pwd: '123456', roles: [ { role: "root", db: "admi
 
 必须用用户密码连接
 
-### docker 安装 mysql
+#### docker 安装 mysql
 
-#### （1）拉取 mysql 镜像
+###### （1）拉取 mysql 镜像
 
 docker pull mysql:5.7
 
-#### （2）启动 mysql（正式配置好了数据库）
+###### （2）启动 mysql（正式配置好了数据库）
 
 ```
 docker run -d \
@@ -268,21 +268,21 @@ mysql:5.7
 
 ```
 
-## 查看当前的 ip
+### 查看当前的 ip
 
 此时电脑的 ip 地址，这里内容无线局域网适配器 WALN 的内容对应
 
-## 4.超快启动 docker-common 使用记录文档和项目地址:docker-compose项目
+### 4.超快启动 docker-common 使用记录文档和项目地址:docker-compose项目
 
 
 [项目地址 docker](https://gitee.com/nyhxiaoning/zkwq-mini-program-platform-api.git)
 
-### 以运行 nginx 为例
+#### 以运行 nginx 为例
 
 - 进入 docker-nginx 目录，直接运行 `docker-compose up -d` , 好了，一键运行完毕
 
 - 重启 docker-compose restart
-### 启动 docker 服务后，然后启动 docker-compose up -d 后
+#### 启动 docker 服务后，然后启动 docker-compose up -d 后
 
 然后使用看文件的映射端口：添加映射端口的内容
 docker-compose.yml
@@ -312,7 +312,7 @@ services:
 
 ```
 
-### 使用文件后，然后启动映射的端口
+#### 使用文件后，然后启动映射的端口
 
 来介绍下 docker-nginx 的目录
 
@@ -329,7 +329,7 @@ docker-compose.yml docker-compose 配置，用于配置端口和数据挂载等
 
 虽然里面的配置都很简单，但是我决定还是简单介绍一下添加项目
 
-##### 如何添加一个新项目
+####### 如何添加一个新项目
 
 比如增加一个商城项目，项目名称叫"mall"
 
@@ -341,11 +341,11 @@ docker-compose.yml docker-compose 配置，用于配置端口和数据挂载等
 docker-compose up -d
 ```
 
-## 5.docker 上面的 nginx 配置记录，部署前端项目
+### 5.docker 上面的 nginx 配置记录，部署前端项目
 
 注意：前端打包的文件夹目录，不要自己指定，如果后台配置好了名称，那么直接将打包完成的放入里面
 
-### 方案 1：
+#### 方案 1：
 
 [实现地址方案 gitee 地址](https://gitee.com/nyhxiaoning/zkwq-mini-program-platform-api.git)
 配置 vuepress 内容部署文件记录 1.第一步
@@ -368,7 +368,7 @@ base:"./"
 3.第三步
 其他的 img 地址内容，配置正确，可以正常展示。
 
-### 方案 2：如果想要用打包的文件夹，那么增加输出文件夹名称自定义
+#### 方案 2：如果想要用打包的文件夹，那么增加输出文件夹名称自定义
 如下面dest文件夹名称
 
 nginx 配置，比如自己想要 apidist2,那么配置一下 apidist2
@@ -390,9 +390,9 @@ dest:"apidist2"
 
 
 
-## 6.nginx.conf汇总使用案例
+### 6.nginx.conf汇总使用案例
 
-### main全局模块
+#### main全局模块
 
 ```
 #定义Nginx运行的用户和用户组
@@ -408,7 +408,7 @@ pid /var/run/nginx.pid;
 worker_rlimit_nofile 65535;
 ```
 
-### Events模块
+#### Events模块
 
 ```
 #工作模式与连接数上限
@@ -421,7 +421,7 @@ worker_connections 65535;
 }
 ```
 
-### HTTP模块
+#### HTTP模块
 
 ```
 http  {
@@ -462,7 +462,7 @@ gzip_vary on;
 #limit_zone crawler $binary_remote_addr 10m; #开启限制IP连接数的时候需要使用
 ```
 
-### upstream指令
+#### upstream指令
 
 Nginx的负载均衡模块目前支持4种调度算法。weight 轮询，ip_hash，fair，url_hash。
 
@@ -476,7 +476,7 @@ server 192.168.80.123:80 weight=3;
 }
 ```
 
-### Server模块
+#### Server模块
 
 ```
 #虚拟主机的配置
@@ -507,7 +507,7 @@ server {
   access_log /var/log/nginx/ospring.pw.log access;
 ```
 
-### Location
+#### Location
 
 ```
 #对 "/" 启用反向代理
@@ -564,7 +564,7 @@ include     vhosts/*.conf; 分割配置文件，方便管理
 }
 ```
 
-### HTTPS server
+#### HTTPS server
 
 ```
 server {  

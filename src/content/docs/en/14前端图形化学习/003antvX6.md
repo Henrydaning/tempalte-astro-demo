@@ -1,6 +1,6 @@
 
 
-## antvX6和G6区别
+### antvX6和G6区别
 [对比X6和G6的区别](https://app.yinxiang.com/shard/s37/nl/24388549/1c61fa52-a992-4d1c-9fd7-db336789ce44)
 x6是html，g6是canvas.
 需要根据图形分析数据，给出结论用g6.
@@ -8,12 +8,12 @@ x6是html，g6是canvas.
 
 
 
-## 1. antXFlow流程图的实现:解决了什么问题
+### 1. antXFlow流程图的实现:解决了什么问题
 - 流程图解决方案
 - ER 建模解决方案
 - DAG 图编辑解决方案
 
-## 2.实际antv-xflow实现流程图案例汇总
+### 2.实际antv-xflow实现流程图案例汇总
 学好React.
 XFlow 是 AntV 旗下, 基于 X6 图编辑引擎、面向 React 技术栈用户的图编辑应用级解决方案, 旨在让复杂的图编辑应用开发简单高效。
 

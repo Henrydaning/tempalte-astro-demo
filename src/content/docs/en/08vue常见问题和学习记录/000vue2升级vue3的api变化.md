@@ -3,7 +3,7 @@
 
 
 vue3 新内容  
-## 一.Composition API  
+### 一.Composition API  
 将数据、方法、computed、生命周期函数, 集中写在一个地方。  
 1.1 setup()  
 `setup()`作为在组件内使用`Composition API`的入口点。执行时机是在`beforeCreate`和`created`之间, 不能使用 this 获取组件的其他变量，而且不能是异步。`setup`返回的对象和方法，都可以在模版中使用。  
@@ -129,7 +129,7 @@ readOnlyState.name = '帅';
 ```
 
 
-## 二 reactive 类工具 API  
+### 二 reactive 类工具 API  
 2.1 isProxy， isReactive，isReadonly  
 isProxy 是检查一个对象是否是由 reactive 或者 readonly 方法创建的代理。后面两个是单独的检测。 注意：只要检测的对象里有 reactive，就算被 readonly 处理过了，isReactive 也为 true。  
 2.2 toRaw  
@@ -172,7 +172,7 @@ const test = () => {   // 深层次数据的变化不会触发响应式   state.
 ```
 
 
-## 三 ref 类工具 API  
+### 三 ref 类工具 API  
 3.1 isRef  
 检查一个值是否为一个`ref`对象  
 3.2 toRef  
@@ -354,7 +354,7 @@ const count = ref(0) watch(count, (count, prevCount) => {   /* ... */ })
 
 **与 watchEffect 共享的行为**  
 停止监听，清除副作用，副作用刷新时机，侦听器调试方面跟 watchEffect 参数是一样的。  
-## 四. 应用配置（原全局配置和全局 API） 
+### 四. 应用配置（原全局配置和全局 API） 
 
 **注意：全局配置的 Vue 都用现在的 createApp 生成的实例来替代**  
 createApp(新增)
@@ -413,7 +413,7 @@ unmount(新增)
 ```
 
 
-## 五. 全局 API（新增）  
+### 五. 全局 API（新增）  
 createApp  
 类似之前全局的 Vue 变量，整个组件树共享的上下文，第二个参数作为 props 值传入  
 h  
@@ -501,7 +501,7 @@ return withDirectives(h('div'), [
 createRenderer  
 接受两个泛型参数：`HostNode`和`HostElement`，对应于宿主环境中的`Node`和 `Element`类型。  
 这个东西不太清楚具体的使用场景  
-## 六. 选项 / 数据  
+### 六. 选项 / 数据  
 emits(新增)  
 在 $emit 触发事件之前验证参数
 
@@ -532,8 +532,8 @@ app.component('reply-form', {
 
 ```
 
-## 七. 选项 / DOM(不变)  
-##  八. 选项 / 生命周期钩子  
+### 七. 选项 / DOM(不变)  
+###  八. 选项 / 生命周期钩子  
 
 *   beforeDestroy -> `beforeUnmount`
 *   destroyed -> `unmounted`
@@ -562,42 +562,42 @@ renderTracked({ key, target, type }) {
 *   destroyed -> `onUnmounted`
 *   errorCaptured -> `onErrorCaptured`
 
-## 九. 选项 / 资源  
+### 九. 选项 / 资源  
 filters(废弃)  
 过滤器还是有时候在用的  
 十. 选项 / 组合  
 parent（废弃）  
 这个属性平时开发基本不会用到  
 setup(详情见上面)  
-## 十一. 选项 / 其它  
+### 十一. 选项 / 其它  
 delimiters（废弃）  
 functional（废弃）  
 使用了新的异步组件的生成方法  
 model（废弃）  
 v-model 修改了，不需要固定的属性名和事件名了，手动去处理  
 comments（废弃）  
-## 十二. 实例 property  
+### 十二. 实例 property  
 vm.$attrs（修改）  
 现在`$attrs`不但会获取父作用域中不作为组件`props`的值，也可以获取到自定义事件（包含了 $listeners 的功能）。  
 vm.$children（废弃）  
 vm.$scopedSlots（废弃）  
 vm.$isServer（废弃）  
 vm.$listeners（废弃）  
-## 十三. 实例方法 / 数据  
+### 十三. 实例方法 / 数据  
 `vue3`底层使用了 proxy 进行数据监听，所以不需要这两个方法了。  
 vm.$set（废弃）  
 vm.$delete（废弃）  
-## 十四. 实例方法 / 事件  
+### 十四. 实例方法 / 事件  
 因为现在可以直接在 setup 调用生命周期 api，而且可以引入别的 js 里的方法来使用，所以这些方法也可以不需要了。  
 vm.$on（废弃）  
 vm.$once（废弃）  
 vm.$off（废弃）  
-## 十五. 实例方法 / 生命周期  
+### 十五. 实例方法 / 生命周期  
 vm.$mount（废弃）  
 统一使用 createApp 的 mount 方法来挂载  
 vm.$destroy（废弃）  
 统一使用 createApp 的 unmount 方法来卸载  
-## 十六. 指令  
+### 十六. 指令  
 v-bind（修改）  
 
 *   .prop 去除
@@ -663,7 +663,7 @@ v-is（新增）
 ```
 
 
-## 十七. 特殊 attribute  
+### 十七. 特殊 attribute  
 key(修改)  
 循环的时候，`key`要设置在`template`上。
 
@@ -705,7 +705,7 @@ export default {
 ```
 
 
-## 十八. 内置的组件  
+### 十八. 内置的组件  
 transition（修改）  
 
 *   Props 新增：
@@ -735,13 +735,13 @@ teleport(新增)
 `to`必填属性，必须是一个有效的 query 选择器，或者是元素 (如果在浏览器环境中使用）。中的内容将会被放置到指定的目标元素中  
 `disabled`这是一个可选项 ，做一个是可以用来禁用的功能，这意味着它的插槽内容不会移动到任何地方，而是按没有 teleport 组件一般来呈现【默认为 false】  
 适合场景，全局的 loading，多个内容合并等等等。  
-## 十九. 总结  
+### 十九. 总结  
 总体来说，`vue3`在尽可能的兼容`vue2`的同时，又引入了全新的组合式 API 的编程方式，这种新的模式有点类似 react 的思想，解决了之前版本对于业务代码难复用的问题，而且对一个页面来说，不同的功能代码可以更好的去区分，不会有以前各种变量和方法挤在一堆，后期难于维护的问题。加上良好的`ts`支持，很好很强大。  
 周边的一些组件`vue Router4.0`, `vuex4.0`也都提供了`vue3`支持。组件库这块，`ant design vue`和`vant`已经支持了`vue3`。  
 不过正如官方文档中建议的，目前还不建议把一些重要的项目迁移到 vue3 当中，因为 vue3 还有很多需要完善的地方，而且目前还不支持 ie，等兼容的工作完成，还是只能兼容到 ie11。
 
 
-### 不支持IE11的vue3
+#### 不支持IE11的vue3
 ~~~
 
 不支持 IE11 的原因
@@ -757,7 +757,7 @@ Vue 团队不想因为 IE11 做更多的牺牲, 如果未来再出个 Super Prox
 
 ~~~
 
-### vue2.x支持ie11的代码
+#### vue2.x支持ie11的代码
 ~~~
 在vue.config.js中的配置
  chainWebpack: (config) => {

@@ -1,10 +1,10 @@
 
 
-### （000）出现问题：TypeError: Invalid value used as weak map key
+#### （000）出现问题：TypeError: Invalid value used as weak map key
 
 一般是 md 文件中有没有识别的闭合标签。比如强行将 elementplus 组件用在 md 中没有特殊处理。
 
-### (001)vuepress 功能引入插件功能说明
+#### (001)vuepress 功能引入插件功能说明
 
 ```
 - 引入回到顶部
@@ -27,7 +27,7 @@ clientAppEnhance.ts
 
 ```
 
-### （002）vuepress 中全局钩子和 UI 组件
+#### （002）vuepress 中全局钩子和 UI 组件
 
 - client.ts 增加全局钩子和全局 UI 组件
   rootComponents 是一个组件数组，它们将会直接被放置在客户端 Vue 应用的根节点下。
@@ -37,7 +37,7 @@ clientAppEnhance.ts
 - vuepress 中引入绝对路径和相关路径
 <!-- 绝对路径 -->
 
-### （003）vuepress 中引入相对和绝对地址图片
+#### （003）vuepress 中引入相对和绝对地址图片
 
 ```
 
@@ -47,7 +47,7 @@ clientAppEnhance.ts
 
 ```
 
-### (004)静态资源部署到某一个文件夹下，如何保证相对地址没有问题
+#### (004)静态资源部署到某一个文件夹下，如何保证相对地址没有问题
 
 部署资源放在某一个文件夹下面如何 vuepress 配置
 
@@ -57,13 +57,13 @@ Base Helper
 
 举例来说，如果你想要把网站部署到 `https://foo.github.io/bar/` ，那么应该把 `base` 设置为 `"/bar/"` ，此时你必须在 Markdown 文件中这样引用 Public 文件：
 
-### （005）使用 GitHub Pages 建立博客
+#### （005）使用 GitHub Pages 建立博客
 
 与 GitHub 建立好链接之后，就可以方便的使用它提供的 Pages 服务，
 
 GitHub Pages 分两种，
 
-#### 一种是你的 GitHub 用户名建立的`username.github.io`这样的用户&组织页（站）
+###### 一种是你的 GitHub 用户名建立的`username.github.io`这样的用户&组织页（站）
 
 ```
 创建好username.github.io项目之后，提交一个index.html文件，然后push到GitHub的master分支（也就是普通意义上的主干）。第一次页面生效需要一些时间，大概10分钟左右。
@@ -77,7 +77,7 @@ https://nyhxiaoning.github.io/dist/
 访问：https://nyhxiaoning.github.io/dist/   注意设置base:/dist/
 ```
 
-#### 一种是依附项目的 pages。
+###### 一种是依附项目的 pages。
 
 CNAME 设置成功后，DNS 生效需要一天左右。
 
@@ -100,11 +100,11 @@ eighth.dnspod.net
 angelo.dnspod.net
 ```
 
-## (1)vuepress1.x 配置项目参考
+### (1)vuepress1.x 配置项目参考
 
-## （2）vuepress2.x 目前需要的配置
+### （2）vuepress2.x 目前需要的配置
 
-### vuepress2 系统化配置使用
+#### vuepress2 系统化配置使用
 
 - 搜索功能和 vuepress 目前必须配置一致。
 
@@ -116,7 +116,7 @@ angelo.dnspod.net
     "vuepress": "2.0.0-beta.50"
 ```
 
-### vuepress2.x 中 head 增加 ico 标签图
+#### vuepress2.x 中 head 增加 ico 标签图
 
 支持两种方式：
 
@@ -141,7 +141,7 @@ angelo.dnspod.net
 
 ```
 
-### vuepress2.x 配置如何清除 md 下面的更新记录内容
+#### vuepress2.x 配置如何清除 md 下面的更新记录内容
 
 Contributors: daning, nyhxiaoning, ningyongheng
 
@@ -158,7 +158,7 @@ import { gitPlugin } from '@vuepress/plugin-git'
 
 ```
 
-## vuepress 打包后的部署 linux 问题。
+### vuepress 打包后的部署 linux 问题。
 
 我们打包完成后，直接放入 github 上面部署，这里资源默认会被 github 解析。
 但是如果放在我们自己的服务器解析，那么注意将这里的资源进行整理：
@@ -170,9 +170,9 @@ import { gitPlugin } from '@vuepress/plugin-git'
 ---css/xxx.css
 ```
 
-## 3.跳转内部 markdown 锚点位置和其他 md 文件的锚点位置
+### 3.跳转内部 markdown 锚点位置和其他 md 文件的锚点位置
 
-### 跳转内部 markdown 锚点位置
+#### 跳转内部 markdown 锚点位置
 
 ```
 markdown拓展中，默认所有的标题（无论是几级标题都可以），都会自动编程anchor链接。
@@ -189,7 +189,7 @@ md中写法
 
 案例修改方法
 跳转：
-#### 8.5我要跳到这里
+###### 8.5我要跳到这里
 如果之类要跳转，那么这里修改为
 _8-5我要跳到这里
 
@@ -200,7 +200,7 @@ _8-5我要跳到这里
 
 ```
 
-### 跳转其他文件位置
+#### 跳转其他文件位置
 
 ```
 --跳转到根目录
@@ -213,7 +213,7 @@ _8-5我要跳到这里
 
 ```
 
-#### 跨页面跳转，中文跳转和数字跳转区别
+###### 跨页面跳转，中文跳转和数字跳转区别
 
 ```
 中文跳转
@@ -221,12 +221,12 @@ _8-5我要跳到这里
 对应跳转方案：[跳转内容五、小应用案例解析](./fifth.md/#五、小应用案例解析)
 
 数字跳转
-### 1.2.2 物栖小应用开发流程
-对应用法跳转的结果：使用[跳转结果是](./first.md/###_1-2-2-物栖小应用开发流程)
+#### 1.2.2 物栖小应用开发流程
+对应用法跳转的结果：使用[跳转结果是](./first.md/####_1-2-2-物栖小应用开发流程)
 
 ```
 
-#### 页面内跳转
+###### 页面内跳转
 
 方案 1：
 
@@ -242,7 +242,7 @@ _8-5我要跳到这里
 
 ```
 注意vuepress2会默认将内容标题减少一个#，所以跳转页面内的时候
-注意一下：比如跳转：## 5.1智能农场demo场景介绍
+注意一下：比如跳转：### 5.1智能农场demo场景介绍
 那么对应页面内
 [跳转内容五、小应用案例解析55555](#_5-1智能农场demo场景介绍)
 
@@ -252,7 +252,7 @@ _8-5我要跳到这里
 
 ```
 
-## 4.配置入口和出口配置内容 vuepress
+### 4.配置入口和出口配置内容 vuepress
 
 ```
 base配置打包的时候相对地址配置，dest配置输出根文件夹目录，如果不配置，默认是.vuepress下的内容
@@ -279,13 +279,13 @@ TODO:
 
 ```
 
-### 所有的锚点在 dev 环境下正常，
+#### 所有的锚点在 dev 环境下正常，
 
 比如
 下面例子:md 结束的地方可以正常解析成 html，但是如果是
 
 ```
-## [一、物栖小应用简介](./pages/first.md)
+### [一、物栖小应用简介](./pages/first.md)
 [1.1 物栖小应用简介](./pages/first.html#_1-1-物栖小应用简介)<br>
 
 
@@ -296,11 +296,11 @@ dev可以但是build环境不允许的情况:dev可以正常解析，但是打�
 [1.1 物栖小应用简介](./pages/first.html#_1-1-物栖小应用简介)<br>
 ```
 
-## 5.vuepress 样式修改
+### 5.vuepress 样式修改
 
 默认修改原 html 标签样式汇总
 
-### vuepress1.x 修改样式
+#### vuepress1.x 修改样式
 
 ```
 1、.vuepress 文件夹下创建 styles/palette.styl （这里使用 stylus）
@@ -309,7 +309,7 @@ dev可以但是build环境不允许的情况:dev可以正常解析，但是打�
 
 ```
 
-### vuepress2.x 方案
+#### vuepress2.x 方案
 
 ```
 - 使用插件
@@ -324,7 +324,7 @@ dev可以但是build环境不允许的情况:dev可以正常解析，但是打�
 
 ```
 
-## 5.解决上线 vuepress 的锚点定位问题
+### 5.解决上线 vuepress 的锚点定位问题
 
 手动全部替换，，，，，，，原因，为什么本地可以???
 
@@ -361,7 +361,7 @@ md文件中后面使用#锚点，这里本地开发可以，但是打包的时�
 案例图如下
 ![vuepress图片问题](./vuepressQA.png)
 
-## 6.默认样式 vuepress 修改
+### 6.默认样式 vuepress 修改
 
 ```
 方法1： docs/.vuepress/public/css/index.css 中修改

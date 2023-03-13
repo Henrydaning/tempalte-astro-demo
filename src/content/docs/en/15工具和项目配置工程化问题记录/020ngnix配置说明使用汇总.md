@@ -1,4 +1,4 @@
-## 如何用 docker-compose 测试 nginx 配置的内容
+### 如何用 docker-compose 测试 nginx 配置的内容
 
 ```
 learn-nginx/location.conf
@@ -58,7 +58,7 @@ server {
 
 ```
 
-### （1）测试代理，创建一个 proxy.conf
+#### （1）测试代理，创建一个 proxy.conf
 
 ```
 # 由于此处使用了proxy_pass，因此需要启动两个服务
@@ -106,7 +106,7 @@ server {
 
 ```
 
-### （2）更新修改好的配置
+#### （2）更新修改好的配置
 
 ```
  docker-compose up location
@@ -115,9 +115,9 @@ server {
 
 ```
 
-## nginx 相关配置内容配置汇总
+### nginx 相关配置内容配置汇总
 
-### 1、nginx 部署静态资源服务器
+#### 1、nginx 部署静态资源服务器
 
 （1）在 nginx 的根目录下，点击 conf 文件夹，编辑 nginx.conf 配置文件；
 
@@ -136,9 +136,9 @@ server {
 
 （3）在安装目录的 cmd 界面中执行命令 nginx -s reload，使更改生效。
 
-## 2.记录一个部署问题
+### 2.记录一个部署问题
 
-### 当前的打包后文件夹和 html 文件位置说明
+#### 当前的打包后文件夹和 html 文件位置说明
 
 ```
 本地部署后，使用本地的容器放入文件夹可以快速访问，文件夹样式内容如下
@@ -160,11 +160,11 @@ server {
 
 但是注意路径说明
 
-## 相对路径和绝对路径说明学习
+### 相对路径和绝对路径说明学习
 
-### 绝对地址：相对根目录的地址（根目录大家都知道的，就是完整 url 最前边的那个啦）；
+#### 绝对地址：相对根目录的地址（根目录大家都知道的，就是完整 url 最前边的那个啦）；
 
-### 相对地址：即相对当前页的地址；
+#### 相对地址：即相对当前页的地址；
 
 注意：如果只有单斜杠，表示相对当前的根目录
 /：根；
@@ -173,7 +173,7 @@ server {
 
 ../：上一级。
 
-### 常见问题：相对地址/使用在最前面部署 nginx
+#### 常见问题：相对地址/使用在最前面部署 nginx
 
 /dist/
 注意：如果 nginx 中根目录相对地址就是资源，那么使用这个没有问题，但是如果这个文件夹上面有父文件夹，
@@ -194,11 +194,11 @@ js和css文件夹同级。
 
 ```
 
-### 部署最后线上
+#### 部署最后线上
 
 这里因为打包后，都是相对,打包后，默认使用了
 
-## linux 系统：使用 zip 上传
+### linux 系统：使用 zip 上传
 
 dist.rar 不会乱码，dist.rar 转成 zip 后再上传 linux 系统就可以了，但是直接使用 windows 打包的 zip 上传 linux，文件夹解压后乱码
 
@@ -206,9 +206,9 @@ dist.rar 不会乱码，dist.rar 转成 zip 后再上传 linux 系统就可以�
 
 # nginx.conf 文件中各个配置项的含义简析
 
-## 注意部署的时候相对位置的坑，如果 root 根目录在 dist 下，表示所有的文件从 dist 开始，那么 dist 相当于 ip,没有位置了。所以应该给 dist 包裹一层根目录，blog，那么这样可以了
+### 注意部署的时候相对位置的坑，如果 root 根目录在 dist 下，表示所有的文件从 dist 开始，那么 dist 相当于 ip,没有位置了。所以应该给 dist 包裹一层根目录，blog，那么这样可以了
 
-## 配置文件
+### 配置文件
 
 - [nginx 配置文件三部分解答](https://app.yinxiang.com/shard/s37/nl/24388549/cfab0a0c-9b0a-42f0-94e4-33725087815e)
 
@@ -249,7 +249,7 @@ dist.rar 不会乱码，dist.rar 转成 zip 后再上传 linux 系统就可以�
 
 ```
 
-## server 宿主机设置
+### server 宿主机设置
 
 #server 块开始，虚拟主机设置，使一个 Nginx 服务器运行多个网站
 
@@ -272,7 +272,7 @@ server {
 
 ```
 
-### location 指令的功能是用来匹配不同的 url 请求，进而对请求做不同的处理和响应
+#### location 指令的功能是用来匹配不同的 url 请求，进而对请求做不同的处理和响应
 
 location 中比较复杂的师 location 指令的匹配顺序。
 1、location 介绍
@@ -280,7 +280,7 @@ location 是 Nginx 中的块级指令(block directive),，location 指令的功�
 
 开始之前先明确一些约定，我们输入的网址叫做请求 URI，nginx 用请求 URI 与 location 中配置的 URI 做匹配。
 
-### 2、localtion 语法
+#### 2、localtion 语法
 
 location 有两种匹配规则：
 
@@ -289,7 +289,7 @@ location [ = | ~ | ~* | ^~ ] uri { … }
 命名 location，用@标识，类似于定于 goto 语句块。
 location @name { … }
 
-#### location 匹配参数解释：
+###### location 匹配参数解释：
 
 （1） “=” ，精确匹配
 
@@ -369,7 +369,7 @@ location @index_error {
 
 ```
 
-#### 3、location 匹配顺序（上面的序号越小优先级越高）
+###### 3、location 匹配顺序（上面的序号越小优先级越高）
 
 ```
 = > ^~ > ~ | ~* > 最长前缀匹配 > /
@@ -385,7 +385,7 @@ location /a # 普通前缀匹配，优先级低于带参数前缀匹配。
 location / # 任何没有匹配成功的，都会匹配这里处理
 ```
 
-## 6.gzip 配置压缩相关 nginx 配置内容：压缩版本和 http 版本
+### 6.gzip 配置压缩相关 nginx 配置内容：压缩版本和 http 版本
 
 ```
 server {
@@ -416,7 +416,7 @@ server {
 ```
 >>>>>>> 5a9ed4db5d4c00a1664d9b5bb2274a85ac6b22a5
 
-## 5.nginx 配置变量和使用
+### 5.nginx 配置变量和使用
 
 ```
 （1）声明变量
@@ -438,7 +438,7 @@ http标签中声明的变量对http块以及http块中的所有子块可见
 
 ```
 
-## 6.nginx.conf 配置多个子目录
+### 6.nginx.conf 配置多个子目录
 注意这里配置了root和alias是否配置都可以。
 这里其实最上面配置了/之后，这个下面的test1，test3都会生效。
 其实默认没有配置，但是我们有test5文件夹，访问也会生效出来。
@@ -474,7 +474,7 @@ server {
 
 ```
 
-## 7.root 和 alias 配置路径区别
+### 7.root 和 alias 配置路径区别
 
 root 用来设置根目录，而 alias 用来重置当前访问文件的目录。
 
@@ -496,7 +496,7 @@ location /img/ {
 
 这里需要注意的就是 location 中的路径匹配问题，root 和 alias 的区别
 
-## 8.配置 location 的指定主页和自动跳转
+### 8.配置 location 的指定主页和自动跳转
 
 ```
 location /react {
@@ -511,7 +511,7 @@ location /react {
 
 ```
 
-## 9.nginx 启动重启和关闭
+### 9.nginx 启动重启和关闭
 
 ```
 关闭nginx

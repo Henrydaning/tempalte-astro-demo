@@ -1,4 +1,4 @@
-## **python换源安装第三方包时，如若超时，也可采用换源的方法**
+### **python换源安装第三方包时，如若超时，也可采用换源的方法**
 
 - pip国内的一些镜像
 
@@ -21,7 +21,7 @@
 eg: pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
-## **设置python切换版本工具。windows 使用pyenv-win 管理多python 版本**
+### **设置python切换版本工具。windows 使用pyenv-win 管理多python 版本**
 
 **（1）利用pip下载pyenv-win工具，安装py切换版本工具。**
 
@@ -115,14 +115,14 @@ python版本命令使用了，但是python的执行器没有改变。
 
 
 
-## 3.一个登陆自动化的puthon项目
+### 3.一个登陆自动化的puthon项目
 （1）当前的自动化工具使用，登录控制
 [[开源]一个基于 Python 的网页自动化工具，控制浏览器，收发数据包-今日头条 (toutiao.com)](https://www.toutiao.com/article/7202243329382531619/?log_from=dcc38b9af10d7_1677114791436&wid=1677202338767)
 （2）使用指导文档记录
 [🌏 安装和导入 - DrissionPage (gitee.io)](http://g1879.gitee.io/drissionpagedocs/3_get_start/1_installation_and_import/)
 注意这里的python的内容，需要切换成当前的python的国内的源。
 
-### (1)问题记录
+#### (1)问题记录
 - 当前登录网站后，通过类名获取元素总是出现找不到，为什么
 比如：gieee登录后，直接按照文档，找个人中心，结果总是文字找不到
 

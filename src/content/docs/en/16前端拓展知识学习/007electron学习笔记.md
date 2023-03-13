@@ -2,7 +2,7 @@
 
 
 
-## 1.比较三种 electron 打包方式的比较
+### 1.比较三种 electron 打包方式的比较
 
 ```
 electron功能实现

@@ -14,7 +14,7 @@
 
 # express实战
 
-## 1.http简化
+### 1.http简化
 express中的http中的send方法和http中writeHead和end是一样的。
 也就是
 ~~~
@@ -36,23 +36,23 @@ express中的http中的send方法和http中writeHead和end是一样的。
     res.end('报错了')
 ~~~
 
-## url.parse和queryString，包
+### url.parse和queryString，包
 express默认自动将请求url进行了处理，不用使用url和querystring包
 
 req.querystring
 
 req.url
 
-## express会根据我们返回的数据格式，将http返回包，处理成想要的样子
+### express会根据我们返回的数据格式，将http返回包，处理成想要的样子
 
 
-## express有中间件的能力。
+### express有中间件的能力。
 
 next。进一步将不同的逻辑，分入不同的块，不同的部分分离。
 通过next将一个回调，传入另一个。
 将中间件内容传入res中。
 
-## 中间件的洋葱模型。
+### 中间件的洋葱模型。
 next是一个普通函数，会执行进入，然后又返回传出。
 但是如果next后一个setTimeout函数，那么next函数因为是同步执行的，就会导致setTImeout中的异步结果无法正常拿到。
 
@@ -60,17 +60,17 @@ next是一个普通函数，会执行进入，然后又返回传出。
 洋葱模型同步的时候很好。
 
 # Koa
-## koa的中间件可以支持async和await。
+### koa的中间件可以支持async和await。
 
 实现优化洋葱模型。
 
-## 区别于express，返回只有一个ctx的内容中只有一个封装。
+### 区别于express，返回只有一个ctx的内容中只有一个封装。
 ctx.request
 ctx.response
 
-## 请求和返回的处理
+### 请求和返回的处理
 
-## koa没有路由处理功能。
+### koa没有路由处理功能。
 koa不绑定任何的中间件。
 
 
@@ -86,7 +86,7 @@ koa不绑定任何的中间件。
 
 remote  procedure call
 
-## ajax区别
+### ajax区别
 
 RPC是什么？和ajax有什么区别
 RPC是远程过程调用（remote  procedure  call）
@@ -104,7 +104,7 @@ RPC是远程过程调用（remote  procedure  call）
 
 
 # Buffer二进制数据包的编码和解码
-## Buffer常用的方法
+### Buffer常用的方法
 Buffer.from
 Buffer.alloc
 Buffer.allocUnsafe

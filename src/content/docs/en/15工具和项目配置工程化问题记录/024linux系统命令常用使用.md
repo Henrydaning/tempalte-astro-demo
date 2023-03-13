@@ -1,17 +1,17 @@
 # ubuntu 系统模块
 
-## 1.查看当前的所有的 linux 服务
+### 1.查看当前的所有的 linux 服务
 
 ```
 netstat -ntulp
 
 ```
 
-## 2.linux 当前的用户是谁？
+### 2.linux 当前的用户是谁？
 
 whoami
 
-## 3.ubuntu 不用每一次输入 sudo
+### 3.ubuntu 不用每一次输入 sudo
 
 （1）sudo visudo
 
@@ -28,30 +28,30 @@ daning ALL=(ALL:ALL) ALL
 
 sudo usermod -aG sudo xxx
 
-## 4.chown 和 chmod 命令区别
+### 4.chown 和 chmod 命令区别
 
 chown 与 chmod 的区别
 chown 修改文件和文件夹的用户和用户组属性
 
 chmod 修改文件和目录的访问权限，但是不能变换所有者
 
-## 5.ubuntu 系统中配置多个 git 账号
+### 5.ubuntu 系统中配置多个 git 账号
 
 配置 gitee 和 github 账号方法
 安装 git
 git 地址在这里，今天用的是 deepin 所以直接使用源安装。
 
-### 安装 git
+#### 安装 git
 
 apt-get install git
 全局配置 name 和 email
 
-### 配置账号密码
+#### 配置账号密码
 
 git config --global user.name "xxx"
 git config --global user.email "eamil@qq.com"
 
-### 生成公钥
+#### 生成公钥
 
 创建~/xingmu/.ssh 目录，并进入。
 
@@ -69,7 +69,7 @@ $ ssh-keygen -t rsa -C "xxx@xxx.com"
 ```
 
 ```
-## github
+### github
 # 域名地址的别名
 Host github
 # 这个是真实的域名地址
@@ -79,7 +79,7 @@ User xxx@xx.com
 # 这里是 id_rsa 的目录位置
 IdentityFile ~/.ssh/id_rsa_github
 
-## 码云
+### 码云
 # 域名地址的别名
 Host gitee
 # 这个是真实的域名地址
@@ -88,10 +88,10 @@ Hostname gitee.com
 User xxx@xx.com
 # 这里是 id_rsa 的目录位置
 IdentityFile ~/.ssh/id_rsa_gitee
-## 以下第三个或者更多
+### 以下第三个或者更多
 ```
 
-### 测试
+#### 测试
 
 ```
 ssh -T git@github
@@ -101,21 +101,21 @@ Hi xingmu! You've successfully authenticated, but GITEE.COM does not provide she
 如果出现如下的提示，选择 yes 继续就可以了
 ```
 
-## 6.文件操作常见命令：重命名，创建
-### mv重命名
+### 6.文件操作常见命令：重命名，创建
+#### mv重命名
 
 mv old 文件名 new 文件名
 
-### 创建一个文件：
+#### 创建一个文件：
 touch或是cat
 
 
-### 显示隐藏文件
+#### 显示隐藏文件
 ls -a
 
 
 
-## 7.ubuntu上面eht0是本地ip，但是无法本机浏览器访问。
+### 7.ubuntu上面eht0是本地ip，但是无法本机浏览器访问。
 如何关闭当前ubuntu中的防火墙
 sudo ufw status 查看是否关闭了
 或是进入管理员模式，su后，进入ufw status查看

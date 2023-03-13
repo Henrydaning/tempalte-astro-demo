@@ -5,17 +5,17 @@
 
 
 
-## aggrid
+### aggrid
 
 
 
-### 000官方API文档：使用说明
+#### 000官方API文档：使用说明
 - 一般这里的接口（interface）是所有的内容全局函数和全局属性都在哪里。
 找一些全局的方法就在接口里面找。
 
 - 对于每一个行列的实例使用，在接口下面找。
 
-### 001项目中引入aggrid
+#### 001项目中引入aggrid
 
 ~~~
 引入aggrid使用方式
@@ -83,7 +83,7 @@ import { AgGridVue } from "ag-grid-vue3";
 
 ~~~
 
-### 002使用自定义渲染器传参的问题
+#### 002使用自定义渲染器传参的问题
 渲染器默认有一个params参数在props下面挂载，如果自定义想要再传入一些值，会默认挂在params对象下面。例如：
 ~~~
   column.cellRendererParams = { properties: colInfo.properties };
@@ -96,12 +96,12 @@ props：["params"]；//即可
 
 ~~~
 
-### 003渲染器使用后，不可以对于在渲染器内部进行条件渲染
+#### 003渲染器使用后，不可以对于在渲染器内部进行条件渲染
 因为进入渲染器后，渲染器一次渲染后，已经实例化，其他地方再次使用了该渲染器，也是使用同样的渲染机制，不可能会再次渲染，只可以通过选择渲染器前进行不同的渲染器判断进行条件渲染。
 
 
 
-### 004对于当前的aggrid列表头的配置
+#### 004对于当前的aggrid列表头的配置
 ~~~
 
 // 这里是初始化配置表头header的任务名称新建
@@ -194,7 +194,7 @@ gridOptions.api.setRowData(data);
 
 ~~~
 
-### 005渲染aggrid需要id对应数据唯一性
+#### 005渲染aggrid需要id对应数据唯一性
 ~~~
       getRowNodeId: (data: any) => {
         return data.record_id;
@@ -205,7 +205,7 @@ gridOptions.api.setRowData(data);
 ~~~
 
 
-### 006滚动条相关接口
+#### 006滚动条相关接口
 ~~~
 当 提供新的行数据时，网格将不会滚动到顶部。
 使用属性：suppressScrollOnNewData,但是实际没有看到效果
@@ -214,7 +214,7 @@ gridOptions.api.setRowData(data);
 ~~~
 
 
-### 006控制aggrid表格滚动条的监听
+#### 006控制aggrid表格滚动条的监听
 
 ~~~
 案例中事件方法：bodyScroll

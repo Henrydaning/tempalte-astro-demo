@@ -1,10 +1,10 @@
 [toc]
 
-## 一些常见使用习惯
+### 一些常见使用习惯
 
-### 组件的开发必须使用大驼峰命名
+#### 组件的开发必须使用大驼峰命名
 
-### jsx 使用说明习惯
+#### jsx 使用说明习惯
 
 ```
 注意事项：
@@ -31,7 +31,7 @@ class和for是JS中的关键字 为了防止歧义 在JSX中必须换个关键�
 就像Vue的<template>里面一样 必须有唯一的根元素进行包裹 不能有多个平级的根元素
 ```
 
-### className
+#### className
 
 ```
 1.jsx中的使用规范，一个jsx最好用小括号括起来，避免自动分号
@@ -39,21 +39,21 @@ class和for是JS中的关键字 为了防止歧义 在JSX中必须换个关键�
 - class是关键字，在react中使用不方便
 ```
 
-### 所有 React 组件都必须像纯函数一样保护它们的 props 不被更改。
+#### 所有 React 组件都必须像纯函数一样保护它们的 props 不被更改。
 
-### jsx 中写注释：{}括起来
+#### jsx 中写注释：{}括起来
 
-### jsx 中自定义组件名称必须以大写字母开头。
+#### jsx 中自定义组件名称必须以大写字母开头。
 
 ```
 React 会将以小写字母开头的组件视为原生 DOM 标签。例如，<div /> 代表 HTML 的 div 标签，而 <Welcome /> 则代表一个组件，并且需在作用域内使用 Welcome。
 ```
 
-### ReactDom 渲染前，默认将输入所有的内容进行转义。
+#### ReactDom 渲染前，默认将输入所有的内容进行转义。
 
 避免了 xss 攻击。
 
-### 避免将 props 的值复制给 state！这是一个常见的错误：
+#### 避免将 props 的值复制给 state！这是一个常见的错误：
 
 ```
 constructor(props) {
@@ -65,7 +65,7 @@ constructor(props) {
 
 ```
 
-### componentDidUpdate()必须注意它必须被包裹在一个条件语句里
+#### componentDidUpdate()必须注意它必须被包裹在一个条件语句里
 
 ```
 componentDidUpdate(prevProps) {
@@ -77,31 +77,31 @@ componentDidUpdate(prevProps) {
 
 ```
 
-### 一般 React 构建的应用通常只有单一的根 DOM 节点。
+#### 一般 React 构建的应用通常只有单一的根 DOM 节点。
 
 但是如果将 React 集成到一个已经存在的应用，那么可以在应用中包含多个根 DOM
 2.jsx 中的通过引号将属性值转为字符串字面量，
 
-## 1.jsx 转换使用特定属性值
+### 1.jsx 转换使用特定属性值
 
 方法 1：使用引号
 方法 2：使用{}
 
 # 第三章：元素渲染
 
-## 1.更新已经渲染的元素
+### 1.更新已经渲染的元素
 
 React 元素是不可变对象，一般创建，不可以更改它的属性或是子元素，它代表了某一个特定时刻的 UI.
 
-## 2.React 只更新它需要更新的部分
+### 2.React 只更新它需要更新的部分
 
 # 第四章：组件和 Pops
 
 组件概念上，类似于 js 函数，接受任意的入参，返回用于描述页面展示内容的 React 元素。
 
-## 函数组件和 class 组件
+### 函数组件和 class 组件
 
-### js 函数定义一个函数组件
+#### js 函数定义一个函数组件
 
 ```
 function  welcome(props){
@@ -110,7 +110,7 @@ function  welcome(props){
 
 ```
 
-### class 组件
+#### class 组件
 
 ```
 class  Welcome extends React.Component{
@@ -121,7 +121,7 @@ class  Welcome extends React.Component{
 
 ```
 
-## 渲染组件
+### 渲染组件
 
 当 React 元素渲染用户自定义的组件时候，会将 jsx 所接收的属性以及子组件 children 转换为单个对象传递给组件，这个对象称为 props
 
@@ -135,7 +135,7 @@ ReactDOM.render(
 
 ```
 
-## props 的只读性
+### props 的只读性
 
 ```
 组件不能修改自身的 props.
@@ -147,11 +147,11 @@ account.total -= amount;
 
 # 5.state 和生命周期
 
-## 组件的生命周期
+### 组件的生命周期
 
 组件的生命周期。
 
-### 当组件实例被创建并插入 DOM 中时，其生命周期调用顺序如下：
+#### 当组件实例被创建并插入 DOM 中时，其生命周期调用顺序如下：
 
 ```
 1.constructor()
@@ -162,7 +162,7 @@ account.total -= amount;
 4.componentDidMount()
 ```
 
-### 组件更新时，调用顺序
+#### 组件更新时，调用顺序
 
 当组件的 props 或 state 发生变化时会触发更新。组件更新的生命周期调用顺序如下：
 
@@ -174,7 +174,7 @@ account.total -= amount;
 5.componentDidUpdate()
 ```
 
-#### 当然这些所有的都是手动的调用（和 vue 一样，如果只是确保一些单一的功能，可以调用必要的）
+###### 当然这些所有的都是手动的调用（和 vue 一样，如果只是确保一些单一的功能，可以调用必要的）
 
 ```
 （1）如果你需要执行副作用（例如，数据提取或动画）以响应 props 中的更改，请改用 componentDidUpdate。
@@ -184,24 +184,24 @@ componentDidUpdate() 会在更新后会被立即调用
 
 ```
 
-#### 重复调用相同的值，有一个类似 vue 的计算属性， memoization 帮助函数来阻止非必要的过滤：
+###### 重复调用相同的值，有一个类似 vue 的计算属性， memoization 帮助函数来阻止非必要的过滤：
 
 缓存上一次的值。
 
-### 组件卸载调用方法
+#### 组件卸载调用方法
 
 当组件从 DOM 中移除时会调用如下方法：
 
 componentWillUnmount()
 
-### 错误处理
+#### 错误处理
 
 当渲染过程，生命周期，或子组件的构造函数中抛出错误时，会调用如下方法：
 
 static getDerivedStateFromError()
 componentDidCatch()
 
-### 总的来说 React 分为两大阶段：render 阶段和 commit 阶段（常用如下）
+#### 总的来说 React 分为两大阶段：render 阶段和 commit 阶段（常用如下）
 
 ```
 挂载时候，constructor->render->(更新 DOM 和 refs)componentDidMount
@@ -209,7 +209,7 @@ componentDidCatch()
 卸载时候，componentWillUnmount
 ```
 
-### 函数组件转换为 class 组件
+#### 函数组件转换为 class 组件
 
 ```
 第一步，创建一个同名的ES6的class,并且继承于React.Component
@@ -219,7 +219,7 @@ componentDidCatch()
 第五步，删除剩余的空函数的声明。
 ```
 
-### 向 class 中添加局部的 state
+#### 向 class 中添加局部的 state
 
 ```
 如何将date从props移动到state中
@@ -237,11 +237,11 @@ ReactDOM.render(
 
 ```
 
-### 将生命周期方法添加到 class
+#### 将生命周期方法添加到 class
 
 将上面声明周期函数写入 class 中即可。
 
-## 正确的使用 State
+### 正确的使用 State
 
 ```
 1.不要直接修改State,使用setState函数
@@ -275,7 +275,7 @@ vue中为什么data是一个函数。
 
 # 第六章：React 事件处理
 
-## 事件处理的语法
+### 事件处理的语法
 
 ```
 1.React事件命名使用小驼峰命名，而不是纯小写原生方式
@@ -283,7 +283,7 @@ vue中为什么data是一个函数。
 3.你不能通过return false阻止默认行为，必须显式调用preventDefault,
 ```
 
-## 向事件处理程序传递参数
+### 向事件处理程序传递参数
 
 方法 1：箭头函数实现传递，因为如果是箭头函数，事件的对象必须通过显式的方法进行传递
 
@@ -302,11 +302,11 @@ bind 的方式，事件对象以及更多的参数将会被隐式的进行传递
 
 # 第七章：条件渲染
 
-## true && expression 总是会返回 expression。
+### true && expression 总是会返回 expression。
 
 因为在 JavaScript 中，true && expression 总是会返回 expression, 而 false && expression 总是会返回 false。
 
-## 阻止组件渲染
+### 阻止组件渲染
 
 ````
 让 render 方法直接返回 null，而不进行任何渲染。
@@ -328,12 +328,12 @@ function WarningBanner(props) {
 
 # 第八章：列表 & Key
 
-## key 帮助 React 识别哪些元素改变了，比如被添加或删除。因此你应当给数组中的每一个元素赋予一个确定的标识。
+### key 帮助 React 识别哪些元素改变了，比如被添加或删除。因此你应当给数组中的每一个元素赋予一个确定的标识。
 
 当元素没有确定 id 的时候，万不得已你可以使用元素索引 index 作为 key。
 如果列表项目的顺序可能会变化，我们不建议使用索引来用作 key 值。
 
-## 用 key 提取组件
+### 用 key 提取组件
 
 ```
 元素的 key 只有放在就近的数组上下文中才有意义。
@@ -394,17 +394,17 @@ function NumberList(props) {
 一个好的经验法则是：在 map() 方法中的元素需要设置 key 属性。
 ```
 
-## key 只是在兄弟节点之间必须唯一
+### key 只是在兄弟节点之间必须唯一
 
 数组元素中使用的 key 在其兄弟节点之间应该是独一无二的。然而，它们不需要是全局唯一的。当我们生成两个不同的数组时，我们可以使用相同的 key 值：
 
-## key 会传递信息给 React ，但不会传递给你的组件。如果你的组件中需要使用 key 属性的值，请用其他属性名显式传递这个值：
+### key 会传递信息给 React ，但不会传递给你的组件。如果你的组件中需要使用 key 属性的值，请用其他属性名显式传递这个值：
 
 # 第九章：在 React 里，HTML 表单元素的工作方式和其他的 DOM 元素有些不同
 
 表单元素通常会保持一些内部的 state。例如这个纯 HTML 表单只接受一个名称。
 
-## 受控组件
+### 受控组件
 
 ```
 HTML 中表单元素：input,textarea,select 等都是自己维护 state,根据用户输入来进行更新。
@@ -412,7 +412,7 @@ React 中可变状态通常保存 state 属性中，只能通过 setState 来更
 所以我们可以结合两者，让 React 的 state 成为唯一的数据源。比如原理的 name 赋值使用 this.state
 ```
 
-## textarea 标签
+### textarea 标签
 
 HTML 中，textarea 元素通过子元素定义其文本。
 
@@ -425,7 +425,7 @@ HTML 中，textarea 元素通过子元素定义其文本。
 
 React 中使用 value 代替，这样，textarea 的使用和 input 的使用非常相似。
 
-## select 标签
+### select 标签
 
 ```
 HTML 中，select 创建下拉标签，这里使用 selected 来选择默认选中，
@@ -435,18 +435,18 @@ React 中使用 select 标签的 value 属性，来定义这个选中，在根�
 
 ```
 
-## input 标签
+### input 标签
 
 HTML 中 input type=file 允许用户选择文件，但是这里的 value 中只读，所以它是一个非受控组件。
 
-## 处理多个输入，可以给每一个元素添加 name,根据函数 event.target.name 的值选择
+### 处理多个输入，可以给每一个元素添加 name,根据函数 event.target.name 的值选择
 
-## 受控组件和非受控组件
+### 受控组件和非受控组件
 
 在大多数情况下，我们推荐使用 受控组件 来处理表单数据。在一个受控组件中，表单数据是由 React 组件来管理的。
 另一种替代方案是使用非受控组件，这时表单数据将交由 DOM 节点来处理。
 
-### 一些外部嵌套 react 的快速 demo,使用非受控组件操作 dom
+#### 一些外部嵌套 react 的快速 demo,使用非受控组件操作 dom
 
 因为非受控组件将真实数据储存在 DOM 节点中，所以在使用非受控组件时，
 有时候反而更容易同时集成 React 和非 React 代码。
@@ -489,27 +489,27 @@ function WelcomeDialog() {
 
 ```
 
-#### Props 和组合为你提供了清晰而安全地定制组件外观和行为的灵活方式。
+###### Props 和组合为你提供了清晰而安全地定制组件外观和行为的灵活方式。
 
 注意：组件可以接受任意 props，包括基本数据类型，React 元素以及函数。
 
-### props 和 state 区别
+#### props 和 state 区别
 
 props 是传递给组件的（类似于函数的形参），而 state 是在组件内被组件自己管理的（类似于在一个函数内声明的变量）。
 
 # 12.React 设计哲学
 
-## 第一步将设计好的 UI 分为组件层级
+### 第一步将设计好的 UI 分为组件层级
 
-## 第二步搭建基础的静态 UI 页面
+### 第二步搭建基础的静态 UI 页面
 
-## 第三步：定义数据结构，确定 UI 的 state 的最小表示
+### 第三步：定义数据结构，确定 UI 的 state 的最小表示
 
-## 第四步：确定 state 的设置位置。
+### 第四步：确定 state 的设置位置。
 
 根据 React 中最小实现，放置 state 的使用位置。
 
-## 第五步：添加反向数据流
+### 第五步：添加反向数据流
 
 ```
 处于较低层级的表单组件更新较高层级的 FilterableProductTable 中的 state。
@@ -534,7 +534,7 @@ let config = {
 访问其 DOM 节点对管理焦点，选中或动画来说是不可避免的。
 Ref 转发是一个可选特性，其允许某些组件接收 ref，并将其向下传递（换句话说，“转发”它）给子组件.
 
-## 案例
+### 案例
 
 ```
 const FancyButton = React.forwardRef((props, ref) => (
@@ -555,7 +555,7 @@ const ref = React.createRef();
 
 # 注意自动绑定，如何 class 中的方法自动绑定 this
 
-### 手动绑定 this
+#### 手动绑定 this
 
 ```
 
@@ -569,7 +569,7 @@ this.handleClick = this.handleClick.bind(this);
 
 ```
 
-### 自定实现组件的绑定 this
+#### 自定实现组件的绑定 this
 
 ```
 如果使用 createReactClass() 方法创建组件，组件中的方法会自动绑定至实例，所以不需要像上面那样做：
@@ -611,7 +611,7 @@ render() {
 
 ```
 
-### 另外一种短语法则
+#### 另外一种短语法则
 
 ```
 return (
@@ -629,7 +629,7 @@ return (
 在你的应用中引入代码分割的最佳方式是通过动态 import() 语法。
 ```
 
-## 使用之前案例
+### 使用之前案例
 
 ```
 import { add } from './math';
@@ -637,7 +637,7 @@ import { add } from './math';
 console.log(add(16, 26));
 ```
 
-## 使用之后案例
+### 使用之后案例
 
 ```
 import("./math").then(math => {
@@ -646,7 +646,7 @@ import("./math").then(math => {
 
 ```
 
-## 代码懒加载 lazy
+### 代码懒加载 lazy
 
 ```
 
@@ -674,20 +674,20 @@ React.createElement(
 )
 ```
 
-## JSX 类型中使用点语法
+### JSX 类型中使用点语法
 
-## 用户定义的组件必须以大写字母开头
+### 用户定义的组件必须以大写字母开头
 
 # 高阶组件 HOC 暂停
 
 高阶组件就是参数为组件，返回值为新组件的函数。
 组件是将 props 转换为 UI,高阶组件是将组件转换为另一个组件。
 
-## HOC 常见的高阶组件
+### HOC 常见的高阶组件
 
 Redux 的 connect 是高阶组件
 Relay 的 createFramentContainer 是高阶组件
 
-## 组件是 React 中代码复用的基本单元，但是某些模式下，不适合传统组件。
+### 组件是 React 中代码复用的基本单元，但是某些模式下，不适合传统组件。
 
-### 案例学习：commentlist 组件，订阅外部数据源，渲染评论列表
+#### 案例学习：commentlist 组件，订阅外部数据源，渲染评论列表

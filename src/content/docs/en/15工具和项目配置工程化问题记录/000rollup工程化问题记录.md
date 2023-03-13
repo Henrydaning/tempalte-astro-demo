@@ -1,4 +1,4 @@
-## 1.rollup 打包的几种格式说明
+### 1.rollup 打包的几种格式说明
 
 ├── out
 │ ├── amd
@@ -27,7 +27,7 @@ SystemJs: 和 UMD 类似。目前较出名的 Angular 用的就是它。
 
 ESM: 1. 还会被引用、二次编译的场景（如组件库等）；2.浏览器调试场景如 vite.js 的开发时。3.对浏览器兼容性非常宽松的场景。
 
-## 2.webpack 的 umd 和 webpack 的 umd 区别。
+### 2.webpack 的 umd 和 webpack 的 umd 区别。
 
 rollup 的 umd 打包模式和 webpack 的 umd 格式打包的区别
 前端打包工具有很多——webpack,gulp,rollup 等等，网上有很多文章分析它们分别更适合哪些场景，

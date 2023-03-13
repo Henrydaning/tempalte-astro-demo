@@ -1,7 +1,7 @@
  
 
-## 1.axios拦截器封装
-## 2.axios取消，防止重复点击。
+### 1.axios拦截器封装
+### 2.axios取消，防止重复点击。
 
 https://gitee.com/nyhxiaoning/pc-person-base-vuecli3-scaffold-0608.git
 

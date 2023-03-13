@@ -47,7 +47,7 @@ export type Sidebar = Record<
  */
 export const SIDEBAR: Sidebar = {
 	en: {
-		'学习的开始': [
+		'记录是学习的开始': [
 			{ text: '全栈学习', link: 'en/introduction' },
 			{ text: '00个人前端项目实战记录和链接', link: 'en/zero' },
 			{ text: '01React 课程学习和问题笔记', link: 'en/first' },
@@ -70,6 +70,6 @@ export const SIDEBAR: Sidebar = {
 			{ text: '其他常见问题', link: 'en/others' },
 			{ text: '常用符号', link: 'en/notices' }
 		],
-		'其他说明': [{ text: 'Page 4', link: 'en/page-4' }]
+		'其他说明': [{ text: '自定义', link: 'en/page-4' }]
 	},
 };

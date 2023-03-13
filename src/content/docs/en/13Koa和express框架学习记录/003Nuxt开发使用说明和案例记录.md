@@ -1,28 +1,28 @@
-## NuxtAPI
+### NuxtAPI
 
 [中文 NuxtAPI](https://www.nuxtjs.org.cn/getting-started/installation.html#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE)
 
-## Nuxt3 版本的 Node 最低支持是 Node14
+### Nuxt3 版本的 Node 最低支持是 Node14
 
-## nuxt 框架的搭建、配置记录
+### nuxt 框架的搭建、配置记录
 
 https://juejin.cn/post/7106397233905401864
 
-## 1.Nuxt3 已经可以参考的 demo 地址
+### 1.Nuxt3 已经可以参考的 demo 地址
 
-## 2.nuxt 打包部署 pm2
+### 2.nuxt 打包部署 pm2
 
 https://blog.csdn.net/m0_48489737/article/details/127796979
 
-## 3.nuxt3 中新增 elementplus 插件教程。
+### 3.nuxt3 中新增 elementplus 插件教程。
 
 [nuxt3-elementplus 实际 gitee 项目代码内容](https://gitee.com/node-project-summary/nuxt3-elementplus-vue3-demo.git)
 
 [nuxt3 按需引入 elmentplus 内容](https://app.yinxiang.com/shard/s37/nl/24388549/1debe0f4-1fd7-4947-899e-b74867282a54)
 
-## 4.nuxt3 中配置增加路由，自动新建一个 pages 中，文件夹就是路由名称。
+### 4.nuxt3 中配置增加路由，自动新建一个 pages 中，文件夹就是路由名称。
 
-## 5.自动导入 elementplus 组件
+### 5.自动导入 elementplus 组件
 
 非常简单的实现。两步法
 
@@ -47,13 +47,13 @@ export default defineNuxtPlugin((nuxtApp) => {
 
 [指导自动导入 elementplus](https://juejin.cn/post/7108916330153115655)
 
-## 6.nuxt 从 0-1 开发记录
+### 6.nuxt 从 0-1 开发记录
 
 [nuxt 记录从 0-1](https://juejin.cn/post/6844903833840123912#heading-34)
 
 # Nuxt3 指导 API 网站学习
 
-## 1.nuxt 自带相关 autoImport 的 API
+### 1.nuxt 自带相关 autoImport 的 API
 
 ```
 Nuxt 自动导入辅助函数、可组合函数和 Vue API.
@@ -67,7 +67,7 @@ Nuxt使用别名公开每个自动导入，如果需要，别名可用于显式�
 
 ```
 
-## 2.渲染模式
+### 2.渲染模式
 
 ```
 redirect- 定义服务器端重定向。
@@ -98,13 +98,13 @@ export default defineNuxtConfig({
 
 ```
 
-## 3.public 文件夹
+### 3.public 文件夹
 
 包含静态文件的目录，可通过 Nuxt 服务器直接访问，并在生成应用程序时自动复制到 dist 文件夹中。
 
-## 4.pages 存放当前的路由自动生成
+### 4.pages 存放当前的路由自动生成
 
-## 5.运行时配置允许向 Nuxt 应用上下文传递动态配置和环境变量。
+### 5.运行时配置允许向 Nuxt 应用上下文传递动态配置和环境变量。
 
 它将在服务器端覆盖 publicRuntimeConfig 内相同内容。它应该用来保存私有环境变量(不应该在前端公开)。这可能包括对您的 API 秘密标记的引用。
 配置传入全局变量
@@ -120,9 +120,9 @@ export default {
 
 publicRuntimeConfig 配置相关的全局变量。
 
-## 6.nuxt 配置 vite 配置和 webpack
+### 6.nuxt 配置 vite 配置和 webpack
 
-### vite
+#### vite
 
 ```
 vite
@@ -132,7 +132,7 @@ vite
 
 ```
 
-### webpack
+#### webpack
 
 ```
 webpack
@@ -142,7 +142,7 @@ watchOptions 直接传递给 webpack。
 
 # 2.目录结构
 
-## （1）组件命名：如下嵌套组件
+### （1）组件命名：如下嵌套组件
 
 ```
 | components/
@@ -154,7 +154,7 @@ watchOptions 直接传递给 webpack。
 
 ```
 
-## （2）库模式使用
+### （2）库模式使用
 
 制作具有自动摇树优化和组件注册功能的 Vue 组件库非常简单 ✨
 
@@ -213,15 +213,15 @@ export default {
 
 ```
 
-## 3.可复用组合逻辑 composables
+### 3.可复用组合逻辑 composables
 
 用户在 composables 目录下创建的组合逻辑文件将会被系统自动识别导入到应用程序，以供全局使用。
 
-### （1）创建 useFoo.ts
+#### （1）创建 useFoo.ts
 
 在 composables 文件夹下新建 useFoo.ts 文件,编写组合逻辑代码。
 
-### (2)填充文件内容：useFoo.ts 中
+#### (2)填充文件内容：useFoo.ts 中
 
 ```
 import { useState } from '#app'
@@ -233,18 +233,18 @@ export const useFoo = () => {
 
 ```
 
-### （3）注意 nuxt3 中自动使用
+#### （3）注意 nuxt3 中自动使用
 
 编写好组合逻辑文件后，Nuxt3 就会自动的导入，您可以在应用程序中使用它而无需手动导入。
 const foo = useFoo()
 
-## 4.layouts 自定义布局
+### 4.layouts 自定义布局
 
 页面布局放置在 目录中，使用时会通过异步导入自动加载。
 如果你创建了一个 这将用于你应用中的所有页面。
 通过将 属性设置为组件选项的一部分来使用其他布局。
 
-## 5.app.vue 入口文件+NuxtPage 配置
+### 5.app.vue 入口文件+NuxtPage 配置
 
 app.vue 文件是 Nuxt 3 应用程序中的入口组件。
 
@@ -253,7 +253,7 @@ app.vue 文件是 Nuxt 3 应用程序中的入口组件。
 
 
 
-## 6.useState内容API
+### 6.useState内容API
 Nuxt 提供可组合的 useState 来创建跨组件的并且对 SSR 友好的响应式状态。
 useState 是一个 SSR 友好的 ref 替代品。它的值将会在服务端渲染（客户端渲染期间）后保留，并且使用唯一的键在所有组件之间共享。
 
@@ -263,14 +263,14 @@ useState 是一个 SSR 友好的 ref 替代品。它的值将会在服务端渲�
 
 
 
-## 7.nuxt渲染模式
+### 7.nuxt渲染模式
 目前前端渲染模式，大致分为 3 种：
 
 （1）客户端渲染 CSR (Croswer Side Render)
 （2）服务端渲染 SSR (Server Side Render)
 （3）静态网站生成 SSG (Static Site Generation)
 
-### universal
+#### universal
 Universal（SSR / SSG）
 您选择后，就包含（内置）了服务端渲染（SSR）与静态网站生成（SSG）两种渲染模式。
 
@@ -278,28 +278,28 @@ Universal（SSR / SSG）
 
 
 
-## 8.nuxt.config.js配置
-### srcDir
+### 8.nuxt.config.js配置
+#### srcDir
 定义 Nuxt 应用程序的源文件目录。
 
 如果指定了相对路径，它将相对于 rootDir。
 如果使用 ~ 别名，将从项目 srcDir 解析
 
 
-### ssr
+#### ssr
 默认使用ssr，表示true
 
 
 
 
-## 9.nuxt缓存
+### 9.nuxt缓存
 nuxt的缓存可以分为组件级别缓存, API级别缓存以及页面级别缓存
 
 
 
 
 
-### 出口路由
+#### 出口路由
 
 如果需要使用 pages/显示相关页面的话，需要使用 
 

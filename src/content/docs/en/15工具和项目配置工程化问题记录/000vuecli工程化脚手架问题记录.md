@@ -1,4 +1,4 @@
-## NODE_ENV 模式说明
+### NODE_ENV 模式说明
 
 NODE_ENV 将决定您的应用运行的模式，是开发，生产还是测试，因此也决定了创建哪种 webpack 配置。
 
@@ -10,9 +10,9 @@ NODE_ENV 将决定您的应用运行的模式，是开发，生产还是测试�
 
 NODE_ENV
 
-## vuecli 构建打包模式
+### vuecli 构建打包模式
 
-### Web Components 组件
+#### Web Components 组件
 
 vue-cli-service build --target wc --name my-element [entry]
 使用方式
@@ -27,10 +27,10 @@ vue-cli-service build --target wc --name my-element [entry]
 
 <my-element></my-element>
 
-### 打包异步 Web Components 组件
+#### 打包异步 Web Components 组件
 
 vue-cli-service build --target wc-async --name foo 'src/components/\*.vue'
 
-### 应用打包
+#### 应用打包
 
-### 库
+#### 库

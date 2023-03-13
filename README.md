@@ -19,7 +19,7 @@ npm create astro@latest -- --template docs
 ![docs](https://user-images.githubusercontent.com/4677417/186189283-0831b9ab-d6b9-485d-8955-3057e532ab31.png)
 
 
-## Features
+### Features
 
 - ✅ **Full Markdown support**
 - ✅ **Responsive mobile-friendly design**
@@ -30,7 +30,7 @@ npm create astro@latest -- --template docs
 - ✅ **Automatic list of contributors**
 - ✅ (and, best of all) **dark mode**
 
-## Commands Cheatsheet
+### Commands Cheatsheet
 
 All commands are run from the root of the project, from a terminal:
 
@@ -45,17 +45,17 @@ All commands are run from the root of the project, from a terminal:
 
 To deploy your site to production, check out our [Deploy an Astro Website](https://docs.astro.build/guides/deploy) guide.
 
-## New to Astro?
+### New to Astro?
 
 Welcome! Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
-## Customize This Theme
+### Customize This Theme
 
-### Site metadata
+#### Site metadata
 
 `src/config.ts` contains several data objects that describe metadata about your site like title, description, default language, and Open Graph details. You can customize these to match your project.
 
-### CSS styling
+#### CSS styling
 
 The theme's look and feel is controlled by a few key variables that you can customize yourself. You'll find them in the `src/styles/theme.css` CSS file.
 
@@ -71,7 +71,7 @@ This theme uses a "cool blue" accent color by default. To customize this for you
 +  --theme-accent: hsla(var(--color-red), 1);   /* or: hsla(#FF0000, 1); */
 ```
 
-## Page metadata
+### Page metadata
 
 Astro uses frontmatter in Markdown pages to choose layouts and pass properties to those layouts. If you are using the default layout, you can customize the page in many different ways to optimize SEO and other things. For example, you can use the `title` and `description` properties to set the document title, meta title, meta description, and Open Graph description.
 
@@ -87,7 +87,7 @@ layout: ../../layouts/MainLayout.astro
 
 For more SEO related properties, look at `src/components/HeadSEO.astro`
 
-### Sidebar navigation
+#### Sidebar navigation
 
 The sidebar navigation is controlled by the `SIDEBAR` variable in your `src/config.ts` file. You can customize the sidebar by modifying this object. A default, starter navigation has already been created for you.
 
@@ -107,7 +107,7 @@ export const SIDEBAR = {
 
 Note the top-level `en` key: This is needed for multi-language support. You can change it to whatever language you'd like, or add new languages as you go. More details on this below.
 
-### Multiple Languages support
+#### Multiple Languages support
 
 The Astro docs template supports multiple languages out of the box. The default theme only shows `en` documentation, but you can enable multi-language support features by adding a second language to your project.
 
@@ -168,13 +168,13 @@ If you plan to use Spanish as the default language, you just need to modify the 
 
 You can also remove the above script and write a landing page in Spanish instead.
 
-### What if I don't plan to support multiple languages?
+#### What if I don't plan to support multiple languages?
 
 That's totally fine! Not all projects need (or can support) multiple languages. You can continue to use this theme without ever adding a second language.
 
 If that single language is not English, you can just replace `en` in directory layouts and configurations with the preferred language.
 
-### Search (Powered by Algolia)
+#### Search (Powered by Algolia)
 
 [Algolia](https://www.algolia.com/) offers a free service to qualified open source projects called [DocSearch](https://docsearch.algolia.com/). If you are accepted to the DocSearch program, provide your API Key & index name in `src/config.ts` and a search box will automatically appear in your site header.
 

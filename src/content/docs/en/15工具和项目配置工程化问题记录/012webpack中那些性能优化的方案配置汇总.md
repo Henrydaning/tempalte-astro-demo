@@ -1,6 +1,6 @@
 
 
-## 1.CDN 引入实现，性能优化考虑 webpack
+### 1.CDN 引入实现，性能优化考虑 webpack
 
 （1）第一种方式：
 
@@ -87,7 +87,7 @@ const WebpackCdnPlugin = require('webpack-cdn-plugin');
 };
 ```
 
-## 2.env 配置 env.development
+### 2.env 配置 env.development
 
 首先创建一个.env 文件放公共的配置汇总内容文件，
 
@@ -113,11 +113,11 @@ VUE_APP_API_BASE_URL=http://dev.iczer.com
 
 ```
 
-## 3.配置分包的使用
+### 3.配置分包的使用
 
 见下面代码
 
-## 4.配置 ali-oss 方法
+### 4.配置 ali-oss 方法
 
 ```
 创建oss文件
@@ -250,7 +250,7 @@ module.exports = {
 
 ```
 
-## 5.普通 vue.config.js 配置文件汇总
+### 5.普通 vue.config.js 配置文件汇总
 
 ```
 /*
@@ -358,9 +358,9 @@ module.exports = {
 
 ```
 
-## 6.webpack4.x 中提取主题样式配置
+### 6.webpack4.x 中提取主题样式配置
 
-###### wbepack-theme-color-replacer 提取主题样式：webpack4
+######### wbepack-theme-color-replacer 提取主题样式：webpack4
 
 ```CSS
 configurreWebpack中配置config
@@ -376,7 +376,7 @@ configurreWebpack中配置config
 
 ```
 
-## 7.webpack 压缩的插件配置
+### 7.webpack 压缩的插件配置
 
 ```
 threshold：x以上的文件才进行压缩

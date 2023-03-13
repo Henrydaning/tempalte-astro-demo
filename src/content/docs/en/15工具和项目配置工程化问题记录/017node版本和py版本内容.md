@@ -1,4 +1,4 @@
-## 1.volta切换node环境，彻底解决nvm切换node版本
+### 1.volta切换node环境，彻底解决nvm切换node版本
 - 有时候出现.无法识别，切换后重新删除一些依赖
 - 有时候出现：yarn和全局依赖不在一个磁盘
 - 有时候出现npm ERR! code MODULE_NOT_FOUND，npm ERR! Cannot find module 'libnpmfund'
@@ -13,7 +13,7 @@ npm config set registry https://registry.npmmirror.com/
 yarn config set registry https://registry.npmmirror.com/
 ~~~
 
-## 2.nrm切换当前的代理下载地址
+### 2.nrm切换当前的代理下载地址
 也可以下载一个包源头代理地址
 nrm工具，注意需要用一个优化版本，星号不生效
 npm install -g @adams549659584/nrm
@@ -22,7 +22,7 @@ npm install -g @adams549659584/nrm
 npm install -g yarn
 
 
-## 3.配置node缓存目录和全局安装包
+### 3.配置node缓存目录和全局安装包
 - 同时配置好缓存和安装目录
 ~~~
 npm config set prefix “D:\nodejs\node_global” //设置全局包目录

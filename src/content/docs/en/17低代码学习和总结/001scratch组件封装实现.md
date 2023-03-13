@@ -4,7 +4,7 @@
 
 
 
-## 0.对比学习blockly-react代码学习
+### 0.对比学习blockly-react代码学习
 
 [blockly-samples/examples/blockly-react at master · google/blockly-samples (github.com)](https://github.com/google/blockly-samples/tree/master/examples/blockly-react)
 
@@ -14,7 +14,7 @@
 
 
 
-## 1.学习scratch二次封装实现底层代码架构逻辑
+### 1.学习scratch二次封装实现底层代码架构逻辑
 
 参考：[scratch结构化实现](https://gitee.com/nyhxiaoning/RhineBlock.git)
 
@@ -88,7 +88,7 @@ var oSvg = document.createElementNS(svgNS,'svg'); //创建了一个svg元素
 
 
 
-### 002web_iso_simulator代码架构分析
+#### 002web_iso_simulator代码架构分析
 
 ~~~
 src
@@ -159,9 +159,9 @@ src
 
 
 
-### 003汇总代码整理学习问题？---待解决
+#### 003汇总代码整理学习问题？---待解决
 
-#### （1）封装的图形库中：
+###### （1）封装的图形库中：
 
 两个类分别有有什么作用
 
@@ -178,13 +178,13 @@ arg.class.ts和block.class.ts
 
 
 
-#### （2）class Block这个库函数中类方法
+###### （2）class Block这个库函数中类方法
 
 封装 各种方法是什么
 
 
 
-#### （3）这些core文件夹之间的关系和渲染可以说明一下吗
+###### （3）这些core文件夹之间的关系和渲染可以说明一下吗
 
 ~~~
 比如这里的core中的block中文件两个分别提供的能力
@@ -192,7 +192,7 @@ arg.class.ts和block.class.ts
 
 
 
-#### （4）具体的base-render.ts文件
+###### （4）具体的base-render.ts文件
 
 ~~~
 局部重渲染表示什么意思？
@@ -211,15 +211,15 @@ MellowRender类的作用说明
 
 
 
-#### （5）view文件夹的两个作用
+###### （5）view文件夹的两个作用
 
 
 
-#### （6）RhineBlock整个库函数增加说明和注释
+###### （6）RhineBlock整个库函数增加说明和注释
 
 
 
-#### （7）关于重构我有个问题
+###### （7）关于重构我有个问题
 
 以后有生成代码问题---因为我看这个block模块中js代码非常多，是和scratch绑定关系。
 
@@ -231,7 +231,7 @@ MellowRender类的作用说明
 
 
 
-#### （8）不重构scratch，解决不了那些问题，例如
+###### （8）不重构scratch，解决不了那些问题，例如
 
 
 
@@ -241,9 +241,9 @@ MellowRender类的作用说明
 
 
 
-## 004svg学习API记录
+### 004svg学习API记录
 
-### 汇总svg的Path路径图的使用
+#### 汇总svg的Path路径图的使用
 
 ~~~
 类似使用svg的使用

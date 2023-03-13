@@ -1,15 +1,9 @@
 ![成长](/images/home.png)
 
 
+# 常用uniapp的标签和vue比较
 
-
-## 001回到博客主页
-[博客首页](./../README.md)  
-
-
-# 基础常用uniapp的标签和vue比较
-
-## 001html标签和小程序的标签的区别
+### 001html标签和小程序的标签的区别
 ~~~
 div 改成 view
 span、font 改成 text
@@ -28,7 +22,7 @@ audio 不再推荐使用，改成api方式，背景音频api文档
 ~~~
 
 
-## 002uniapp的手机端常用的一些新组建
+### 002uniapp的手机端常用的一些新组建
 ~~~
 
 scroll-view 可区域滚动视图容器
@@ -55,7 +49,7 @@ webview（Web-view）
 
 ~~~
 
-## 003一些高级的比较的内容
+### 003一些高级的比较的内容
 
 
 (1)小程序中使用全局变量，可以挂载在vue对象上面
@@ -71,7 +65,7 @@ webview（Web-view）
 ~~~
 
 
-## 004uniapp文件夹结构内容
+### 004uniapp文件夹结构内容
 
 ~~~
 myuniappVue3
@@ -107,7 +101,7 @@ myuniappVue3
 ~~~
 
 
-## 005uniapp中对于多平台的配置和检测处理
+### 005uniapp中对于多平台的配置和检测处理
 ~~~
 #ifdef	仅在某个平台上使用
 #ifndef	在除了这个平台的其他平台上使用(非此平台使用）
@@ -163,8 +157,8 @@ app.$mount()
 ~~~
 
 
-## 06初学者可能插件的一些问题
-### pages.json中的内容配置
+### 06初学者可能插件的一些问题
+#### pages.json中的内容配置
 ~~~
 tabBar
 当设置 position 为 top 时，将不会显示 icon
@@ -177,10 +171,10 @@ tabbar 的页面展现过一次后就保留在内存中，再次切换 tabbar �
 ~~~
 
 
-### 好用的插件：一键创建页面、组件、分包
+#### 好用的插件：一键创建页面、组件、分包
 这个vscode中自己安装插件：uni-create-view,而在hbuild中内置了
 
-### 005页面导航，网络请求，数据缓存
+#### 005页面导航，网络请求，数据缓存
 页面导航的区别内容
 ~~~
 H5 通过 window.history 属性对其进行访问，改变路由记录从而实现跳转
@@ -191,16 +185,16 @@ ios/安卓 是改变根视图或操作导航控制器出栈进栈从而实现跳
 ~~~
 
 
-### custom设置为true，并且把所有需要切换的页面都配置在list中，否则之后切换tab用switchTab方法无效
+#### custom设置为true，并且把所有需要切换的页面都配置在list中，否则之后切换tab用switchTab方法无效
 
 
 pages.json中配置custom
 
 
-### tabbar增加入口文件，
+#### tabbar增加入口文件，
 命名为index入口，默认加载文件夹下的index
 
-### 007uniapp中跳转页面的API
+#### 007uniapp中跳转页面的API
 ~~~
 uni.navigateTo() 保留当前页面，跳转到应用内的某个页面，使用 uni.navigateBack 可以返回到原页面。
 uni.redirectTo() 关闭当前页面，跳转到应用内的某个页面。
@@ -220,9 +214,9 @@ uni.switchTab() 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
 
 
 
-## 08布局样式和跨端建通
+### 08布局样式和跨端建通
 
-### 001全局样式和局部样式
+#### 001全局样式和局部样式
 ~~~
 App.vue 中通过 @import 语句可以导入外联样式，一样作用于每一个页面。
 
@@ -230,7 +224,7 @@ App.vue 中通过 @import 语句可以导入外联样式，一样作用于每一
 ~~~
 
 
-### 002样式的条件编译
+#### 002样式的条件编译
 ~~~
 条件编译写法：以 #ifdef 或 #ifndef 加 “平台名称” 开头，以 #endif 结尾。
 
@@ -242,7 +236,7 @@ App.vue 中通过 @import 语句可以导入外联样式，一样作用于每一
 ~~~
 
 
-## 08使用iconfont阿里巴巴矢量图库
+### 08使用iconfont阿里巴巴矢量图库
 
 创建一个账号，iconfont账号，然后添加到项目后，解压
 
@@ -261,7 +255,7 @@ TODO:设置项目的颜色
 
 
 # 10浏览器兼容
-## 001常见兼容性问题出现的原因:从环境使用角度
+### 001常见兼容性问题出现的原因:从环境使用角度
 熟知语言框架的特性，才能避免问题，最快定位问题
 
 小程序兼容的本质是混合开发，hybridapp，介于native和webapp.
@@ -273,7 +267,7 @@ TODO:设置项目的颜色
  新版本，小程序逻辑层的 javascript 代码运行在 V8 中，视图层是由自研 XWeb 引擎基于 Mobile Chrome 67 内核来渲染的； 
 
  在开发工具上，小程序逻辑层的 javascript 代码是运行在 NW.js 中，视图层是由 Chromium 60 Webview 来渲染的
-## 常见几个问题
+### 常见几个问题
 scroll-view 在手机上可能会出现滚动条
 直接在标签添加 style 行内样式
 css 不支持本地路径图片
@@ -282,7 +276,7 @@ css 不支持本地路径图片
 
 应该说这些问题只是因为语言特性渲染机制不同产生的，这些情况微信也在文档做了说明
 
-## 04修改全局参数配置
+### 04修改全局参数配置
 ~~~
 pages.json
 /* pages.json */
@@ -296,9 +290,9 @@ pages.json
 我们需要在 pages.json 修改 globalStyle 配置应用的状态栏、导航条、标题、窗口背景色等。
 ~~~
 
-## 06图片存放，全局变量使用
+### 06图片存放，全局变量使用
 
-### 使用全局属性的说明
+#### 使用全局属性的说明
 [vue2升级vue3](https://uniapp.dcloud.io/tutorial/migration-to-vue3.html)
 
 ~~~
@@ -312,7 +306,7 @@ $mp 调整为 $scope
 ~~~
 
 
-## 09开屏广告的实现逻辑
+### 09开屏广告的实现逻辑
 
 开屏广告一般都会到达广告主的落地页。
 点击开屏广告后，逻辑：是否有广告主的app,如果有，那么唤醒启动当前广告主的app,否则
@@ -320,7 +314,7 @@ $mp 调整为 $scope
 第二种情况进入H5页面详情介绍
 第三种情况直接下载这个应用。
 
-### 广告内容实现逻辑
+#### 广告内容实现逻辑
 在上一次打开应用的时候，预加载本地，下一次打开应用时候，判断离开应用时间是否超过了时间段，如果超过了，那么高高出现。
 ~~~
 用户进入应用
@@ -332,7 +326,7 @@ $mp 调整为 $scope
 ~~~
 
 
-### 补充uniapp使用
+#### 补充uniapp使用
 
 获取路由信息
 ~~~
@@ -347,7 +341,7 @@ onShow的生命周期的使用。
 和vue3的其他onMounted(()=>{})编程函数式使用。
 
 
-## 配置uniapp中的路径别名
+### 配置uniapp中的路径别名
 ~~~
 可以直接在uniapp中使用@
 @/是从项目根路径下开始
@@ -356,7 +350,7 @@ onShow的生命周期的使用。
 ~~~
 
 
-## 应用图片的asset的引入
+### 应用图片的asset的引入
 ~~~
 ~@相对于assets的引用
 ~@ 从 assets 起 应用于图片的引用
@@ -366,20 +360,20 @@ background-image: url(~@/assets/img/wap/settings/icon_view.png);
 ~~~
 
 
-## 12解决uniapp的打包apk的方法
+### 12解决uniapp的打包apk的方法
 h5打包成uniapp
 h5打包成小程序
 
 安卓app打包发布
 云打包（个人应用推荐使用）
 在工具栏，选择"原生App-云打包"；
-## Hbuild发布微信小程序
+### Hbuild发布微信小程序
 
-### 申请微信开发者APPID
+#### 申请微信开发者APPID
 [申请微信开发者APPID](https://mp.weixin.qq.com/wxamp/wadevelopcode/sandbox?lang=zh_CN&token=1922935855)
 
-### 选择Hbuild中的内容
-#### 微信小程序平台打包
+#### 选择Hbuild中的内容
+###### 微信小程序平台打包
 弹出内容有APPID输入，然后下面不用选择内容。默认打包后，会打开微信开发者工具。
 
 打开微信开发者工具，这时默认不是从根目录加载文件，所以报错找不到app.json内容
@@ -394,12 +388,12 @@ E:\codeLession\vueAllProject\myuniappVue3\unpackage\dist\dev\mp-weixin\app.json
 
 ~~~
 
-#### 安卓app打包发布
+###### 安卓app打包发布
 云打包（个人应用推荐使用）
 在工具栏，选择"原生App-云打包"；
 很久等待，用下面的本地打包。
 （云打包更快，这里生成无需配置，）
-#### 本地打包（企业应用推荐使用）
+###### 本地打包（企业应用推荐使用）
 需要下载配置依赖，如下内容
 
 也可以选择本地打包，按章androidStudio的前提下。
@@ -422,14 +416,14 @@ E:\codeLession\vueAllProject\myuniappVue3\unpackage\dist\dev\mp-weixin\app.json
 
 
 
-## 13docker打包的上下文路径
+### 13docker打包的上下文路径
 如果未说明最后一个参数，那么默认上下文路径就是 Dockerfile 所在的位置。
 
-### linux系统有几个文件
+#### linux系统有几个文件
 Docker拉取的镜像和创建的容器就存放docker-desktop和docker-desktop-data。
 docker-desktop存放镜像
 docker-desktop-data存放容器
-### 基本命令
+#### 基本命令
 ADD
 ADD指令用于将文件添加到容器中
 ADD指令和COPY指令的格式和性质基本一致，只不过ADD指令是在COPY指令的基础上增加了一些功能。例如，ADD指令指定的源路径可以是一个远程URL，
@@ -446,31 +440,31 @@ ADD https://www.baidu.com/index.html /index/
 
 
 vim /etc/passwd	---查看有哪些用户
-## 13docker构建多阶段实战
+### 13docker构建多阶段实战
 Docker Engine 17.05 中引入了多阶段构建，以此降低构建复杂度，同时使缩小镜像尺寸更为简单。
-### 不适用多阶段部署
+#### 不适用多阶段部署
 我们通常创建两个dockerfile文件，一个用于开发编译应用，一个用于精简生产镜像。
 
-#### 一些包非常大
+###### 一些包非常大
 :alpine用这个版本构建小
 
 将原来的node:latest换成alpine后，从1G降低到200M
 最后面的 --from=0,表示第一阶段
 
 
-#### 这里Dockerfile是一种方式，另一种方式是docker-common
+###### 这里Dockerfile是一种方式，另一种方式是docker-common
 docker-compose up -d
 
 
 
-## 自动化部署
+### 14.自动化部署
 已经完成，可以查看15章节
-### 搞个Nginx做WEB服务器
+#### 搞个Nginx做WEB服务器
 然后docker中拉取一个镜像，跑起来
 docker pull nginx
 docker run --name nginx-server -p 4000:80 -d nginx
 
-## 补充一个实例化版本部署完整:expred，mysql,uniapp
+### 补充一个实例化版本部署完整:expred，mysql,uniapp
 [个人博客+blog+node+express+mysql+vue2+uniapp完整](https://gitee.com/nyhxiaoning/all-blog-sys.git)
 D:\works\NodePro\all-blog-sys
 

@@ -5,8 +5,8 @@
 
 <a href="#end" id="begin">跳到底部</a>
 
-## JavaScript中检测对象的方法 
- ### 1.typeof操作符 
+### JavaScript中检测对象的方法 
+ #### 1.typeof操作符 
  
  ~~~
  
@@ -26,7 +26,7 @@ alert(typeof []); // "object"
 
 ~~~
 
- ### 2.instanceof操作符 
+ #### 2.instanceof操作符 
  
  ~~~
  
@@ -51,7 +51,7 @@ alert(arr.constructor === Array); // false
 以上那些方法看上去无懈可击，但是终究会有些问题，接下来向大家提供一些比较不错的方法，可以说是无懈可击了。 
 ~~~
 
- ### 1.Object.prototype.toString 
+ #### 1.Object.prototype.toString 
  
  ~~~
  
@@ -81,7 +81,7 @@ JavaScript 标准文档中定义: [[Class]] 的值只可能是下面字符串中
 
 ~~~
 
- ### 2.Array.isArray() 
+ #### 2.Array.isArray() 
  
 ~~~
 ECMAScript5将Array.isArray()正式引入JavaScript
@@ -91,7 +91,7 @@ IE9+、 Firefox 4+、Safari 5+、Opera 10.5+和Chrome都实现了这个方法。
 ~~~
 
 
-## 4.JavaScript中async/await的使用和执行
+### 4.JavaScript中async/await的使用和执行
 
 ~~~
 
@@ -100,11 +100,11 @@ IE9+、 Firefox 4+、Safari 5+、Opera 10.5+和Chrome都实现了这个方法。
 ~~~
 
 
-## 5.new到底做了什么？
+### 5.new到底做了什么？
     详见本章节中的2.JS 的 new 到底是干什么的？
 
 
-## 6.关于JS中的setPrototypeOf用法
+### 6.关于JS中的setPrototypeOf用法
     解释：
     Object.setPrototypeOf()，为现有对象设置原型，返回一个新对象
     接收两个参数：第一个是现有对象，第二是原型对象。
@@ -137,14 +137,14 @@ IE9+、 Firefox 4+、Safari 5+、Opera 10.5+和Chrome都实现了这个方法。
     
 原文链接：https://blog.csdn.net/zljhdu/article/details/78765241
 
-### 补充关于getPrototypeOf
+#### 补充关于getPrototypeOf
     Object.setPrototypeOf 方法配套，用于读取一个对象的原型对象。
     Object.getPrototypeOf(obj);
     obj参数默认未对象，如果不是对象，会将obj转成对象
     
 
 
-## 7.关于真实数组定义和js中数组的区别
+### 7.关于真实数组定义和js中数组的区别
 
 ~~~
     数组的定义：
@@ -173,7 +173,7 @@ IE9+、 Firefox 4+、Safari 5+、Opera 10.5+和Chrome都实现了这个方法。
 
 ~~~
     
-### 关于js中的数组和数据结构数组中的使用
+#### 关于js中的数组和数据结构数组中的使用
 ~~~
 
     JavaScript中数组的实现方式
@@ -232,7 +232,7 @@ ArrayBuffer。而ArrayBuffer才符合标准的数据结构中数组
 
 
 
-## 9.数组在编程语言中应用
+### 9.数组在编程语言中应用
 
 ~~~
 
@@ -256,7 +256,7 @@ ArrayBuffer。而ArrayBuffer才符合标准的数据结构中数组
 
 
 ~~~
-### 关联数组的使用和简介
+#### 关联数组的使用和简介
 ~~~
 
 用数字作为键名的数组一般叫做索引数组。用字符串表示键的数组就是下面要介绍的关联数组。
@@ -277,7 +277,7 @@ javascript 数组用[]不可以声明关联数组，但是可以存放关联数�
 
 ~~~
 
-## 10.Object对象中的assign可以合并两个对象
+### 10.Object对象中的assign可以合并两个对象
 将两个对象合并，合并对象合并到第一个对象
 ~~~
     var a={name:'jack'};

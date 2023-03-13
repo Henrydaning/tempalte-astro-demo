@@ -5,14 +5,14 @@
 
 
 
-## 模板引擎需要实现的内容，解构
+### 模板引擎需要实现的内容，解构
 模板渲染：两部分
 第一部分：include子模板
 第二部分：xss过滤，模板helper函数
 
 
 
-## 3.通过es6实现模板字符串
+### 3.通过es6实现模板字符串
 
 （1）vm模块
 Nodejs运行html模板字符串内容的方式，更加安全，
@@ -34,7 +34,7 @@ vm是Node.js中的一个内置模块，其runInNewContext方法的作用相当�
 
 
 
-## 4.// TODO:经典遍历对象Object.keys.forEach和for in
+### 4.// TODO:经典遍历对象Object.keys.forEach和for in
 为什么使用Object.keys.forEach,而不是for in  
 
 for in是for in
@@ -69,11 +69,11 @@ console.log(obj2); // { a: 1, b: { c: 2 } }
 
 
 
-## 6.easy_sock实现后台RPC通信的模块
+### 6.easy_sock实现后台RPC通信的模块
 
 easy_sock帮你快速开发基于tcp协议的接口，快速打通nodejs跟其他私有协议server的交互。让你做到像调用本地接口一样调用server api。
 
-## 7.API服务
+### 7.API服务
 （1）restApI\\通过路径进行不同的资源（食堂吃饭）
 
 简单易懂
@@ -85,21 +85,21 @@ easy_sock帮你快速开发基于tcp协议的接口，快速打通nodejs跟其�
 
 让前端有自定义查询数据的能力
 
-## 8.经典面试题，通过node后台收到到嵌套渲染从URL到渲染出页面出现过程。
+### 8.经典面试题，通过node后台收到到嵌套渲染从URL到渲染出页面出现过程。
 
-## 9.前后端同构
+### 9.前后端同构
 前后台使用同一套模板写代码，渲染html。
 Vue中使用VueServerRenderer.renderToString()
 
 React中使用ReactDomServer.renderToString()
 
-## 10.React.Vue同构最大的难度，其实是数据部分。
+### 10.React.Vue同构最大的难度，其实是数据部分。
 比如前端的vuex，Redux，这些数据怎样管理使得同构部分的代码更好。
 引出了next框架和nuxt框架
 
 
 
-## 11.Nuxt.js
+### 11.Nuxt.js
 
 Nuxt.js 是一个基于 Vue.js 的通用应用框架，一个用于Vue.js 开发SSR应用的一站式解决方案。它的优点是将原来几个配置文件要完成的内容，都整合在了一个nuxt.config.js，封装与扩展性完美的契合。
 
@@ -135,7 +135,7 @@ npx create-next-app
 
 
 
-## 事件循环
+### 事件循环
 https://www.taopoppy.cn/node/one_eventLoop.html#%E5%85%AD%E4%B8%AA%E9%98%B6%E6%AE%B5
 
 [JS Visualizer 9000 (jsv9000.app)](https://www.jsv9000.app/)
@@ -145,7 +145,7 @@ https://www.taopoppy.cn/node/one_eventLoop.html#%E5%85%AD%E4%B8%AA%E9%98%B6%E6%A
 
 
 
-## 简单调试一个ts文件
+### 简单调试一个ts文件
 
 打开控制台 JavaScript Debug Termernal
 然后安装全局ts-node模块后，ts-node xxx.ts文件，
@@ -153,4 +153,4 @@ https://www.taopoppy.cn/node/one_eventLoop.html#%E5%85%AD%E4%B8%AA%E9%98%B6%E6%A
 
 
 
-## 304，307区别
+### 304，307区别

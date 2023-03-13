@@ -1,19 +1,19 @@
-## 1.umijs 是什么
+### 1.umijs 是什么
 
 蚂蚁金服开发、企业级 react 应用框架，以路由为基础，类似 nextJs、支持按需加载、提供比较完善等插件体系。
 
-## 2.umijs 中核心
+### 2.umijs 中核心
 
 组件生命周期、组件通信、Dva 数据处理、mock、数据流管理
 
-## 3.React - hooks
+### 3.React - hooks
 
-### Hook 是什么?
+#### Hook 是什么?
 
 1. Hook 是什么？<br> Hook 是一个特殊的函数，它可以让你“钩入” React 的特性。例如，useState 是允许你在 React 函数组件中添加 state 的 Hook。
 2. 产生原因：可利用 js 的闭包机制，不用额外的 api。
 
-### useState() 一些介绍
+#### useState() 一些介绍
 
 1. <b> 调用 useState 方法的时候做了什么?</b> <br>
    它定义一个 “state 变量”。可以叫任何名字。这是一种在函数调用时保存变量的方式 —— useState 是一种新方法，它与 class 里面的 this.state 提供的功能完全相同。
@@ -43,9 +43,9 @@ count 是‘state 变量’<br>
    返回值为：当前 state 以及更新 state 的函数。<br>
    这就是我们写 const [count, setCount] = useState() 的原因。这与 class 里面 this.state.count 和 this.setState 类似，唯一区别就是你需要成对的获取它们。
 
-### useEffect() 一些介绍
+#### useEffect() 一些介绍
 
-#### 总结的几个特性：
+###### 总结的几个特性：
 
 1. Dom 更新完毕，每次渲染后都会执行（替代旧 API 的 componentDidMount、componentDidUpdate、componentWillUnmount）
 2. 提供清除函数。（每个 useEffect 中都返回一个函数，该函数将会在 componentWillUnmount 时刻执行）

@@ -1,6 +1,6 @@
-## vite 框架打包库文件模式实现
+### vite 框架打包库文件模式实现
 
-### 第一步：创建 index
+#### 第一步：创建 index
 
 ```
 src/components 目录下，新建打包配置文件 index.ts。
@@ -8,7 +8,7 @@ src/components 目录下，新建打包配置文件 index.ts。
 
 ```
 
-### 第二步：根目录创建一个 build.cjs
+#### 第二步：根目录创建一个 build.cjs
 
 ```
 const path = require('path')
@@ -68,7 +68,7 @@ buildLib()
 
 ```
 
-### 第三步：打包命令
+#### 第三步：打包命令
 
 ```
 "build:components": "node --trace-warnings ./build/build.js",
@@ -76,7 +76,7 @@ buildLib()
 
 ```
 
-### 第四步：使用方式
+#### 第四步：使用方式
 
 ```
 main.js中全局引入
@@ -88,7 +88,7 @@ import '../lib/style.css'
 
 ```
 
-### 第五步：发布 npm
+#### 第五步：发布 npm
 
 ```
 private 值为 false，组件库不能私有；
@@ -110,9 +110,9 @@ npm ERR! This operation requires a one-time password from your authenticator.
 
 npm publish 后，发现错误说，你不能发布名为 lib 的包，意思是重名了。
 
-## 私有化部署 npm 服务支持
+### 私有化部署 npm 服务支持
 
-## 创建 npm 私有服务器，公司内部访问
+### 创建 npm 私有服务器，公司内部访问
 
 因为 npm 上面的包都是公共，不能私有化。
 
@@ -154,12 +154,12 @@ npm adduser
 
 创建一个 npm init -f
 
-### 私有域配置了 nrm 后，如果使用，
+#### 私有域配置了 nrm 后，如果使用，
 
 就是 npm i 后使用，和正常的一摸一样，
 在私有域找不到，会自动连接到 npm.mirror 上，自己不用担心私有共有的包的问题。
 
-## 2.利用 tsup 快速打包出各种 ts 的依赖包,类似 rollup
+### 2.利用 tsup 快速打包出各种 ts 的依赖包,类似 rollup
 
 Bundle your TypeScript library with no config, powered by [esbuild](https://github.com/evanw/esbuild).
 
@@ -171,7 +171,7 @@ tsup src/index.ts --dts --format cjs,esm
 
 ```
 
-### （1）第三方 vite 插件的配置开发和引入
+#### （1）第三方 vite 插件的配置开发和引入
 
 [vite 脚手架插件的配置和使用](https://gitee.com/nyhxiaoning/vite-cli-tools-list.git)
 
@@ -193,9 +193,9 @@ pnpm link ./../vite-plugin-template/
 
 ```
 
-## 5.打包发布到 NPM 并通过 CDN 访问
+### 5.打包发布到 NPM 并通过 CDN 访问
 
-### 语义化改动控制版本
+#### 语义化改动控制版本
 
 ```
 通过npm version <update_type>自动改变版本
@@ -207,7 +207,7 @@ pnpm link ./../vite-plugin-template/
 
 ```
 
-### （2）cdn 通过 jsdelivr 可以免费访问 npm 包
+#### （2）cdn 通过 jsdelivr 可以免费访问 npm 包
 
 https://www.jsdelivr.com/
 
@@ -218,7 +218,7 @@ https://cdn.jsdelivr.net/npm/vue@3.2.0
 比如 jquery 包，这个特殊因为有做压缩
 https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js
 
-### （3）esm 方式：通过网络访问某一个包的另一种方式
+#### （3）esm 方式：通过网络访问某一个包的另一种方式
 https://www.jsdelivr.com/esm
 
 比如 d3 包
@@ -226,7 +226,7 @@ import _ as d3 from 'https://esm.run/d3';
 比如 vue 包
 import _ as vue from "https://esm.run/vue"
 
-### （4）本机方法：ssh 文件到远程地址：scp 内容
+#### （4）本机方法：ssh 文件到远程地址：scp 内容
 
 scp 这些命令和权限相关使用 git 命令行工具使用
 比如：远程堡垒机或是服务器地址已经知道

@@ -1,25 +1,25 @@
-## 000 工程化相关的配置文件汇总
+### 000 工程化相关的配置文件汇总
 
 [前端工程化配置系统汇总文件内容](https://www.processon.com/mindmap/617781871efad44894fbe29d)
 
 [核心脚手架项目配置地址](https://gitee.com/front-end-tool-development/cli-scaffold-local-down-sets.git)
 汇总了各种常见的配置情况：最优化说明：
 
-### webpack4.x+babel+eslint
+#### webpack4.x+babel+eslint
 
 ```
 
 
 ```
 
-### webpack5.x+babel+eslint
+#### webpack5.x+babel+eslint
 
 ```
 
 
 ```
 
-### vite2.x+babel+eslint
+#### vite2.x+babel+eslint
 
 package.json
 
@@ -206,7 +206,7 @@ vite项目学习补充--------------------------
 
 ```
 
-### vite3.x+babel+eslint
+#### vite3.x+babel+eslint
 
 ```
 vite 3.x 已经将 esbuild 作为默认构建选项，你可以通过如下配置在构建时移除代码中的 console.log、debugger。
@@ -243,7 +243,7 @@ export default defineConfig({
 
 - 待补充
 
-## 001es module 中使用\_\_dirname
+### 001es module 中使用\_\_dirname
 
 因为 path 是 Node 模块，一些方法无法直接使用。
 
@@ -258,23 +258,23 @@ import { fileURLToPath } from 'url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 ```
 
-## 002 如何抽离使用项目中的库
+### 002 如何抽离使用项目中的库
 
-### 引用 webpack 的模块联邦架构
+#### 引用 webpack 的模块联邦架构
 
-#### lib-app
+###### lib-app
 
 暴露了一些库模块：axios,vue,react，react-dom。提供远程公共库依赖，它是一个纯粹的 remote
 
-#### component-app
+###### component-app
 
 暴露了一些公共组件：作为生产者，但同时又消费 expose 暴露的 react 模块，
 
-#### main-app
+###### main-app
 
 上层 App，依赖 lib-app 和 component-app 应用。
 
-#### lib-app 中 axios,vue 两个库进行模块联邦测试
+###### lib-app 中 axios,vue 两个库进行模块联邦测试
 
 npm run start 先编译出来模块联邦需要的库文件：axios,vue,react 等
 
@@ -288,7 +288,7 @@ npm run  start后生成依赖
 随后启动模块服务：npm run serve
 ```
 
-### component-app 中作为生产者和消费者进行模块联邦
+#### component-app 中作为生产者和消费者进行模块联邦
 
 ```
 npm run start生成依赖
@@ -305,11 +305,11 @@ npm run start生成依赖
 
 [借鉴了很多 github 项目上的代码](https://github.com/anderlaw/react-webpack-MF.git)
 
-#### 打包成组件库，然后导出成 lib 库包，再通过资源引用
+###### 打包成组件库，然后导出成 lib 库包，再通过资源引用
 
 成本，需要构造一个 lib 库，见[vitelib 开发组件库](./001vitevue3%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E7%BB%84%E4%BB%B6%E5%BA%93.md)
 
-### webpack 模块联邦实现的更好。
+#### webpack 模块联邦实现的更好。
 
 我们利用模块联邦，将项目中所有的公共组件设置为一个项目，然后导出 expose 暴露，再消费者哪里，利用 remote 引用。
 注意配置 output 的目录代码。
@@ -319,15 +319,15 @@ npm run start生成依赖
 
 ![模块联邦同时运行lib公共依赖库，com组件库，主项目](/images/modulesbundle.png)
 
-## 003webpack 中使用 cdn 减少资源下载，加快速度
+### 003webpack 中使用 cdn 减少资源下载，加快速度
 
-## 003webpack 中开发一个 plugin
+### 003webpack 中开发一个 plugin
 
 webpack 插件中，两个对象 compiler 编译对象是 webpack 启动后，一次性生成 webpack 环境配置，可以访问整个 webpack 的运行时期。插件应用时候，会收到整个对象的引用，可以访问 webpack 的主环境。
 
 另一个 compilation 对象是 webpack 的实时生成的编译对象，一个 compilation 表现了当前的模块资源，编译内容依赖变化。
 
-### 插件的时候原理
+#### 插件的时候原理
 
 webpack 打包是一种事件流的机制，它的原理是将各个插件串联起来。那么实现这一切的核心就是在 compiler 对象中的 tapable，将 plugin 控制在 webpack 事件流上运行。（基本使用几个 tap 类中钩子：compile 是创建 compilation 之前，compilation 创建完成，emit 输出资源到目录前，done 编译完成）
 
@@ -335,7 +335,7 @@ webpack 打包是一种事件流的机制，它的原理是将各个插件串联
 
 插件通过具有 apply 方法的 prototype 对象实例化出来。
 
-### 插件的基本内容组成
+#### 插件的基本内容组成
 
 ```
 从官网得知：编写一个webpack插件需要由以下组成：
@@ -347,9 +347,9 @@ webpack 打包是一种事件流的机制，它的原理是将各个插件串联
 5. 功能完成后调用webpack提供的回调函数。
 ```
 
-### vue.config.js 中内容
+#### vue.config.js 中内容
 
-#### 开发插件的步骤：[项目地址](https://gitee.com/nyhxiaoning/vue3.0-ts-admin.git)
+###### 开发插件的步骤：[项目地址](https://gitee.com/nyhxiaoning/vue3.0-ts-admin.git)
 
 ```
 第一步：创建一个js命令的类，添加apply方法。
@@ -379,25 +379,25 @@ webpack 打包是一种事件流的机制，它的原理是将各个插件串联
 
 ```
 
-## 004 开发 webpack 和 vite 插件的模板
+### 004 开发 webpack 和 vite 插件的模板
 
-## 开发插件
+### 开发插件
 
 上面写了原生开发 webpack 和 vite 插件功能的代码和脚手架，有没有模板，真的有。
 
 https://github.com/nyhxiaoning/gogocode.git
 
-### 开发 webpack 的插件模板
+#### 开发 webpack 的插件模板
 
 [gogocode](https://github.com/thx/gogocode)/[example](https://github.com/thx/gogocode/tree/main/example)/**demo-with-webpack-plugin**/
 
-### 开发 vite 的插件模板
+#### 开发 vite 的插件模板
 
 [gogocode](https://github.com/thx/gogocode)/[example](https://github.com/thx/gogocode/tree/main/example)/**demo-with-vite-plugin**/
 
-## 005rollup 开发一个通用插件
+### 005rollup 开发一个通用插件
 
-### 注意 rollup 引入 babel 的时候，有一个坑
+#### 注意 rollup 引入 babel 的时候，有一个坑
 
 ```
 rollup --config简写rollup  -c
@@ -437,7 +437,7 @@ export default {
 
 ```
 
-### rollup 不将第三方包放入打包结果中
+#### rollup 不将第三方包放入打包结果中
 
 ```
 不将第三方库放入打包结果,在plugins中放入：external
@@ -500,7 +500,7 @@ export default {
 
 项目详情地址：https://github.com/nyhxiaoning/utilibs-rollup-npm.git
 
-### 简单打包 rollup 一个文件函数成 es,commonjs
+#### 简单打包 rollup 一个文件函数成 es,commonjs
 
 ```
 全局安装rollup后
@@ -509,7 +509,7 @@ export default {
 
 ```
 
-## 006.利用 tsup 快速打包出各种 ts 的依赖包,类似 rollup
+### 006.利用 tsup 快速打包出各种 ts 的依赖包,类似 rollup
 
 Bundle your TypeScript library with no config, powered by [esbuild](https://github.com/evanw/esbuild).
 
@@ -521,7 +521,7 @@ tsup src/index.ts --dts --format cjs,esm
 
 ```
 
-### （1）第三方 vite 插件的配置开发和引入
+#### （1）第三方 vite 插件的配置开发和引入
 
 [vite 脚手架插件的配置和使用](https://gitee.com/nyhxiaoning/vite-cli-tools-list.git)
 
@@ -543,7 +543,7 @@ pnpm link ./../vite-plugin-template/
 
 ```
 
-## 007babel 是如何实现引入 commonjs 转换成 es
+### 007babel 是如何实现引入 commonjs 转换成 es
 
 ```
 es module 在转换时会在 export 上挂载__esModule 属性。
@@ -552,7 +552,7 @@ es module 在转换时会在 export 上挂载__esModule 属性。
 
 ```
 
-## 008 关于 rollup 和 babel 处理 commonjs 模块成 es 模块的思考。
+### 008 关于 rollup 和 babel 处理 commonjs 模块成 es 模块的思考。
 
 rollup 直接把 default export 挂到了 module.exports 上。而 babel 还是通过 \_\_esModule 的标识，挂载在 exports.default 上。这个地方需要特别关注， 假如有一个库之前时 使用 babel 处理的， 那 cjs 用户只能以 `require('lib').default` 的形式来使用。 有一天这个库的作者决定使用 rollup, 那么 cjs 的用户想要使用新的库，只能去更改原先的代码。
 

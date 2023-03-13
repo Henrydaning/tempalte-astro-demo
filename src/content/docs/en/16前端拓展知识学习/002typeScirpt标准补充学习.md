@@ -6,7 +6,7 @@
   
 
 
-### 000ts中很多项目工程引入一些库报错
+#### 000ts中很多项目工程引入一些库报错
 
 【在typesearch查询后安装](https://www.typescriptlang.org/dt/search?search=)
 ~~~
@@ -21,7 +21,7 @@ import { IUiGridConstants } from 'ui-grid';
 ~~~
 
 方法2：通过
-## 网上前端typeSciript入门学习基础---复习基础常用
+### 网上前端typeSciript入门学习基础---复习基础常用
 
 ~~~
 // 1. 自己定义变量可以设置基本类型
@@ -112,10 +112,10 @@ request('/course/404',{id:1}) //接口不存在 类型报错
 ~~~
 
 
-## 2.常用关键字的高级使用
+### 2.常用关键字的高级使用
 
 
-### keyof关键字
+#### keyof关键字
 
 ~~~
 
@@ -136,7 +136,7 @@ keyof提取interface中的所有类型，生成一个联合类型
 ~~~
 
 
-### typeof
+#### typeof
 给类型起别名
 
 ~~~
@@ -146,7 +146,7 @@ keyof提取interface中的所有类型，生成一个联合类型
 
 ~~~
 
-### in 用于取联合类型的值，主要用于数组和对象的构造
+#### in 用于取联合类型的值，主要用于数组和对象的构造
 ~~~
 in用于取联合类型的值。主要用于数组和对象的构造。
 案例1常见
@@ -159,15 +159,15 @@ type Obj =  {
 ~~~
 
 
-### 四种特殊类型
+#### 四种特殊类型
 void 代表空，可以是 null 或者 undefined，一般是用于函数返回值。
 any是任意类型，任何类型都可以赋值给它，它也可以赋值给任何类型。
 unknown是未知类型，任何类型都可以赋值给它，但是它不可以赋值给别的类型。
 never代表不可达，比如函数抛异常的时候，返回值就是never。
 
 
-## 3.实用案例补充
-### 定义泛型相关
+### 3.实用案例补充
+#### 定义泛型相关
 
 ~~~
 定义一个数组，使用泛型定义。
@@ -178,7 +178,7 @@ let  arr2:number[] = [1,3,5]
 
 ~~~
 
-### 声明比较复杂的对象数组
+#### 声明比较复杂的对象数组
 ~~~
 //拿出需要声明的类型属性
 type Person = "name" | "school" | "major"
@@ -194,7 +194,7 @@ let myarr:Obj[]=[{"name":'3',"major":'3',school:'3'}]
 
 ~~~
 
-### infer 的作用一言蔽之：推导泛型参数
+#### infer 的作用一言蔽之：推导泛型参数
 推导出泛型参数
 ~~~
 type  numberPromise = Promise<number>;
@@ -204,7 +204,7 @@ type n = numberPromise extend Promise<infer P>?P:never;
 ~~~
 
 
-## 4.接口和class一起使用定义的方式
+### 4.接口和class一起使用定义的方式
 使用interface定义基类，然后可以使用class 来implements实现这个接口。
 
 虽然简单方式interface和class都可以定义一个类型。
@@ -242,14 +242,14 @@ export class SelectItemEntity implements IGrouping {
 
 
 
-## interface和type的区别
+### interface和type的区别
 
 
 
 
-### 每日ts汇总基础---基础复习版本
+#### 每日ts汇总基础---基础复习版本
 [基础入门学习](https://juejin.cn/post/7018805943710253086#heading-11)
-### js的八种内置类型的表示
+#### js的八种内置类型的表示
 ~~~
 
 let str: string = "jimmy";
@@ -265,11 +265,11 @@ let sym: symbol = Symbol("me");
 ~~~
 
 
-### null和undefined是所有类型的子类型。
+#### null和undefined是所有类型的子类型。
 可以将null和undefined赋值给其他类型
 
 
-### 数组两种定义
+#### 数组两种定义
 ~~~
 let arr:string[] = ["1","2"];
 let arr2:Array<string> = ["1","2"]；
@@ -278,7 +278,7 @@ let arr2:Array<string> = ["1","2"]；
 ~~~
 
 
-### 定义对象数组成员的接口
+#### 定义对象数组成员的接口
 ~~~
 
 // interface是接口,后面会讲到
@@ -292,7 +292,7 @@ let arr3:Arrobj[]=[{name:'jimmy',age:22}]
 ~~~
 
 
-### 可选参数
+#### 可选参数
 ~~~
 function buildName(firstName: string, lastName?: string) {
     if (lastName) {
@@ -306,7 +306,7 @@ let tom = buildName('Tom');
 
 ~~~
 
-### 参数默认值
+#### 参数默认值
 
 ~~~
 function buildName(firstName: string, lastName: string = 'Cat') {
@@ -318,7 +318,7 @@ let tom = buildName('Tom');
 
 ~~~
 
-## 5.typescript的配置文件说明记录
+### 5.typescript的配置文件说明记录
 
 ~~~
 {
@@ -370,7 +370,7 @@ let tom = buildName('Tom');
   }
 ~~~
 
-### 优化版分类说明
+#### 优化版分类说明
 
 ~~~
 {
@@ -432,7 +432,7 @@ let tom = buildName('Tom');
 
 
 
-### （1）配置ts-node编译ts代码在tsconfig.json
+#### （1）配置ts-node编译ts代码在tsconfig.json
 
 ts-node包装了node，它可以直接运行ts代码。使用起来会很方便。为了提高执行速度，默认不会读取 `tsconfig.json` 中的 `files`, `include` 和 `exclude` 字段。
 
@@ -446,7 +446,7 @@ ts-node基于模块依赖读取声明字段，这会导致全局的d.ts文件不
 
 
 
-### （2）为什么将文件放入了exclude中，编译的时候，还可以被选中。
+#### （2）为什么将文件放入了exclude中，编译的时候，还可以被选中。
 
 tsconfig.json将文件夹转换为项目，如果不指定任何exclude和files，那么默认包含所有文件。
 
@@ -460,7 +460,7 @@ tsc --listFiles命令可以列出所有编译时候包含的文件
 
 
 
-### （3）声明文件
+#### （3）声明文件
 
 三斜线语法，只能与哦那个与d.ts文件中，
 
@@ -477,9 +477,9 @@ tsc --listFiles命令可以列出所有编译时候包含的文件
 
 
 
-### （4）reference引用高级使用
+#### （4）reference引用高级使用
 
-#### demo：在monorepo中引用不同项目
+###### demo：在monorepo中引用不同项目
 
 ~~~
   "references": [
@@ -497,7 +497,7 @@ tsc --listFiles命令可以列出所有编译时候包含的文件
 
 
 
-### （5）tsconfig.json中lib表示指定包含在编译中的库文件
+#### （5）tsconfig.json中lib表示指定包含在编译中的库文件
 
 我们可以选择性的指定编译在库文件，这样减少运行时候报错。
 
@@ -519,12 +519,12 @@ tsc --listFiles命令可以列出所有编译时候包含的文件
 
 
 
-## 常用的ts内容学习复习资源
+### 常用的ts内容学习复习资源
 
-### （1）个人processOn的ts记录
+#### （1）个人processOn的ts记录
 
 
 
-### （2）在线深入理解ts
+#### （2）在线深入理解ts
 
 [tsconfig.json 的行为 | 深入理解 TypeScript (jkchao.github.io)](https://jkchao.github.io/typescript-book-chinese/faqs/tsconfig-behavior.html#为什么把一个文件放入「exclude」选项中，它仍然会被编译器选中？)
