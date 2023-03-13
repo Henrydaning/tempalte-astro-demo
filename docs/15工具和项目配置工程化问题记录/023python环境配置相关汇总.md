@@ -121,3 +121,10 @@ python版本命令使用了，但是python的执行器没有改变。
 （2）使用指导文档记录
 [🌏 安装和导入 - DrissionPage (gitee.io)](http://g1879.gitee.io/drissionpagedocs/3_get_start/1_installation_and_import/)
 注意这里的python的内容，需要切换成当前的python的国内的源。
+
+### (1)问题记录
+- 当前登录网站后，通过类名获取元素总是出现找不到，为什么
+比如：gieee登录后，直接按照文档，找个人中心，结果总是文字找不到
+
+
+

@@ -1,0 +1,1 @@
+import{_,o as e,c}from"./app.5805b0e6.js";const r={};function t(a,n){return e(),c("div")}var p=_(r,[["render",t],["__file","002uniapp\u57FA\u7840\u5F00\u53D1\u8BB0\u5F55.html.vue"]]);export{p as default};
