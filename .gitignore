@@ -1,5 +1,7 @@
 # build output
-dist/
+# TODO:部署站点
+# dist/
+
 # generated types
 .astro/
 

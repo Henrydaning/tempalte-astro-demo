@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial astro-OUAMJN2I">
+	<head>
+		<!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Astro v2.0.1">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<link rel="sitemap" href="/sitemap.xml">
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script src="/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('theme-dark');
+	} else {
+		root.classList.remove('theme-dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+		<!-- Page Metadata --><link rel="canonical" href="https://astro.build/en/15%E5%B7%A5%E5%85%B7%E5%92%8C%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E5%B7%A5%E7%A8%8B%E5%8C%96%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/001vuepress%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="全栈记录之旅 🚀 全栈记录之旅">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://astro.build/en/15%E5%B7%A5%E5%85%B7%E5%92%8C%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E5%B7%A5%E7%A8%8B%E5%8C%96%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/001vuepress%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/">
+<meta property="og:locale" content="en-us">
+<meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta property="og:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+<meta name="description" property="og:description" content="成长依旧，步履不停">
+<meta property="og:site_name" content="全栈记录之旅">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="astrodotbuild">
+<meta name="twitter:title" content="全栈记录之旅 🚀 全栈记录之旅">
+<meta name="twitter:description" content="成长依旧，步履不停">
+<meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta name="twitter:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+		<title>
+			全栈记录之旅 🚀 全栈记录之旅
+		</title>
+		
+		
+	<link rel="stylesheet" href="/_astro/_...slug_.a0ad6b47.css" /></head>
+
+	<body class="astro-OUAMJN2I">
+		<header class="astro-2W66RQV5">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink astro-DMGOOZ7Y"><span class="astro-DMGOOZ7Y">Skip to Content</span></a>
+	<nav class="nav-wrapper astro-2W66RQV5" title="Top Navigation">
+		<div class="menu-toggle astro-2W66RQV5">
+			<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z1tJ5XG" component-url="/_astro/SidebarToggle.c7c67a70.js" component-export="default" renderer-url="/_astro/client.15ddb572.js" props="{&quot;class&quot;:[0,&quot;astro-2W66RQV5&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;SidebarToggle&quot;,&quot;value&quot;:true}" await-children=""><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-island>
+		</div>
+		<div class="logo flex astro-2W66RQV5">
+			<a href="/" class="astro-2W66RQV5">
+				<svg class="logo" width="40" height="40" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		#flame {
+			fill: var(--theme-text-accent);
+		}
+
+		#a {
+			fill: var(--theme-text-accent);
+		}
+	</style>
+	<title>Logo:文档中心</title>
+	<path id="a" fill-rule="evenodd" clip-rule="evenodd" d="M163.008 18.929c1.944 2.413 2.935 5.67 4.917 12.181l43.309 142.27a180.277 180.277 0 00-51.778-17.53l-28.198-95.29a3.67 3.67 0 00-7.042.01l-27.857 95.232a180.225 180.225 0 00-52.01 17.557l43.52-142.281c1.99-6.502 2.983-9.752 4.927-12.16a15.999 15.999 0 016.484-4.798c2.872-1.154 6.271-1.154 13.07-1.154h31.085c6.807 0 10.211 0 13.086 1.157a16.004 16.004 0 016.487 4.806z">
+	</path>
+	<path id="flame" fill-rule="evenodd" clip-rule="evenodd" d="M168.19 180.151c-7.139 6.105-21.39 10.268-37.804 10.268-20.147 0-37.033-6.272-41.513-14.707-1.602 4.835-1.961 10.367-1.961 13.902 0 0-1.056 17.355 11.015 29.426 0-6.268 5.081-11.349 11.349-11.349 10.743 0 10.731 9.373 10.721 16.977v.679c0 11.542 7.054 21.436 17.086 25.606a23.27 23.27 0 01-2.339-10.2c0-11.008 6.463-15.107 13.974-19.87 5.976-3.79 12.616-8.001 17.192-16.449a31.024 31.024 0 003.743-14.82c0-3.299-.513-6.479-1.463-9.463z">
+	</path>
+</svg>
+				<h1 class="astro-2W66RQV5">全栈记录之旅</h1>
+			</a>
+		</div>
+		<div style="flex-grow: 1;" class="astro-2W66RQV5"></div>
+		
+		<div class="search-item astro-2W66RQV5">
+			<astro-island uid="K4PRh" component-url="/_astro/Search.fc8f0463.js" component-export="default" renderer-url="/_astro/client.fd400d45.js" props="{}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children=""><button type="button" class="search-input"><svg width="24" height="24" fill="none"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Search</span><span class="search-hint"><span class="sr-only">Press </span><kbd>/</kbd><span class="sr-only"> to search</span></span></button></astro-island>
+		</div>
+	</nav>
+</header>
+
+
+		<main class="layout astro-OUAMJN2I">
+			<aside id="grid-left" class="grid-sidebar astro-OUAMJN2I" title="Site Navigation">
+				<nav aria-labelledby="grid-left" class="astro-KQNE5HRN">
+	<ul class="nav-groups astro-KQNE5HRN">
+		<li class="astro-KQNE5HRN">
+					<div class="nav-group astro-KQNE5HRN">
+						<h2 class="astro-KQNE5HRN">记录是学习的开始</h2>
+						<ul class="astro-KQNE5HRN">
+							<li class="nav-link astro-KQNE5HRN">
+										<a href="/en/introduction" class="astro-KQNE5HRN">
+											全栈学习
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/zero" class="astro-KQNE5HRN">
+											00 个人前端项目实战记录和链接
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/first" class="astro-KQNE5HRN">
+											01 React 课程学习和问题笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/second" class="astro-KQNE5HRN">
+											02 极客时间Vue课程学习和问题笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/third" class="astro-KQNE5HRN">
+											03 掘金算法课程学习和问题笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/fourth" class="astro-KQNE5HRN">
+											04 掘金 Uniapp 课程和Taro或原生小程序学习笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/fifth" class="astro-KQNE5HRN">
+											05 leetcode 刷题记录每周
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/sixth" class="astro-KQNE5HRN">
+											06 极客时间 Node 全栈记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/seventh" class="astro-KQNE5HRN">
+											07 React 学习常见问题和笔记记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/eighth" class="astro-KQNE5HRN">
+											08 vue 常见问题和学习记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/ninth" class="astro-KQNE5HRN">
+											09 book 前端进阶知识学习图书笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/tenth" class="astro-KQNE5HRN">
+											10 book 前端开发设计模式和开发实战笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/eleventh" class="astro-KQNE5HRN">
+											11 elementplus 经典源码和实战学习和问题笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/twelfth" class="astro-KQNE5HRN">
+											12 前端开发经典库学习记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/thirteenth" class="astro-KQNE5HRN">
+											13Koa 和 express 框架学习记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/fourteenth" class="astro-KQNE5HRN">
+											14 前端图形化学习
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/fifteenth" class="astro-KQNE5HRN">
+											15 工具和项目配置工程化问题记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/sixteenth" class="astro-KQNE5HRN">
+											16 前端拓展知识学习
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/seventeenth" class="astro-KQNE5HRN">
+											17 低代码学习和总结
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/eighteen" class="astro-KQNE5HRN">
+											18 经验亮点汇总( 迁移中 )
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/others" class="astro-KQNE5HRN">
+											其他常见问题
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/notices" class="astro-KQNE5HRN">
+											常用符号
+										</a>
+									</li>
+						</ul>
+					</div>
+				</li><li class="astro-KQNE5HRN">
+					<div class="nav-group astro-KQNE5HRN">
+						<h2 class="astro-KQNE5HRN">其他说明</h2>
+						<ul class="astro-KQNE5HRN">
+							<li class="nav-link astro-KQNE5HRN">
+										<a href="/en/page-4" class="astro-KQNE5HRN">
+											自定义
+										</a>
+									</li>
+						</ul>
+					</div>
+				</li>
+	</ul>
+</nav>
+
+<script>
+	window.addEventListener('DOMContentLoaded', () => {
+		var target = document.querySelector('[aria-current="page"]');
+		if (target && target.offsetTop > window.innerHeight - 100) {
+			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+		}
+	});
+</script>
+
+
+			</aside>
+			<div id="grid-main" class="astro-OUAMJN2I">
+				<article id="article" class="content astro-J75B3YUS">
+	<section class="main-section astro-J75B3YUS">
+		<h1 class="content-title astro-J75B3YUS" id="overview">全栈记录之旅</h1>
+		<nav class="block sm:hidden astro-J75B3YUS">
+			<script>(self.Astro=self.Astro||{}).media=(s,a)=>{const t=async()=>{await(await s())()};if(a.value){const e=matchMedia(a.value);e.matches?t():e.addEventListener("change",t,{once:!0})}},window.dispatchEvent(new Event("astro:media"));</script><astro-island uid="MHBfU" component-url="/_astro/TableOfContents.a1e7e9c9.js" component-export="default" renderer-url="/_astro/client.15ddb572.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;000出现问题typeerror-invalid-value-used-as-weak-map-key\&quot;],\&quot;text\&quot;:[0,\&quot;（000）出现问题：TypeError: Invalid value used as weak map key\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;001vuepress-功能引入插件功能说明\&quot;],\&quot;text\&quot;:[0,\&quot;(001)vuepress 功能引入插件功能说明\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;002vuepress-中全局钩子和-ui-组件\&quot;],\&quot;text\&quot;:[0,\&quot;（002）vuepress 中全局钩子和 UI 组件\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;003vuepress-中引入相对和绝对地址图片\&quot;],\&quot;text\&quot;:[0,\&quot;（003）vuepress 中引入相对和绝对地址图片\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;004静态资源部署到某一个文件夹下如何保证相对地址没有问题\&quot;],\&quot;text\&quot;:[0,\&quot;(004)静态资源部署到某一个文件夹下，如何保证相对地址没有问题\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;005使用-github-pages-建立博客\&quot;],\&quot;text\&quot;:[0,\&quot;（005）使用 GitHub Pages 建立博客\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;一种是你的-github-用户名建立的usernamegithubio这样的用户组织页站\&quot;],\&quot;text\&quot;:[0,\&quot;一种是你的 GitHub 用户名建立的username.github.io这样的用户&amp;组织页（站）\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;一种是依附项目的-pages\&quot;],\&quot;text\&quot;:[0,\&quot;一种是依附项目的 pages。\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;1vuepress1x-配置项目参考\&quot;],\&quot;text\&quot;:[0,\&quot;(1)vuepress1.x 配置项目参考\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;2vuepress2x-目前需要的配置\&quot;],\&quot;text\&quot;:[0,\&quot;（2）vuepress2.x 目前需要的配置\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vuepress2-系统化配置使用\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress2 系统化配置使用\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vuepress2x-中-head-增加-ico-标签图\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress2.x 中 head 增加 ico 标签图\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vuepress2x-配置如何清除-md-下面的更新记录内容\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress2.x 配置如何清除 md 下面的更新记录内容\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;vuepress-打包后的部署-linux-问题\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress 打包后的部署 linux 问题。\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;3跳转内部-markdown-锚点位置和其他-md-文件的锚点位置\&quot;],\&quot;text\&quot;:[0,\&quot;3.跳转内部 markdown 锚点位置和其他 md 文件的锚点位置\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;跳转内部-markdown-锚点位置\&quot;],\&quot;text\&quot;:[0,\&quot;跳转内部 markdown 锚点位置\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;跳转其他文件位置\&quot;],\&quot;text\&quot;:[0,\&quot;跳转其他文件位置\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;跨页面跳转中文跳转和数字跳转区别\&quot;],\&quot;text\&quot;:[0,\&quot;跨页面跳转，中文跳转和数字跳转区别\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;页面内跳转\&quot;],\&quot;text\&quot;:[0,\&quot;页面内跳转\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;4配置入口和出口配置内容-vuepress\&quot;],\&quot;text\&quot;:[0,\&quot;4.配置入口和出口配置内容 vuepress\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;所有的锚点在-dev-环境下正常\&quot;],\&quot;text\&quot;:[0,\&quot;所有的锚点在 dev 环境下正常，\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;5vuepress-样式修改\&quot;],\&quot;text\&quot;:[0,\&quot;5.vuepress 样式修改\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vuepress1x-修改样式\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress1.x 修改样式\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vuepress2x-方案\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress2.x 方案\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;5解决上线-vuepress-的锚点定位问题\&quot;],\&quot;text\&quot;:[0,\&quot;5.解决上线 vuepress 的锚点定位问题\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;6默认样式-vuepress-修改\&quot;],\&quot;text\&quot;:[0,\&quot;6.默认样式 vuepress 修改\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-J75B3YUS&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(max-width: 50em)&quot;}" await-children=""><h2 id="on-this-page-heading" class="heading">目录</h2><ul><li class="header-link depth-3"><a href="#1vuepress1x-配置项目参考">(1)vuepress1.x 配置项目参考</a></li><li class="header-link depth-3"><a href="#2vuepress2x-目前需要的配置">（2）vuepress2.x 目前需要的配置</a></li><li class="header-link depth-3"><a href="#vuepress-打包后的部署-linux-问题">vuepress 打包后的部署 linux 问题。</a></li><li class="header-link depth-3"><a href="#3跳转内部-markdown-锚点位置和其他-md-文件的锚点位置">3.跳转内部 markdown 锚点位置和其他 md 文件的锚点位置</a></li><li class="header-link depth-3"><a href="#4配置入口和出口配置内容-vuepress">4.配置入口和出口配置内容 vuepress</a></li><li class="header-link depth-3"><a href="#5vuepress-样式修改">5.vuepress 样式修改</a></li><li class="header-link depth-3"><a href="#5解决上线-vuepress-的锚点定位问题">5.解决上线 vuepress 的锚点定位问题</a></li><li class="header-link depth-3"><a href="#6默认样式-vuepress-修改">6.默认样式 vuepress 修改</a></li></ul></astro-island>
+		</nav>
+		<h4 id="000出现问题typeerror-invalid-value-used-as-weak-map-key">（000）出现问题：TypeError: Invalid value used as weak map key</h4>
+<p>一般是 md 文件中有没有识别的闭合标签。比如强行将 elementplus 组件用在 md 中没有特殊处理。</p>
+<h4 id="001vuepress-功能引入插件功能说明">(001)vuepress 功能引入插件功能说明</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">- 引入回到顶部</span></span>
+<span class="line"><span style="color: #c9d1d9">yarn add -D @vuepress/plugin-back-to-top@next</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">- 给markdown增加图标</span></span>
+<span class="line"><span style="color: #c9d1d9">yarn add -D @vuepress/plugin-external-link-icon@next</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">- 增加进度条</span></span>
+<span class="line"><span style="color: #c9d1d9">yarn add  -D @vuepress/plugin-nprogress@next</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">- 提供toc功能</span></span>
+<span class="line"><span style="color: #c9d1d9">yarn add -D @vuepress/plugin-toc@next</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">- 点击图片提供伸缩功能</span></span>
+<span class="line"><span style="color: #c9d1d9">yarn add -D @vuepress/plugin-medium-zoom@next</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">- 引入elementplus</span></span>
+<span class="line"><span style="color: #c9d1d9">clientAppEnhance.ts</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="002vuepress-中全局钩子和-ui-组件">（002）vuepress 中全局钩子和 UI 组件</h4>
+<ul>
+<li>client.ts 增加全局钩子和全局 UI 组件
+rootComponents 是一个组件数组，它们将会直接被放置在客户端 Vue 应用的根节点下。</li>
+</ul>
+<p><a href="https://v2.vuepress.vuejs.org/zh/advanced/cookbook">全局钩子和 UI</a></p>
+<ul>
+<li>vuepress 中引入绝对路径和相关路径</li>
+</ul>
+<!-- 绝对路径 -->
+<h4 id="003vuepress-中引入相对和绝对地址图片">（003）vuepress 中引入相对和绝对地址图片</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">[指南](/zh/guide/README.md)</span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;!-- 相对路径 --></span></span>
+<span class="line"><span style="color: #c9d1d9">![成长](/images/home.png)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="004静态资源部署到某一个文件夹下如何保证相对地址没有问题">(004)静态资源部署到某一个文件夹下，如何保证相对地址没有问题</h4>
+<p>部署资源放在某一个文件夹下面如何 vuepress 配置</p>
+<p>Base Helper</p>
+<p>如果你的网站部署在非根路径下，即 <a href="https://v2.vuepress.vuejs.org/zh/reference/config.html#base">base</a> 不是 <code>"/"</code> ，你需要把 <code>base</code> 添加到 Public 文件的绝对路径前。</p>
+<p>举例来说，如果你想要把网站部署到 <code>https://foo.github.io/bar/</code> ，那么应该把 <code>base</code> 设置为 <code>"/bar/"</code> ，此时你必须在 Markdown 文件中这样引用 Public 文件：</p>
+<h4 id="005使用-github-pages-建立博客">（005）使用 GitHub Pages 建立博客</h4>
+<p>与 GitHub 建立好链接之后，就可以方便的使用它提供的 Pages 服务，</p>
+<p>GitHub Pages 分两种，</p>
+<h6 id="一种是你的-github-用户名建立的usernamegithubio这样的用户组织页站">一种是你的 GitHub 用户名建立的<code>username.github.io</code>这样的用户&#x26;组织页（站）</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">创建好username.github.io项目之后，提交一个index.html文件，然后push到GitHub的master分支（也就是普通意义上的主干）。第一次页面生效需要一些时间，大概10分钟左右。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">生效之后，访问username.github.io就可以看到你上传的页面了，beiyuu.github.io就是一个例子。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">https://nyhxiaoning.github.io/</span></span>
+<span class="line"><span style="color: #c9d1d9">https://nyhxiaoning.github.io/dist/</span></span>
+<span class="line"><span style="color: #c9d1d9">支持多级地址查询</span></span>
+<span class="line"><span style="color: #c9d1d9">但是，其实很简单，打包之后，将文件夹设置dist放入根目录，然后设置vuepress2中的base地址，这样所有的文件相对位置都可以设置正常。</span></span>
+<span class="line"><span style="color: #c9d1d9">访问：https://nyhxiaoning.github.io/dist/   注意设置base:/dist/</span></span></code></pre>
+<h6 id="一种是依附项目的-pages">一种是依附项目的 pages。</h6>
+<p>CNAME 设置成功后，DNS 生效需要一天左右。</p>
+<p>将独立域名与 GitHub Pages 的空间绑定
+GitHub Pages 的设置
+去到你的 blog.io 仓库，点击 CNAME,再点击右下角的铅笔编辑，将 cnfeat.com 改成你的域名。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">补充学习：</span></span>
+<span class="line"><span style="color: #c9d1d9">A (Address) 记录是用来指定[主机](https://baike.baidu.com/item/主机)名（或[域名](https://baike.baidu.com/item/域名/86062)）对应的[IP地址](https://baike.baidu.com/item/IP地址)记录。</span></span>
+<span class="line"><span style="color: #c9d1d9">用户可以将该域名下的[网站服务器](https://baike.baidu.com/item/网站服务器/8156379)指向到自己的网页服务器(web server)上。同时也可以设置域名的[子域名](https://baike.baidu.com/item/子域名/10937658)。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">腾讯云如何设置A记录</span></span>
+<span class="line"><span style="color: #c9d1d9">[设置 A 记录 - DNSPod 服务与支持](https://docs.dnspod.cn/dns/help-a/)</span></span>
+<span class="line"><span style="color: #c9d1d9">@对应的A记录是IP地址：34.102.136.180</span></span>
+<span class="line"><span style="color: #c9d1d9">[www.nyhdadaning.xyz](http://www.nyhdadaning.xyz/)</span></span>
+<span class="line"><span style="color: #c9d1d9">eighth.dnspod.net</span></span>
+<span class="line"><span style="color: #c9d1d9">angelo.dnspod.net</span></span></code></pre>
+<h3 id="1vuepress1x-配置项目参考">(1)vuepress1.x 配置项目参考</h3>
+<h3 id="2vuepress2x-目前需要的配置">（2）vuepress2.x 目前需要的配置</h3>
+<h4 id="vuepress2-系统化配置使用">vuepress2 系统化配置使用</h4>
+<ul>
+<li>搜索功能和 vuepress 目前必须配置一致。</li>
+</ul>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">    "@vuepress/plugin-nprogress": "^2.0.0-beta.46",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "@vuepress/plugin-search": "2.0.0-beta.50",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "@vuepress/plugin-toc": "^2.0.0-beta.46",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "cz-git": "^1.3.3",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "vuepress": "2.0.0-beta.50"</span></span></code></pre>
+<h4 id="vuepress2x-中-head-增加-ico-标签图">vuepress2.x 中 head 增加 ico 标签图</h4>
+<p>支持两种方式：</p>
+<ul>
+<li>url 地址使用在线 url</li>
+</ul>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">  head: [</span></span>
+<span class="line"><span style="color: #c9d1d9">    ['link', { rel: 'icon', href: 'https://vuejs.org/images/logo.png' }]</span></span>
+<span class="line"><span style="color: #c9d1d9">  ],</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<ul>
+<li>使用本地的图片，注意这里的图片使用 dist 打包后的地址
+一般这里/images/home.png,但是 head 特殊</li>
+</ul>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">  head: [</span></span>
+<span class="line"><span style="color: #c9d1d9">    //</span></span>
+<span class="line"><span style="color: #c9d1d9">    ['link', { rel: 'icon', href: '/dist/images/home.png' }]</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">  ],</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="vuepress2x-配置如何清除-md-下面的更新记录内容">vuepress2.x 配置如何清除 md 下面的更新记录内容</h4>
+<p>Contributors: daning, nyhxiaoning, ningyongheng</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">删除相关的内容：不展示创建事件，贡献者</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">import { gitPlugin } from '@vuepress/plugin-git'</span></span>
+<span class="line"><span style="color: #c9d1d9">插件部分引入下面内容</span></span>
+<span class="line"><span style="color: #c9d1d9">    gitPlugin({</span></span>
+<span class="line"><span style="color: #c9d1d9">      createdTime: false,</span></span>
+<span class="line"><span style="color: #c9d1d9">      contributors: false,</span></span>
+<span class="line"><span style="color: #c9d1d9">      updatedTime: false</span></span>
+<span class="line"><span style="color: #c9d1d9">    })</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="vuepress-打包后的部署-linux-问题">vuepress 打包后的部署 linux 问题。</h3>
+<p>我们打包完成后，直接放入 github 上面部署，这里资源默认会被 github 解析。
+但是如果放在我们自己的服务器解析，那么注意将这里的资源进行整理：
+注意：nginx 配置的时候，这里的相对路径，所以将 index.html 和引用的资源放入父子级别关系</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">--index.html二级目录index.html</span></span>
+<span class="line"><span style="color: #c9d1d9">---js/xxxx.js三级目录js文件夹</span></span>
+<span class="line"><span style="color: #c9d1d9">---css/xxx.css</span></span></code></pre>
+<h3 id="3跳转内部-markdown-锚点位置和其他-md-文件的锚点位置">3.跳转内部 markdown 锚点位置和其他 md 文件的锚点位置</h3>
+<h4 id="跳转内部-markdown-锚点位置">跳转内部 markdown 锚点位置</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">markdown拓展中，默认所有的标题（无论是几级标题都可以），都会自动编程anchor链接。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">所以内部的跳转，只要用#加上当前的标题头名称即可，这里注意标题头不可以有空格。</span></span>
+<span class="line"><span style="color: #c9d1d9">比如在当前的文件中跳转，当前的文件first,那么有一个标题是：测试跳转到这里，那么如下写即可</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">----------注意下面说明</span></span>
+<span class="line"><span style="color: #c9d1d9">[跳到first文件的文件夹的头部位置](./first/#测试跳转到这里)</span></span>
+<span class="line"><span style="color: #c9d1d9">但是这样只能保证跳转到那一个文件，然后，最后做一下不会定位到相对的位置上，这里需要配置一下</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">注意编译之后，案例跳转地址说明</span></span>
+<span class="line"><span style="color: #c9d1d9">md中写法</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">案例修改方法</span></span>
+<span class="line"><span style="color: #c9d1d9">跳转：</span></span>
+<span class="line"><span style="color: #c9d1d9">###### 8.5我要跳到这里</span></span>
+<span class="line"><span style="color: #c9d1d9">如果之类要跳转，那么这里修改为</span></span>
+<span class="line"><span style="color: #c9d1d9">_8-5我要跳到这里</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">[_8-5我要跳到这里](./third.md/#_8-5我要跳到这里)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">注意：跳转的标题不能有空格。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="跳转其他文件位置">跳转其他文件位置</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">--跳转到根目录</span></span>
+<span class="line"><span style="color: #c9d1d9">[跳到根目录](/)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">--跳转到和first.md文件同级别的third中的某一个标题位置</span></span>
+<span class="line"><span style="color: #c9d1d9">[跳到first之外的third文件的文件夹的头部位置](./third/#3.2声明设备的方法)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="跨页面跳转中文跳转和数字跳转区别">跨页面跳转，中文跳转和数字跳转区别</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">中文跳转</span></span>
+<span class="line"><span style="color: #c9d1d9"># 五、智能农场demo案例解析</span></span>
+<span class="line"><span style="color: #c9d1d9">对应跳转方案：[跳转内容五、小应用案例解析](./fifth.md/#五、小应用案例解析)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">数字跳转</span></span>
+<span class="line"><span style="color: #c9d1d9">#### 1.2.2 物栖小应用开发流程</span></span>
+<span class="line"><span style="color: #c9d1d9">对应用法跳转的结果：使用[跳转结果是](./first.md/####_1-2-2-物栖小应用开发流程)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="页面内跳转">页面内跳转</h6>
+<p>方案 1：</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&#x3C;div id="jump">&#x3C;/div></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">[我要跳转到这里](#jump)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>方案 2：</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">注意vuepress2会默认将内容标题减少一个#，所以跳转页面内的时候</span></span>
+<span class="line"><span style="color: #c9d1d9">注意一下：比如跳转：### 5.1智能农场demo场景介绍</span></span>
+<span class="line"><span style="color: #c9d1d9">那么对应页面内</span></span>
+<span class="line"><span style="color: #c9d1d9">[跳转内容五、小应用案例解析55555](#_5-1智能农场demo场景介绍)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">这里明显少了一个#</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="4配置入口和出口配置内容-vuepress">4.配置入口和出口配置内容 vuepress</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">base配置打包的时候相对地址配置，dest配置输出根文件夹目录，如果不配置，默认是.vuepress下的内容</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">  base: process.argv[2]==='dev'?"/apidist/":"./",//如果是本地dev使用appdist地址，如果是线上，那么使用相对地址./</span></span>
+<span class="line"><span style="color: #c9d1d9">  dest:"dist",</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">  base: process.argv[2] === 'dev' ? "/" : "./",//如果是本地dev使用/如果是打包，使用./表示相对地址，可以任意部署，</span></span>
+<span class="line"><span style="color: #c9d1d9">  dest: "dist",//配置后，默认根目录dist文件夹</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">对于打包后的地址，看看静态页面是否地址是md或是html，这里需要确认。TODO:这个是大坑</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">具体原因是为什么</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">----------跟踪一下，为什么本地npm  run docs:dev没有问题，但是打包build后，这些地址md增加锚点后，不会解析了，原因</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">TODO:</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">今天晚上。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="所有的锚点在-dev-环境下正常">所有的锚点在 dev 环境下正常，</h4>
+<p>比如
+下面例子:md 结束的地方可以正常解析成 html，但是如果是</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">### [一、物栖小应用简介](./pages/first.md)</span></span>
+<span class="line"><span style="color: #c9d1d9">[1.1 物栖小应用简介](./pages/first.html#_1-1-物栖小应用简介)&#x3C;br></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">dev可以但是build环境不允许的情况:dev可以正常解析，但是打包的时候，不会被识别，应该是框架问题：待解决处理</span></span>
+<span class="line"><span style="color: #c9d1d9">[1.1 物栖小应用简介](./pages/first.md/#_1-1-物栖小应用简介)&#x3C;br></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">一个build环境的解决方案：这里利用</span></span>
+<span class="line"><span style="color: #c9d1d9">[1.1 物栖小应用简介](./pages/first.html#_1-1-物栖小应用简介)&#x3C;br></span></span></code></pre>
+<h3 id="5vuepress-样式修改">5.vuepress 样式修改</h3>
+<p>默认修改原 html 标签样式汇总</p>
+<h4 id="vuepress1x-修改样式">vuepress1.x 修改样式</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">1、.vuepress 文件夹下创建 styles/palette.styl （这里使用 stylus）</span></span>
+<span class="line"><span style="color: #c9d1d9">2、重置取消 max-width 设置，classname 直接从 开发者工具 中复制 即可</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="vuepress2x-方案">vuepress2.x 方案</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">- 使用插件</span></span>
+<span class="line"><span style="color: #c9d1d9">调色板系统提取到了 @vuepress/plugin-palette 当中。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">- 调色板和样式</span></span>
+<span class="line"><span style="color: #c9d1d9">该插件会提供一个 @vuepress/plugin-palette/palette （调色板文件）和一个 @vuepress/plugin-palette/style （样式文件），</span></span>
+<span class="line"><span style="color: #c9d1d9">用于在你的主题样式中引入。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="5解决上线-vuepress-的锚点定位问题">5.解决上线 vuepress 的锚点定位问题</h3>
+<p>手动全部替换，，，，，，，原因，为什么本地可以???</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">md文件中后面使用#锚点，这里本地开发可以，但是打包的时候不可以自动转换。目前解决方案，先将所有的打包文件md替换成html。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">本地开发的时候，md文件结束后，</span></span>
+<span class="line"><span style="color: #c9d1d9">增加锚点可以生效</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">但是打包的时候，不会自动处理</span></span>
+<span class="line"><span style="color: #c9d1d9">导致本地这些生效的锚点，导致这些配置</span></span>
+<span class="line"><span style="color: #c9d1d9">过的锚点，打包后，全部失去导航的锚点作用</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">具体原因：暂时不知道为什么</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">这个原因是：npm  run docs:dev都可以，但是一旦build后，这个锚点的作用就消失了。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">手动解决方案：唯一解决方案，就是将原来的md都修改为html</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">这里查看这里的API官网：转换原理</span></span>
+<span class="line"><span style="color: #c9d1d9">- 内部链接会被转换为 &#x3C;RouterLink> 以便进行 SPA 导航。</span></span>
+<span class="line"><span style="color: #c9d1d9">- 指向 .md 文件的内部链接会被转换为目标页面的 路由路径，并且支持绝对路径和相对路径。</span></span>
+<span class="line"><span style="color: #c9d1d9">- 外部链接会被添加 target="_blank" rel="noopener noreferrer" 属性</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">链接扩展是由我们的内置插件支持的。配置参考： markdown.links</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="6默认样式-vuepress-修改">6.默认样式 vuepress 修改</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">方法1： docs/.vuepress/public/css/index.css 中修改</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">/* 日间模式 */</span></span>
+<span class="line"><span style="color: #c9d1d9">:root {</span></span>
+<span class="line"><span style="color: #c9d1d9">    --c-brand: #409eff;</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"> 方式二：直接在开发者工具中找到要修改的元素的css名称，然后在 docs/.vuepress/public/css/index.css 中修改即可。如：修改右上角站点名的字体颜色。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">/* 左上角标题 */</span></span>
+<span class="line"><span style="color: #c9d1d9">.navbar .site-name {</span></span>
+<span class="line"><span style="color: #c9d1d9">    color: #409eff;</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre>
+	</section>
+	<nav class="block sm:hidden astro-J75B3YUS">
+		<h2 class="heading astro-BYIKQF6W">More</h2>
+<ul class="astro-BYIKQF6W">
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a class="edit-on-github astro-BYIKQF6W" href="https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master/src/content/docs/en/15%E5%B7%A5%E5%85%B7%E5%92%8C%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E5%B7%A5%E7%A8%8B%E5%8C%96%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/001vuepress%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.md" target="_blank">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Edit this page</span>
+				</a>
+			</li>
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a href="https://astro.build/chat" target="_blank" class="astro-BYIKQF6W">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Join our community</span>
+				</a>
+			</li>
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-BYIKQF6W">
+	<script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(!!t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));</script><astro-island uid="Z25Qg0T" component-url="/_astro/ThemeToggleButton.90e627d1.js" component-export="default" renderer-url="/_astro/client.15ddb572.js" props="{&quot;class&quot;:[0,&quot;astro-BYIKQF6W&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+</div>
+	</nav>
+</article>
+			</div>
+			<aside id="grid-right" class="grid-sidebar astro-OUAMJN2I" title="Table of Contents">
+				<nav class="sidebar-nav astro-ROIVMLUZ" aria-labelledby="grid-right">
+	<div class="sidebar-nav-inner astro-ROIVMLUZ">
+		<astro-island uid="Z1x2R2i" component-url="/_astro/TableOfContents.a1e7e9c9.js" component-export="default" renderer-url="/_astro/client.15ddb572.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;000出现问题typeerror-invalid-value-used-as-weak-map-key\&quot;],\&quot;text\&quot;:[0,\&quot;（000）出现问题：TypeError: Invalid value used as weak map key\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;001vuepress-功能引入插件功能说明\&quot;],\&quot;text\&quot;:[0,\&quot;(001)vuepress 功能引入插件功能说明\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;002vuepress-中全局钩子和-ui-组件\&quot;],\&quot;text\&quot;:[0,\&quot;（002）vuepress 中全局钩子和 UI 组件\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;003vuepress-中引入相对和绝对地址图片\&quot;],\&quot;text\&quot;:[0,\&quot;（003）vuepress 中引入相对和绝对地址图片\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;004静态资源部署到某一个文件夹下如何保证相对地址没有问题\&quot;],\&quot;text\&quot;:[0,\&quot;(004)静态资源部署到某一个文件夹下，如何保证相对地址没有问题\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;005使用-github-pages-建立博客\&quot;],\&quot;text\&quot;:[0,\&quot;（005）使用 GitHub Pages 建立博客\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;一种是你的-github-用户名建立的usernamegithubio这样的用户组织页站\&quot;],\&quot;text\&quot;:[0,\&quot;一种是你的 GitHub 用户名建立的username.github.io这样的用户&amp;组织页（站）\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;一种是依附项目的-pages\&quot;],\&quot;text\&quot;:[0,\&quot;一种是依附项目的 pages。\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;1vuepress1x-配置项目参考\&quot;],\&quot;text\&quot;:[0,\&quot;(1)vuepress1.x 配置项目参考\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;2vuepress2x-目前需要的配置\&quot;],\&quot;text\&quot;:[0,\&quot;（2）vuepress2.x 目前需要的配置\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vuepress2-系统化配置使用\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress2 系统化配置使用\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vuepress2x-中-head-增加-ico-标签图\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress2.x 中 head 增加 ico 标签图\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vuepress2x-配置如何清除-md-下面的更新记录内容\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress2.x 配置如何清除 md 下面的更新记录内容\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;vuepress-打包后的部署-linux-问题\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress 打包后的部署 linux 问题。\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;3跳转内部-markdown-锚点位置和其他-md-文件的锚点位置\&quot;],\&quot;text\&quot;:[0,\&quot;3.跳转内部 markdown 锚点位置和其他 md 文件的锚点位置\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;跳转内部-markdown-锚点位置\&quot;],\&quot;text\&quot;:[0,\&quot;跳转内部 markdown 锚点位置\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;跳转其他文件位置\&quot;],\&quot;text\&quot;:[0,\&quot;跳转其他文件位置\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;跨页面跳转中文跳转和数字跳转区别\&quot;],\&quot;text\&quot;:[0,\&quot;跨页面跳转，中文跳转和数字跳转区别\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;页面内跳转\&quot;],\&quot;text\&quot;:[0,\&quot;页面内跳转\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;4配置入口和出口配置内容-vuepress\&quot;],\&quot;text\&quot;:[0,\&quot;4.配置入口和出口配置内容 vuepress\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;所有的锚点在-dev-环境下正常\&quot;],\&quot;text\&quot;:[0,\&quot;所有的锚点在 dev 环境下正常，\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;5vuepress-样式修改\&quot;],\&quot;text\&quot;:[0,\&quot;5.vuepress 样式修改\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vuepress1x-修改样式\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress1.x 修改样式\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vuepress2x-方案\&quot;],\&quot;text\&quot;:[0,\&quot;vuepress2.x 方案\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;5解决上线-vuepress-的锚点定位问题\&quot;],\&quot;text\&quot;:[0,\&quot;5.解决上线 vuepress 的锚点定位问题\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;6默认样式-vuepress-修改\&quot;],\&quot;text\&quot;:[0,\&quot;6.默认样式 vuepress 修改\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-ROIVMLUZ&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(min-width: 50em)&quot;}" await-children=""><h2 id="on-this-page-heading" class="heading">目录</h2><ul><li class="header-link depth-3"><a href="#1vuepress1x-配置项目参考">(1)vuepress1.x 配置项目参考</a></li><li class="header-link depth-3"><a href="#2vuepress2x-目前需要的配置">（2）vuepress2.x 目前需要的配置</a></li><li class="header-link depth-3"><a href="#vuepress-打包后的部署-linux-问题">vuepress 打包后的部署 linux 问题。</a></li><li class="header-link depth-3"><a href="#3跳转内部-markdown-锚点位置和其他-md-文件的锚点位置">3.跳转内部 markdown 锚点位置和其他 md 文件的锚点位置</a></li><li class="header-link depth-3"><a href="#4配置入口和出口配置内容-vuepress">4.配置入口和出口配置内容 vuepress</a></li><li class="header-link depth-3"><a href="#5vuepress-样式修改">5.vuepress 样式修改</a></li><li class="header-link depth-3"><a href="#5解决上线-vuepress-的锚点定位问题">5.解决上线 vuepress 的锚点定位问题</a></li><li class="header-link depth-3"><a href="#6默认样式-vuepress-修改">6.默认样式 vuepress 修改</a></li></ul></astro-island>
+		<h2 class="heading astro-BYIKQF6W">More</h2>
+<ul class="astro-BYIKQF6W">
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a class="edit-on-github astro-BYIKQF6W" href="https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master/src/content/docs/en/15%E5%B7%A5%E5%85%B7%E5%92%8C%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E5%B7%A5%E7%A8%8B%E5%8C%96%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/001vuepress%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.md" target="_blank">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Edit this page</span>
+				</a>
+			</li>
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a href="https://astro.build/chat" target="_blank" class="astro-BYIKQF6W">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Join our community</span>
+				</a>
+			</li>
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-BYIKQF6W">
+	<astro-island uid="Z25Qg0T" component-url="/_astro/ThemeToggleButton.90e627d1.js" component-export="default" renderer-url="/_astro/client.15ddb572.js" props="{&quot;class&quot;:[0,&quot;astro-BYIKQF6W&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+</div>
+	</div>
+</nav>
+			</aside>
+		</main>
+		<!-- <footer> --><!-- <AvatarList path={path} /> --><!-- </footer> -->
+	</body></html>

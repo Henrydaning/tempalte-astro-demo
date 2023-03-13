@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial astro-OUAMJN2I">
+	<head>
+		<!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Astro v2.0.1">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<link rel="sitemap" href="/sitemap.xml">
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script src="/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('theme-dark');
+	} else {
+		root.classList.remove('theme-dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+		<!-- Page Metadata --><link rel="canonical" href="https://astro.build/en/zero/010%E9%A1%B9%E7%9B%AEmonorepo%E6%9E%B6%E6%9E%84%E5%BC%80%E5%8F%91/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="全栈记录之旅 🚀 全栈记录之旅">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://astro.build/en/zero/010%E9%A1%B9%E7%9B%AEmonorepo%E6%9E%B6%E6%9E%84%E5%BC%80%E5%8F%91/">
+<meta property="og:locale" content="en-us">
+<meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta property="og:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+<meta name="description" property="og:description" content="成长依旧，步履不停">
+<meta property="og:site_name" content="全栈记录之旅">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="astrodotbuild">
+<meta name="twitter:title" content="全栈记录之旅 🚀 全栈记录之旅">
+<meta name="twitter:description" content="成长依旧，步履不停">
+<meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta name="twitter:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+		<title>
+			全栈记录之旅 🚀 全栈记录之旅
+		</title>
+		
+		
+	<link rel="stylesheet" href="/_astro/_...slug_.a0ad6b47.css" /></head>
+
+	<body class="astro-OUAMJN2I">
+		<header class="astro-2W66RQV5">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink astro-DMGOOZ7Y"><span class="astro-DMGOOZ7Y">Skip to Content</span></a>
+	<nav class="nav-wrapper astro-2W66RQV5" title="Top Navigation">
+		<div class="menu-toggle astro-2W66RQV5">
+			<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z1tJ5XG" component-url="/_astro/SidebarToggle.c7c67a70.js" component-export="default" renderer-url="/_astro/client.15ddb572.js" props="{&quot;class&quot;:[0,&quot;astro-2W66RQV5&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;SidebarToggle&quot;,&quot;value&quot;:true}" await-children=""><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-island>
+		</div>
+		<div class="logo flex astro-2W66RQV5">
+			<a href="/" class="astro-2W66RQV5">
+				<svg class="logo" width="40" height="40" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		#flame {
+			fill: var(--theme-text-accent);
+		}
+
+		#a {
+			fill: var(--theme-text-accent);
+		}
+	</style>
+	<title>Logo:文档中心</title>
+	<path id="a" fill-rule="evenodd" clip-rule="evenodd" d="M163.008 18.929c1.944 2.413 2.935 5.67 4.917 12.181l43.309 142.27a180.277 180.277 0 00-51.778-17.53l-28.198-95.29a3.67 3.67 0 00-7.042.01l-27.857 95.232a180.225 180.225 0 00-52.01 17.557l43.52-142.281c1.99-6.502 2.983-9.752 4.927-12.16a15.999 15.999 0 016.484-4.798c2.872-1.154 6.271-1.154 13.07-1.154h31.085c6.807 0 10.211 0 13.086 1.157a16.004 16.004 0 016.487 4.806z">
+	</path>
+	<path id="flame" fill-rule="evenodd" clip-rule="evenodd" d="M168.19 180.151c-7.139 6.105-21.39 10.268-37.804 10.268-20.147 0-37.033-6.272-41.513-14.707-1.602 4.835-1.961 10.367-1.961 13.902 0 0-1.056 17.355 11.015 29.426 0-6.268 5.081-11.349 11.349-11.349 10.743 0 10.731 9.373 10.721 16.977v.679c0 11.542 7.054 21.436 17.086 25.606a23.27 23.27 0 01-2.339-10.2c0-11.008 6.463-15.107 13.974-19.87 5.976-3.79 12.616-8.001 17.192-16.449a31.024 31.024 0 003.743-14.82c0-3.299-.513-6.479-1.463-9.463z">
+	</path>
+</svg>
+				<h1 class="astro-2W66RQV5">全栈记录之旅</h1>
+			</a>
+		</div>
+		<div style="flex-grow: 1;" class="astro-2W66RQV5"></div>
+		
+		<div class="search-item astro-2W66RQV5">
+			<astro-island uid="K4PRh" component-url="/_astro/Search.fc8f0463.js" component-export="default" renderer-url="/_astro/client.fd400d45.js" props="{}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children=""><button type="button" class="search-input"><svg width="24" height="24" fill="none"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Search</span><span class="search-hint"><span class="sr-only">Press </span><kbd>/</kbd><span class="sr-only"> to search</span></span></button></astro-island>
+		</div>
+	</nav>
+</header>
+
+
+		<main class="layout astro-OUAMJN2I">
+			<aside id="grid-left" class="grid-sidebar astro-OUAMJN2I" title="Site Navigation">
+				<nav aria-labelledby="grid-left" class="astro-KQNE5HRN">
+	<ul class="nav-groups astro-KQNE5HRN">
+		<li class="astro-KQNE5HRN">
+					<div class="nav-group astro-KQNE5HRN">
+						<h2 class="astro-KQNE5HRN">记录是学习的开始</h2>
+						<ul class="astro-KQNE5HRN">
+							<li class="nav-link astro-KQNE5HRN">
+										<a href="/en/introduction" class="astro-KQNE5HRN">
+											全栈学习
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/zero" class="astro-KQNE5HRN">
+											00 个人前端项目实战记录和链接
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/first" class="astro-KQNE5HRN">
+											01 React 课程学习和问题笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/second" class="astro-KQNE5HRN">
+											02 极客时间Vue课程学习和问题笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/third" class="astro-KQNE5HRN">
+											03 掘金算法课程学习和问题笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/fourth" class="astro-KQNE5HRN">
+											04 掘金 Uniapp 课程和Taro或原生小程序学习笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/fifth" class="astro-KQNE5HRN">
+											05 leetcode 刷题记录每周
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/sixth" class="astro-KQNE5HRN">
+											06 极客时间 Node 全栈记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/seventh" class="astro-KQNE5HRN">
+											07 React 学习常见问题和笔记记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/eighth" class="astro-KQNE5HRN">
+											08 vue 常见问题和学习记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/ninth" class="astro-KQNE5HRN">
+											09 book 前端进阶知识学习图书笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/tenth" class="astro-KQNE5HRN">
+											10 book 前端开发设计模式和开发实战笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/eleventh" class="astro-KQNE5HRN">
+											11 elementplus 经典源码和实战学习和问题笔记
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/twelfth" class="astro-KQNE5HRN">
+											12 前端开发经典库学习记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/thirteenth" class="astro-KQNE5HRN">
+											13Koa 和 express 框架学习记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/fourteenth" class="astro-KQNE5HRN">
+											14 前端图形化学习
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/fifteenth" class="astro-KQNE5HRN">
+											15 工具和项目配置工程化问题记录
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/sixteenth" class="astro-KQNE5HRN">
+											16 前端拓展知识学习
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/seventeenth" class="astro-KQNE5HRN">
+											17 低代码学习和总结
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/eighteen" class="astro-KQNE5HRN">
+											18 经验亮点汇总( 迁移中 )
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/others" class="astro-KQNE5HRN">
+											其他常见问题
+										</a>
+									</li><li class="nav-link astro-KQNE5HRN">
+										<a href="/en/notices" class="astro-KQNE5HRN">
+											常用符号
+										</a>
+									</li>
+						</ul>
+					</div>
+				</li><li class="astro-KQNE5HRN">
+					<div class="nav-group astro-KQNE5HRN">
+						<h2 class="astro-KQNE5HRN">其他说明</h2>
+						<ul class="astro-KQNE5HRN">
+							<li class="nav-link astro-KQNE5HRN">
+										<a href="/en/page-4" class="astro-KQNE5HRN">
+											自定义
+										</a>
+									</li>
+						</ul>
+					</div>
+				</li>
+	</ul>
+</nav>
+
+<script>
+	window.addEventListener('DOMContentLoaded', () => {
+		var target = document.querySelector('[aria-current="page"]');
+		if (target && target.offsetTop > window.innerHeight - 100) {
+			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+		}
+	});
+</script>
+
+
+			</aside>
+			<div id="grid-main" class="astro-OUAMJN2I">
+				<article id="article" class="content astro-J75B3YUS">
+	<section class="main-section astro-J75B3YUS">
+		<h1 class="content-title astro-J75B3YUS" id="overview">全栈记录之旅</h1>
+		<nav class="block sm:hidden astro-J75B3YUS">
+			<script>(self.Astro=self.Astro||{}).media=(s,a)=>{const t=async()=>{await(await s())()};if(a.value){const e=matchMedia(a.value);e.matches?t():e.addEventListener("change",t,{once:!0})}},window.dispatchEvent(new Event("astro:media"));</script><astro-island uid="Z2qiTJf" component-url="/_astro/TableOfContents.a1e7e9c9.js" component-export="default" renderer-url="/_astro/client.15ddb572.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;1lerna-实现-monorepo-架构实现\&quot;],\&quot;text\&quot;:[0,\&quot;1.lerna 实现 monorepo 架构实现\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;1创建-lerna-工程\&quot;],\&quot;text\&quot;:[0,\&quot;1.创建 Lerna 工程：\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;2创建两个-package\&quot;],\&quot;text\&quot;:[0,\&quot;2.创建两个 package：\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;3package-中互相引用怎么创建链接\&quot;],\&quot;text\&quot;:[0,\&quot;3.package 中互相引用，怎么创建链接\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;2pnpm-创建步骤-monrepo-项目方式\&quot;],\&quot;text\&quot;:[0,\&quot;2.pnpm 创建步骤 monrepo 项目方式\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;新建根目录\&quot;],\&quot;text\&quot;:[0,\&quot;新建根目录\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;创建-pnpm-workspaceyaml\&quot;],\&quot;text\&quot;:[0,\&quot;创建 pnpm-workspace.yaml\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;创建公用目录建议是一个只含有脚手架的容器\&quot;],\&quot;text\&quot;:[0,\&quot;创建公用目录（建议是一个只含有脚手架的容器）\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;子项目如何使用库例如请求-api-库\&quot;],\&quot;text\&quot;:[0,\&quot;子项目如何使用库：例如请求 api 库\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;项目引用这个包的时候\&quot;],\&quot;text\&quot;:[0,\&quot;项目引用这个包的时候\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;加快执行构建速度的-vue3-框架命令skiplibcheck\&quot;],\&quot;text\&quot;:[0,\&quot;加快执行构建速度的 vue3 框架命令—skipLibCheck\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;包安装操作\&quot;],\&quot;text\&quot;:[0,\&quot;包安装操作\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;pnpm-项目配置需要增加配置全局-tsconfigjson注意第一点\&quot;],\&quot;text\&quot;:[0,\&quot;pnpm 项目配置需要增加配置全局 ts.config.json:注意第一点\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;注意第二点作为-utils-请求库如果进行打包配置-tsconfig-和-package\&quot;],\&quot;text\&quot;:[0,\&quot;注意第二点：作为 utils 请求库，如果进行打包，配置 tsconfig 和 package\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;3lerna-实现-monorepo-和-pnpm-实现-monorepo-区别\&quot;],\&quot;text\&quot;:[0,\&quot;3.lerna 实现 monorepo 和 pnpm 实现 monorepo 区别\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;lerna-架构老版本缺点\&quot;],\&quot;text\&quot;:[0,\&quot;lerna 架构老版本缺点，\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;pnpm-架构-monorepo\&quot;],\&quot;text\&quot;:[0,\&quot;pnpm 架构 monorepo\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;4项目强制只可以使用某一个安装包---使用一个脚本-preinstall\&quot;],\&quot;text\&quot;:[0,\&quot;4.项目强制只可以使用某一个安装包。---使用一个脚本 preinstall\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-J75B3YUS&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(max-width: 50em)&quot;}" await-children=""><h2 id="on-this-page-heading" class="heading">目录</h2><ul><li class="header-link depth-3"><a href="#1lerna-实现-monorepo-架构实现">1.lerna 实现 monorepo 架构实现</a></li><li class="header-link depth-3"><a href="#2pnpm-创建步骤-monrepo-项目方式">2.pnpm 创建步骤 monrepo 项目方式</a></li><li class="header-link depth-3"><a href="#3lerna-实现-monorepo-和-pnpm-实现-monorepo-区别">3.lerna 实现 monorepo 和 pnpm 实现 monorepo 区别</a></li><li class="header-link depth-3"><a href="#4项目强制只可以使用某一个安装包---使用一个脚本-preinstall">4.项目强制只可以使用某一个安装包。---使用一个脚本 preinstall</a></li></ul></astro-island>
+		</nav>
+		<h3 id="1lerna-实现-monorepo-架构实现">1.lerna 实现 monorepo 架构实现</h3>
+<ul>
+<li>lerna-monorepo 架构实战</li>
+</ul>
+<p><a href="https://gitee.com/nyhxiaoning/lerna-workspace-projects-demos.git">lerna 项目架构管理汇总使用</a>
+如果某一个项目 yarn 安装不上，删除目录，重新创建子项目，重新安装
+快速创建脚手架命令</p>
+<h4 id="1创建-lerna-工程">1.创建 Lerna 工程：</h4>
+<p>git init lerna-demo &#x26;&#x26; cd lerna-demo &#x26;&#x26; lerna init</p>
+<h4 id="2创建两个-package">2.创建两个 package：</h4>
+<p>lerna create lerna-module1
+lerna create lerna-module2</p>
+<h4 id="3package-中互相引用怎么创建链接">3.package 中互相引用，怎么创建链接</h4>
+<p>比如 module2 使用了 module1 的包</p>
+<p>lerna add module1 —scope module2
+运行测试</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">lerna run  test  --scope=lerna-module1或是</span></span>
+<span class="line"><span style="color: #c9d1d9">lerna run  test  --scope lerna-module1或是</span></span>
+<span class="line"><span style="color: #c9d1d9">lerna run  test  packages/lerna-module1</span></span></code></pre>
+<h3 id="2pnpm-创建步骤-monrepo-项目方式">2.pnpm 创建步骤 monrepo 项目方式</h3>
+<h6 id="新建根目录">新建根目录</h6>
+<p>首先 Monorepo 需要一个根项目，所以我们先创建一个根项目，他相当于一个容器，用来存放我们的子项目，所以这个根项目并不需要安装太多的依赖</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">脚手架自己选pnpm create vite</span></span>
+<span class="line"><span style="color: #c9d1d9">vanilla---vite纯脚手架</span></span>
+<span class="line"><span style="color: #c9d1d9">vue</span></span>
+<span class="line"><span style="color: #c9d1d9">React</span></span>
+<span class="line"><span style="color: #c9d1d9">lit---lit+vite脚手架</span></span>
+<span class="line"><span style="color: #c9d1d9">Preact</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="创建-pnpm-workspaceyaml">创建 pnpm-workspace.yaml</h6>
+<p>新建 pnpm-workspace.yaml 文件，他的作用是：指定工作空间 workspace 的目录，里面的内容为：</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">packages:</span></span>
+<span class="line"><span style="color: #c9d1d9">  # 子项目存放的地方</span></span>
+<span class="line"><span style="color: #c9d1d9">  - 'packages/*'</span></span>
+<span class="line"><span style="color: #c9d1d9">  如果没有下面的可以放入一个包，其实怎么放都可以</span></span>
+<span class="line"><span style="color: #c9d1d9">  # 公用组件目录</span></span>
+<span class="line"><span style="color: #c9d1d9">  - 'components/**'</span></span>
+<span class="line"><span style="color: #c9d1d9">  # request目录</span></span>
+<span class="line"><span style="color: #c9d1d9">  - 'apis/**'</span></span>
+<span class="line"><span style="color: #c9d1d9">  # utils目录</span></span>
+<span class="line"><span style="color: #c9d1d9">  - 'utils/**'</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="创建公用目录建议是一个只含有脚手架的容器">创建公用目录（建议是一个只含有脚手架的容器）</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">npm create vite</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">Project name: apis</span></span>
+<span class="line"><span style="color: #c9d1d9">Select a framework: › vanilla</span></span>
+<span class="line"><span style="color: #c9d1d9">Select a variant: › vanilla-ts</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">npm create vite</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">Project name: utils</span></span>
+<span class="line"><span style="color: #c9d1d9">Select a framework: › vanilla</span></span>
+<span class="line"><span style="color: #c9d1d9">Select a variant: › vanilla-ts</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">npm init vue@3</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">Project Name -> compnents</span></span>
+<span class="line"><span style="color: #c9d1d9">Typescript -> Yes</span></span>
+<span class="line"><span style="color: #c9d1d9">JSX -> Yes</span></span>
+<span class="line"><span style="color: #c9d1d9">Pinia -> Yes</span></span>
+<span class="line"><span style="color: #c9d1d9">Testing -> No</span></span>
+<span class="line"><span style="color: #c9d1d9">Eslint -> Yes</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="子项目如何使用库例如请求-api-库">子项目如何使用库：例如请求 api 库</h6>
+<p><a href="https://mp.weixin.qq.com/s/y0cHuMxc7bC9Lhh5q2j5zQ">https://mp.weixin.qq.com/s/y0cHuMxc7bC9Lhh5q2j5zQ</a></p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">cd apis</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">npm i axios</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">创建和导出自己的apo封装代码后，</span></span>
+<span class="line"><span style="color: #c9d1d9">一般是接口请求拦截器和响应拦截器</span></span>
+<span class="line"><span style="color: #c9d1d9">然后src文件下，放一些模块的请求函数</span></span>
+<span class="line"><span style="color: #c9d1d9">在apis/src下创建：</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">request.ts---请求和响应拦截器</span></span>
+<span class="line"><span style="color: #c9d1d9">user.ts---api的封装接口</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>完成后，对于这个 apis 的包进行个性命令，因为这里的名称和版本号，决定了子项目引用时候这里的显示。</p>
+<ul>
+<li>修改 name 和 version（在 package.json）</li>
+</ul>
+<p>创建好之后，然后</p>
+<h6 id="项目引用这个包的时候">项目引用这个包的时候</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">首先进入某一个项:这里的package.json中的name就是这里的api-nyh名称</span></span>
+<span class="line"><span style="color: #c9d1d9">pnpm  install  apis-nyh -D</span></span>
+<span class="line"><span style="color: #c9d1d9">默认安装到生产环境。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">- 项目测试使用api---注意这里有个使用方法</span></span>
+<span class="line"><span style="color: #c9d1d9">注意引入的时候，注意先把自己的版本删除，然后使用 pnpm  install  apis-nyh -D</span></span>
+<span class="line"><span style="color: #c9d1d9">如果是引用本地workspace的包，包名称前面加上@</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">比如下面</span></span>
+<span class="line"><span style="color: #c9d1d9">import { getUser，createUser } from 'apis-nyh'</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">如果上面不生效</span></span>
+<span class="line"><span style="color: #c9d1d9">首先引入包后，在包前面加上一个@，就可以随意的使用了，比如原来的包名称是apis-nyh</span></span>
+<span class="line"><span style="color: #c9d1d9">使用的时候必须加上@apis-nyh</span></span>
+<span class="line"><span style="color: #c9d1d9">这样，所有的包都可以一目了然的使用了，只要将整个项目用@xxxx引入以后，都是模块化的使用方式了</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">import { getUser，createUser } from '@api-ts'</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">注意打包后，其实是一个对象输出，</span></span>
+<span class="line"><span style="color: #c9d1d9">例如：多个导入一个对象（多个export仅仅适用于单个项目中，如果这个项目做lib库，那么只能导出一个对象，对象上挂属性或是方法）</span></span>
+<span class="line"><span style="color: #c9d1d9">//!!!注意这里的坑，被坑了</span></span>
+<span class="line"><span style="color: #c9d1d9"> export const userApi = {</span></span>
+<span class="line"><span style="color: #c9d1d9">    addFn: () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">        return add</span></span>
+<span class="line"><span style="color: #c9d1d9">    },</span></span>
+<span class="line"><span style="color: #c9d1d9">    getUserFn: () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">        return getUser</span></span>
+<span class="line"><span style="color: #c9d1d9">    },</span></span>
+<span class="line"><span style="color: #c9d1d9">    createUserFn: () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">        return createUser</span></span>
+<span class="line"><span style="color: #c9d1d9">    },</span></span>
+<span class="line"><span style="color: #c9d1d9">    getCommentScheduleWeekFn: () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">        return getCommentScheduleWeek</span></span>
+<span class="line"><span style="color: #c9d1d9">    },</span></span>
+<span class="line"><span style="color: #c9d1d9">    getCommentScheduleDayFn: () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">        return getCommentScheduleDay</span></span>
+<span class="line"><span style="color: #c9d1d9">    },</span></span>
+<span class="line"><span style="color: #c9d1d9">    getSingleMusicDetailsFn: () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">        return getSingleMusicDetails</span></span>
+<span class="line"><span style="color: #c9d1d9">    },</span></span>
+<span class="line"><span style="color: #c9d1d9">};</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="加快执行构建速度的-vue3-框架命令skiplibcheck">加快执行构建速度的 vue3 框架命令—skipLibCheck</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">一般项目vue3安装后，有一个脚本build，如下，但是有时候执行检查总是报错，那么可以跳过</span></span>
+<span class="line"><span style="color: #c9d1d9">pnpm i @test/utils -r --filter web-vite-client</span></span>
+<span class="line"><span style="color: #c9d1d9">"build": "vue-tsc --noEmit --skipLibCheck &#x26;&#x26; vite build"</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">scripts.build 字段，原来里面执行了两条命令 vue-tsc --noEmit &#x26;&#x26; vite build ，嗯？这个 vue-tsc 是干嘛的，查找了一下原来是对 vue 3 的一个类型检测工具，然后我尝试单独执行 vue-tsc --noEmit ，上面的报错出现了，原来是 vue-tsc 引起的错误。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="包安装操作">包安装操作</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> 把包安装在哪里</span></span>
+<span class="line"><span style="color: #c9d1d9"> -w 表示把包安装在 root 下，该包会放置在 &#x3C;root>/node_modules 下。</span></span>
+<span class="line"><span style="color: #c9d1d9"> 当然也可以把把安装在所有 packages 中，使用 -r 代替 -w。你必须使用其中一个参数。</span></span>
+<span class="line"><span style="color: #c9d1d9"> 例如把 dayjs 装入 packages/web 下，packages/web 中的 package.json name 为 @test/web。</span></span>
+<span class="line"><span style="color: #c9d1d9"> 需要执行：pnpm i dayjs -r --filter @test/web</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">命令如下</span></span>
+<span class="line"><span style="color: #c9d1d9">把包安装到所有的项目</span></span>
+<span class="line"><span style="color: #c9d1d9">pnpm i dayjs -r</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">把包安装在web-vite-client项目(项目名称package的name字段)</span></span>
+<span class="line"><span style="color: #c9d1d9">pnpm i color -r --filter web-vite-client</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">我们开发好apis包之后安装到web-vite-client中</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">pnpm i @nyh/apis -r --filter web-vite-client</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">pnpm i axios -r --filter @test/utils</span></span>
+<span class="line"><span style="color: #c9d1d9">pnpm i json-bigint -r --filter @test/utils</span></span>
+<span class="line"><span style="color: #c9d1d9">pnpm i @test/utils -r --filter web-vite-client</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">更新</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">pnpm up apis-ts -r --filter vue3-components</span></span></code></pre>
+<h4 id="pnpm-项目配置需要增加配置全局-tsconfigjson注意第一点">pnpm 项目配置需要增加配置全局 ts.config.json:注意第一点</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">全局的tsconfig.json</span></span>
+<span class="line"><span style="color: #c9d1d9">{</span></span>
+<span class="line"><span style="color: #c9d1d9">  "compilerOptions": {</span></span>
+<span class="line"><span style="color: #c9d1d9">    "target": "ESNext",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "module": "ESNext",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "lib": ["ESNext", "DOM", "DOM.Iterable", "webworker"],</span></span>
+<span class="line"><span style="color: #c9d1d9">    "moduleResolution": "Node",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "esModuleInterop": true,---------允许当前的es模块</span></span>
+<span class="line"><span style="color: #c9d1d9">    "strict": true,</span></span>
+<span class="line"><span style="color: #c9d1d9">    "allowJs": true,</span></span>
+<span class="line"><span style="color: #c9d1d9">    "declaration": true,</span></span>
+<span class="line"><span style="color: #c9d1d9">    "resolveJsonModule": true,</span></span>
+<span class="line"><span style="color: #c9d1d9">    "skipLibCheck": true,</span></span>
+<span class="line"><span style="color: #c9d1d9">    "noEmitOnError": true,</span></span>
+<span class="line"><span style="color: #c9d1d9">    "noUnusedLocals": false,</span></span>
+<span class="line"><span style="color: #c9d1d9">    "noImplicitAny": false,</span></span>
+<span class="line"><span style="color: #c9d1d9">    "declarationMap": true,-------------为源文件创建一个d.ts生命</span></span>
+<span class="line"><span style="color: #c9d1d9">    "isolatedModules": true</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9">  "references": [------------------这部分放一些相关的package包的引用，这里做关系的连接，如果包之间有引用关系</span></span>
+<span class="line"><span style="color: #c9d1d9">    { "path": "packages/apis-ts" },</span></span>
+<span class="line"><span style="color: #c9d1d9">    { "path": "packages/vue3-components" },</span></span>
+<span class="line"><span style="color: #c9d1d9">    { "path": "web-vue3-vite-meituan-ts" }</span></span>
+<span class="line"><span style="color: #c9d1d9">  ]</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="注意第二点作为-utils-请求库如果进行打包配置-tsconfig-和-package">注意第二点：作为 utils 请求库，如果进行打包，配置 tsconfig 和 package</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">tsconfig.json</span></span>
+<span class="line"><span style="color: #c9d1d9">{</span></span>
+<span class="line"><span style="color: #c9d1d9">  "extends": "../../tsconfig.json",</span></span>
+<span class="line"><span style="color: #c9d1d9">  "compilerOptions": {</span></span>
+<span class="line"><span style="color: #c9d1d9">    "composite": true,------这个属性</span></span>
+<span class="line"><span style="color: #c9d1d9">    "rootDir": "./src",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "outDir": "./dist"</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9">  "include": ["./src"]</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">package.json中配置：最后打包的类型（同时得益于全局tsconfig配置，declarationMap会生成.d.ts，自己不用创建了d.ts了）</span></span>
+<span class="line"><span style="color: #c9d1d9">{</span></span>
+<span class="line"><span style="color: #c9d1d9">    "name": "foo",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "author": "Vandelay Industries",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "version": "1.0.0",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "main": "./lib/foo.js",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "typings": "./lib/foo.d.ts"</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">这里typeing是读取类型文件的路径，这个作为模块或是对外包的时候使用。</span></span>
+<span class="line"><span style="color: #c9d1d9">访问的时候尝试加载代码包路径下dist下的index.d.ts文件，这个文件也包含了文件类型信息。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="3lerna-实现-monorepo-和-pnpm-实现-monorepo-区别">3.lerna 实现 monorepo 和 pnpm 实现 monorepo 区别</h3>
+<p>（1）leran
+yarn + lerna 的组合已经是现在 monorepo 的通用方案，也是功能最多，最火的方案，使用这套方案绝对是正确的。</p>
+<p>但是其上手存在一定的门槛，相比 pnpm 这种自带 workspace 的方案，在效率上不能匹敌。</p>
+<h4 id="lerna-架构老版本缺点">lerna 架构老版本缺点，</h4>
+<p>（1）新入门 monorepo 的小白来说，光搞清单独使用 lerna 和 yarn + workspace + lerna 的区别，就足够吃一壶的了。
+同时 package.json 明确指明 workspace 位置</p>
+<p>两个地方维护 workspace。</p>
+<p>（2）yarn + lerna 中的方案是配置自动抬升，这种方案会存在依赖滥用的问题</p>
+<h4 id="pnpm-架构-monorepo">pnpm 架构 monorepo</h4>
+<p>先在项目根目录建立一个 pnpm 的 workspcae 配置文件 pnpm-workspace.yaml。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">配置一些好用的指令</span></span>
+<span class="line"><span style="color: #c9d1d9">么在项目根目录 package.json 配置项目启动命令：</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">"scripts": {</span></span>
+<span class="line"><span style="color: #c9d1d9">    "dev:app1": "pnpm start --filter \"@mono/app1\"",</span></span>
+<span class="line"><span style="color: #c9d1d9">    "dev:app2": "pnpm start --filter \"@mono/app2\""</span></span>
+<span class="line"><span style="color: #c9d1d9">},</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">这里 --filter 参数即特定要作用到哪个子项目，详见：pnpm 过滤</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="4项目强制只可以使用某一个安装包---使用一个脚本-preinstall">4.项目强制只可以使用某一个安装包。---使用一个脚本 preinstall</h3>
+<p>强制检查当前的包管理工具：only-allow配置检查package.json中preInstall钩子
+only-allow 安装后，
+配置使用</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">只能使用npm</span></span>
+<span class="line"><span style="color: #c9d1d9">{</span></span>
+<span class="line"><span style="color: #c9d1d9">  "scripts": {</span></span>
+<span class="line"><span style="color: #c9d1d9">    "preinstall": "npx only-allow npm"</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">智能使用pnpm</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">{</span></span>
+<span class="line"><span style="color: #c9d1d9">  "scripts": {</span></span>
+<span class="line"><span style="color: #c9d1d9">    "preinstall": "npx only-allow pnpm"</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>通过npm的文档我了解到，在scripts中，npm提供了一系列的生命周期钩子（Life Cycle Scripts），它们只在特定情形下触发，
+而且，更进一步的是，也允许用户创建自定义的钩子，并通过 pre-和post-前缀，可以在执行特定scirpts时，附加执行一些前置或者后置的程序。</p>
+<p>下面存疑，因为测试了一下，可以通过安装only-allow进行检查，不会不支持。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">废弃知识。</span></span>
+<span class="line"><span style="color: #c9d1d9">pnpm的处理和npm和yarn都不太一样，它认为支持用户自定义的scripts使用pre和post前缀容易引起误解，而且可能会导致部分人在毫无知觉的情形下执行了他们并不想执行的程序，因此pnpm默认不支持用户自定义scirpts的pre和post前缀。</span></span></code></pre>
+	</section>
+	<nav class="block sm:hidden astro-J75B3YUS">
+		<h2 class="heading astro-BYIKQF6W">More</h2>
+<ul class="astro-BYIKQF6W">
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a class="edit-on-github astro-BYIKQF6W" href="https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master/src/content/docs/en/zero/010%E9%A1%B9%E7%9B%AEmonorepo%E6%9E%B6%E6%9E%84%E5%BC%80%E5%8F%91.md" target="_blank">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Edit this page</span>
+				</a>
+			</li>
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a href="https://astro.build/chat" target="_blank" class="astro-BYIKQF6W">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Join our community</span>
+				</a>
+			</li>
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-BYIKQF6W">
+	<script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(!!t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));</script><astro-island uid="Z25Qg0T" component-url="/_astro/ThemeToggleButton.90e627d1.js" component-export="default" renderer-url="/_astro/client.15ddb572.js" props="{&quot;class&quot;:[0,&quot;astro-BYIKQF6W&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+</div>
+	</nav>
+</article>
+			</div>
+			<aside id="grid-right" class="grid-sidebar astro-OUAMJN2I" title="Table of Contents">
+				<nav class="sidebar-nav astro-ROIVMLUZ" aria-labelledby="grid-right">
+	<div class="sidebar-nav-inner astro-ROIVMLUZ">
+		<astro-island uid="j7JLt" component-url="/_astro/TableOfContents.a1e7e9c9.js" component-export="default" renderer-url="/_astro/client.15ddb572.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;1lerna-实现-monorepo-架构实现\&quot;],\&quot;text\&quot;:[0,\&quot;1.lerna 实现 monorepo 架构实现\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;1创建-lerna-工程\&quot;],\&quot;text\&quot;:[0,\&quot;1.创建 Lerna 工程：\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;2创建两个-package\&quot;],\&quot;text\&quot;:[0,\&quot;2.创建两个 package：\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;3package-中互相引用怎么创建链接\&quot;],\&quot;text\&quot;:[0,\&quot;3.package 中互相引用，怎么创建链接\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;2pnpm-创建步骤-monrepo-项目方式\&quot;],\&quot;text\&quot;:[0,\&quot;2.pnpm 创建步骤 monrepo 项目方式\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;新建根目录\&quot;],\&quot;text\&quot;:[0,\&quot;新建根目录\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;创建-pnpm-workspaceyaml\&quot;],\&quot;text\&quot;:[0,\&quot;创建 pnpm-workspace.yaml\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;创建公用目录建议是一个只含有脚手架的容器\&quot;],\&quot;text\&quot;:[0,\&quot;创建公用目录（建议是一个只含有脚手架的容器）\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;子项目如何使用库例如请求-api-库\&quot;],\&quot;text\&quot;:[0,\&quot;子项目如何使用库：例如请求 api 库\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;项目引用这个包的时候\&quot;],\&quot;text\&quot;:[0,\&quot;项目引用这个包的时候\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;加快执行构建速度的-vue3-框架命令skiplibcheck\&quot;],\&quot;text\&quot;:[0,\&quot;加快执行构建速度的 vue3 框架命令—skipLibCheck\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;包安装操作\&quot;],\&quot;text\&quot;:[0,\&quot;包安装操作\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;pnpm-项目配置需要增加配置全局-tsconfigjson注意第一点\&quot;],\&quot;text\&quot;:[0,\&quot;pnpm 项目配置需要增加配置全局 ts.config.json:注意第一点\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;注意第二点作为-utils-请求库如果进行打包配置-tsconfig-和-package\&quot;],\&quot;text\&quot;:[0,\&quot;注意第二点：作为 utils 请求库，如果进行打包，配置 tsconfig 和 package\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;3lerna-实现-monorepo-和-pnpm-实现-monorepo-区别\&quot;],\&quot;text\&quot;:[0,\&quot;3.lerna 实现 monorepo 和 pnpm 实现 monorepo 区别\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;lerna-架构老版本缺点\&quot;],\&quot;text\&quot;:[0,\&quot;lerna 架构老版本缺点，\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;pnpm-架构-monorepo\&quot;],\&quot;text\&quot;:[0,\&quot;pnpm 架构 monorepo\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;4项目强制只可以使用某一个安装包---使用一个脚本-preinstall\&quot;],\&quot;text\&quot;:[0,\&quot;4.项目强制只可以使用某一个安装包。---使用一个脚本 preinstall\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-ROIVMLUZ&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(min-width: 50em)&quot;}" await-children=""><h2 id="on-this-page-heading" class="heading">目录</h2><ul><li class="header-link depth-3"><a href="#1lerna-实现-monorepo-架构实现">1.lerna 实现 monorepo 架构实现</a></li><li class="header-link depth-3"><a href="#2pnpm-创建步骤-monrepo-项目方式">2.pnpm 创建步骤 monrepo 项目方式</a></li><li class="header-link depth-3"><a href="#3lerna-实现-monorepo-和-pnpm-实现-monorepo-区别">3.lerna 实现 monorepo 和 pnpm 实现 monorepo 区别</a></li><li class="header-link depth-3"><a href="#4项目强制只可以使用某一个安装包---使用一个脚本-preinstall">4.项目强制只可以使用某一个安装包。---使用一个脚本 preinstall</a></li></ul></astro-island>
+		<h2 class="heading astro-BYIKQF6W">More</h2>
+<ul class="astro-BYIKQF6W">
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a class="edit-on-github astro-BYIKQF6W" href="https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master/src/content/docs/en/zero/010%E9%A1%B9%E7%9B%AEmonorepo%E6%9E%B6%E6%9E%84%E5%BC%80%E5%8F%91.md" target="_blank">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Edit this page</span>
+				</a>
+			</li>
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a href="https://astro.build/chat" target="_blank" class="astro-BYIKQF6W">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Join our community</span>
+				</a>
+			</li>
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-BYIKQF6W">
+	<astro-island uid="Z25Qg0T" component-url="/_astro/ThemeToggleButton.90e627d1.js" component-export="default" renderer-url="/_astro/client.15ddb572.js" props="{&quot;class&quot;:[0,&quot;astro-BYIKQF6W&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+</div>
+	</div>
+</nav>
+			</aside>
+		</main>
+		<!-- <footer> --><!-- <AvatarList path={path} /> --><!-- </footer> -->
+	</body></html>
