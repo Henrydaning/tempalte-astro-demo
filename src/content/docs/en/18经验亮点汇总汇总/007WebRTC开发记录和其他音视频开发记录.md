@@ -50,4 +50,4 @@ API 可分成 Media Stream API、 RTCPeerConnection、Peer-to-peer Data API 三�
 
 
 ### 拓展RTMP和WebRTC开发对比
-![RTMP和WebSocket比较](./WebRTC%E5%92%8CRTMP.png)
+![RTMP和WebSocket比较](/images/WebRTC%E5%92%8CRTMP.png)
