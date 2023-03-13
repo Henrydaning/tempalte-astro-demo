@@ -1,1 +1,0 @@
-import{_ as t}from"./home.4afc8b2a.js";import{_ as o,o as s,c as _,a as e}from"./app.651f479d.js";const c={},a=e("p",null,[e("img",{src:t,alt:"\u6210\u957F"})],-1),n=e("nav",{class:"table-of-contents"},[e("ul")],-1),r=[a,n];function l(i,m){return s(),_("div",null,r)}var p=o(c,[["render",l],["__file","000README.html.vue"]]);export{p as default};

@@ -1,1 +1,0 @@
-import{_,o as c,c as e}from"./app.5805b0e6.js";const o={};function r(t,a){return c(),e("div")}var s=_(o,[["render",r],["__file","006coco\u4F4E\u4EE3\u7801\u6A21\u62DF\u5668\u5F00\u53D1\u8BB0\u5F55.html.vue"]]);export{s as default};
