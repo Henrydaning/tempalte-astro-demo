@@ -6,7 +6,9 @@ export const SITE = {
 	description: '成长依旧，步履不停',
 	defaultLanguage: 'en-us',
 } as const;
-
+/**
+ * 打开源头编辑页面的时候
+ */
 export const OPEN_GRAPH = {
 	image: {
 		src: 'https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true',
@@ -22,7 +24,10 @@ export const KNOWN_LANGUAGES = {
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
-export const GITHUB_EDIT_URL = `https://github.com/withastro/astro/tree/main/examples/docs`;
+/**
+ * 可编辑的url地址：官方案例：export const GITHUB_EDIT_URL = `https://github.com/withastro/astro/tree/main/examples/docs`;
+ */
+export const GITHUB_EDIT_URL = `https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master`;
 
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
 
