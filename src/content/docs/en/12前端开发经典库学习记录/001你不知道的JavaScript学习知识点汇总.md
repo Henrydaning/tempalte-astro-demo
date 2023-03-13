@@ -1,12 +1,10 @@
 
 
-[toc]
-
 
 <a href="#end" id="begin">跳到底部</a>
 
 ### JavaScript中检测对象的方法 
- #### 1.typeof操作符 
+#### 1.typeof操作符 
  
  ~~~
  
