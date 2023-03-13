@@ -13,5 +13,5 @@ export default defineConfig({
 	// TODO:这里的地址site和base写的慎重一些，如果都写了，这里可能出现解析错误地址
 	// TODO:如果这里site地址不配置，可能出现new URL的地址解析出错
 	site: 'https://nyhxiaoning.github.io/',
-	base: '/nyhxiaoning.github.io/dist',
+	base: '/dist',
 });
