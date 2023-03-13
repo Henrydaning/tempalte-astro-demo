@@ -62,7 +62,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: '10 book 前端开发设计模式和开发实战笔记', link: 'en/tenth' },
 			{ text: '11 elementplus 经典源码和实战学习和问题笔记', link: 'en/eleventh' },
 			{ text: '12 前端开发经典库学习记录', link: 'en/twelfth' },
-			{ text: '13Koa 和 express 框架学习记录', link: 'en/thirteenth' },
+			{ text: '13 Koa和express 框架学习记录', link: 'en/thirteenth' },
 			{ text: '14 前端图形化学习', link: 'en/fourteenth' },
 			{ text: '15 工具和项目配置工程化问题记录', link: 'en/fifteenth' },
 			{ text: '16 前端拓展知识学习', link: 'en/sixteenth' },

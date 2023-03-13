@@ -15,6 +15,7 @@ type Props = CollectionEntry<'docs'>['data'] & {
 };
 
 const { headings, ...data } = Astro.props;
+// TODO:注意astro出现new URL出现的问题使用问题TODO:
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const currentPage = Astro.url.pathname;
 // TODO:文件配置自定义的编辑
