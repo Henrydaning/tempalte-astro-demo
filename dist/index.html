@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+
 <head>
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval';">
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src *; connect-src * ws://* wss://*; style-src * 'unsafe-inline' 'unsafe-eval'; media-src * ; img-src * data:; font-src * ; script-src * 'unsafe-inline' 'unsafe-eval';" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 
 <script>
 	// Redirect your homepage to the first page of documentation.
