@@ -12,6 +12,6 @@ export default defineConfig({
 	],
 	// TODO:这里的地址site和base写的慎重一些，如果都写了，这里可能出现解析错误地址
 	// TODO:如果这里site地址不配置，可能出现new URL的地址解析出错
-	site: 'https://nyhxiaoning-github-io.vercel.app',//注意结尾没有斜杠/
+	site: 'https://henry.vercel.app',//注意结尾没有斜杠/
 	// base: '/dist',//网站根目录是dist，但是如果仓库名称是xxx.github.io，那么不要使用base参数
 });
