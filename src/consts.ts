@@ -32,10 +32,11 @@ export const GITHUB_EDIT_URL = `https://github.com/nyhxiaoning/nyhxiaoning.githu
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
 
 // See "Algolia" section of the README for more information.
+// TODO:algolia的网站api的key:https://www.algolia.com/account/api-keys/all?applicationId=L77QL0K6KC
 export const ALGOLIA = {
 	indexName: 'astro',
-	appId: 'JR4GWIBQCM',
-	apiKey: 'a89edafef3d5437f3f802b03cb380fc6',
+	appId: 'L77QL0K6KC',
+	apiKey: 'bb4b5ccc6005a8b219b1781eed1f68cd',
 };
 
 export type Sidebar = Record<
