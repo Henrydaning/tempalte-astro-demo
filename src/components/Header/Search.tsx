@@ -5,6 +5,7 @@ import '@docsearch/css';
 import './Search.css';
 
 import { createPortal } from 'react-dom';
+// TODO:如何获取docsearch/react如何获取appId,apiKey.通过(https://docsearch.algolia.com/apply/)申请，详见：修改开发记录.md
 import * as docSearchReact from '@docsearch/react';
 
 /** FIXME: This is still kinda nasty, but DocSearch is not ESM ready. */

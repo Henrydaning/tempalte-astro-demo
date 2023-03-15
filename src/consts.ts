@@ -34,7 +34,7 @@ export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
 // See "Algolia" section of the README for more information.
 // TODO:algolia的网站api的key:https://www.algolia.com/account/api-keys/all?applicationId=L77QL0K6KC
 export const ALGOLIA = {
-	indexName: 'astro',
+	indexName: 'astro',//这个名字的来源，可以新建New API Key后，找到更新查看indices
 	appId: 'L77QL0K6KC',
 	apiKey: 'bb4b5ccc6005a8b219b1781eed1f68cd',
 };
