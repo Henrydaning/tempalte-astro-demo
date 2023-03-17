@@ -36,7 +36,7 @@ export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
 export const ALGOLIA = {
 	indexName: 'henry-git-master-nyhxiaoning',//这个名字的来源，可以新建New API Key后，找到更新查看indices
 	appId: ' F55Q6IXQJ6',
-	apiKey: '13847e52ae5d844eb3824654fccf40e5',
+	apiKey: 'a90a2ba0ae3064e4cc5550f8cfbb0754',
 };
 
 export type Sidebar = Record<
