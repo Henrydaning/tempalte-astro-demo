@@ -3,7 +3,11 @@
 
 
 
+### 飞书简单亮点汇总
+[项目亮点的解析说明](https://hrll1lipzw.feishu.cn/docx/Noi2dCPPBoou9hxdpT4ckWs4neg)
 
+### 公司亮点汇总简单版本内容
+[公司开发中遇到的问题](https://hrll1lipzw.feishu.cn/docx/AM74d9ychopRkmxfow4c1ix6nUb)
 
 ### 001手把手带你实现存储引擎
 [001手把手带你实现存储引擎](/en/18经验亮点汇总汇总/001%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%9E%E7%8E%B0%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E)
