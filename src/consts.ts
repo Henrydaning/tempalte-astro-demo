@@ -69,7 +69,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: '16 前端拓展知识学习', link: 'en/sixteenth' },
 			{ text: '17 低代码学习和总结', link: 'en/seventeenth' },
 			{ text: '18 经验亮点汇总( 迁移中 )', link: 'en/eighteen' },
-			{ text: '18 项目复盘汇总( 迁移中 )', link: 'en/ninghteen' },
+			{ text: '19 项目复盘汇总( 迁移中 )', link: 'en/ninghteen' },
 			{ text: '其他常见问题', link: 'en/others' },
 			{ text: '常用符号', link: 'en/notices' }
 		],
