@@ -9,6 +9,11 @@
 ### 公司亮点汇总简单版本内容
 [公司开发中遇到的问题](https://hrll1lipzw.feishu.cn/docx/AM74d9ychopRkmxfow4c1ix6nUb)
 
+### 000整理一些processOn上面汇总的项目
+- [优秀的项目案例参考](https://www.processon.com/mindmap/61e232770e3e744157810e27)
+- [npm包汇总：一个包解决一个问题](https://www.processon.com/mindmap/62ce23ec1efad406ff80701e)
+- [前端常见问题解决方案](https://www.processon.com/mindmap/6214476d079129079ad749e1)
+
 ### 001手把手带你实现存储引擎
 [001手把手带你实现存储引擎](/en/18经验亮点汇总汇总/001%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%A6%E4%BD%A0%E5%AE%9E%E7%8E%B0%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E)
 
