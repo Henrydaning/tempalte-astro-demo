@@ -12,6 +12,8 @@
 
 #### 一步一步来：对于地址~/docker-nginx
 这里配置一个ngigx服务地址内容
+这个项目地址：下面有nginx配置汇总内容
+[docker-common内容项目在docker-nginx/etc/nginx配置里面](https://gitee.com/nyhxiaoning/docker-common.git)
 
 启动.sh文件启动nginx服务
 
