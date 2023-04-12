@@ -825,6 +825,20 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
+"en/15工具和项目配置工程化问题记录/026ngrok内网穿透工具使用相关.md": {
+  id: "en/15工具和项目配置工程化问题记录/026ngrok内网穿透工具使用相关.md",
+  slug: "en/15工具和项目配置工程化问题记录/026ngrok内网穿透工具使用相关",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/15工具和项目配置工程化问题记录/027bpmn图.md": {
+  id: "en/15工具和项目配置工程化问题记录/027bpmn图.md",
+  slug: "en/15工具和项目配置工程化问题记录/027bpmn图",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
 "en/16前端拓展知识学习/000000学以致用用程序员的思路思考和解决现实问题.md": {
   id: "en/16前端拓展知识学习/000000学以致用用程序员的思路思考和解决现实问题.md",
   slug: "en/16前端拓展知识学习/000000学以致用用程序员的思路思考和解决现实问题",
@@ -1098,9 +1112,9 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/18经验亮点汇总汇总/004前端开发常用工具汇总说明.md": {
-  id: "en/18经验亮点汇总汇总/004前端开发常用工具汇总说明.md",
-  slug: "en/18经验亮点汇总汇总/004前端开发常用工具汇总说明",
+"en/18经验亮点汇总汇总/004前端抓包工具和调试工具汇总说明.md": {
+  id: "en/18经验亮点汇总汇总/004前端抓包工具和调试工具汇总说明.md",
+  slug: "en/18经验亮点汇总汇总/004前端抓包工具和调试工具汇总说明",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
@@ -1129,6 +1143,13 @@ declare module 'astro:content' {
 "en/18经验亮点汇总汇总/007WebRTC开发记录和其他音视频开发记录.md": {
   id: "en/18经验亮点汇总汇总/007WebRTC开发记录和其他音视频开发记录.md",
   slug: "en/18经验亮点汇总汇总/007webrtc开发记录和其他音视频开发记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/18经验亮点汇总汇总/008Node开发调用后端c语言.md": {
+  id: "en/18经验亮点汇总汇总/008Node开发调用后端c语言.md",
+  slug: "en/18经验亮点汇总汇总/008node开发调用后端c语言",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
