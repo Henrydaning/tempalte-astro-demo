@@ -650,9 +650,9 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/15工具和项目配置工程化问题记录/004Docker课程学习笔记和部署笔记.md": {
-  id: "en/15工具和项目配置工程化问题记录/004Docker课程学习笔记和部署笔记.md",
-  slug: "en/15工具和项目配置工程化问题记录/004docker课程学习笔记和部署笔记",
+"en/15工具和项目配置工程化问题记录/004Docker课程学习笔记和部署笔记包含nginx配置.md": {
+  id: "en/15工具和项目配置工程化问题记录/004Docker课程学习笔记和部署笔记包含nginx配置.md",
+  slug: "en/15工具和项目配置工程化问题记录/004docker课程学习笔记和部署笔记包含nginx配置",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
