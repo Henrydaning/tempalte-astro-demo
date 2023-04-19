@@ -108,7 +108,53 @@
 ~~~
 
 
+#### 另一类问题
+第一种：当前的变量找不到，这里解决方案：直接在index.less补充。
+第二种：当前的变量使用了嵌套，自己引用自己，这里解决方案：直接将这个变量嵌套拆开。
+~~~
+下面这里是一些解决嵌套和缺少变量的补充内容。
+@primary-color: #222222;
+@success-color: #222222;
+@warning-color: #222222;
+@error-color: #222222;
+@heading-color:#222222;
+@title-color: #564433;
+@text-color: #222222;
+@text-color-secondary:#212434;
+@text-color-second: #212434;
+@layout-body-background:#212222;
+@layout-bg-color: #421111;
+@body-background:#666666;
+@base-bg-color: #222222;
+@hover-bg-color: rgba(0, 0, 0, 0.025);
+@border-color-split:#211111;
+@border-color: #222222;
+@shadow-color: #716111;
+@text-color-inverse:#499874;
+@hover-bg-color: #888888;
+@hover-bg-color-light: #999999;
+@primary-7:#888888;
+@hover-bg-color-dark:#999999;
+@hover-bg-color-night: rgba(255, 255, 255, 0.025);
+@header-bg-color-dark: #000000;
+@layout-header-background:#909090;
+@shadow-1-down:#909090;
+@shadow-down: #090909;
+@shadow-1-up:#555555;
+@shadow-1-left:#555555;
+@shadow-1-right:#555555;
+@shadow-up: #555555;
+@shadow-left:#555555; ;
+@shadow-right: #555555;
+@primary-2:#777777;
+@primary-3:#777777;
+@primary-4:#777777;
+@disabled-color:#999999;
+@component-background:#456789;
+@background-color-base:#888888;
 
+
+~~~
 
 
 
