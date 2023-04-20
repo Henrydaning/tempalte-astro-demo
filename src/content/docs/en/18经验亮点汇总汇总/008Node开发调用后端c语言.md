@@ -179,9 +179,18 @@ sudo chmod 777 filexxxxx
 释放固定的IP方法：dhclient -r 释放地址
 
 第七步：突然出现当前的fileZilla无法连接。
-看看ssh服务启动没有？ sudo ps -e | grep ssh
+(1)看看ssh服务启动没有？ sudo ps -e | grep ssh
  sudo service ssh start
 使用当前的ssh的ubuntu系统，无法连接。配置一下ssh文件，这里使用
 set nu设置当前的行数和/ 搜索和：123跳转到123行。
+(2)注意这里的密码打开
+解决Permission denied (publickey).
+录目标机器，打开/etc/ssh/sshd_config ，修改PasswordAuthentication no为：
+PasswordAuthentication yes。
+
+最后： service ssh restart 
+(3)// 更改.ssh文件夹权限
+ chmod 700 ~/.ssh
+
 
 

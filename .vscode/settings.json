@@ -5,5 +5,12 @@
     },
     "workspace.isHidden": false,
     "护眼主题.查看用户配置文件📙": "如果配置出错，可以手动将此页内错误的配置项删除！！！",
-    "editor.fontSize": 13
+    "editor.fontSize": 13,
+    "files.associations": {
+        "*.js": "javascript",
+        "*.vue": "vue",
+        "*.ts": "typescript",
+        "*.ttml": "xml",
+        "*.ttss": "css"
+    }
 }
