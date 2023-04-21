@@ -76,30 +76,51 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"docs": {
-"en/01React课程学习和问题笔记/000README.md": {
-  id: "en/01React课程学习和问题笔记/000README.md",
+"en/01react课程学习和问题笔记/000README.md": {
+  id: "en/01react课程学习和问题笔记/000README.md",
   slug: "en/01react课程学习和问题笔记/000readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/01React课程学习和问题笔记/000ReackHook掘金课程.md": {
-  id: "en/01React课程学习和问题笔记/000ReackHook掘金课程.md",
+"en/01react课程学习和问题笔记/000reackhook掘金课程.md": {
+  id: "en/01react课程学习和问题笔记/000reackhook掘金课程.md",
   slug: "en/01react课程学习和问题笔记/000reackhook掘金课程",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/01React课程学习和问题笔记/001UmiJS学习记录.md": {
-  id: "en/01React课程学习和问题笔记/001UmiJS学习记录.md",
+"en/01react课程学习和问题笔记/001umijs学习记录.md": {
+  id: "en/01react课程学习和问题笔记/001umijs学习记录.md",
   slug: "en/01react课程学习和问题笔记/001umijs学习记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/01React课程学习和问题笔记/React-SSR.md": {
-  id: "en/01React课程学习和问题笔记/React-SSR.md",
-  slug: "en/01react课程学习和问题笔记/react-ssr",
+"en/01react课程学习和问题笔记/002react-ssr.md": {
+  id: "en/01react课程学习和问题笔记/002react-ssr.md",
+  slug: "en/01react课程学习和问题笔记/002react-ssr",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/02极客时间vue课程学习和问题笔记/000README.md": {
+  id: "en/02极客时间vue课程学习和问题笔记/000README.md",
+  slug: "en/02极客时间vue课程学习和问题笔记/000readme",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/02极客时间vue课程学习和问题笔记/001源码api的区别学习记录.md": {
+  id: "en/02极客时间vue课程学习和问题笔记/001源码api的区别学习记录.md",
+  slug: "en/02极客时间vue课程学习和问题笔记/001源码api的区别学习记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/02极客时间vue课程学习和问题笔记/002课程记录周边每周汇总01.md": {
+  id: "en/02极客时间vue课程学习和问题笔记/002课程记录周边每周汇总01.md",
+  slug: "en/02极客时间vue课程学习和问题笔记/002课程记录周边每周汇总01",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
@@ -174,43 +195,43 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06Node全栈记录/001第二章-jksj-koaexpress说明对比笔记readme.md": {
-  id: "en/06Node全栈记录/001第二章-jksj-koaexpress说明对比笔记readme.md",
-  slug: "en/06node全栈记录/001第二章-jksj-koaexpress说明对比笔记readme",
+"en/06node全栈记录/001第二章极客时间koaexpress说明对比笔记readme.md": {
+  id: "en/06node全栈记录/001第二章极客时间koaexpress说明对比笔记readme.md",
+  slug: "en/06node全栈记录/001第二章极客时间koaexpress说明对比笔记readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06Node全栈记录/002第三章-jksj-Nodejs学习笔记1readme.md": {
-  id: "en/06Node全栈记录/002第三章-jksj-Nodejs学习笔记1readme.md",
-  slug: "en/06node全栈记录/002第三章-jksj-nodejs学习笔记1readme",
+"en/06node全栈记录/002第三章极客时间Nodejs学习笔记1readme.md": {
+  id: "en/06node全栈记录/002第三章极客时间Nodejs学习笔记1readme.md",
+  slug: "en/06node全栈记录/002第三章极客时间nodejs学习笔记1readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06Node全栈记录/003第四章-jksj-笔记Node.js优化性能.md": {
-  id: "en/06Node全栈记录/003第四章-jksj-笔记Node.js优化性能.md",
-  slug: "en/06node全栈记录/003第四章-jksj-笔记nodejs优化性能",
+"en/06node全栈记录/003第四章极客时间笔记Node.js优化性能.md": {
+  id: "en/06node全栈记录/003第四章极客时间笔记Node.js优化性能.md",
+  slug: "en/06node全栈记录/003第四章极客时间笔记nodejs优化性能",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06Node全栈记录/004第五章-jksj-总结学习事件循环记录整理.md": {
-  id: "en/06Node全栈记录/004第五章-jksj-总结学习事件循环记录整理.md",
-  slug: "en/06node全栈记录/004第五章-jksj-总结学习事件循环记录整理",
+"en/06node全栈记录/004第五章jksj总结学习事件循环记录整理.md": {
+  id: "en/06node全栈记录/004第五章jksj总结学习事件循环记录整理.md",
+  slug: "en/06node全栈记录/004第五章jksj总结学习事件循环记录整理",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06Node全栈记录/006Node相关学习补充.md": {
-  id: "en/06Node全栈记录/006Node相关学习补充.md",
+"en/06node全栈记录/006Node相关学习补充.md": {
+  id: "en/06node全栈记录/006Node相关学习补充.md",
   slug: "en/06node全栈记录/006node相关学习补充",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06Node全栈记录/008webSocket的开发使用记录.md": {
-  id: "en/06Node全栈记录/008webSocket的开发使用记录.md",
+"en/06node全栈记录/008webSocket的开发使用记录.md": {
+  id: "en/06node全栈记录/008webSocket的开发使用记录.md",
   slug: "en/06node全栈记录/008websocket的开发使用记录",
   body: string,
   collection: "docs",
@@ -401,6 +422,97 @@ declare module 'astro:content' {
 "en/09book前端进阶知识学习图书笔记/007less和sass汇总常用说明.md": {
   id: "en/09book前端进阶知识学习图书笔记/007less和sass汇总常用说明.md",
   slug: "en/09book前端进阶知识学习图书笔记/007less和sass汇总常用说明",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/001前端经典问题考究思考.md": {
+  id: "en/0个人前端项目实战记录和链接/001前端经典问题考究思考.md",
+  slug: "en/0个人前端项目实战记录和链接/001前端经典问题考究思考",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/001掘金课程记录和问题.md": {
+  id: "en/0个人前端项目实战记录和链接/001掘金课程记录和问题.md",
+  slug: "en/0个人前端项目实战记录和链接/001掘金课程记录和问题",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/002项目实战和说明内容001.md": {
+  id: "en/0个人前端项目实战记录和链接/002项目实战和说明内容001.md",
+  slug: "en/0个人前端项目实战记录和链接/002项目实战和说明内容001",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/003常用node开发.md": {
+  id: "en/0个人前端项目实战记录和链接/003常用node开发.md",
+  slug: "en/0个人前端项目实战记录和链接/003常用node开发",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/004常用前端开发项目总结.md": {
+  id: "en/0个人前端项目实战记录和链接/004常用前端开发项目总结.md",
+  slug: "en/0个人前端项目实战记录和链接/004常用前端开发项目总结",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/005编程猫学习研究依赖相关汇总.md": {
+  id: "en/0个人前端项目实战记录和链接/005编程猫学习研究依赖相关汇总.md",
+  slug: "en/0个人前端项目实战记录和链接/005编程猫学习研究依赖相关汇总",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/006常用H5开发总结.md": {
+  id: "en/0个人前端项目实战记录和链接/006常用H5开发总结.md",
+  slug: "en/0个人前端项目实战记录和链接/006常用h5开发总结",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/007常用react开发汇总.md": {
+  id: "en/0个人前端项目实战记录和链接/007常用react开发汇总.md",
+  slug: "en/0个人前端项目实战记录和链接/007常用react开发汇总",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/008常用Vue开发总结.md": {
+  id: "en/0个人前端项目实战记录和链接/008常用Vue开发总结.md",
+  slug: "en/0个人前端项目实战记录和链接/008常用vue开发总结",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/009前端存储相关的问题开发总结.md": {
+  id: "en/0个人前端项目实战记录和链接/009前端存储相关的问题开发总结.md",
+  slug: "en/0个人前端项目实战记录和链接/009前端存储相关的问题开发总结",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/010项目monorepo架构开发.md": {
+  id: "en/0个人前端项目实战记录和链接/010项目monorepo架构开发.md",
+  slug: "en/0个人前端项目实战记录和链接/010项目monorepo架构开发",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0个人前端项目实战记录和链接/README.md": {
+  id: "en/0个人前端项目实战记录和链接/README.md",
+  slug: "en/0个人前端项目实战记录和链接/readme",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/0经典脚手架持续迭代/000README.md": {
+  id: "en/0经典脚手架持续迭代/000README.md",
+  slug: "en/0经典脚手架持续迭代/000readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
@@ -1266,27 +1378,6 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/second/000README.md": {
-  id: "en/second/000README.md",
-  slug: "en/second/000readme",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/second/001源码API的区别学习记录.md": {
-  id: "en/second/001源码API的区别学习记录.md",
-  slug: "en/second/001源码api的区别学习记录",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/second/002课程记录周边每周汇总01.md": {
-  id: "en/second/002课程记录周边每周汇总01.md",
-  slug: "en/second/002课程记录周边每周汇总01",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
 "en/seventeenth.md": {
   id: "en/seventeenth.md",
   slug: "en/seventeenth",
@@ -1346,97 +1437,6 @@ declare module 'astro:content' {
 "en/zero.md": {
   id: "en/zero.md",
   slug: "en/zero",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/001前端经典问题考究思考.md": {
-  id: "en/zero/001前端经典问题考究思考.md",
-  slug: "en/zero/001前端经典问题考究思考",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/001掘金课程记录和问题.md": {
-  id: "en/zero/001掘金课程记录和问题.md",
-  slug: "en/zero/001掘金课程记录和问题",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/002项目实战和说明内容001.md": {
-  id: "en/zero/002项目实战和说明内容001.md",
-  slug: "en/zero/002项目实战和说明内容001",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/003常用node开发.md": {
-  id: "en/zero/003常用node开发.md",
-  slug: "en/zero/003常用node开发",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/004常用前端开发项目总结.md": {
-  id: "en/zero/004常用前端开发项目总结.md",
-  slug: "en/zero/004常用前端开发项目总结",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/005编程猫学习研究依赖相关汇总.md": {
-  id: "en/zero/005编程猫学习研究依赖相关汇总.md",
-  slug: "en/zero/005编程猫学习研究依赖相关汇总",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/006常用H5开发总结.md": {
-  id: "en/zero/006常用H5开发总结.md",
-  slug: "en/zero/006常用h5开发总结",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/007常用react开发汇总.md": {
-  id: "en/zero/007常用react开发汇总.md",
-  slug: "en/zero/007常用react开发汇总",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/008常用Vue开发总结.md": {
-  id: "en/zero/008常用Vue开发总结.md",
-  slug: "en/zero/008常用vue开发总结",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/009前端存储相关的问题开发总结.md": {
-  id: "en/zero/009前端存储相关的问题开发总结.md",
-  slug: "en/zero/009前端存储相关的问题开发总结",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/010项目monorepo架构开发.md": {
-  id: "en/zero/010项目monorepo架构开发.md",
-  slug: "en/zero/010项目monorepo架构开发",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/README.md": {
-  id: "en/zero/README.md",
-  slug: "en/zero/readme",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/zero/test.md": {
-  id: "en/zero/test.md",
-  slug: "en/zero/test",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
