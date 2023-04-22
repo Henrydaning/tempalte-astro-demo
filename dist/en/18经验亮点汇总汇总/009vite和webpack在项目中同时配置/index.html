@@ -242,22 +242,23 @@
 </ul>
 <h3 id="1两种方案相同点">（1）两种方案相同点。</h3>
 <p>基本都会增加vite.config.js和html.
-然后其他的css配置，resolve解析，基本的配置项目转换。
-╔════════╤═════════════════════════════════════╤══════════════════╗
-║ Number │ Conversion item                     │ Conversion count ║
-╟────────┼─────────────────────────────────────┼──────────────────╢
-║  B01   │ add package.json                    │        1         ║
-║  B02   │ add index.html                      │        1         ║
-║  B03   │ add vite.config.js                  │        1         ║
-║  B04   │ required plugins                    │        1         ║
-║  B11   │ html-webpack-plugin is supported    │        1         ║
-║  V01   │ base public path                    │        1         ║
-║  V02   │ css options                         │        1         ║
-║  V03   │ build options                       │        1         ║
-║  V05   │ resolve.alias options               │        1         ║
-║  V06   │ client-side env variables           │        1         ║
-║  V08   │ transform functional webpack config │        3         ║
-╚════════╧═════════════════════════════════════╧══════════════════╝</p>
+然后其他的css配置，resolve解析，基本的配置项目转换。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">╔════════╤═════════════════════════════════════╤══════════════════╗</span></span>
+<span class="line"><span style="color: #c9d1d9">║ Number │ Conversion item                     │ Conversion count ║</span></span>
+<span class="line"><span style="color: #c9d1d9">╟────────┼─────────────────────────────────────┼──────────────────╢</span></span>
+<span class="line"><span style="color: #c9d1d9">║  B01   │ add package.json                    │        1         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">║  B02   │ add index.html                      │        1         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">║  B03   │ add vite.config.js                  │        1         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">║  B04   │ required plugins                    │        1         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">║  B11   │ html-webpack-plugin is supported    │        1         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">║  V01   │ base public path                    │        1         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">║  V02   │ css options                         │        1         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">║  V03   │ build options                       │        1         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">║  V05   │ resolve.alias options               │        1         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">║  V06   │ client-side env variables           │        1         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">║  V08   │ transform functional webpack config │        3         ║</span></span>
+<span class="line"><span style="color: #c9d1d9">╚════════╧═════════════════════════════════════╧══════════════════╝</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
 <h3 id="2实际使用后如果是非常小的项目">（2）实际使用后如果是非常小的项目，</h3>
 <p>基本上面的两个方案兼容vue2.x都很好。</p>
 <h3 id="3如果项目比较大">（3）如果项目比较大。</h3>
