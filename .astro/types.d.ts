@@ -202,16 +202,16 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06node全栈记录/002第三章极客时间Nodejs学习笔记1readme.md": {
-  id: "en/06node全栈记录/002第三章极客时间Nodejs学习笔记1readme.md",
-  slug: "en/06node全栈记录/002第三章极客时间nodejs学习笔记1readme",
+"en/06node全栈记录/002第三章极客时间nodejs学习笔记readme.md": {
+  id: "en/06node全栈记录/002第三章极客时间nodejs学习笔记readme.md",
+  slug: "en/06node全栈记录/002第三章极客时间nodejs学习笔记readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06node全栈记录/003第四章极客时间笔记Node.js优化性能.md": {
-  id: "en/06node全栈记录/003第四章极客时间笔记Node.js优化性能.md",
-  slug: "en/06node全栈记录/003第四章极客时间笔记nodejs优化性能",
+"en/06node全栈记录/003第四章极客时间笔记node优化性能.md": {
+  id: "en/06node全栈记录/003第四章极客时间笔记node优化性能.md",
+  slug: "en/06node全栈记录/003第四章极客时间笔记node优化性能",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
@@ -223,15 +223,15 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06node全栈记录/006Node相关学习补充.md": {
-  id: "en/06node全栈记录/006Node相关学习补充.md",
+"en/06node全栈记录/006node相关学习补充.md": {
+  id: "en/06node全栈记录/006node相关学习补充.md",
   slug: "en/06node全栈记录/006node相关学习补充",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06node全栈记录/008webSocket的开发使用记录.md": {
-  id: "en/06node全栈记录/008webSocket的开发使用记录.md",
+"en/06node全栈记录/008websocket的开发使用记录.md": {
+  id: "en/06node全栈记录/008websocket的开发使用记录.md",
   slug: "en/06node全栈记录/008websocket的开发使用记录",
   body: string,
   collection: "docs",
@@ -594,36 +594,36 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13Koa和express框架学习记录/000README.md": {
-  id: "en/13Koa和express框架学习记录/000README.md",
+"en/13koa和express框架学习记录/000README.md": {
+  id: "en/13koa和express框架学习记录/000README.md",
   slug: "en/13koa和express框架学习记录/000readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13Koa和express框架学习记录/001PM2进程相关汇总记录.md": {
-  id: "en/13Koa和express框架学习记录/001PM2进程相关汇总记录.md",
+"en/13koa和express框架学习记录/001PM2进程相关汇总记录.md": {
+  id: "en/13koa和express框架学习记录/001PM2进程相关汇总记录.md",
   slug: "en/13koa和express框架学习记录/001pm2进程相关汇总记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13Koa和express框架学习记录/003Nuxt开发使用说明和案例记录.md": {
-  id: "en/13Koa和express框架学习记录/003Nuxt开发使用说明和案例记录.md",
+"en/13koa和express框架学习记录/003Nuxt开发使用说明和案例记录.md": {
+  id: "en/13koa和express框架学习记录/003Nuxt开发使用说明和案例记录.md",
   slug: "en/13koa和express框架学习记录/003nuxt开发使用说明和案例记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13Koa和express框架学习记录/004Koa开发使用说明和案例记录.md": {
-  id: "en/13Koa和express框架学习记录/004Koa开发使用说明和案例记录.md",
+"en/13koa和express框架学习记录/004Koa开发使用说明和案例记录.md": {
+  id: "en/13koa和express框架学习记录/004Koa开发使用说明和案例记录.md",
   slug: "en/13koa和express框架学习记录/004koa开发使用说明和案例记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13Koa和express框架学习记录/006vitesse汇总记录.md": {
-  id: "en/13Koa和express框架学习记录/006vitesse汇总记录.md",
+"en/13koa和express框架学习记录/006vitesse汇总记录.md": {
+  id: "en/13koa和express框架学习记录/006vitesse汇总记录.md",
   slug: "en/13koa和express框架学习记录/006vitesse汇总记录",
   body: string,
   collection: "docs",
