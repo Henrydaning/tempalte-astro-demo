@@ -237,69 +237,6 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/07React学习常见问题和笔记记录/000README.md": {
-  id: "en/07React学习常见问题和笔记记录/000README.md",
-  slug: "en/07react学习常见问题和笔记记录/000readme",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/07React学习常见问题和笔记记录/001React版本升级和功能说明.md": {
-  id: "en/07React学习常见问题和笔记记录/001React版本升级和功能说明.md",
-  slug: "en/07react学习常见问题和笔记记录/001react版本升级和功能说明",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/07React学习常见问题和笔记记录/001入门面试题react笔记汇总记录.md": {
-  id: "en/07React学习常见问题和笔记记录/001入门面试题react笔记汇总记录.md",
-  slug: "en/07react学习常见问题和笔记记录/001入门面试题react笔记汇总记录",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/07React学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录.md": {
-  id: "en/07React学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录.md",
-  slug: "en/07react学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/07React学习常见问题和笔记记录/002相关项目安装React问题排查.md": {
-  id: "en/07React学习常见问题和笔记记录/002相关项目安装React问题排查.md",
-  slug: "en/07react学习常见问题和笔记记录/002相关项目安装react问题排查",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/07React学习常见问题和笔记记录/003React路由和其他核心插件的相关升级问题记录.md": {
-  id: "en/07React学习常见问题和笔记记录/003React路由和其他核心插件的相关升级问题记录.md",
-  slug: "en/07react学习常见问题和笔记记录/003react路由和其他核心插件的相关升级问题记录",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/07React学习常见问题和笔记记录/004React生命周期以及hook和性能优化的问题记录.md": {
-  id: "en/07React学习常见问题和笔记记录/004React生命周期以及hook和性能优化的问题记录.md",
-  slug: "en/07react学习常见问题和笔记记录/004react生命周期以及hook和性能优化的问题记录",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/07React学习常见问题和笔记记录/006React脚手架创建和配置使用记录.md": {
-  id: "en/07React学习常见问题和笔记记录/006React脚手架创建和配置使用记录.md",
-  slug: "en/07react学习常见问题和笔记记录/006react脚手架创建和配置使用记录",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
-"en/07React学习常见问题和笔记记录/007React配置Webpack项目说明记录.md": {
-  id: "en/07React学习常见问题和笔记记录/007React配置Webpack项目说明记录.md",
-  slug: "en/07react学习常见问题和笔记记录/007react配置webpack项目说明记录",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
 "en/07react学习常见问题和笔记记录/000README.md": {
   id: "en/07react学习常见问题和笔记记录/000README.md",
   slug: "en/07react学习常见问题和笔记记录/000readme",
@@ -1070,8 +1007,8 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/16前端拓展知识学习/002typeScirpt标准补充学习.md": {
-  id: "en/16前端拓展知识学习/002typeScirpt标准补充学习.md",
+"en/16前端拓展知识学习/002typescirpt标准补充学习.md": {
+  id: "en/16前端拓展知识学习/002typescirpt标准补充学习.md",
   slug: "en/16前端拓展知识学习/002typescirpt标准补充学习",
   body: string,
   collection: "docs",
@@ -1084,8 +1021,8 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/16前端拓展知识学习/004React项目中常见ts方式汇总01.md": {
-  id: "en/16前端拓展知识学习/004React项目中常见ts方式汇总01.md",
+"en/16前端拓展知识学习/004react项目中常见ts方式汇总01.md": {
+  id: "en/16前端拓展知识学习/004react项目中常见ts方式汇总01.md",
   slug: "en/16前端拓展知识学习/004react项目中常见ts方式汇总01",
   body: string,
   collection: "docs",
@@ -1245,22 +1182,22 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/17低代码学习和总结/007低代码0-1实现思路梳理01.md": {
-  id: "en/17低代码学习和总结/007低代码0-1实现思路梳理01.md",
-  slug: "en/17低代码学习和总结/007低代码0-1实现思路梳理01",
+"en/17低代码学习和总结/007低代码0到1实现思路梳理01.md": {
+  id: "en/17低代码学习和总结/007低代码0到1实现思路梳理01.md",
+  slug: "en/17低代码学习和总结/007低代码0到1实现思路梳理01",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/17低代码学习和总结/007低代码0-1实现思路梳理02.md": {
-  id: "en/17低代码学习和总结/007低代码0-1实现思路梳理02.md",
-  slug: "en/17低代码学习和总结/007低代码0-1实现思路梳理02",
+"en/17低代码学习和总结/007低代码0到1实现思路梳理02.md": {
+  id: "en/17低代码学习和总结/007低代码0到1实现思路梳理02.md",
+  slug: "en/17低代码学习和总结/007低代码0到1实现思路梳理02",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/17低代码学习和总结/009DSL说明学习记录.md": {
-  id: "en/17低代码学习和总结/009DSL说明学习记录.md",
+"en/17低代码学习和总结/009dsl说明学习记录.md": {
+  id: "en/17低代码学习和总结/009dsl说明学习记录.md",
   slug: "en/17低代码学习和总结/009dsl说明学习记录",
   body: string,
   collection: "docs",

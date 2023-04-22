@@ -1,51 +1,97 @@
 ---
-import type { MarkdownHeading } from 'astro';
-import MoreMenu from '../RightSidebar/MoreMenu.astro';
-import TableOfContents from '../RightSidebar/TableOfContents';
+import type { MarkdownHeading } from "astro";
+import MoreMenu from "../RightSidebar/MoreMenu.astro";
+import TableOfContents from "../RightSidebar/TableOfContents";
 
 type Props = {
-	title: string;
-	headings: MarkdownHeading[];
-	githubEditUrl: string;
+  title: string;
+  headings: MarkdownHeading[];
+  githubEditUrl: string;
 };
 
 const { title, headings, githubEditUrl } = Astro.props;
 ---
 
 <article id="article" class="content">
-	<section class="main-section">
-		<h1 class="content-title" id="overview">{title}</h1>
-		<nav class="block sm:hidden">
-			<TableOfContents client:media="(max-width: 50em)" headings={headings} />
-		</nav>
-		<slot />
-	</section>
-	<nav class="block sm:hidden">
-		<MoreMenu editHref={githubEditUrl} />
-	</nav>
+  <section class="main-section">
+    <h1 class="content-title" id="overview">{title}</h1>
+    <nav class="block sm:hidden">
+      <TableOfContents client:media="(max-width: 50em)" headings={headings} />
+    </nav>
+    <slot />
+  </section>
+  <nav class="block sm:hidden">
+    <MoreMenu editHref={githubEditUrl} />
+  </nav>
 </article>
+<script is:inline>
+  console.log(window.location.href);
+  let currentRoute = decodeURIComponent(window.location.href).split("/")[
+    decodeURIComponent(window.location.href).split("/").length - 2
+  ];
+  const menuData = {
+    "0个人前端项目实战记录和链接": 0,
+    "0经典脚手架持续迭代": 1,
+    "01react课程学习和问题笔记": 2,
+    "02极客时间vue课程学习和问题笔记": 3,
+    "03掘金算法课程学习和问题笔记": 4,
+    "04小程序专题": 5,
+    "05leetcode刷题记录每周": 6,
+    "06node全栈记录": 7,
+    "07react学习常见问题和笔记记录": 8,
+    "08vue常见问题和学习记录": 9,
+    "09book前端进阶知识学习图书笔记": 10,
+    "10book前端开发设计模式和开发实战笔记": 11,
+    "11elementplus经典源码和实战学习和问题笔记": 12,
+    "12前端开发经典库学习记录": 13,
+    "13koa和express框架学习记录": 14,
+    "14前端图形化学习": 15,
+    "15工具和项目配置工程化问题记录": 16,
+    "16前端拓展知识学习": 17,
+    "17低代码学习和总结": 18,
+    "18经验亮点汇总汇总": 19,
+    "19项目复盘汇总": 20,
+    其他常见问题: 21,
+  };
 
+  window.addEventListener("DOMContentLoaded", () => {
+    var target = document.querySelector('[aria-current="page"]');
+    if (target && target.offsetTop > window.innerHeight - 100) {
+      document.querySelector(".nav-groups").scrollTop = target.offsetTop;
+    }
+  });
+  debugger;
+  // TODO:根据当前的选中的路由的名称，反转成路由菜单
+  console.log("%s 当前的值💡 ");
+  console.log(
+    "%c💡 当前的最新打印，用完删除",
+    "background-color:blue;color:#fff"
+  );
+  let testDiv = document.getElementsByClassName("nav-group astro-KQNE5HRN")[0];
+  testDiv.getElementsByTagName("ul")[0].children[menuData[currentRoute]].style =
+    "color: rgb(56,149,255);font-weight:700;background:rgb(225,239,255)";
+</script>
 <style>
-	.content {
-		padding: 0;
-		max-width: 75ch;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-	}
+  .content {
+    padding: 0;
+    max-width: 75ch;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-	.content > section {
-		margin-bottom: 4rem;
-	}
+  .content > section {
+    margin-bottom: 4rem;
+  }
 
-	.block {
-		display: block;
-	}
+  .block {
+    display: block;
+  }
 
-	@media (min-width: 50em) {
-		.sm\:hidden {
-			display: none;
-		}
-	}
+  @media (min-width: 50em) {
+    .sm\:hidden {
+      display: none;
+    }
+  }
 </style>
