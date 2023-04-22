@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial astro-OUAMJN2I">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Astro v2.1.2">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<link rel="sitemap" href="/sitemap.xml">
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script src="/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('theme-dark');
+	} else {
+		root.classList.remove('theme-dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+    <!-- Page Metadata --><link rel="canonical" href="https://henry-git-master-nyhxiaoning/en/16%E5%89%8D%E7%AB%AF%E6%8B%93%E5%B1%95%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/003vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%B8%B8%E7%94%A8ts%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB01/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="全栈记录之旅 🚀 全栈记录之旅">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://henry-git-master-nyhxiaoning/en/16%E5%89%8D%E7%AB%AF%E6%8B%93%E5%B1%95%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/003vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%B8%B8%E7%94%A8ts%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB01/">
+<meta property="og:locale" content="en-us">
+<meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta property="og:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+<meta name="description" property="og:description" content="成长依旧，步履不停">
+<meta property="og:site_name" content="全栈记录之旅">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="astrodotbuild">
+<meta name="twitter:title" content="全栈记录之旅 🚀 全栈记录之旅">
+<meta name="twitter:description" content="成长依旧，步履不停">
+<meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta name="twitter:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+    <title>
+      全栈记录之旅 🚀 全栈记录之旅
+    </title>
+    
+    
+  <link rel="stylesheet" href="/_astro/_...slug_.699682f2.css" /></head>
+
+  <body class="astro-OUAMJN2I">
+    <header class="astro-2W66RQV5">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink astro-DMGOOZ7Y"><span class="astro-DMGOOZ7Y">Skip to Content</span></a>
+	<nav class="nav-wrapper astro-2W66RQV5" title="Top Navigation">
+		<div class="menu-toggle astro-2W66RQV5">
+			<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Rxydg" component-url="/_astro/SidebarToggle.65a801f9.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;class&quot;:[0,&quot;astro-2W66RQV5&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;SidebarToggle&quot;,&quot;value&quot;:true}" await-children=""><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-island>
+		</div>
+		<div class="logo flex astro-2W66RQV5">
+			<a href="/" class="astro-2W66RQV5">
+				<svg class="logo" width="40" height="40" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		#flame {
+			fill: var(--theme-text-accent);
+		}
+
+		#a {
+			fill: var(--theme-text-accent);
+		}
+	</style>
+	<title>Logo:文档中心</title>
+	<path id="a" fill-rule="evenodd" clip-rule="evenodd" d="M163.008 18.929c1.944 2.413 2.935 5.67 4.917 12.181l43.309 142.27a180.277 180.277 0 00-51.778-17.53l-28.198-95.29a3.67 3.67 0 00-7.042.01l-27.857 95.232a180.225 180.225 0 00-52.01 17.557l43.52-142.281c1.99-6.502 2.983-9.752 4.927-12.16a15.999 15.999 0 016.484-4.798c2.872-1.154 6.271-1.154 13.07-1.154h31.085c6.807 0 10.211 0 13.086 1.157a16.004 16.004 0 016.487 4.806z">
+	</path>
+	<path id="flame" fill-rule="evenodd" clip-rule="evenodd" d="M168.19 180.151c-7.139 6.105-21.39 10.268-37.804 10.268-20.147 0-37.033-6.272-41.513-14.707-1.602 4.835-1.961 10.367-1.961 13.902 0 0-1.056 17.355 11.015 29.426 0-6.268 5.081-11.349 11.349-11.349 10.743 0 10.731 9.373 10.721 16.977v.679c0 11.542 7.054 21.436 17.086 25.606a23.27 23.27 0 01-2.339-10.2c0-11.008 6.463-15.107 13.974-19.87 5.976-3.79 12.616-8.001 17.192-16.449a31.024 31.024 0 003.743-14.82c0-3.299-.513-6.479-1.463-9.463z">
+	</path>
+</svg>
+				<h1 class="astro-2W66RQV5">全栈记录之旅</h1>
+			</a>
+		</div>
+		<div style="flex-grow: 1;" class="astro-2W66RQV5"></div>
+		
+		<div class="search-item astro-2W66RQV5">
+			<astro-island uid="pp6Cr" component-url="/_astro/Search.aa1cadd5.js" component-export="default" renderer-url="/_astro/client.fd400d45.js" props="{}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children=""><button type="button" class="search-input"><svg width="24" height="24" fill="none"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Search</span><span class="search-hint"><span class="sr-only">Press </span><kbd>/</kbd><span class="sr-only"> to search</span></span></button></astro-island>
+		</div>
+	</nav>
+</header>
+    <main class="layout astro-OUAMJN2I">
+      <aside id="grid-left" class="grid-sidebar astro-OUAMJN2I" title="Site Navigation">
+        <nav aria-labelledby="grid-left" class="astro-KQNE5HRN">
+  <ul class="nav-groups astro-KQNE5HRN">
+    <li class="astro-KQNE5HRN">
+          <div class="nav-group astro-KQNE5HRN">
+            <h2 class="astro-KQNE5HRN">记录是学习的开始</h2>
+            <ul class="astro-KQNE5HRN">
+              <li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/introduction" class="astro-KQNE5HRN">
+                      全栈学习
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/zero" class="astro-KQNE5HRN">
+                      0个人前端项目实战记录和链接
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/first" class="astro-KQNE5HRN">
+                      01 React 课程学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/second" class="astro-KQNE5HRN">
+                      02 极客时间Vue课程学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/third" class="astro-KQNE5HRN">
+                      03 掘金算法课程学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fourth" class="astro-KQNE5HRN">
+                      04 掘金 Uniapp 课程和Taro或原生小程序学习笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fifth" class="astro-KQNE5HRN">
+                      05 leetcode 刷题记录每周
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/sixth" class="astro-KQNE5HRN">
+                      06 极客时间 Node 全栈记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/seventh" class="astro-KQNE5HRN">
+                      07 React 学习常见问题和笔记记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/eighth" class="astro-KQNE5HRN">
+                      08 vue 常见问题和学习记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/ninth" class="astro-KQNE5HRN">
+                      09 book 前端进阶知识学习图书笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/tenth" class="astro-KQNE5HRN">
+                      10 book 前端开发设计模式和开发实战笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/eleventh" class="astro-KQNE5HRN">
+                      11 elementplus 经典源码和实战学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/twelfth" class="astro-KQNE5HRN">
+                      12 前端开发经典库学习记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/thirteenth" class="astro-KQNE5HRN">
+                      13 Koa和express 框架学习记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fourteenth" class="astro-KQNE5HRN">
+                      14 前端图形化学习
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fifteenth" class="astro-KQNE5HRN">
+                      15工具和项目配置工程化问题记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/sixteenth" class="astro-KQNE5HRN">
+                      16 前端拓展知识学习
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/seventeenth" class="astro-KQNE5HRN">
+                      17 低代码学习和总结
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/eighteen" class="astro-KQNE5HRN">
+                      18 经验亮点汇总( 迁移中 )
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/ninghteen" class="astro-KQNE5HRN">
+                      19 项目复盘汇总( 迁移中 )
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/others" class="astro-KQNE5HRN">
+                      其他常见问题
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/notices" class="astro-KQNE5HRN">
+                      常用符号
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </li><li class="astro-KQNE5HRN">
+          <div class="nav-group astro-KQNE5HRN">
+            <h2 class="astro-KQNE5HRN">其他说明</h2>
+            <ul class="astro-KQNE5HRN">
+              <li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/page-4" class="astro-KQNE5HRN">
+                      自定义
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </li>
+  </ul>
+</nav>
+      </aside>
+      <div id="grid-main" class="astro-OUAMJN2I">
+        <article id="article" class="content astro-J75B3YUS">
+  <section class="main-section astro-J75B3YUS">
+    <h1 class="content-title astro-J75B3YUS" id="overview">全栈记录之旅</h1>
+    <nav class="block sm:hidden astro-J75B3YUS">
+      <script>(self.Astro=self.Astro||{}).media=(s,a)=>{const t=async()=>{await(await s())()};if(a.value){const e=matchMedia(a.value);e.matches?t():e.addEventListener("change",t,{once:!0})}},window.dispatchEvent(new Event("astro:media"));</script><astro-island uid="Z2alsAA" component-url="/_astro/TableOfContents.3058fe45.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vue源码中的ts类型使用\&quot;],\&quot;text\&quot;:[0,\&quot;vue源码中的ts类型使用\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;0一些ts基础知识汇总\&quot;],\&quot;text\&quot;:[0,\&quot;0一些ts基础知识汇总\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;在-typescript-中我们使用接口interfaces来定义对象的类型\&quot;],\&quot;text\&quot;:[0,\&quot;在 TypeScript 中，我们使用接口（Interfaces）来定义对象的类型。\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;js中类的概念总结\&quot;],\&quot;text\&quot;:[0,\&quot;js中类的概念总结\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;类与接口\&quot;],\&quot;text\&quot;:[0,\&quot;类与接口\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;接口继承类\&quot;],\&quot;text\&quot;:[0,\&quot;接口继承类\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;声明-class-point-时除了会创建一个名为-point-的类之外同时也创建了一个名为-point-的类型实例的类型\&quot;],\&quot;text\&quot;:[0,\&quot;声明 class Point 时，除了会创建一个名为 Point 的类之外，同时也创建了一个名为 Point 的类型（实例的类型）。\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;经典案例对于interface声明接口和class声明接口的最好案例\&quot;],\&quot;text\&quot;:[0,\&quot;经典案例对于interface声明接口和class声明接口的最好案例\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;经典全局变量的方法拓展拓展array和number\&quot;],\&quot;text\&quot;:[0,\&quot;经典全局变量的方法拓展，拓展Array和Number\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;拓展array\&quot;],\&quot;text\&quot;:[0,\&quot;拓展Array\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;泛型定义函数接口或是类的时候不预先指定具体类型\&quot;],\&quot;text\&quot;:[0,\&quot;泛型：定义函数，接口或是类的时候，不预先指定具体类型，\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;定义一个泛型数组\&quot;],\&quot;text\&quot;:[0,\&quot;定义一个泛型数组\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;定义一个泛型函数接口\&quot;],\&quot;text\&quot;:[0,\&quot;定义一个泛型函数接口\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;泛型默认参数\&quot;],\&quot;text\&quot;:[0,\&quot;泛型默认参数\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;元祖的使用\&quot;],\&quot;text\&quot;:[0,\&quot;元祖的使用\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;1基本ts的类型定义汇总分类\&quot;],\&quot;text\&quot;:[0,\&quot;1.基本ts的类型定义汇总分类：\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;定义泛型进行接口类型定义\&quot;],\&quot;text\&quot;:[0,\&quot;定义泛型进行接口类型定义\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;对于数组泛型\&quot;],\&quot;text\&quot;:[0,\&quot;对于数组泛型\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;常见一些ts用法术语和案例\&quot;],\&quot;text\&quot;:[0,\&quot;常见一些ts用法术语和案例。\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;类型定义别名\&quot;],\&quot;text\&quot;:[0,\&quot;类型定义别名\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;类型断言用法使用as\&quot;],\&quot;text\&quot;:[0,\&quot;类型断言用法，使用as\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;ts中使用双重断言\&quot;],\&quot;text\&quot;:[0,\&quot;ts中使用双重断言\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;看到标题可能很多同学会有疑问为什么要断言为-any-类型之前不是说要尽量让类型明确吗\&quot;],\&quot;text\&quot;:[0,\&quot;看到标题可能很多同学会有疑问，为什么要断言为 any 类型？之前不是说要尽量让类型明确吗。\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;枚举\&quot;],\&quot;text\&quot;:[0,\&quot;枚举\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;xxx和xxx区别\&quot;],\&quot;text\&quot;:[0,\&quot;xxx[]和xxx&lt;&gt;区别\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;vue中拓展工具库函数\&quot;],\&quot;text\&quot;:[0,\&quot;vue中拓展工具库函数\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;在-typescript-中我们使用接口interfaces来定义对象的类型-1\&quot;],\&quot;text\&quot;:[0,\&quot;在 TypeScript 中，我们使用接口（Interfaces）来定义对象的类型。\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-J75B3YUS&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(max-width: 50em)&quot;}" await-children=""><h2 id="on-this-page-heading" class="heading">目录</h2><ul><li class="header-link depth-3"><a href="#0一些ts基础知识汇总">0一些ts基础知识汇总</a></li><li class="header-link depth-3"><a href="#1基本ts的类型定义汇总分类">1.基本ts的类型定义汇总分类：</a></li><li class="header-link depth-3"><a href="#常见一些ts用法术语和案例">常见一些ts用法术语和案例。</a></li><li class="header-link depth-3"><a href="#xxx和xxx区别">xxx[]和xxx&lt;>区别</a></li><li class="header-link depth-3"><a href="#vue中拓展工具库函数">vue中拓展工具库函数</a></li><li class="header-link depth-3"><a href="#在-typescript-中我们使用接口interfaces来定义对象的类型-1">在 TypeScript 中，我们使用接口（Interfaces）来定义对象的类型。</a></li></ul></astro-island>
+    </nav>
+    <p><img src="/images/home.png" alt="成长"></p>
+<ul>
+<li>第一步基本使用知识</li>
+<li>第二步vue中使用场景</li>
+</ul>
+<h4 id="vue源码中的ts类型使用">vue源码中的ts类型使用</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">import {ref, Ref} from 'vue'</span></span>
+<span class="line"><span style="color: #c9d1d9">const props = defineProps&#x3C;{ title: string value?: number}>()</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">interface Todo{</span></span>
+<span class="line"><span style="color: #c9d1d9">  title:string,</span></span>
+<span class="line"><span style="color: #c9d1d9">  done:boolean</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">let todos:Ref&#x3C;Todo[]> = ref([{title:'学习Vue',done:false}])</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="0一些ts基础知识汇总">0一些ts基础知识汇总</h3>
+<h4 id="在-typescript-中我们使用接口interfaces来定义对象的类型">在 TypeScript 中，我们使用接口（Interfaces）来定义对象的类型。</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">interface Person {</span></span>
+<span class="line"><span style="color: #c9d1d9">    name: string;</span></span>
+<span class="line"><span style="color: #c9d1d9">    age: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">let tom: Person = {</span></span>
+<span class="line"><span style="color: #c9d1d9">    name: 'Tom',</span></span>
+<span class="line"><span style="color: #c9d1d9">    age: 25</span></span>
+<span class="line"><span style="color: #c9d1d9">};</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">------------高级用法</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="js中类的概念总结">js中类的概念总结</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">- 类（Class）：定义了一件事物的抽象特点，包含它的属性和方法</span></span>
+<span class="line"><span style="color: #c9d1d9">- 对象（Object）：类的实例，通过 new 生成</span></span>
+<span class="line"><span style="color: #c9d1d9">- 面向对象（OOP）的三大特性：封装、继承、多态</span></span>
+<span class="line"><span style="color: #c9d1d9">封装（Encapsulation）：将对数据的操作细节隐藏起来，只暴露对外的接口。外界调用端不需要（也不可能）知道细节，就能通过对外提供的接口来访问该对象，同时也保证了外界无法任意更改对象内部的数据</span></span>
+<span class="line"><span style="color: #c9d1d9">继承（Inheritance）：子类继承父类，子类除了拥有父类的所有特性外，还有一些更具体的特性</span></span>
+<span class="line"><span style="color: #c9d1d9">多态（Polymorphism）：由继承而产生了相关的不同的类，对同一个方法可以有不同的响应。比如 Cat 和 Dog 都继承自 Animal，但是分别实现了自己的 eat 方法。此时针对某一个实例，我们无需了解它是 Cat 还是 Dog，就可以直接调用 eat 方法，程序会自动判断出来应该如何执行 eat</span></span>
+<span class="line"><span style="color: #c9d1d9">存取器（getter &#x26; setter）：用以改变属性的读取和赋值行为</span></span>
+<span class="line"><span style="color: #c9d1d9">修饰符（Modifiers）：修饰符是一些关键字，用于限定成员或类型的性质。比如 public 表示公有属性或方法</span></span>
+<span class="line"><span style="color: #c9d1d9">抽象类（Abstract Class）：抽象类是供其他类继承的基类，抽象类不允许被实例化。抽象类中的抽象方法必须在子类中被实现</span></span>
+<span class="line"><span style="color: #c9d1d9">- 接口（Interfaces）：不同类之间公有的属性或方法，可以抽象成一个接口。接口可以被类实现（implements）。一个类只能继承自另一个类，但是可以实现多个接口</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="类与接口">类与接口</h4>
+<p>接口对于对象形状进行描述。
+通过类来实现（implement）接口</p>
+<h4 id="接口继承类">接口继承类</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">class Point {</span></span>
+<span class="line"><span style="color: #c9d1d9">    x: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">    y: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">    constructor(x: number, y: number) {</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.x = x;</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.y = y;</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">interface Point3d extends Point {</span></span>
+<span class="line"><span style="color: #c9d1d9">    z: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">let point3d: Point3d = {x: 1, y: 2, z: 3};</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="声明-class-point-时除了会创建一个名为-point-的类之外同时也创建了一个名为-point-的类型实例的类型">声明 class Point 时，除了会创建一个名为 Point 的类之外，同时也创建了一个名为 Point 的类型（实例的类型）。</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">（这也是为什么接口继承类）</span></span>
+<span class="line"><span style="color: #c9d1d9">class Point {</span></span>
+<span class="line"><span style="color: #c9d1d9">    x: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">    y: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">    constructor(x: number, y: number) {</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.x = x;</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.y = y;</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">function printPoint(p: Point) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    console.log(p.x, p.y);</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">这里Point可以是一个类型使用。</span></span>
+<span class="line"><span style="color: #c9d1d9">补充这里interface声明接口非常简单：就是函数和属性。</span></span>
+<span class="line"><span style="color: #c9d1d9">因为class声明的Point类创建的Point类型不包含构造函数，静态属性和方法。</span></span>
+<span class="line"><span style="color: #c9d1d9">所以其实class使用类的继承或是对象的时候，只会是使用当前的属性和方法。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">因此，很多泛型的使用。</span></span>
+<span class="line"><span style="color: #c9d1d9">Array&#x3C;Point>;//内部元素是Point接口</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">总结：interface和class都可以声明接口，定义类型。</span></span>
+<span class="line"><span style="color: #c9d1d9">class本质实现是构造函数类型。</span></span>
+<span class="line"><span style="color: #c9d1d9">这里注意：class中如果是对于接口类型的声明，只做接口，其实只需要一些属性和方法，其他的作为类实质使用，不是作为</span></span>
+<span class="line"><span style="color: #c9d1d9">类型接口使用。</span></span>
+<span class="line"><span style="color: #c9d1d9">因为interface接口声明比较纯粹，就是属性和方法。或是对于class的实现（实例化当前的属性和方法）</span></span>
+<span class="line"><span style="color: #c9d1d9">interface Point3d extends Point {</span></span>
+<span class="line"><span style="color: #c9d1d9">    z: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">//当前的接口类型继承Point类。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="经典案例对于interface声明接口和class声明接口的最好案例">经典案例对于interface声明接口和class声明接口的最好案例</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">class Point {</span></span>
+<span class="line"><span style="color: #c9d1d9">    /** 静态属性，坐标系原点 */</span></span>
+<span class="line"><span style="color: #c9d1d9">    static origin = new Point(0, 0);</span></span>
+<span class="line"><span style="color: #c9d1d9">    /** 静态方法，计算与原点距离 */</span></span>
+<span class="line"><span style="color: #c9d1d9">    static distanceToOrigin(p: Point) {</span></span>
+<span class="line"><span style="color: #c9d1d9">        return Math.sqrt(p.x * p.x + p.y * p.y);</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">    /** 实例属性，x 轴的值 */</span></span>
+<span class="line"><span style="color: #c9d1d9">    x: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">    /** 实例属性，y 轴的值 */</span></span>
+<span class="line"><span style="color: #c9d1d9">    y: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">    /** 构造函数 */</span></span>
+<span class="line"><span style="color: #c9d1d9">    constructor(x: number, y: number) {</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.x = x;</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.y = y;</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">    /** 实例方法，打印此点 */</span></span>
+<span class="line"><span style="color: #c9d1d9">    printPoint() {</span></span>
+<span class="line"><span style="color: #c9d1d9">        console.log(this.x, this.y);</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">interface PointInstanceType {</span></span>
+<span class="line"><span style="color: #c9d1d9">    x: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">    y: number;</span></span>
+<span class="line"><span style="color: #c9d1d9">    printPoint(): void;</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">let p1: Point;</span></span>
+<span class="line"><span style="color: #c9d1d9">let p2: PointInstanceType;</span></span>
+<span class="line"><span style="color: #c9d1d9">----------------注意：这里的Point和PointInstanceType是一样的-------------</span></span>
+<span class="line"><span style="color: #c9d1d9">不过一个小区别注意一下，在接口定义的时候，</span></span>
+<span class="line"><span style="color: #c9d1d9">注意：interface是定义的只是函数的类型，不能有实现。</span></span>
+<span class="line"><span style="color: #c9d1d9">接口是对于类型的抽象定义，类是对于函数或是属性的实现（ts中特殊，类可以作为接口类型）</span></span></code></pre>
+<h4 id="经典全局变量的方法拓展拓展array和number">经典全局变量的方法拓展，拓展Array和Number</h4>
+<h6 id="拓展array">拓展Array</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">文件名称：type.ts; //扩展函</span></span>
+<span class="line"><span style="color: #c9d1d9">declare interface Array&#x3C;T> {</span></span>
+<span class="line"><span style="color: #c9d1d9">    /**</span></span>
+<span class="line"><span style="color: #c9d1d9">     * 获取数组第一个元素</span></span>
+<span class="line"><span style="color: #c9d1d9">     */</span></span>
+<span class="line"><span style="color: #c9d1d9">    first(this: T[]): T;</span></span>
+<span class="line"><span style="color: #c9d1d9">    /**</span></span>
+<span class="line"><span style="color: #c9d1d9">    * 获取数组最后一个元素</span></span>
+<span class="line"><span style="color: #c9d1d9">    */</span></span>
+<span class="line"><span style="color: #c9d1d9">    last(this: T[]): T;</span></span>
+<span class="line"><span style="color: #c9d1d9">    /**</span></span>
+<span class="line"><span style="color: #c9d1d9">    * 通过索引移除元素</span></span>
+<span class="line"><span style="color: #c9d1d9">    * @parpam index：索引</span></span>
+<span class="line"><span style="color: #c9d1d9">    */</span></span>
+<span class="line"><span style="color: #c9d1d9">    removeAt(this: T[], index: number): void;</span></span>
+<span class="line"><span style="color: #c9d1d9">    /**</span></span>
+<span class="line"><span style="color: #c9d1d9">     * 移除指定元素</span></span>
+<span class="line"><span style="color: #c9d1d9">     * @parpam item：需要移除得元素</span></span>
+<span class="line"><span style="color: #c9d1d9">     */</span></span>
+<span class="line"><span style="color: #c9d1d9">    remove(this: T[], item: T): void;</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">下面写一些内容</span></span>
+<span class="line"><span style="color: #c9d1d9">Array.prototype.first = function &#x3C;T>(this: T[]): T {</span></span>
+<span class="line"><span style="color: #c9d1d9">    return this[0];</span></span>
+<span class="line"><span style="color: #c9d1d9">};</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">Array.prototype.last = function &#x3C;T>(this: T[]): T {</span></span>
+<span class="line"><span style="color: #c9d1d9">    return this[this.length - 1];</span></span>
+<span class="line"><span style="color: #c9d1d9">};</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">Array.prototype.removeAt = function &#x3C;T>(this: T[], index: number) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    if (index > -1)</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.splice(index, 1);</span></span>
+<span class="line"><span style="color: #c9d1d9">};</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">然后main.js引入</span></span>
+<span class="line"><span style="color: #c9d1d9">import "./type.ts"; //扩展函数</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="泛型定义函数接口或是类的时候不预先指定具体类型">泛型：定义函数，接口或是类的时候，不预先指定具体类型，</h4>
+<p>而是在使用的时候，再指定类型</p>
+<h6 id="定义一个泛型数组">定义一个泛型数组</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">定义一个泛型数组let arr2 :Array&#x3C;number> = [111,345,5]</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="定义一个泛型函数接口">定义一个泛型函数接口</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">interface createSearch2&#x3C;T>{</span></span>
+<span class="line"><span style="color: #c9d1d9">    (length:number,value:T):Array&#x3C;T></span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">--------使用</span></span>
+<span class="line"><span style="color: #c9d1d9">let createArray: createSearch2&#x3C;any>;</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="泛型默认参数">泛型默认参数</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">function  createArray(length,number){}的ts优化使用</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">function createArray&#x3C;T = string>(length: number, value: T): Array&#x3C;T> {</span></span>
+<span class="line"><span style="color: #c9d1d9">    let result: T[] = [];</span></span>
+<span class="line"><span style="color: #c9d1d9">    for (let i = 0; i &#x3C; length; i++) {</span></span>
+<span class="line"><span style="color: #c9d1d9">        result[i] = value;</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">    return result;</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="元祖的使用">元祖的使用</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">简单案例：// TODO:元组</span></span>
+<span class="line"><span style="color: #c9d1d9">let  ttom: [string,number] = ['to1m',1212];</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">注意定义数组：</span></span>
+<span class="line"><span style="color: #c9d1d9">- 第一种：定义一个数组let arr2 :Array&#x3C;number> = [111,345,5];---泛型默认参数传入number</span></span>
+<span class="line"><span style="color: #c9d1d9">- 第二种：let fab:number[] = [11,2,4,5]；---类型挂在[]前面</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="1基本ts的类型定义汇总分类">1.基本ts的类型定义汇总分类：</h3>
+<p>ref和reactive初始化变量的汇总</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="定义泛型进行接口类型定义">定义泛型进行接口类型定义</h4>
+<h4 id="对于数组泛型">对于数组泛型</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">案例1： /** 视图集合 */</span></span>
+<span class="line"><span style="color: #c9d1d9"> const views = ref([] as ViewEntity[])</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">        /** 菜单完整数据 */</span></span>
+<span class="line"><span style="color: #c9d1d9">        const menu = ref({} as MenuEntity)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="常见一些ts用法术语和案例">常见一些ts用法术语和案例。</h3>
+<h4 id="类型定义别名">类型定义别名</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">type NameOf = eventname | nameover;</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="类型断言用法使用as">类型断言用法，使用as</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">const queryObj = {} as any;</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">粗糙的定义。</span></span>
+<span class="line"><span style="color: #c9d1d9">vue中</span></span>
+<span class="line"><span style="color: #c9d1d9">const menu = ref({} as MenuEntity)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">这里看MenuEntity是一个对象实体。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">/**</span></span>
+<span class="line"><span style="color: #c9d1d9"> * 菜单接口</span></span>
+<span class="line"><span style="color: #c9d1d9"> */</span></span>
+<span class="line"><span style="color: #c9d1d9">export interface IMenu {</span></span>
+<span class="line"><span style="color: #c9d1d9">    /**菜单的唯一标识 */</span></span>
+<span class="line"><span style="color: #c9d1d9">    id: string</span></span>
+<span class="line"><span style="color: #c9d1d9">    /**菜单的父级节点标识 */</span></span>
+<span class="line"><span style="color: #c9d1d9">    parentId: string | undefined</span></span>
+<span class="line"><span style="color: #c9d1d9">    /**菜单的名称 */</span></span>
+<span class="line"><span style="color: #c9d1d9">    name: string</span></span>
+<span class="line"><span style="color: #c9d1d9">    /**</span></span>
+<span class="line"><span style="color: #c9d1d9">     * 菜单的类型</span></span>
+<span class="line"><span style="color: #c9d1d9">     * @catalog 目录, </span></span>
+<span class="line"><span style="color: #c9d1d9">     * @list 表格,</span></span>
+<span class="line"><span style="color: #c9d1d9">     * @doc 文档</span></span>
+<span class="line"><span style="color: #c9d1d9">    */</span></span>
+<span class="line"><span style="color: #c9d1d9">    type: string</span></span>
+<span class="line"><span style="color: #c9d1d9">    /** 扩展字段 */</span></span>
+<span class="line"><span style="color: #c9d1d9">    extend: any,</span></span>
+<span class="line"><span style="color: #c9d1d9">    children: MenuEntity[]</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">/**</span></span>
+<span class="line"><span style="color: #c9d1d9"> * 菜单项实体：对于类的对象实现。</span></span>
+<span class="line"><span style="color: #c9d1d9"> */</span></span>
+<span class="line"><span style="color: #c9d1d9">export class MenuEntity implements IMenu {</span></span>
+<span class="line"><span style="color: #c9d1d9">    constructor(id: string) {</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.id = id;</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.name = "";</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.type = "";</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.children = []</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">    children: MenuEntity[];</span></span>
+<span class="line"><span style="color: #c9d1d9">    id: string;</span></span>
+<span class="line"><span style="color: #c9d1d9">    parentId: string | undefined;</span></span>
+<span class="line"><span style="color: #c9d1d9">    name: string;</span></span>
+<span class="line"><span style="color: #c9d1d9">    type: string;</span></span>
+<span class="line"><span style="color: #c9d1d9">    extend: any</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="ts中使用双重断言">ts中使用双重断言</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">      searchCondition: null as unknown as ScreenCofig,</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="看到标题可能很多同学会有疑问为什么要断言为-any-类型之前不是说要尽量让类型明确吗">看到标题可能很多同学会有疑问，为什么要断言为 any 类型？之前不是说要尽量让类型明确吗。</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">为了让代码清晰便于阅读，在使用TypeScript 开发的过程中我们一定要尽量避免声明 any 类型。但是在实际的开发过程中，难免遇到某些场景使得 TypeScript 无法编译通过，这里例举以下两个场景。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">方法被调用的时候，实际传入的参数有可能是一个更加具体的值？</span></span>
+<span class="line"><span style="color: #c9d1d9">例如</span></span>
+<span class="line"><span style="color: #c9d1d9">function handler (e: Event) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    let touchEvent = e as TouchEvent;</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">下面的代码会报错</span></span>
+<span class="line"><span style="color: #c9d1d9">function handler (e: Event) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    let $element = e as HTMLElement; // 类型“Event”不可转换为类型“HTMLElement”。类型“Event”中缺少属性“accessKey”。</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">function handler (e: Event) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    let $element = e as any as HTMLElement; // 双重断言</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="枚举">枚举</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">例子：enum  Direction {up,left,right}</span></span>
+<span class="line"><span style="color: #c9d1d9">输出内容</span></span>
+<span class="line"><span style="color: #c9d1d9">{</span></span>
+<span class="line"><span style="color: #c9d1d9">  "0": "up",</span></span>
+<span class="line"><span style="color: #c9d1d9">  "1": "left",</span></span>
+<span class="line"><span style="color: #c9d1d9">  "2": "right",</span></span>
+<span class="line"><span style="color: #c9d1d9">  "up": 0,</span></span>
+<span class="line"><span style="color: #c9d1d9">  "left": 1,</span></span>
+<span class="line"><span style="color: #c9d1d9">  "right": 2</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">例如------------</span></span>
+<span class="line"><span style="color: #c9d1d9">/**</span></span>
+<span class="line"><span style="color: #c9d1d9"> * Column Type</span></span>
+<span class="line"><span style="color: #c9d1d9"> * 列筛选类型</span></span>
+<span class="line"><span style="color: #c9d1d9"> */</span></span>
+<span class="line"><span style="color: #c9d1d9">export enum SortType {</span></span>
+<span class="line"><span style="color: #c9d1d9">    default = 0,</span></span>
+<span class="line"><span style="color: #c9d1d9">    string = 1,</span></span>
+<span class="line"><span style="color: #c9d1d9">    boolean = 2,</span></span>
+<span class="line"><span style="color: #c9d1d9">    date = 3,</span></span>
+<span class="line"><span style="color: #c9d1d9">    number = 4</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">使用导入import后</span></span>
+<span class="line"><span style="color: #c9d1d9">/**</span></span>
+<span class="line"><span style="color: #c9d1d9">    * 获取分组下拉选项</span></span>
+<span class="line"><span style="color: #c9d1d9">    */</span></span>
+<span class="line"><span style="color: #c9d1d9">getOptions: function (): Array&#x3C;OptionsEntity> {</span></span>
+<span class="line"><span style="color: #c9d1d9">    let allColumns = gridOptions.columnApi?.getAllColumns();</span></span>
+<span class="line"><span style="color: #c9d1d9">    let columns = allColumns?.filter(x => x.isVisible() &#x26;&#x26; x.getColId() !== "add");</span></span>
+<span class="line"><span style="color: #c9d1d9">    return columns?.map(item => {</span></span>
+<span class="line"><span style="color: #c9d1d9">        let info = item.getColDef();</span></span>
+<span class="line"><span style="color: #c9d1d9">        return {</span></span>
+<span class="line"><span style="color: #c9d1d9">            value: info.field,</span></span>
+<span class="line"><span style="color: #c9d1d9">            caption: info.headerName,</span></span>
+<span class="line"><span style="color: #c9d1d9">            columnType: SortType.string</span></span>
+<span class="line"><span style="color: #c9d1d9">        }</span></span>
+<span class="line"><span style="color: #c9d1d9">    }) as Array&#x3C;OptionsEntity>;</span></span>
+<span class="line"><span style="color: #c9d1d9">},</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">------------解释上面的内容，其实</span></span>
+<span class="line"><span style="color: #c9d1d9">/**</span></span>
+<span class="line"><span style="color: #c9d1d9"> * 下拉框项实体</span></span>
+<span class="line"><span style="color: #c9d1d9"> */</span></span>
+<span class="line"><span style="color: #c9d1d9">export class OptionsEntity {</span></span>
+<span class="line"><span style="color: #c9d1d9">    constructor() {</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.value = ''</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.caption = ''</span></span>
+<span class="line"><span style="color: #c9d1d9">        this.columnType = SortType.default</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">    value: string</span></span>
+<span class="line"><span style="color: #c9d1d9">    caption: string</span></span>
+<span class="line"><span style="color: #c9d1d9">    columnType: SortType</span></span>
+<span class="line"><span style="color: #c9d1d9">    source: any</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="xxx和xxx区别">xxx[]和xxx&#x3C;>区别</h3>
+<h3 id="vue中拓展工具库函数">vue中拓展工具库函数</h3>
+<h3 id="在-typescript-中我们使用接口interfaces来定义对象的类型-1">在 TypeScript 中，我们使用接口（Interfaces）来定义对象的类型。</h3>
+  </section>
+  <nav class="block sm:hidden astro-J75B3YUS">
+    <h2 class="heading astro-BYIKQF6W">More</h2>
+<ul class="astro-BYIKQF6W">
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a class="edit-on-github astro-BYIKQF6W" href="https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master/src/content/docs/en/16%E5%89%8D%E7%AB%AF%E6%8B%93%E5%B1%95%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/003vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%B8%B8%E7%94%A8ts%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB01.md" target="_blank">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Edit this page</span>
+				</a>
+			</li>
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a href="https://astro.build/chat" target="_blank" class="astro-BYIKQF6W">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Join our community</span>
+				</a>
+			</li>
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-BYIKQF6W">
+	<script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(!!t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));</script><astro-island uid="Ofjlz" component-url="/_astro/ThemeToggleButton.7f5d5bf2.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;class&quot;:[0,&quot;astro-BYIKQF6W&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+</div>
+  </nav>
+</article>
+<script>
+  console.log(window.location.href);
+  let currentRoute = decodeURIComponent(window.location.href).split("/")[
+    decodeURIComponent(window.location.href).split("/").length - 2
+  ];
+  const menuData = {
+    "0个人前端项目实战记录和链接": 0,
+    "0经典脚手架持续迭代": 1,
+    "01react课程学习和问题笔记": 2,
+    "02极客时间vue课程学习和问题笔记": 3,
+    "03掘金算法课程学习和问题笔记": 4,
+    "04小程序专题": 5,
+    "05leetcode刷题记录每周": 6,
+    "06node全栈记录": 7,
+    "07react学习常见问题和笔记记录": 8,
+    "08vue常见问题和学习记录": 9,
+    "09book前端进阶知识学习图书笔记": 10,
+    "10book前端开发设计模式和开发实战笔记": 11,
+    "11elementplus经典源码和实战学习和问题笔记": 12,
+    "12前端开发经典库学习记录": 13,
+    "13koa和express框架学习记录": 14,
+    "14前端图形化学习": 15,
+    "15工具和项目配置工程化问题记录": 16,
+    "16前端拓展知识学习": 17,
+    "17低代码学习和总结": 18,
+    "18经验亮点汇总汇总": 19,
+    "19项目复盘汇总": 20,
+    其他常见问题: 21,
+  };
+
+  window.addEventListener("DOMContentLoaded", () => {
+    var target = document.querySelector('[aria-current="page"]');
+    if (target && target.offsetTop > window.innerHeight - 100) {
+      document.querySelector(".nav-groups").scrollTop = target.offsetTop;
+    }
+  });
+  debugger;
+  // TODO:根据当前的选中的路由的名称，反转成路由菜单
+  console.log("%s 当前的值💡 ");
+  console.log(
+    "%c💡 当前的最新打印，用完删除",
+    "background-color:blue;color:#fff"
+  );
+  let testDiv = document.getElementsByClassName("nav-group astro-KQNE5HRN")[0];
+  testDiv.getElementsByTagName("ul")[0].children[menuData[currentRoute]].style =
+    "color: rgb(56,149,255);font-weight:700;background:rgb(225,239,255)";
+</script>
+      </div>
+      <aside id="grid-right" class="grid-sidebar astro-OUAMJN2I" title="Table of Contents">
+        <nav class="sidebar-nav astro-ROIVMLUZ" aria-labelledby="grid-right">
+	<div class="sidebar-nav-inner astro-ROIVMLUZ">
+		<astro-island uid="z5bU8" component-url="/_astro/TableOfContents.3058fe45.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vue源码中的ts类型使用\&quot;],\&quot;text\&quot;:[0,\&quot;vue源码中的ts类型使用\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;0一些ts基础知识汇总\&quot;],\&quot;text\&quot;:[0,\&quot;0一些ts基础知识汇总\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;在-typescript-中我们使用接口interfaces来定义对象的类型\&quot;],\&quot;text\&quot;:[0,\&quot;在 TypeScript 中，我们使用接口（Interfaces）来定义对象的类型。\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;js中类的概念总结\&quot;],\&quot;text\&quot;:[0,\&quot;js中类的概念总结\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;类与接口\&quot;],\&quot;text\&quot;:[0,\&quot;类与接口\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;接口继承类\&quot;],\&quot;text\&quot;:[0,\&quot;接口继承类\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;声明-class-point-时除了会创建一个名为-point-的类之外同时也创建了一个名为-point-的类型实例的类型\&quot;],\&quot;text\&quot;:[0,\&quot;声明 class Point 时，除了会创建一个名为 Point 的类之外，同时也创建了一个名为 Point 的类型（实例的类型）。\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;经典案例对于interface声明接口和class声明接口的最好案例\&quot;],\&quot;text\&quot;:[0,\&quot;经典案例对于interface声明接口和class声明接口的最好案例\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;经典全局变量的方法拓展拓展array和number\&quot;],\&quot;text\&quot;:[0,\&quot;经典全局变量的方法拓展，拓展Array和Number\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;拓展array\&quot;],\&quot;text\&quot;:[0,\&quot;拓展Array\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;泛型定义函数接口或是类的时候不预先指定具体类型\&quot;],\&quot;text\&quot;:[0,\&quot;泛型：定义函数，接口或是类的时候，不预先指定具体类型，\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;定义一个泛型数组\&quot;],\&quot;text\&quot;:[0,\&quot;定义一个泛型数组\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;定义一个泛型函数接口\&quot;],\&quot;text\&quot;:[0,\&quot;定义一个泛型函数接口\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;泛型默认参数\&quot;],\&quot;text\&quot;:[0,\&quot;泛型默认参数\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;元祖的使用\&quot;],\&quot;text\&quot;:[0,\&quot;元祖的使用\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;1基本ts的类型定义汇总分类\&quot;],\&quot;text\&quot;:[0,\&quot;1.基本ts的类型定义汇总分类：\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;定义泛型进行接口类型定义\&quot;],\&quot;text\&quot;:[0,\&quot;定义泛型进行接口类型定义\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;对于数组泛型\&quot;],\&quot;text\&quot;:[0,\&quot;对于数组泛型\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;常见一些ts用法术语和案例\&quot;],\&quot;text\&quot;:[0,\&quot;常见一些ts用法术语和案例。\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;类型定义别名\&quot;],\&quot;text\&quot;:[0,\&quot;类型定义别名\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;类型断言用法使用as\&quot;],\&quot;text\&quot;:[0,\&quot;类型断言用法，使用as\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;ts中使用双重断言\&quot;],\&quot;text\&quot;:[0,\&quot;ts中使用双重断言\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;看到标题可能很多同学会有疑问为什么要断言为-any-类型之前不是说要尽量让类型明确吗\&quot;],\&quot;text\&quot;:[0,\&quot;看到标题可能很多同学会有疑问，为什么要断言为 any 类型？之前不是说要尽量让类型明确吗。\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;枚举\&quot;],\&quot;text\&quot;:[0,\&quot;枚举\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;xxx和xxx区别\&quot;],\&quot;text\&quot;:[0,\&quot;xxx[]和xxx&lt;&gt;区别\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;vue中拓展工具库函数\&quot;],\&quot;text\&quot;:[0,\&quot;vue中拓展工具库函数\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;在-typescript-中我们使用接口interfaces来定义对象的类型-1\&quot;],\&quot;text\&quot;:[0,\&quot;在 TypeScript 中，我们使用接口（Interfaces）来定义对象的类型。\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-ROIVMLUZ&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(min-width: 50em)&quot;}" await-children=""><h2 id="on-this-page-heading" class="heading">目录</h2><ul><li class="header-link depth-3"><a href="#0一些ts基础知识汇总">0一些ts基础知识汇总</a></li><li class="header-link depth-3"><a href="#1基本ts的类型定义汇总分类">1.基本ts的类型定义汇总分类：</a></li><li class="header-link depth-3"><a href="#常见一些ts用法术语和案例">常见一些ts用法术语和案例。</a></li><li class="header-link depth-3"><a href="#xxx和xxx区别">xxx[]和xxx&lt;>区别</a></li><li class="header-link depth-3"><a href="#vue中拓展工具库函数">vue中拓展工具库函数</a></li><li class="header-link depth-3"><a href="#在-typescript-中我们使用接口interfaces来定义对象的类型-1">在 TypeScript 中，我们使用接口（Interfaces）来定义对象的类型。</a></li></ul></astro-island>
+		<h2 class="heading astro-BYIKQF6W">More</h2>
+<ul class="astro-BYIKQF6W">
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a class="edit-on-github astro-BYIKQF6W" href="https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master/src/content/docs/en/16%E5%89%8D%E7%AB%AF%E6%8B%93%E5%B1%95%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/003vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%B8%B8%E7%94%A8ts%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB01.md" target="_blank">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Edit this page</span>
+				</a>
+			</li>
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a href="https://astro.build/chat" target="_blank" class="astro-BYIKQF6W">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Join our community</span>
+				</a>
+			</li>
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-BYIKQF6W">
+	<astro-island uid="Ofjlz" component-url="/_astro/ThemeToggleButton.7f5d5bf2.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;class&quot;:[0,&quot;astro-BYIKQF6W&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+</div>
+	</div>
+</nav>
+      </aside>
+    </main>
+    <!-- <footer> --><!-- <AvatarList path={path} /> --><!-- </footer> -->
+  </body></html>

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial astro-OUAMJN2I">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Astro v2.1.2">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<link rel="sitemap" href="/sitemap.xml">
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script src="/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('theme-dark');
+	} else {
+		root.classList.remove('theme-dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+    <!-- Page Metadata --><link rel="canonical" href="https://henry-git-master-nyhxiaoning/en/08vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/000vue2%E5%8D%87%E7%BA%A7vue3%E7%9A%84api%E5%8F%98%E5%8C%96/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="全栈记录之旅 🚀 全栈记录之旅">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://henry-git-master-nyhxiaoning/en/08vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/000vue2%E5%8D%87%E7%BA%A7vue3%E7%9A%84api%E5%8F%98%E5%8C%96/">
+<meta property="og:locale" content="en-us">
+<meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta property="og:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+<meta name="description" property="og:description" content="成长依旧，步履不停">
+<meta property="og:site_name" content="全栈记录之旅">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="astrodotbuild">
+<meta name="twitter:title" content="全栈记录之旅 🚀 全栈记录之旅">
+<meta name="twitter:description" content="成长依旧，步履不停">
+<meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta name="twitter:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+    <title>
+      全栈记录之旅 🚀 全栈记录之旅
+    </title>
+    
+    
+  <link rel="stylesheet" href="/_astro/_...slug_.699682f2.css" /></head>
+
+  <body class="astro-OUAMJN2I">
+    <header class="astro-2W66RQV5">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink astro-DMGOOZ7Y"><span class="astro-DMGOOZ7Y">Skip to Content</span></a>
+	<nav class="nav-wrapper astro-2W66RQV5" title="Top Navigation">
+		<div class="menu-toggle astro-2W66RQV5">
+			<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Rxydg" component-url="/_astro/SidebarToggle.65a801f9.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;class&quot;:[0,&quot;astro-2W66RQV5&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;SidebarToggle&quot;,&quot;value&quot;:true}" await-children=""><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-island>
+		</div>
+		<div class="logo flex astro-2W66RQV5">
+			<a href="/" class="astro-2W66RQV5">
+				<svg class="logo" width="40" height="40" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		#flame {
+			fill: var(--theme-text-accent);
+		}
+
+		#a {
+			fill: var(--theme-text-accent);
+		}
+	</style>
+	<title>Logo:文档中心</title>
+	<path id="a" fill-rule="evenodd" clip-rule="evenodd" d="M163.008 18.929c1.944 2.413 2.935 5.67 4.917 12.181l43.309 142.27a180.277 180.277 0 00-51.778-17.53l-28.198-95.29a3.67 3.67 0 00-7.042.01l-27.857 95.232a180.225 180.225 0 00-52.01 17.557l43.52-142.281c1.99-6.502 2.983-9.752 4.927-12.16a15.999 15.999 0 016.484-4.798c2.872-1.154 6.271-1.154 13.07-1.154h31.085c6.807 0 10.211 0 13.086 1.157a16.004 16.004 0 016.487 4.806z">
+	</path>
+	<path id="flame" fill-rule="evenodd" clip-rule="evenodd" d="M168.19 180.151c-7.139 6.105-21.39 10.268-37.804 10.268-20.147 0-37.033-6.272-41.513-14.707-1.602 4.835-1.961 10.367-1.961 13.902 0 0-1.056 17.355 11.015 29.426 0-6.268 5.081-11.349 11.349-11.349 10.743 0 10.731 9.373 10.721 16.977v.679c0 11.542 7.054 21.436 17.086 25.606a23.27 23.27 0 01-2.339-10.2c0-11.008 6.463-15.107 13.974-19.87 5.976-3.79 12.616-8.001 17.192-16.449a31.024 31.024 0 003.743-14.82c0-3.299-.513-6.479-1.463-9.463z">
+	</path>
+</svg>
+				<h1 class="astro-2W66RQV5">全栈记录之旅</h1>
+			</a>
+		</div>
+		<div style="flex-grow: 1;" class="astro-2W66RQV5"></div>
+		
+		<div class="search-item astro-2W66RQV5">
+			<astro-island uid="pp6Cr" component-url="/_astro/Search.aa1cadd5.js" component-export="default" renderer-url="/_astro/client.fd400d45.js" props="{}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children=""><button type="button" class="search-input"><svg width="24" height="24" fill="none"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Search</span><span class="search-hint"><span class="sr-only">Press </span><kbd>/</kbd><span class="sr-only"> to search</span></span></button></astro-island>
+		</div>
+	</nav>
+</header>
+    <main class="layout astro-OUAMJN2I">
+      <aside id="grid-left" class="grid-sidebar astro-OUAMJN2I" title="Site Navigation">
+        <nav aria-labelledby="grid-left" class="astro-KQNE5HRN">
+  <ul class="nav-groups astro-KQNE5HRN">
+    <li class="astro-KQNE5HRN">
+          <div class="nav-group astro-KQNE5HRN">
+            <h2 class="astro-KQNE5HRN">记录是学习的开始</h2>
+            <ul class="astro-KQNE5HRN">
+              <li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/introduction" class="astro-KQNE5HRN">
+                      全栈学习
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/zero" class="astro-KQNE5HRN">
+                      0个人前端项目实战记录和链接
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/first" class="astro-KQNE5HRN">
+                      01 React 课程学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/second" class="astro-KQNE5HRN">
+                      02 极客时间Vue课程学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/third" class="astro-KQNE5HRN">
+                      03 掘金算法课程学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fourth" class="astro-KQNE5HRN">
+                      04 掘金 Uniapp 课程和Taro或原生小程序学习笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fifth" class="astro-KQNE5HRN">
+                      05 leetcode 刷题记录每周
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/sixth" class="astro-KQNE5HRN">
+                      06 极客时间 Node 全栈记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/seventh" class="astro-KQNE5HRN">
+                      07 React 学习常见问题和笔记记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/eighth" class="astro-KQNE5HRN">
+                      08 vue 常见问题和学习记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/ninth" class="astro-KQNE5HRN">
+                      09 book 前端进阶知识学习图书笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/tenth" class="astro-KQNE5HRN">
+                      10 book 前端开发设计模式和开发实战笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/eleventh" class="astro-KQNE5HRN">
+                      11 elementplus 经典源码和实战学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/twelfth" class="astro-KQNE5HRN">
+                      12 前端开发经典库学习记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/thirteenth" class="astro-KQNE5HRN">
+                      13 Koa和express 框架学习记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fourteenth" class="astro-KQNE5HRN">
+                      14 前端图形化学习
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fifteenth" class="astro-KQNE5HRN">
+                      15工具和项目配置工程化问题记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/sixteenth" class="astro-KQNE5HRN">
+                      16 前端拓展知识学习
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/seventeenth" class="astro-KQNE5HRN">
+                      17 低代码学习和总结
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/eighteen" class="astro-KQNE5HRN">
+                      18 经验亮点汇总( 迁移中 )
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/ninghteen" class="astro-KQNE5HRN">
+                      19 项目复盘汇总( 迁移中 )
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/others" class="astro-KQNE5HRN">
+                      其他常见问题
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/notices" class="astro-KQNE5HRN">
+                      常用符号
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </li><li class="astro-KQNE5HRN">
+          <div class="nav-group astro-KQNE5HRN">
+            <h2 class="astro-KQNE5HRN">其他说明</h2>
+            <ul class="astro-KQNE5HRN">
+              <li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/page-4" class="astro-KQNE5HRN">
+                      自定义
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </li>
+  </ul>
+</nav>
+      </aside>
+      <div id="grid-main" class="astro-OUAMJN2I">
+        <article id="article" class="content astro-J75B3YUS">
+  <section class="main-section astro-J75B3YUS">
+    <h1 class="content-title astro-J75B3YUS" id="overview">全栈记录之旅</h1>
+    <nav class="block sm:hidden astro-J75B3YUS">
+      <script>(self.Astro=self.Astro||{}).media=(s,a)=>{const t=async()=>{await(await s())()};if(a.value){const e=matchMedia(a.value);e.matches?t():e.addEventListener("change",t,{once:!0})}},window.dispatchEvent(new Event("astro:media"));</script><astro-island uid="Z1qpT99" component-url="/_astro/TableOfContents.3058fe45.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;一composition-api\&quot;],\&quot;text\&quot;:[0,\&quot;一.Composition API\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;二-reactive-类工具-api\&quot;],\&quot;text\&quot;:[0,\&quot;二 reactive 类工具 API\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;三-ref-类工具-api\&quot;],\&quot;text\&quot;:[0,\&quot;三 ref 类工具 API\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;四-应用配置原全局配置和全局-api\&quot;],\&quot;text\&quot;:[0,\&quot;四. 应用配置（原全局配置和全局 API）\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;五-全局-api新增\&quot;],\&quot;text\&quot;:[0,\&quot;五. 全局 API（新增）\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;六-选项--数据\&quot;],\&quot;text\&quot;:[0,\&quot;六. 选项 / 数据\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;七-选项--dom不变\&quot;],\&quot;text\&quot;:[0,\&quot;七. 选项 / DOM(不变)\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;八-选项--生命周期钩子\&quot;],\&quot;text\&quot;:[0,\&quot;八. 选项 / 生命周期钩子\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;九-选项--资源\&quot;],\&quot;text\&quot;:[0,\&quot;九. 选项 / 资源\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十一-选项--其它\&quot;],\&quot;text\&quot;:[0,\&quot;十一. 选项 / 其它\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十二-实例-property\&quot;],\&quot;text\&quot;:[0,\&quot;十二. 实例 property\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十三-实例方法--数据\&quot;],\&quot;text\&quot;:[0,\&quot;十三. 实例方法 / 数据\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十四-实例方法--事件\&quot;],\&quot;text\&quot;:[0,\&quot;十四. 实例方法 / 事件\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十五-实例方法--生命周期\&quot;],\&quot;text\&quot;:[0,\&quot;十五. 实例方法 / 生命周期\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十六-指令\&quot;],\&quot;text\&quot;:[0,\&quot;十六. 指令\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十七-特殊-attribute\&quot;],\&quot;text\&quot;:[0,\&quot;十七. 特殊 attribute\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十八-内置的组件\&quot;],\&quot;text\&quot;:[0,\&quot;十八. 内置的组件\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十九-总结\&quot;],\&quot;text\&quot;:[0,\&quot;十九. 总结\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;不支持ie11的vue3\&quot;],\&quot;text\&quot;:[0,\&quot;不支持IE11的vue3\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vue2x支持ie11的代码\&quot;],\&quot;text\&quot;:[0,\&quot;vue2.x支持ie11的代码\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-J75B3YUS&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(max-width: 50em)&quot;}" await-children=""><h2 id="on-this-page-heading" class="heading">目录</h2><ul><li class="header-link depth-3"><a href="#一composition-api">一.Composition API</a></li><li class="header-link depth-3"><a href="#二-reactive-类工具-api">二 reactive 类工具 API</a></li><li class="header-link depth-3"><a href="#三-ref-类工具-api">三 ref 类工具 API</a></li><li class="header-link depth-3"><a href="#四-应用配置原全局配置和全局-api">四. 应用配置（原全局配置和全局 API）</a></li><li class="header-link depth-3"><a href="#五-全局-api新增">五. 全局 API（新增）</a></li><li class="header-link depth-3"><a href="#六-选项--数据">六. 选项 / 数据</a></li><li class="header-link depth-3"><a href="#七-选项--dom不变">七. 选项 / DOM(不变)</a></li><li class="header-link depth-3"><a href="#八-选项--生命周期钩子">八. 选项 / 生命周期钩子</a></li><li class="header-link depth-3"><a href="#九-选项--资源">九. 选项 / 资源</a></li><li class="header-link depth-3"><a href="#十一-选项--其它">十一. 选项 / 其它</a></li><li class="header-link depth-3"><a href="#十二-实例-property">十二. 实例 property</a></li><li class="header-link depth-3"><a href="#十三-实例方法--数据">十三. 实例方法 / 数据</a></li><li class="header-link depth-3"><a href="#十四-实例方法--事件">十四. 实例方法 / 事件</a></li><li class="header-link depth-3"><a href="#十五-实例方法--生命周期">十五. 实例方法 / 生命周期</a></li><li class="header-link depth-3"><a href="#十六-指令">十六. 指令</a></li><li class="header-link depth-3"><a href="#十七-特殊-attribute">十七. 特殊 attribute</a></li><li class="header-link depth-3"><a href="#十八-内置的组件">十八. 内置的组件</a></li><li class="header-link depth-3"><a href="#十九-总结">十九. 总结</a></li></ul></astro-island>
+    </nav>
+    <p>vue3 新内容</p>
+<h3 id="一composition-api">一.Composition API</h3>
+<p>将数据、方法、computed、生命周期函数, 集中写在一个地方。<br>
+1.1 setup()<br>
+<code>setup()</code>作为在组件内使用<code>Composition API</code>的入口点。执行时机是在<code>beforeCreate</code>和<code>created</code>之间, 不能使用 this 获取组件的其他变量，而且不能是异步。<code>setup</code>返回的对象和方法，都可以在模版中使用。<br>
+setup 有两个参数,<code>props</code>,<code>context</code>。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&#x3C;script lang="js"></span></span>
+<span class="line"><span style="color: #c9d1d9">import {toRefs} from 'vue'</span></span>
+<span class="line"><span style="color: #c9d1d9">export default {</span></span>
+<span class="line"><span style="color: #c9d1d9">    name: 'demo',</span></span>
+<span class="line"><span style="color: #c9d1d9">    props:{</span></span>
+<span class="line"><span style="color: #c9d1d9">      name: String,</span></span>
+<span class="line"><span style="color: #c9d1d9">    },</span></span>
+<span class="line"><span style="color: #c9d1d9">    setup(props, context){</span></span>
+<span class="line"><span style="color: #c9d1d9">      // 这里需要使用toRefs来进行解构</span></span>
+<span class="line"><span style="color: #c9d1d9">      // 这里的props与vue2基本一致,当然这里的name也可以直接在template中使用</span></span>
+<span class="line"><span style="color: #c9d1d9">      const { name }=toRefs(props);</span></span>
+<span class="line"><span style="color: #c9d1d9">      console.log(name.value);</span></span>
+<span class="line"><span style="color: #c9d1d9">      // 只能获取到这三个属性,也是不能使用ES6的解构</span></span>
+<span class="line"><span style="color: #c9d1d9">      // 属性，同vue2的$attrs</span></span>
+<span class="line"><span style="color: #c9d1d9">      console.log(context.attrs);</span></span>
+<span class="line"><span style="color: #c9d1d9">      // 插槽</span></span>
+<span class="line"><span style="color: #c9d1d9">      console.log(context.slots);</span></span>
+<span class="line"><span style="color: #c9d1d9">      // 事件，同vue2的$emit</span></span>
+<span class="line"><span style="color: #c9d1d9">      console.log(context.emit);</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;/script></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>1.2 reactive<br>
+<code>vue3</code>将响应式的功能和 vue 代码解耦，单独作为一个 js 库来调用。（在其他任何 js 运行的框架当中，都可以引入和使用<code>vue3</code>的这个响应式功能）。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&#x3C;template></span></span>
+<span class="line"><span style="color: #c9d1d9">  &#x3C;div>{{ state.text }}&#x3C;/div></span></span>
+<span class="line"><span style="color: #c9d1d9">  &#x3C;button @click="test">测试一下？&#x3C;/button></span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;/template></span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;script></span></span>
+<span class="line"><span style="color: #c9d1d9">import { reactive } from 'vue';</span></span>
+<span class="line"><span style="color: #c9d1d9">export default {</span></span>
+<span class="line"><span style="color: #c9d1d9">  setup() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    // 通过reactive声明一个可响应式的对象</span></span>
+<span class="line"><span style="color: #c9d1d9">    const state = reactive({ text: "我帅吗" });</span></span>
+<span class="line"><span style="color: #c9d1d9">    // 通过reactive声明一个可响应式的数组</span></span>
+<span class="line"><span style="color: #c9d1d9">    const state1 = reactive([ text: "我帅吗" ]);</span></span>
+<span class="line"><span style="color: #c9d1d9">    // 声明一个修改方法</span></span>
+<span class="line"><span style="color: #c9d1d9">    const test = () => state.text = '你很丑';</span></span>
+<span class="line"><span style="color: #c9d1d9">    // 返回state和方法</span></span>
+<span class="line"><span style="color: #c9d1d9">    return { state,test };</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">};</span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;/script></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>这是一个跟<code>vue2</code>比较大的区别，使用上面的方法，才能实现数据的响应式。然后这里的对象可以随意赋值，不会出现<code>vue2</code>中深层未定义的对象值赋值不能响应式的问题。因为现在 vue 的底层是用<code>proxy</code>实现的数据监听。<br>
+<strong>注意：这里的元素只能是对象或者数组，基本数据类型需要使用 ref</strong><br>
+1.3 ref<br>
+声明响应式的基本数据类型</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">import { ref } from 'vue';</span></span>
+<span class="line"><span style="color: #c9d1d9">export default {</span></span>
+<span class="line"><span style="color: #c9d1d9">  setup(){</span></span>
+<span class="line"><span style="color: #c9d1d9">    const a = ref(1);</span></span>
+<span class="line"><span style="color: #c9d1d9">    const b = ref('1');</span></span>
+<span class="line"><span style="color: #c9d1d9">    const c = ref(true);</span></span>
+<span class="line"><span style="color: #c9d1d9">    // 声明一个修改方法</span></span>
+<span class="line"><span style="color: #c9d1d9">    const test = () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">      // 注意：在setup里面修改ref的值是需要通过.value的，template做了解套，所以不需要。</span></span>
+<span class="line"><span style="color: #c9d1d9">      // ref 作为 reactive的对象的值时不需要.value</span></span>
+<span class="line"><span style="color: #c9d1d9">      // ref 作为 reactive的数组的值时需要.value</span></span>
+<span class="line"><span style="color: #c9d1d9">      a.value = 2;</span></span>
+<span class="line"><span style="color: #c9d1d9">      b.value = '1';</span></span>
+<span class="line"><span style="color: #c9d1d9">      c.value = false;</span></span>
+<span class="line"><span style="color: #c9d1d9">    };</span></span>
+<span class="line"><span style="color: #c9d1d9">    return { a, b, c, test };</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>获取 DOM 元素</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&#x3C;template></span></span>
+<span class="line"><span style="color: #c9d1d9">  &#x3C;div ref="testDom">&#x3C;/div></span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;/template></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;script></span></span>
+<span class="line"><span style="color: #c9d1d9">import { ref, onMounted } from 'vue';</span></span>
+<span class="line"><span style="color: #c9d1d9">export default {</span></span>
+<span class="line"><span style="color: #c9d1d9">  setup(){</span></span>
+<span class="line"><span style="color: #c9d1d9">    const testDom = ref(null);</span></span>
+<span class="line"><span style="color: #c9d1d9">    //使用onMounted钩子,类似在vue2的mounted生命周期中操作元素</span></span>
+<span class="line"><span style="color: #c9d1d9">    onMounted(() => {</span></span>
+<span class="line"><span style="color: #c9d1d9">      // 记得要加.value</span></span>
+<span class="line"><span style="color: #c9d1d9">      console.log(testDom.value);</span></span>
+<span class="line"><span style="color: #c9d1d9">    })</span></span>
+<span class="line"><span style="color: #c9d1d9">    return { testDom };</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;/script></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>1.4 readonly</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">const state = reactive({ name: 0 })</span></span>
+<span class="line"><span style="color: #c9d1d9">const readOnlyState = readonly(state)</span></span>
+<span class="line"><span style="color: #c9d1d9">// 可以修改</span></span>
+<span class="line"><span style="color: #c9d1d9">state.name = '帅';</span></span>
+<span class="line"><span style="color: #c9d1d9">// 无法修改并警告</span></span>
+<span class="line"><span style="color: #c9d1d9">readOnlyState.name = '帅';</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="二-reactive-类工具-api">二 reactive 类工具 API</h3>
+<p>2.1 isProxy， isReactive，isReadonly<br>
+isProxy 是检查一个对象是否是由 reactive 或者 readonly 方法创建的代理。后面两个是单独的检测。 注意：只要检测的对象里有 reactive，就算被 readonly 处理过了，isReactive 也为 true。<br>
+2.2 toRaw<br>
+把被代理或者响应式的对象转换成普通对象</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> const state = {} </span></span>
+<span class="line"><span style="color: #c9d1d9">const stateReactive = reactive(state) </span></span>
+<span class="line"><span style="color: #c9d1d9">console.log(toRaw(stateReactive) === state) // true </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>2.3 markRaw<br>
+禁止这个对象成为响应式</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> const state = markRaw({ name: '帅' }) console.log(isReactive(reactive(state))) // false</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p><strong>注意，markRaw 只作用于根元素，如果使用子元素去赋值，还是可以转成响应式代理</strong></p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> const state = markRaw({   data: { id: 123 }, }) </span></span>
+<span class="line"><span style="color: #c9d1d9">const newState = reactive({   data: state.data, }) </span></span>
+<span class="line"><span style="color: #c9d1d9">console.log(isReactive(newState.data)) // true </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>2.4 shallowReactive, shallowReadonly<br>
+跟上面<code>reactive</code>,<code>readonly</code>的作用一样，区别是这两个方法是浅层的监听。 只会对第一层响应式，深层次的数据不会响应</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> const state = shallowReactive({ name: '123', test: { id: 1 } }) </span></span>
+<span class="line"><span style="color: #c9d1d9">const test = () => {   // 深层次数据的变化不会触发响应式   state.test.id = 2; };</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="三-ref-类工具-api">三 ref 类工具 API</h3>
+<p>3.1 isRef<br>
+检查一个值是否为一个<code>ref</code>对象<br>
+3.2 toRef<br>
+用来作为一个<code>reactive</code>对象的属性, 保持响应式</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> const state = reactive({   a: 0 }) // 作为一个reactive对象的属性 </span></span>
+<span class="line"><span style="color: #c9d1d9">const aRef = toRef(state, 'a') // 在这里修改读取Ref要使用.</span></span>
+<span class="line"><span style="color: #c9d1d9">value aRef.value++ console.log(state.a) // 1 </span></span>
+<span class="line"><span style="color: #c9d1d9"> state.a++ console.log(aRef.value) // 2 </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>3.3 toRefs<br>
+将响应式对象转换为普通对象 (类似解构)，但是还可以保留响应式。可以用来对一些响应式变量多次复用。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> function useFeatureX() { const state = reactive({     foo: 1,     bar: 2   })  </span></span>
+<span class="line"><span style="color: #c9d1d9"> return toRefs(state) } export default { </span></span>
+<span class="line"><span style="color: #c9d1d9">  setup() {    </span></span>
+<span class="line"><span style="color: #c9d1d9"> // 可以在不失去响应式的情况下复用</span></span>
+<span class="line"><span style="color: #c9d1d9"> const { foo, bar } = useFeatureX()    </span></span>
+<span class="line"><span style="color: #c9d1d9"> return {       foo,       bar     } </span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9"> } </span></span>
+<span class="line"><span style="color: #c9d1d9"> </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>3.4 unref<br>
+获取 ref 值的语法糖</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> val = isRef(val) ? val.value : val </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>3.5 customRef</p>
+<p>创建一个自定义的<code>ref</code>, 对它的读写进行手动控制。这是文档上的一个防抖的例子</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> &#x3C;input v-model="text" /> </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">function useDebouncedRef(value, delay = 200) {</span></span>
+<span class="line"><span style="color: #c9d1d9">  let timeout</span></span>
+<span class="line"><span style="color: #c9d1d9">  return customRef((track, trigger) => {</span></span>
+<span class="line"><span style="color: #c9d1d9">    return {</span></span>
+<span class="line"><span style="color: #c9d1d9">      get() {</span></span>
+<span class="line"><span style="color: #c9d1d9">        // 读值的时候,触发依赖</span></span>
+<span class="line"><span style="color: #c9d1d9">        track()</span></span>
+<span class="line"><span style="color: #c9d1d9">        return value</span></span>
+<span class="line"><span style="color: #c9d1d9">      },</span></span>
+<span class="line"><span style="color: #c9d1d9">      set(newValue) {</span></span>
+<span class="line"><span style="color: #c9d1d9">        clearTimeout(timeout)</span></span>
+<span class="line"><span style="color: #c9d1d9">        timeout = setTimeout(() => {</span></span>
+<span class="line"><span style="color: #c9d1d9">          value = newValue</span></span>
+<span class="line"><span style="color: #c9d1d9">          // 写值的时候，进行防抖，触发依赖</span></span>
+<span class="line"><span style="color: #c9d1d9">          trigger()</span></span>
+<span class="line"><span style="color: #c9d1d9">        }, delay)</span></span>
+<span class="line"><span style="color: #c9d1d9">      }</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">  })</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">export default {</span></span>
+<span class="line"><span style="color: #c9d1d9">  setup() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    return {</span></span>
+<span class="line"><span style="color: #c9d1d9">      text: useDebouncedRef('hello')</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>3.6 shallowRef, triggerRef<br>
+shallowRef 数据是没有响应式的，但是可以使用 triggerRef 来手动触发</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> const shallow = shallowRef({   greet: 'Hello, world' }) </span></span>
+<span class="line"><span style="color: #c9d1d9">shallow.value.greet = 'Hello, universe' triggerRef(shallow) //手动触发响应式 </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<ol start="4">
+<li>computed and watch<br>
+4.1 computed</li>
+</ol>
+<ul>
+<li>传入一个 getter 函数，返回一个默认不可手动修改的 ref 对象</li>
+<li>具有 get 和 set 函数的对象来创建可写的 ref 对象</li>
+</ul>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> const count = ref(1)</span></span>
+<span class="line"><span style="color: #c9d1d9">// 只读的</span></span>
+<span class="line"><span style="color: #c9d1d9">const plusOne = computed(() => count.value + 1)</span></span>
+<span class="line"><span style="color: #c9d1d9">// 可更改的</span></span>
+<span class="line"><span style="color: #c9d1d9">const plusOne = computed({</span></span>
+<span class="line"><span style="color: #c9d1d9">  get: () => count.value + 1,</span></span>
+<span class="line"><span style="color: #c9d1d9">  set: (val) => {</span></span>
+<span class="line"><span style="color: #c9d1d9">    count.value = val - 1</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9">})</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">plusOne.value = 1</span></span>
+<span class="line"><span style="color: #c9d1d9">console.log(count.value) // 0</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>4.2 watchEffect<br>
+立即执行传入的一个函数，并响应式追踪其依赖，并在其依赖变更时重新运行该函数。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> const count = ref(0) </span></span>
+<span class="line"><span style="color: #c9d1d9">watchEffect(() => console.log(count.value)) // 打印出 0,初始化的时候就会打印 </span></span>
+<span class="line"><span style="color: #c9d1d9">setTimeout(() => {   count.value++   // -> 打印出 1 }, 100) </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p><strong>停止观察</strong><br>
+卸载组件的时候会自动停止，也可以手动停止监听</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> const stop = watchEffect(() => {   /* ... */ }) // 停止监听程序 stop() </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p><strong>副作用</strong><br>
+如果一个函数内外有依赖于外部变量或者环境时，常常我们称之为其有副作用，如果我们仅通过函数签名不打开内部代码检查并不能知道该函数在干什么，作为一个独立函数我们期望有明确的输入和输出，副作用是 bug 的发源地，作为程序员开发者应尽量少的开发有副作用的函数或方法，副作用也使得方法通用性下降不适合扩展和可重用性</p>
+<p><strong>运行时机</strong></p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> // 初始化运行需要读取dom</span></span>
+<span class="line"><span style="color: #c9d1d9">onMounted(() => {</span></span>
+<span class="line"><span style="color: #c9d1d9">  watchEffect(() => {</span></span>
+<span class="line"><span style="color: #c9d1d9">  })</span></span>
+<span class="line"><span style="color: #c9d1d9">})</span></span>
+<span class="line"><span style="color: #c9d1d9">//设置运行时机</span></span>
+<span class="line"><span style="color: #c9d1d9">watchEffect(</span></span>
+<span class="line"><span style="color: #c9d1d9">  () => {/* ... */},</span></span>
+<span class="line"><span style="color: #c9d1d9">  {flush: 'pre'}</span></span>
+<span class="line"><span style="color: #c9d1d9">)</span></span>
+<span class="line"><span style="color: #c9d1d9">// pre是默认，组件更新前执行</span></span>
+<span class="line"><span style="color: #c9d1d9">// post, 组件更新后执行</span></span>
+<span class="line"><span style="color: #c9d1d9">// sync, 同步运行</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"> </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>4.3 watch<br>
+跟 vue2 的 watch 一致</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> // 侦听一个 getter const state = reactive({ count: 0 }) </span></span>
+<span class="line"><span style="color: #c9d1d9">watch(   () => state.count,   (count, prevCount) => {     /* ... */   } )  // 直接侦听一个 ref </span></span>
+<span class="line"><span style="color: #c9d1d9">const count = ref(0) watch(count, (count, prevCount) => {   /* ... */ }) </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p><strong>监听多个数据源</strong></p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> watch([fooRef, barRef], ([foo, bar], [prevFoo, prevBar]) => {   /* ... */ }) </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p><strong>与 watchEffect 共享的行为</strong><br>
+停止监听，清除副作用，副作用刷新时机，侦听器调试方面跟 watchEffect 参数是一样的。</p>
+<h3 id="四-应用配置原全局配置和全局-api">四. 应用配置（原全局配置和全局 API）</h3>
+<p><strong>注意：全局配置的 Vue 都用现在的 createApp 生成的实例来替代</strong><br>
+createApp(新增)</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">// vue2挂载dom方法</span></span>
+<span class="line"><span style="color: #c9d1d9">new Vue({</span></span>
+<span class="line"><span style="color: #c9d1d9">  render: (h) => h(App)</span></span>
+<span class="line"><span style="color: #c9d1d9">}).$mount("#app");</span></span>
+<span class="line"><span style="color: #c9d1d9">// vue3</span></span>
+<span class="line"><span style="color: #c9d1d9">createApp(App).mount('#app')</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>注意，之前用到的全局配置的 Vue 都用现在的 createApp 生成的实例来替代</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">import { createApp } from 'vue'</span></span>
+<span class="line"><span style="color: #c9d1d9">const app = createApp({})</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">// 比如注册全局组件</span></span>
+<span class="line"><span style="color: #c9d1d9">app.component('my-component', {</span></span>
+<span class="line"><span style="color: #c9d1d9">  /* ... */</span></span>
+<span class="line"><span style="color: #c9d1d9">})</span></span>
+<span class="line"><span style="color: #c9d1d9">// 是否允许devtools检查代码</span></span>
+<span class="line"><span style="color: #c9d1d9">app.config.devtools = true  </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>globalProperties(新增)</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">app.config.globalProperties.foo = 'bar'</span></span>
+<span class="line"><span style="color: #c9d1d9">app.component('child-component', {</span></span>
+<span class="line"><span style="color: #c9d1d9">  mounted() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    console.log(this.foo) // 'bar'</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">})</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<ul>
+<li>添加可在程序内的任何组件实例中访问的全局属性。当存在键冲突时，组件属性将优先</li>
+<li>替代掉 Vue2.x 的 Vue.prototype 属性放到原型上的写法</li>
+</ul>
+<p>unmount(新增)<br>
+卸载 DOM 元素上应用程序实例的根组件</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> const app = createApp(App) app.mount('#app') // 5秒之后，卸载APP组件</span></span>
+<span class="line"><span style="color: #c9d1d9"> setTimeout(() => app.unmount('#app'), 5000) </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="五-全局-api新增">五. 全局 API（新增）</h3>
+<p>createApp<br>
+类似之前全局的 Vue 变量，整个组件树共享的上下文，第二个参数作为 props 值传入<br>
+h<br>
+就是之前的 createElement。<br>
+jsx 偶尔在用，但是这个底层的相对用的比较少，就不细讲了</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> render() {   return Vue.h('h1', {}, 'Some title') } </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>defineComponent（组件）<br>
+创建一个组件</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">import { defineComponent } from 'vue'</span></span>
+<span class="line"><span style="color: #c9d1d9">const MyComponent = defineComponent({</span></span>
+<span class="line"><span style="color: #c9d1d9">  data() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    return { count: 1 }</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9">  methods: {</span></span>
+<span class="line"><span style="color: #c9d1d9">    increment() {</span></span>
+<span class="line"><span style="color: #c9d1d9">      this.count++</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">})</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>defineAsyncComponent(异步组件)<br>
+创建一个异步组件</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> import { defineAsyncComponent } from 'vue'</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">const AsyncComp = defineAsyncComponent(() =></span></span>
+<span class="line"><span style="color: #c9d1d9">   /*或者*/</span></span>
+<span class="line"><span style="color: #c9d1d9">  import('./components/AsyncComponent.vue')</span></span>
+<span class="line"><span style="color: #c9d1d9">   /*或者*/</span></span>
+<span class="line"><span style="color: #c9d1d9">  new Promise((resolve, reject) => {</span></span>
+<span class="line"><span style="color: #c9d1d9">  /*可以reject*/</span></span>
+<span class="line"><span style="color: #c9d1d9">      resolve({</span></span>
+<span class="line"><span style="color: #c9d1d9">        template: '&#x3C;div>I am async!&#x3C;/div>'</span></span>
+<span class="line"><span style="color: #c9d1d9">      })</span></span>
+<span class="line"><span style="color: #c9d1d9">    })</span></span>
+<span class="line"><span style="color: #c9d1d9">)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">app.component('async-component', AsyncComp)</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>resolveComponent<br>
+只能在<code>render</code>和<code>setup</code>中使用，通过名称来寻找组件</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">app.component('MyComponent', {</span></span>
+<span class="line"><span style="color: #c9d1d9">  /* ... */</span></span>
+<span class="line"><span style="color: #c9d1d9">})</span></span>
+<span class="line"><span style="color: #c9d1d9">const MyComponent = resolveComponent('MyComponent')</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>resolveDynamicComponent<br>
+只能在<code>render</code>和<code>setup</code>中使用，解析活动的组件 active<br>
+resolveDirective<br>
+只能在<code>render</code>和<code>setup</code>中使用，允许通过名称解析指令<br>
+withDirectives<br>
+只能在<code>render</code>和<code>setup</code>中使用，允许应用指令到<code>VNode</code>。返回一个带有应用指令的<code>VNode</code></p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">const bar = resolveDirective('bar')</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">return withDirectives(h('div'), [</span></span>
+<span class="line"><span style="color: #c9d1d9">  [bar, this.y]</span></span>
+<span class="line"><span style="color: #c9d1d9">])</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>createRenderer<br>
+接受两个泛型参数：<code>HostNode</code>和<code>HostElement</code>，对应于宿主环境中的<code>Node</code>和 <code>Element</code>类型。<br>
+这个东西不太清楚具体的使用场景</p>
+<h3 id="六-选项--数据">六. 选项 / 数据</h3>
+<p>emits(新增)<br>
+在 $emit 触发事件之前验证参数</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">const app = Vue.createApp({})</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">// 对象语法</span></span>
+<span class="line"><span style="color: #c9d1d9">app.component('reply-form', {</span></span>
+<span class="line"><span style="color: #c9d1d9">  created() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    this.$emit('check')</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9">  emits: {</span></span>
+<span class="line"><span style="color: #c9d1d9">    // 没有验证函数</span></span>
+<span class="line"><span style="color: #c9d1d9">    click: null,</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">    // 带有验证函数</span></span>
+<span class="line"><span style="color: #c9d1d9">    submit: payload => {</span></span>
+<span class="line"><span style="color: #c9d1d9">      if (payload.email &#x26;&#x26; payload.password) {</span></span>
+<span class="line"><span style="color: #c9d1d9">        return true</span></span>
+<span class="line"><span style="color: #c9d1d9">      } else {</span></span>
+<span class="line"><span style="color: #c9d1d9">        console.warn(`Invalid submit event payload!`)</span></span>
+<span class="line"><span style="color: #c9d1d9">        return false</span></span>
+<span class="line"><span style="color: #c9d1d9">      }</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">})</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="七-选项--dom不变">七. 选项 / DOM(不变)</h3>
+<h3 id="八-选项--生命周期钩子">八. 选项 / 生命周期钩子</h3>
+<ul>
+<li>beforeDestroy -> <code>beforeUnmount</code></li>
+<li>destroyed -> <code>unmounted</code></li>
+<li>renderTracked（新增）</li>
+</ul>
+<p>告诉你哪个操作跟踪了组件以及该操作的目标对象和键</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">renderTracked({ key, target, type }) {</span></span>
+<span class="line"><span style="color: #c9d1d9">  // 这里的target为更新之前的值,type是get</span></span>
+<span class="line"><span style="color: #c9d1d9">  console.log({ key, target, type })</span></span>
+<span class="line"><span style="color: #c9d1d9">} </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<ul>
+<li>renderTriggered（新增）</li>
+</ul>
+<p>告诉你是什么操作触发了重新渲染，以及该操作的目标对象和键。 target 为更新之后的值, type 是 set<br>
+这些生命周期还可以通过 API 在 setup() 里使用</p>
+<ul>
+<li>beforeMount -> <code>onBeforeMount</code></li>
+<li>mounted -> <code>onMounted</code></li>
+<li>beforeUpdate -> <code>onBeforeUpdate</code></li>
+<li>updated -> <code>onUpdated</code></li>
+<li>beforeDestroy -> <code>onBeforeUnmount</code></li>
+<li>destroyed -> <code>onUnmounted</code></li>
+<li>errorCaptured -> <code>onErrorCaptured</code></li>
+</ul>
+<h3 id="九-选项--资源">九. 选项 / 资源</h3>
+<p>filters(废弃)<br>
+过滤器还是有时候在用的<br>
+十. 选项 / 组合<br>
+parent（废弃）<br>
+这个属性平时开发基本不会用到<br>
+setup(详情见上面)</p>
+<h3 id="十一-选项--其它">十一. 选项 / 其它</h3>
+<p>delimiters（废弃）<br>
+functional（废弃）<br>
+使用了新的异步组件的生成方法<br>
+model（废弃）<br>
+v-model 修改了，不需要固定的属性名和事件名了，手动去处理<br>
+comments（废弃）</p>
+<h3 id="十二-实例-property">十二. 实例 property</h3>
+<p>vm.$attrs（修改）<br>
+现在<code>$attrs</code>不但会获取父作用域中不作为组件<code>props</code>的值，也可以获取到自定义事件（包含了 $listeners 的功能）。<br>
+vm.$children（废弃）<br>
+vm.$scopedSlots（废弃）<br>
+vm.$isServer（废弃）<br>
+vm.$listeners（废弃）</p>
+<h3 id="十三-实例方法--数据">十三. 实例方法 / 数据</h3>
+<p><code>vue3</code>底层使用了 proxy 进行数据监听，所以不需要这两个方法了。<br>
+vm.$set（废弃）<br>
+vm.$delete（废弃）</p>
+<h3 id="十四-实例方法--事件">十四. 实例方法 / 事件</h3>
+<p>因为现在可以直接在 setup 调用生命周期 api，而且可以引入别的 js 里的方法来使用，所以这些方法也可以不需要了。<br>
+vm.$on（废弃）<br>
+vm.$once（废弃）<br>
+vm.$off（废弃）</p>
+<h3 id="十五-实例方法--生命周期">十五. 实例方法 / 生命周期</h3>
+<p>vm.$mount（废弃）<br>
+统一使用 createApp 的 mount 方法来挂载<br>
+vm.$destroy（废弃）<br>
+统一使用 createApp 的 unmount 方法来卸载</p>
+<h3 id="十六-指令">十六. 指令</h3>
+<p>v-bind（修改）</p>
+<ul>
+<li>.prop 去除</li>
+<li>.sync 去除 (现在需要手动去同步)</li>
+<li>.camel 将 kebab-case attribute 名转换为 camelCase</li>
+</ul>
+<p>v-model（修改）<br>
+对于组件可以绑定多个属性值</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&#x3C;template></span></span>
+<span class="line"><span style="color: #c9d1d9">  &#x3C;!--在vue3.0中，v-model后面需要跟一个modelValue，即要双向绑定的属性名--></span></span>
+<span class="line"><span style="color: #c9d1d9">  &#x3C;!-- 在Vue3.0中也可以继续使用`Vue2.0`的写法 --></span></span>
+<span class="line"><span style="color: #c9d1d9">  &#x3C;a-input v-model:value="value" placeholder="Basic usage" /></span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;/template></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>自定义一个组件</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&#x3C;template></span></span>
+<span class="line"><span style="color: #c9d1d9">  &#x3C;div></span></span>
+<span class="line"><span style="color: #c9d1d9">    &#x3C;input :value="value" @input="_handleChangeValue" /></span></span>
+<span class="line"><span style="color: #c9d1d9">  &#x3C;/div></span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;/template></span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;script></span></span>
+<span class="line"><span style="color: #c9d1d9">export default {</span></span>
+<span class="line"><span style="color: #c9d1d9">  props: {</span></span>
+<span class="line"><span style="color: #c9d1d9">    value: {</span></span>
+<span class="line"><span style="color: #c9d1d9">      type: String,</span></span>
+<span class="line"><span style="color: #c9d1d9">      default: ""</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9">  name: "CustomInput",</span></span>
+<span class="line"><span style="color: #c9d1d9">  setup(props, { emit }) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    function _handleChangeValue(e) {</span></span>
+<span class="line"><span style="color: #c9d1d9">      // vue3.0 是通过emit事件名为 update:modelValue来更新v-model的</span></span>
+<span class="line"><span style="color: #c9d1d9">      emit("update:value", e.target.value);</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">    return {</span></span>
+<span class="line"><span style="color: #c9d1d9">      _handleChangeValue</span></span>
+<span class="line"><span style="color: #c9d1d9">    };</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">};</span></span>
+<span class="line"><span style="color: #c9d1d9">&#x3C;/script></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>v-on（修改）<br>
+.{keyAlias} - 仅当事件是从特定键触发时才触发回调。不再通过键码的修饰符来触发。<br>
+v-is（新增）<br>
+类似 vue2 中的: is 绑定，可以让组件在某些特定的 html 标签中渲染，比如 table,ul。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> &#x3C;!-- 不正确，不会渲染任何内容 --> &#x3C;tr v-is="blog-post-row">&#x3C;/tr></span></span>
+<span class="line"><span style="color: #c9d1d9"> &#x3C;!-- 正确 --> &#x3C;tr v-is="'blog-post-row'">&#x3C;/tr></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="十七-特殊-attribute">十七. 特殊 attribute</h3>
+<p>key(修改)<br>
+循环的时候，<code>key</code>要设置在<code>template</code>上。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> &#x3C;template v-for="item in list" :key="item.id"> &#x3C;div>...&#x3C;/div> &#x3C;span>...&#x3C;/span> &#x3C;/template></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>ref(修改)<br>
+<code>v-for</code>里使用的<code>ref</code>将不会再自动创建数组<br>
+解决方式:</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> &#x3C;div v-for="item in list" :ref="setItemRef">&#x3C;/div> </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">export default {</span></span>
+<span class="line"><span style="color: #c9d1d9">  data() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    return {</span></span>
+<span class="line"><span style="color: #c9d1d9">      itemRefs: []</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9">  methods: {</span></span>
+<span class="line"><span style="color: #c9d1d9">    setItemRef(el) {</span></span>
+<span class="line"><span style="color: #c9d1d9">      this.itemRefs.push(el)</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9">  beforeUpdate() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    this.itemRefs = []</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9">  updated() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    console.log(this.itemRefs)</span></span>
+<span class="line"><span style="color: #c9d1d9">  }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="十八-内置的组件">十八. 内置的组件</h3>
+<p>transition（修改）</p>
+<ul>
+<li>Props 新增：</li>
+</ul>
+<p>persisted - boolean 如果为 true，则表示这是一个转换，实际上不会插入 / 删除元素，而是切换显示 / 隐藏状态。 transition 过渡挂钩被注入，但会被渲染器跳过。 相反，自定义指令可以通过调用注入的钩子（例如 v-show）来控制过渡<br>
+enter-class -><code>enter-from-class</code><br>
+leave-class -><code>leave-from-class</code></p>
+<ul>
+<li>事件</li>
+</ul>
+<p>before appear<br>
+teleport(新增)<br>
+将内容插入到目标元素中</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"> &#x3C;teleport to="#popup" :disabled="displayVideoInline"> &#x3C;h1>999999&#x3C;/h1> &#x3C;/teleport> </span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p><code>to</code>必填属性，必须是一个有效的 query 选择器，或者是元素 (如果在浏览器环境中使用）。中的内容将会被放置到指定的目标元素中<br>
+<code>disabled</code>这是一个可选项 ，做一个是可以用来禁用的功能，这意味着它的插槽内容不会移动到任何地方，而是按没有 teleport 组件一般来呈现【默认为 false】<br>
+适合场景，全局的 loading，多个内容合并等等等。</p>
+<h3 id="十九-总结">十九. 总结</h3>
+<p>总体来说，<code>vue3</code>在尽可能的兼容<code>vue2</code>的同时，又引入了全新的组合式 API 的编程方式，这种新的模式有点类似 react 的思想，解决了之前版本对于业务代码难复用的问题，而且对一个页面来说，不同的功能代码可以更好的去区分，不会有以前各种变量和方法挤在一堆，后期难于维护的问题。加上良好的<code>ts</code>支持，很好很强大。<br>
+周边的一些组件<code>vue Router4.0</code>, <code>vuex4.0</code>也都提供了<code>vue3</code>支持。组件库这块，<code>ant design vue</code>和<code>vant</code>已经支持了<code>vue3</code>。<br>
+不过正如官方文档中建议的，目前还不建议把一些重要的项目迁移到 vue3 当中，因为 vue3 还有很多需要完善的地方，而且目前还不支持 ie，等兼容的工作完成，还是只能兼容到 ie11。</p>
+<h4 id="不支持ie11的vue3">不支持IE11的vue3</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">不支持 IE11 的原因</span></span>
+<span class="line"><span style="color: #c9d1d9">所以我硬着头皮看了下英文，总结一下原因有三：</span></span>
+<span class="line"><span style="color: #c9d1d9">1.Proxy 更香，Vue 团队想用</span></span>
+<span class="line"><span style="color: #c9d1d9">2.Vue 团队想为干掉 IE 贡献一份力量</span></span>
+<span class="line"><span style="color: #c9d1d9">3.若支持，开发和维护成本都太高。</span></span>
+<span class="line"><span style="color: #c9d1d9">Vue 2 基于 ES5 getter/setters，Vue 3 基于 Proxy，若实现他们要逻辑双写。</span></span>
+<span class="line"><span style="color: #c9d1d9">Vue 团队不想因为 IE11 做更多的牺牲, 如果未来再出个 Super Proxy 我就太难了。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">我们想着，使用babel转换vue3，Babel 的 transpiled 和 polyfilled 都没办法支持 Proxy</span></span>
+<span class="line"><span style="color: #c9d1d9"> 的功能特性。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="vue2x支持ie11的代码">vue2.x支持ie11的代码</h4>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">在vue.config.js中的配置</span></span>
+<span class="line"><span style="color: #c9d1d9"> chainWebpack: (config) => {</span></span>
+<span class="line"><span style="color: #c9d1d9">    // 在chainWebpack中添加下面的代码</span></span>
+<span class="line"><span style="color: #c9d1d9">    config.entry.app = ['babel-polyfill', './src/main.js'];</span></span>
+<span class="line"><span style="color: #c9d1d9">};</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+  </section>
+  <nav class="block sm:hidden astro-J75B3YUS">
+    <h2 class="heading astro-BYIKQF6W">More</h2>
+<ul class="astro-BYIKQF6W">
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a class="edit-on-github astro-BYIKQF6W" href="https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master/src/content/docs/en/08vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/000vue2%E5%8D%87%E7%BA%A7vue3%E7%9A%84api%E5%8F%98%E5%8C%96.md" target="_blank">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Edit this page</span>
+				</a>
+			</li>
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a href="https://astro.build/chat" target="_blank" class="astro-BYIKQF6W">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Join our community</span>
+				</a>
+			</li>
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-BYIKQF6W">
+	<script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(!!t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));</script><astro-island uid="Ofjlz" component-url="/_astro/ThemeToggleButton.7f5d5bf2.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;class&quot;:[0,&quot;astro-BYIKQF6W&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+</div>
+  </nav>
+</article>
+<script>
+  console.log(window.location.href);
+  let currentRoute = decodeURIComponent(window.location.href).split("/")[
+    decodeURIComponent(window.location.href).split("/").length - 2
+  ];
+  const menuData = {
+    "0个人前端项目实战记录和链接": 0,
+    "0经典脚手架持续迭代": 1,
+    "01react课程学习和问题笔记": 2,
+    "02极客时间vue课程学习和问题笔记": 3,
+    "03掘金算法课程学习和问题笔记": 4,
+    "04小程序专题": 5,
+    "05leetcode刷题记录每周": 6,
+    "06node全栈记录": 7,
+    "07react学习常见问题和笔记记录": 8,
+    "08vue常见问题和学习记录": 9,
+    "09book前端进阶知识学习图书笔记": 10,
+    "10book前端开发设计模式和开发实战笔记": 11,
+    "11elementplus经典源码和实战学习和问题笔记": 12,
+    "12前端开发经典库学习记录": 13,
+    "13koa和express框架学习记录": 14,
+    "14前端图形化学习": 15,
+    "15工具和项目配置工程化问题记录": 16,
+    "16前端拓展知识学习": 17,
+    "17低代码学习和总结": 18,
+    "18经验亮点汇总汇总": 19,
+    "19项目复盘汇总": 20,
+    其他常见问题: 21,
+  };
+
+  window.addEventListener("DOMContentLoaded", () => {
+    var target = document.querySelector('[aria-current="page"]');
+    if (target && target.offsetTop > window.innerHeight - 100) {
+      document.querySelector(".nav-groups").scrollTop = target.offsetTop;
+    }
+  });
+  debugger;
+  // TODO:根据当前的选中的路由的名称，反转成路由菜单
+  console.log("%s 当前的值💡 ");
+  console.log(
+    "%c💡 当前的最新打印，用完删除",
+    "background-color:blue;color:#fff"
+  );
+  let testDiv = document.getElementsByClassName("nav-group astro-KQNE5HRN")[0];
+  testDiv.getElementsByTagName("ul")[0].children[menuData[currentRoute]].style =
+    "color: rgb(56,149,255);font-weight:700;background:rgb(225,239,255)";
+</script>
+      </div>
+      <aside id="grid-right" class="grid-sidebar astro-OUAMJN2I" title="Table of Contents">
+        <nav class="sidebar-nav astro-ROIVMLUZ" aria-labelledby="grid-right">
+	<div class="sidebar-nav-inner astro-ROIVMLUZ">
+		<astro-island uid="1j0Kmz" component-url="/_astro/TableOfContents.3058fe45.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;一composition-api\&quot;],\&quot;text\&quot;:[0,\&quot;一.Composition API\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;二-reactive-类工具-api\&quot;],\&quot;text\&quot;:[0,\&quot;二 reactive 类工具 API\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;三-ref-类工具-api\&quot;],\&quot;text\&quot;:[0,\&quot;三 ref 类工具 API\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;四-应用配置原全局配置和全局-api\&quot;],\&quot;text\&quot;:[0,\&quot;四. 应用配置（原全局配置和全局 API）\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;五-全局-api新增\&quot;],\&quot;text\&quot;:[0,\&quot;五. 全局 API（新增）\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;六-选项--数据\&quot;],\&quot;text\&quot;:[0,\&quot;六. 选项 / 数据\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;七-选项--dom不变\&quot;],\&quot;text\&quot;:[0,\&quot;七. 选项 / DOM(不变)\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;八-选项--生命周期钩子\&quot;],\&quot;text\&quot;:[0,\&quot;八. 选项 / 生命周期钩子\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;九-选项--资源\&quot;],\&quot;text\&quot;:[0,\&quot;九. 选项 / 资源\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十一-选项--其它\&quot;],\&quot;text\&quot;:[0,\&quot;十一. 选项 / 其它\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十二-实例-property\&quot;],\&quot;text\&quot;:[0,\&quot;十二. 实例 property\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十三-实例方法--数据\&quot;],\&quot;text\&quot;:[0,\&quot;十三. 实例方法 / 数据\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十四-实例方法--事件\&quot;],\&quot;text\&quot;:[0,\&quot;十四. 实例方法 / 事件\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十五-实例方法--生命周期\&quot;],\&quot;text\&quot;:[0,\&quot;十五. 实例方法 / 生命周期\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十六-指令\&quot;],\&quot;text\&quot;:[0,\&quot;十六. 指令\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十七-特殊-attribute\&quot;],\&quot;text\&quot;:[0,\&quot;十七. 特殊 attribute\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十八-内置的组件\&quot;],\&quot;text\&quot;:[0,\&quot;十八. 内置的组件\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;十九-总结\&quot;],\&quot;text\&quot;:[0,\&quot;十九. 总结\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;不支持ie11的vue3\&quot;],\&quot;text\&quot;:[0,\&quot;不支持IE11的vue3\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vue2x支持ie11的代码\&quot;],\&quot;text\&quot;:[0,\&quot;vue2.x支持ie11的代码\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-ROIVMLUZ&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(min-width: 50em)&quot;}" await-children=""><h2 id="on-this-page-heading" class="heading">目录</h2><ul><li class="header-link depth-3"><a href="#一composition-api">一.Composition API</a></li><li class="header-link depth-3"><a href="#二-reactive-类工具-api">二 reactive 类工具 API</a></li><li class="header-link depth-3"><a href="#三-ref-类工具-api">三 ref 类工具 API</a></li><li class="header-link depth-3"><a href="#四-应用配置原全局配置和全局-api">四. 应用配置（原全局配置和全局 API）</a></li><li class="header-link depth-3"><a href="#五-全局-api新增">五. 全局 API（新增）</a></li><li class="header-link depth-3"><a href="#六-选项--数据">六. 选项 / 数据</a></li><li class="header-link depth-3"><a href="#七-选项--dom不变">七. 选项 / DOM(不变)</a></li><li class="header-link depth-3"><a href="#八-选项--生命周期钩子">八. 选项 / 生命周期钩子</a></li><li class="header-link depth-3"><a href="#九-选项--资源">九. 选项 / 资源</a></li><li class="header-link depth-3"><a href="#十一-选项--其它">十一. 选项 / 其它</a></li><li class="header-link depth-3"><a href="#十二-实例-property">十二. 实例 property</a></li><li class="header-link depth-3"><a href="#十三-实例方法--数据">十三. 实例方法 / 数据</a></li><li class="header-link depth-3"><a href="#十四-实例方法--事件">十四. 实例方法 / 事件</a></li><li class="header-link depth-3"><a href="#十五-实例方法--生命周期">十五. 实例方法 / 生命周期</a></li><li class="header-link depth-3"><a href="#十六-指令">十六. 指令</a></li><li class="header-link depth-3"><a href="#十七-特殊-attribute">十七. 特殊 attribute</a></li><li class="header-link depth-3"><a href="#十八-内置的组件">十八. 内置的组件</a></li><li class="header-link depth-3"><a href="#十九-总结">十九. 总结</a></li></ul></astro-island>
+		<h2 class="heading astro-BYIKQF6W">More</h2>
+<ul class="astro-BYIKQF6W">
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a class="edit-on-github astro-BYIKQF6W" href="https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master/src/content/docs/en/08vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/000vue2%E5%8D%87%E7%BA%A7vue3%E7%9A%84api%E5%8F%98%E5%8C%96.md" target="_blank">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Edit this page</span>
+				</a>
+			</li>
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a href="https://astro.build/chat" target="_blank" class="astro-BYIKQF6W">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Join our community</span>
+				</a>
+			</li>
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-BYIKQF6W">
+	<astro-island uid="Ofjlz" component-url="/_astro/ThemeToggleButton.7f5d5bf2.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;class&quot;:[0,&quot;astro-BYIKQF6W&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+</div>
+	</div>
+</nav>
+      </aside>
+    </main>
+    <!-- <footer> --><!-- <AvatarList path={path} /> --><!-- </footer> -->
+  </body></html>

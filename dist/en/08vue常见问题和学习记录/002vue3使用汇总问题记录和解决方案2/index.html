@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial astro-OUAMJN2I">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Astro v2.1.2">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<link rel="sitemap" href="/sitemap.xml">
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script src="/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('theme-dark');
+	} else {
+		root.classList.remove('theme-dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+    <!-- Page Metadata --><link rel="canonical" href="https://henry-git-master-nyhxiaoning/en/08vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/002vue3%E4%BD%BF%E7%94%A8%E6%B1%87%E6%80%BB%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%882/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="全栈记录之旅 🚀 全栈记录之旅">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://henry-git-master-nyhxiaoning/en/08vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/002vue3%E4%BD%BF%E7%94%A8%E6%B1%87%E6%80%BB%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%882/">
+<meta property="og:locale" content="en-us">
+<meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta property="og:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+<meta name="description" property="og:description" content="成长依旧，步履不停">
+<meta property="og:site_name" content="全栈记录之旅">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="astrodotbuild">
+<meta name="twitter:title" content="全栈记录之旅 🚀 全栈记录之旅">
+<meta name="twitter:description" content="成长依旧，步履不停">
+<meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta name="twitter:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+    <title>
+      全栈记录之旅 🚀 全栈记录之旅
+    </title>
+    
+    
+  <link rel="stylesheet" href="/_astro/_...slug_.699682f2.css" /></head>
+
+  <body class="astro-OUAMJN2I">
+    <header class="astro-2W66RQV5">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink astro-DMGOOZ7Y"><span class="astro-DMGOOZ7Y">Skip to Content</span></a>
+	<nav class="nav-wrapper astro-2W66RQV5" title="Top Navigation">
+		<div class="menu-toggle astro-2W66RQV5">
+			<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Rxydg" component-url="/_astro/SidebarToggle.65a801f9.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;class&quot;:[0,&quot;astro-2W66RQV5&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;SidebarToggle&quot;,&quot;value&quot;:true}" await-children=""><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-island>
+		</div>
+		<div class="logo flex astro-2W66RQV5">
+			<a href="/" class="astro-2W66RQV5">
+				<svg class="logo" width="40" height="40" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		#flame {
+			fill: var(--theme-text-accent);
+		}
+
+		#a {
+			fill: var(--theme-text-accent);
+		}
+	</style>
+	<title>Logo:文档中心</title>
+	<path id="a" fill-rule="evenodd" clip-rule="evenodd" d="M163.008 18.929c1.944 2.413 2.935 5.67 4.917 12.181l43.309 142.27a180.277 180.277 0 00-51.778-17.53l-28.198-95.29a3.67 3.67 0 00-7.042.01l-27.857 95.232a180.225 180.225 0 00-52.01 17.557l43.52-142.281c1.99-6.502 2.983-9.752 4.927-12.16a15.999 15.999 0 016.484-4.798c2.872-1.154 6.271-1.154 13.07-1.154h31.085c6.807 0 10.211 0 13.086 1.157a16.004 16.004 0 016.487 4.806z">
+	</path>
+	<path id="flame" fill-rule="evenodd" clip-rule="evenodd" d="M168.19 180.151c-7.139 6.105-21.39 10.268-37.804 10.268-20.147 0-37.033-6.272-41.513-14.707-1.602 4.835-1.961 10.367-1.961 13.902 0 0-1.056 17.355 11.015 29.426 0-6.268 5.081-11.349 11.349-11.349 10.743 0 10.731 9.373 10.721 16.977v.679c0 11.542 7.054 21.436 17.086 25.606a23.27 23.27 0 01-2.339-10.2c0-11.008 6.463-15.107 13.974-19.87 5.976-3.79 12.616-8.001 17.192-16.449a31.024 31.024 0 003.743-14.82c0-3.299-.513-6.479-1.463-9.463z">
+	</path>
+</svg>
+				<h1 class="astro-2W66RQV5">全栈记录之旅</h1>
+			</a>
+		</div>
+		<div style="flex-grow: 1;" class="astro-2W66RQV5"></div>
+		
+		<div class="search-item astro-2W66RQV5">
+			<astro-island uid="pp6Cr" component-url="/_astro/Search.aa1cadd5.js" component-export="default" renderer-url="/_astro/client.fd400d45.js" props="{}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children=""><button type="button" class="search-input"><svg width="24" height="24" fill="none"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Search</span><span class="search-hint"><span class="sr-only">Press </span><kbd>/</kbd><span class="sr-only"> to search</span></span></button></astro-island>
+		</div>
+	</nav>
+</header>
+    <main class="layout astro-OUAMJN2I">
+      <aside id="grid-left" class="grid-sidebar astro-OUAMJN2I" title="Site Navigation">
+        <nav aria-labelledby="grid-left" class="astro-KQNE5HRN">
+  <ul class="nav-groups astro-KQNE5HRN">
+    <li class="astro-KQNE5HRN">
+          <div class="nav-group astro-KQNE5HRN">
+            <h2 class="astro-KQNE5HRN">记录是学习的开始</h2>
+            <ul class="astro-KQNE5HRN">
+              <li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/introduction" class="astro-KQNE5HRN">
+                      全栈学习
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/zero" class="astro-KQNE5HRN">
+                      0个人前端项目实战记录和链接
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/first" class="astro-KQNE5HRN">
+                      01 React 课程学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/second" class="astro-KQNE5HRN">
+                      02 极客时间Vue课程学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/third" class="astro-KQNE5HRN">
+                      03 掘金算法课程学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fourth" class="astro-KQNE5HRN">
+                      04 掘金 Uniapp 课程和Taro或原生小程序学习笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fifth" class="astro-KQNE5HRN">
+                      05 leetcode 刷题记录每周
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/sixth" class="astro-KQNE5HRN">
+                      06 极客时间 Node 全栈记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/seventh" class="astro-KQNE5HRN">
+                      07 React 学习常见问题和笔记记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/eighth" class="astro-KQNE5HRN">
+                      08 vue 常见问题和学习记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/ninth" class="astro-KQNE5HRN">
+                      09 book 前端进阶知识学习图书笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/tenth" class="astro-KQNE5HRN">
+                      10 book 前端开发设计模式和开发实战笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/eleventh" class="astro-KQNE5HRN">
+                      11 elementplus 经典源码和实战学习和问题笔记
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/twelfth" class="astro-KQNE5HRN">
+                      12 前端开发经典库学习记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/thirteenth" class="astro-KQNE5HRN">
+                      13 Koa和express 框架学习记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fourteenth" class="astro-KQNE5HRN">
+                      14 前端图形化学习
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/fifteenth" class="astro-KQNE5HRN">
+                      15工具和项目配置工程化问题记录
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/sixteenth" class="astro-KQNE5HRN">
+                      16 前端拓展知识学习
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/seventeenth" class="astro-KQNE5HRN">
+                      17 低代码学习和总结
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/eighteen" class="astro-KQNE5HRN">
+                      18 经验亮点汇总( 迁移中 )
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/ninghteen" class="astro-KQNE5HRN">
+                      19 项目复盘汇总( 迁移中 )
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/others" class="astro-KQNE5HRN">
+                      其他常见问题
+                    </a>
+                  </li><li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/notices" class="astro-KQNE5HRN">
+                      常用符号
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </li><li class="astro-KQNE5HRN">
+          <div class="nav-group astro-KQNE5HRN">
+            <h2 class="astro-KQNE5HRN">其他说明</h2>
+            <ul class="astro-KQNE5HRN">
+              <li class="nav-link astro-KQNE5HRN">
+                    <a href="/en/page-4" class="astro-KQNE5HRN">
+                      自定义
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </li>
+  </ul>
+</nav>
+      </aside>
+      <div id="grid-main" class="astro-OUAMJN2I">
+        <article id="article" class="content astro-J75B3YUS">
+  <section class="main-section astro-J75B3YUS">
+    <h1 class="content-title astro-J75B3YUS" id="overview">全栈记录之旅</h1>
+    <nav class="block sm:hidden astro-J75B3YUS">
+      <script>(self.Astro=self.Astro||{}).media=(s,a)=>{const t=async()=>{await(await s())()};if(a.value){const e=matchMedia(a.value);e.matches?t():e.addEventListener("change",t,{once:!0})}},window.dispatchEvent(new Event("astro:media"));</script><astro-island uid="Z2whOL4" component-url="/_astro/TableOfContents.3058fe45.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;看不懂的ts项目tsc编译文件多次看\&quot;],\&quot;text\&quot;:[0,\&quot;看不懂的ts项目，tsc编译文件多次看\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;好用的小功能vue3好用的地方\&quot;],\&quot;text\&quot;:[0,\&quot;好用的小功能，vue3好用的地方\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;1script增加setup后导入模块后不需要再注册\&quot;],\&quot;text\&quot;:[0,\&quot;1.script增加setup后，导入模块后，不需要再注册\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;2process在vite中移除\&quot;],\&quot;text\&quot;:[0,\&quot;2.process在vite中移除\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;3components配置是对象\&quot;],\&quot;text\&quot;:[0,\&quot;3.components配置是对象\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;4子组件修改父组件\&quot;],\&quot;text\&quot;:[0,\&quot;4.子组件修改父组件\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;5provide和inject\&quot;],\&quot;text\&quot;:[0,\&quot;5.provide和inject\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;6vue3时代你应该全面拥抱依赖注入\&quot;],\&quot;text\&quot;:[0,\&quot;6.Vue3时代，你应该全面拥抱依赖注入\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vue3的全局状态管理抛弃vuex使用自己定义的嗯转实现\&quot;],\&quot;text\&quot;:[0,\&quot;vue3的全局状态管理，抛弃vuex，使用自己定义的嗯转实现\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;父子件通信\&quot;],\&quot;text\&quot;:[0,\&quot;父子件通信\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vue3搭建事件总线机制\&quot;],\&quot;text\&quot;:[0,\&quot;vue3搭建事件总线机制\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;使用方法\&quot;],\&quot;text\&quot;:[0,\&quot;使用方法\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;总结通信说明\&quot;],\&quot;text\&quot;:[0,\&quot;总结通信说明\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;8对于aixos请求封装后的使用\&quot;],\&quot;text\&quot;:[0,\&quot;8.对于aixos请求封装后的使用\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;vue2和vue3的api的区别\&quot;],\&quot;text\&quot;:[0,\&quot;vue2和vue3的api的区别\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vue3中没有this怎么办\&quot;],\&quot;text\&quot;:[0,\&quot;vue3中没有this怎么办\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;怎样自定义派发事件\&quot;],\&quot;text\&quot;:[0,\&quot;怎样自定义派发事件\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;如何选择我该如何在reactive和ref之间做选择\&quot;],\&quot;text\&quot;:[0,\&quot;如何选择我该如何在reactive和ref之间做选择？\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;单个值时用reactive显得比较多余使用ref但是记住修改值加上value\&quot;],\&quot;text\&quot;:[0,\&quot;单个值时用reactive()显得比较多余,使用ref,但是记住修改值，加上value\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;多个值使用reacive返回值增加torefs增加响应式\&quot;],\&quot;text\&quot;:[0,\&quot;多个值，使用reacive,返回值增加toRefs增加响应式\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;watcheffect和watch有啥不同\&quot;],\&quot;text\&quot;:[0,\&quot;watchEffect和watch有啥不同？\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;关于多个生命周期钩子\&quot;],\&quot;text\&quot;:[0,\&quot;关于多个生命周期钩子\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;可以拆分到独立函数中去执行不同的钩子\&quot;],\&quot;text\&quot;:[0,\&quot;可以拆分到独立函数中，去执行不同的钩子\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;watch的使用这里注意需要监听的ref响应式的值\&quot;],\&quot;text\&quot;:[0,\&quot;watch的使用：这里注意，需要监听的ref响应式的值\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;watcheffect监听的经典使用oninvalidate做一些事件销毁移除\&quot;],\&quot;text\&quot;:[0,\&quot;watchEffect监听的经典使用，onInvalidate做一些事件销毁移除\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;vue3如何全局绑定方法或是属性\&quot;],\&quot;text\&quot;:[0,\&quot;vue3如何全局绑定方法或是属性\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;9如何快速将接口改造成async和await\&quot;],\&quot;text\&quot;:[0,\&quot;9.如何快速将接口改造成async和await\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;10为什么有人吐槽vue30没有vue20好用\&quot;],\&quot;text\&quot;:[0,\&quot;10为什么有人吐槽vue3.0没有vue2.0好用\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;一完全抛弃options-api的作风改用composition-api的写法\&quot;],\&quot;text\&quot;:[0,\&quot;一、完全抛弃options api的作风，改用composition api的写法\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-J75B3YUS&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(max-width: 50em)&quot;}" await-children=""><h2 id="on-this-page-heading" class="heading">目录</h2><ul><li class="header-link depth-3"><a href="#看不懂的ts项目tsc编译文件多次看">看不懂的ts项目，tsc编译文件多次看</a></li><li class="header-link depth-3"><a href="#好用的小功能vue3好用的地方">好用的小功能，vue3好用的地方</a></li><li class="header-link depth-3"><a href="#1script增加setup后导入模块后不需要再注册">1.script增加setup后，导入模块后，不需要再注册</a></li><li class="header-link depth-3"><a href="#2process在vite中移除">2.process在vite中移除</a></li><li class="header-link depth-3"><a href="#3components配置是对象">3.components配置是对象</a></li><li class="header-link depth-3"><a href="#4子组件修改父组件">4.子组件修改父组件</a></li><li class="header-link depth-3"><a href="#5provide和inject">5.provide和inject</a></li><li class="header-link depth-3"><a href="#6vue3时代你应该全面拥抱依赖注入">6.Vue3时代，你应该全面拥抱依赖注入</a></li><li class="header-link depth-3"><a href="#父子件通信">父子件通信</a></li><li class="header-link depth-3"><a href="#8对于aixos请求封装后的使用">8.对于aixos请求封装后的使用</a></li><li class="header-link depth-3"><a href="#vue2和vue3的api的区别">vue2和vue3的api的区别</a></li><li class="header-link depth-3"><a href="#9如何快速将接口改造成async和await">9.如何快速将接口改造成async和await</a></li><li class="header-link depth-3"><a href="#10为什么有人吐槽vue30没有vue20好用">10为什么有人吐槽vue3.0没有vue2.0好用</a></li></ul></astro-island>
+    </nav>
+    <h3 id="看不懂的ts项目tsc编译文件多次看">看不懂的ts项目，tsc编译文件多次看</h3>
+<h3 id="好用的小功能vue3好用的地方">好用的小功能，vue3好用的地方</h3>
+<h3 id="1script增加setup后导入模块后不需要再注册">1.script增加setup后，导入模块后，不需要再注册</h3>
+<p>setup</p>
+<h3 id="2process在vite中移除">2.process在vite中移除</h3>
+<p>需要增加定义</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">vite.config.js中增加</span></span>
+<span class="line"><span style="color: #c9d1d9">define:{</span></span>
+<span class="line"><span style="color: #c9d1d9">    "process.env":{}</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="3components配置是对象">3.components配置是对象</h3>
+<p>components:{
+homecom
+},
+注意这里的组件配置是一个对象。</p>
+<p>自己傻傻的和vuex的导入混在一起了。</p>
+<h3 id="4子组件修改父组件">4.子组件修改父组件</h3>
+<p>子组件定义事件eventfn，定义在emits中，导出。
+父组件中引入子组件，给子组件标签中加入这个@eventfn=“fatherfn”，然后父组件内容进行对应属性赋值。</p>
+<h3 id="5provide和inject">5.provide和inject</h3>
+<p>父组件有一个 provide 选项来提供数据，子组件有一个 inject 选项来开始使用这些数据。</p>
+<p>大家肯定第一想到的就Vue2中的provide / inject选项。
+如果要把data里的数据provide，说白了就是打算用this，provide要写成函数：
+注意传统使用provide和inject方法，这里两种模式，使用的区别好处在于，一种直接对象数组，一种是返回函数对象。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">//这种写法用于使用this.</span></span>
+<span class="line"><span style="color: #c9d1d9">provide() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    return {</span></span>
+<span class="line"><span style="color: #c9d1d9">      abcabc: computed(() => this.abc),</span></span>
+<span class="line"><span style="color: #c9d1d9">      updateAbc: this.updateAbc</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">  },</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<hr>
+<p>没错，这套逻辑在vue3中同样适用，同时这两个选项变成了两个方法。</p>
+<h3 id="6vue3时代你应该全面拥抱依赖注入">6.Vue3时代，你应该全面拥抱依赖注入</h3>
+<p>vue3中的响应式变量ref/reactive天生与组件解耦，也就是说，可以在组件外单独声明ref/reactive，然后再在组件内引用。</p>
+<p>这样一来，跨组件共享状态的需求在框架内部就得到解决，Vue3的诞生早已注定了vuex这类方案的死亡。</p>
+<h4 id="vue3的全局状态管理抛弃vuex使用自己定义的嗯转实现">vue3的全局状态管理，抛弃vuex，使用自己定义的嗯转实现</h4>
+<p>api
+Vue3中有一对新增的api，provide和inject，熟悉Vue2的朋友应该明白，</p>
+<p>在上层组件通过provide提供一些变量，在子组件中可以通过inject来拿到，但是必须在组件的对象里面声明，使用场景的也很少，所以之前我也并没有往状态管理的方向去想。</p>
+<p>但是Vue3中新增了Hook，而Hook的特征之一就是可以在组件外去写一些自定义Hook，所以我们不光可以在.vue组件内部使用Vue的能力， 在任意的文件下（如context.ts）下也可以，</p>
+<p>如果我们在context.ts中</p>
+<p>自定义并export一个hook叫useProvide，并且在这个hook中使用provide并且注册一些全局状态，</p>
+<p>再自定义并export一个hook叫useInject，并且在这个hook中使用inject返回刚刚provide的全局状态，</p>
+<p>然后在根组件的setup函数中调用useProvide。</p>
+<p>就可以在任意的子组件去共享这些全局状态了。</p>
+<h3 id="父子件通信">父子件通信</h3>
+<p>Vue3.x 推荐使用 mitt.js
+Vue2.x 使用 EventBus 进行组件通信，而 Vue3.x 推荐使用 mitt.js。</p>
+<p>比起 Vue 实例上的 EventBus，mitt.js 好在哪里呢？首先它足够小，仅有200bytes，其次支持全部事件的监听和批量移除，它还不依赖 Vue 实例，所以可以跨框架使用，React 或者 Vue，甚至 jQuery 项目都能使用同一套库。</p>
+<h4 id="vue3搭建事件总线机制">vue3搭建事件总线机制</h4>
+<p>封装自定义事务总线文件 mybus.js，创建新的 js 文件。
+npm install -S mitt.</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">import mitt from 'mitt';</span></span>
+<span class="line"><span style="color: #c9d1d9">export default mitt();</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>其余两种方式
+第二种，全局main.js挂载。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">import  {createApp} from "vue";</span></span>
+<span class="line"><span style="color: #c9d1d9">import App from "./App.vue"</span></span>
+<span class="line"><span style="color: #c9d1d9">import mitt  from "mitt";</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">const app = createApp(App);</span></span>
+<span class="line"><span style="color: #c9d1d9">app.config.globalProperties.$mittbus = mitt();</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>第三种，在组件内引入</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">setup (props) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    const formItemMitt = mitt()</span></span>
+<span class="line"><span style="color: #c9d1d9">    return {</span></span>
+<span class="line"><span style="color: #c9d1d9">      formItemMitt</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="使用方法">使用方法</h4>
+<p>!!!
+接收方on：记住一定要写在mounted，这里一定要格外注意，千万不要写在method中，如果你用WebStorm是不会报错误的，这个bug非常不好排查，我是深受其害，费了很大劲才找到错误。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">import mitt from 'mitt'</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">const emitter = mitt()</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">// listen to an event</span></span>
+<span class="line"><span style="color: #c9d1d9">emitter.on('foo', e => console.log('foo', e) )</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">// listen to all events</span></span>
+<span class="line"><span style="color: #c9d1d9">emitter.on('*', (type, e) => console.log(type, e) )</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">// fire an event</span></span>
+<span class="line"><span style="color: #c9d1d9">emitter.emit('foo', { a: 'b' })</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">// clearing all events</span></span>
+<span class="line"><span style="color: #c9d1d9">emitter.all.clear()</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">// working with handler references:</span></span>
+<span class="line"><span style="color: #c9d1d9">function onFoo() {}</span></span>
+<span class="line"><span style="color: #c9d1d9">emitter.on('foo', onFoo)   // listen</span></span>
+<span class="line"><span style="color: #c9d1d9">emitter.off('foo', onFoo)  // unlisten</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">###### 记录自己脑子被门挤了的mitt调用错误。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">自定义封装好mitt后。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">childmittFn是子组件派发的事件。</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>接收方组件：Onmounted写好
+onMounted(() => {
+// console.log(‘页面挂载完成，触发了onMounted钩子函数’);
+// TODO:使用mitt事件总线全局监听:
+emitter.on(“childmittFn”, e => {
+console.log(‘foohaha’, e)
+})
+})</p>
+<p>传入方：派发方
+&#x3C;button @click=“childmittFn”>mitt点击事件子组件发动一个事件</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">事件定义</span></span>
+<span class="line"><span style="color: #c9d1d9">  const childmittFnName = () => {/*  */</span></span>
+<span class="line"><span style="color: #c9d1d9">        emitter.emit("childmittFn", '我是来自child的事件')</span></span>
+<span class="line"><span style="color: #c9d1d9">        // fire an event</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">    导出事件</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">    return {</span></span>
+<span class="line"><span style="color: #c9d1d9">        childmittFnName</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span></code></pre>
+<p>//排查过程，一直在测试，没有报错，但是就是不会打印接收方，为什么。</p>
+<p>！！！！！！！！！！！！！！！！！！！！！
+最后发现自己脑子被门挤了，html定义函数的时候，定义的是一个接收方的函数名称触发。这个不是没找脑子写代码吗！！！！</p>
+<p>修改方法很简单，但是费了1个多小时。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="总结通信说明">总结通信说明</h4>
+<p>provide/inject局限于父子/爷孙组件通信；
+而mitt基于事件总线的订阅发布模式，任意组件之间都可以通信。</p>
+<p>当然通信也可以使用传统的emit</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">从setup中传入当前的上下文</span></span>
+<span class="line"><span style="color: #c9d1d9">    setup(props, context) {</span></span>
+<span class="line"><span style="color: #c9d1d9">        console.log(props,'这个子组件和父组件的传参')</span></span>
+<span class="line"><span style="color: #c9d1d9">        //setup是在beforeCreate和created之前执行，创建的是data和method</span></span>
+<span class="line"><span style="color: #c9d1d9">        /**</span></span>
+<span class="line"><span style="color: #c9d1d9">         * @description: 子组件实现事件</span></span>
+<span class="line"><span style="color: #c9d1d9">         * @param {*} val</span></span>
+<span class="line"><span style="color: #c9d1d9">         * @return {*}</span></span>
+<span class="line"><span style="color: #c9d1d9">         */</span></span>
+<span class="line"><span style="color: #c9d1d9">         const submitForm = () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">            context.emit('mychildevent', 222) // 后定义事件以及传值,TODO:派发出去子组件上面的自定义事件</span></span>
+<span class="line"><span style="color: #c9d1d9">        }</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre>
+<h3 id="8对于aixos请求封装后的使用">8.对于aixos请求封装后的使用</h3>
+<p>async和await
+await可以讲过函数返回值取出来。</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">例子</span></span>
+<span class="line"><span style="color: #c9d1d9">    // 获取渔船数据</span></span>
+<span class="line"><span style="color: #c9d1d9">    const getshipData = async () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">      state.listData = (await getVideoList()).data;</span></span>
+<span class="line"><span style="color: #c9d1d9">      console.log("listData...", state.listData);</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">      // 页面加载完成，给兄弟组件video传值</span></span>
+<span class="line"><span style="color: #c9d1d9">      VueEvent.emit("passInfo", state.listData);</span></span>
+<span class="line"><span style="color: #c9d1d9">      let name = state.listData[0].fisherName;</span></span>
+<span class="line"><span style="color: #c9d1d9">      handClickShip(0, name);</span></span>
+<span class="line"><span style="color: #c9d1d9">    };</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h3 id="vue2和vue3的api的区别">vue2和vue3的api的区别</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/337871096">比较vue2和vue3</a></p>
+<h4 id="vue3中没有this怎么办">vue3中没有this怎么办</h4>
+<p>vue3中组件实例结构如下，各个选项中的this实际上是ctx或proxy
+const {ctx,proxy} = getCurrentInstance()</p>
+<p>当然坑还是有的，你仔细观察这个ctx，发现它不是一个Proxy对象，也就是这位兄台只有值却没有响应性，
+所以如果要利用响应特性，还得用proxy这个属性返回上下文对象，如果只是想要数据，上图中不是有个data也是Proxy类型的嘛。</p>
+<h4 id="怎样自定义派发事件">怎样自定义派发事件</h4>
+<p>方法1</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">setup(props, { emit }) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    emit('ooxx')</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">或是</span></span>
+<span class="line"><span style="color: #c9d1d9">setup(props, ctx) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    ctx.emit('ooxx')</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre>
+<p>方法2</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">setup() {</span></span>
+<span class="line"><span style="color: #c9d1d9">  getCurrentInstance().emit('ooxx') </span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h4 id="如何选择我该如何在reactive和ref之间做选择">如何选择我该如何在reactive和ref之间做选择？</h4>
+<p>composition-api引入了独立的数据响应式方法reactive，它可以将传入的对象做响应式处理
+const state = reactive({
+foo: ‘foo’,
+})
+watchEffect(() => {
+console.log(state.foo)
+})
+state.foo = ‘foooooo’ // 输出 ‘foooooo’</p>
+<h6 id="单个值时用reactive显得比较多余使用ref但是记住修改值加上value">单个值时用reactive()显得比较多余,使用ref,但是记住修改值，加上value</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">setup() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    const foo = ref('foo')</span></span>
+<span class="line"><span style="color: #c9d1d9">    return { foo } </span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">//当然这里有一个副作用</span></span>
+<span class="line"><span style="color: #c9d1d9">但是Ref对象也有副作用：修改值，必须加上value</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="多个值使用reacive返回值增加torefs增加响应式">多个值，使用reacive,返回值增加toRefs增加响应式</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">const mouse = reactive({</span></span>
+<span class="line"><span style="color: #c9d1d9">    x: 0,</span></span>
+<span class="line"><span style="color: #c9d1d9">    y: 0</span></span>
+<span class="line"><span style="color: #c9d1d9">})</span></span>
+<span class="line"><span style="color: #c9d1d9">return {</span></span>
+<span class="line"><span style="color: #c9d1d9">    ...toRef(mouse)</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre>
+<h6 id="watcheffect和watch有啥不同">watchEffect和watch有啥不同？</h6>
+<p>watch监听目标，指定属性名称
+watch(() => state.counter, (val, prevVal) => {})</p>
+<p>watchEffect不需要指定名称</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">watchEffect(() => {</span></span>
+<span class="line"><span style="color: #c9d1d9">    console.log(state.counter)</span></span>
+<span class="line"><span style="color: #c9d1d9">})</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>watch可以获取变化前后的值</p>
+<p>watch是懒执行的，它等效于vue2中的this.$watch()，watchEffect为了收集依赖，要立即执行一次</p>
+<h6 id="关于多个生命周期钩子">关于多个生命周期钩子</h6>
+<p>可以写多个相同钩子，会按照顺序执行</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">setup() {</span></span>
+<span class="line"><span style="color: #c9d1d9">    onMounted(() => {})</span></span>
+<span class="line"><span style="color: #c9d1d9">  onMounted(() => {})</span></span>
+<span class="line"><span style="color: #c9d1d9">  onMounted(() => {})</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="可以拆分到独立函数中去执行不同的钩子">可以拆分到独立函数中，去执行不同的钩子</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">function fun1() {</span></span>
+<span class="line"><span style="color: #c9d1d9">  // 这里可以用onMounted执行代码</span></span>
+<span class="line"><span style="color: #c9d1d9">    onMounted(() => {})</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9">function fun2() {</span></span>
+<span class="line"><span style="color: #c9d1d9">  // 这里还可以用onMounted执行代码</span></span>
+<span class="line"><span style="color: #c9d1d9">    onMounted(() => {})</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="watch的使用这里注意需要监听的ref响应式的值">watch的使用：这里注意，需要监听的ref响应式的值</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">  // watch 有三个参数：第一个是个getter（所谓getter写法就是你要写个getter函数）,第二个是个回调函数，第三个是个options(这个参数是放vue2.0的deep或者immediate等可选项)</span></span>
+<span class="line"><span style="color: #c9d1d9">    // 第一种：直接放ref</span></span>
+<span class="line"><span style="color: #c9d1d9">    watch(baby, () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">      return `I'm sure,I'm a 300 month baby, ${baby.value}`</span></span>
+<span class="line"><span style="color: #c9d1d9">    })</span></span>
+<span class="line"><span style="color: #c9d1d9">   // 第二种：放ref的value值，不知道为什么不可以生效，！！！！</span></span>
+<span class="line"><span style="color: #c9d1d9">   watch(() => baby.value, () => {</span></span>
+<span class="line"><span style="color: #c9d1d9">      return `I'm sure,I'm a 300 month baby, ${baby.value}`</span></span>
+<span class="line"><span style="color: #c9d1d9">    })</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<h6 id="watcheffect监听的经典使用oninvalidate做一些事件销毁移除">watchEffect监听的经典使用，onInvalidate做一些事件销毁移除</h6>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">// TODO:还有一种,我们监听完成一个事件，然后将这个事件移除，避免内存泄露</span></span>
+<span class="line"><span style="color: #c9d1d9">watchEffect((onInvalidate) => {</span></span>
+<span class="line"><span style="color: #c9d1d9">  // 这里的变化就相当于依赖了age.value，如果age变化了就会触发这个监听</span></span>
+<span class="line"><span style="color: #c9d1d9">  // 刚刚创建组件的时候会立即执行这个</span></span>
+<span class="line"><span style="color: #c9d1d9">  const _age = `her age is ${baby.value}`;</span></span>
+<span class="line"><span style="color: #c9d1d9">  console.log(_age);</span></span>
+<span class="line"><span style="color: #c9d1d9">  debugger;</span></span>
+<span class="line"><span style="color: #c9d1d9">  //有时候你需要在这里挂载一些监听事件</span></span>
+<span class="line"><span style="color: #c9d1d9">  const handerClick = () => {};</span></span>
+<span class="line"><span style="color: #c9d1d9">  document.addEventListener("click", handerClick);</span></span>
+<span class="line"><span style="color: #c9d1d9">  // 在vue2.0我们需要在destroy的时候remove它，这里提供了一个方法onInvalidate回调解决remove的问题</span></span>
+<span class="line"><span style="color: #c9d1d9">  onInvalidate(() => {</span></span>
+<span class="line"><span style="color: #c9d1d9">    /*</span></span>
+<span class="line"><span style="color: #c9d1d9">    执行时机:  在副作用即将重新执行时，就是在每次执行这个watchEffect回调的时候会先执行这个,如果在setup()或生命周期钩子函数中使用watchEffect, 则在卸载组件时执行此函数。</span></span>
+<span class="line"><span style="color: #c9d1d9">   */</span></span>
+<span class="line"><span style="color: #c9d1d9">    document.removeEventListener("click", handerClick);</span></span>
+<span class="line"><span style="color: #c9d1d9">  });</span></span>
+<span class="line"><span style="color: #c9d1d9">});</span></span></code></pre>
+<h6 id="vue3如何全局绑定方法或是属性">vue3如何全局绑定方法或是属性</h6>
+<p>CreateApp(App).config.globalProperties.$emm = xxx</p>
+<p>然后，目前个人只能曲线找到方案，通过使用method方法，vue2中的，然后this，自然找到，这个时候，this.$emm可以</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">    methods: {</span></span>
+<span class="line"><span style="color: #c9d1d9">        // TODO:定义在method中，不用return，就可以使用</span></span>
+<span class="line"><span style="color: #c9d1d9">        handleClick() {</span></span>
+<span class="line"><span style="color: #c9d1d9">            //   this.$bus.$emit('click')</span></span>
+<span class="line"><span style="color: #c9d1d9">            this.$bus.$emit("childmittFn", '我是来自child的事件')</span></span>
+<span class="line"><span style="color: #c9d1d9">        }</span></span>
+<span class="line"><span style="color: #c9d1d9">    }</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>--------------------但是vue3中，说是proxy或是ctx,可以，但是实际使用，全是找不到这个全局属性！！！！！！！不知道为什么</p>
+<h3 id="9如何快速将接口改造成async和await">9.如何快速将接口改造成async和await</h3>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9"></span></span>
+<span class="line"><span style="color: #c9d1d9">export function  exampleapi (params) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    return  request({</span></span>
+<span class="line"><span style="color: #c9d1d9">            url: `admin`,</span></span>
+<span class="line"><span style="color: #c9d1d9">            method: "GET",</span></span>
+<span class="line"><span style="color: #c9d1d9">            params</span></span>
+<span class="line"><span style="color: #c9d1d9">    })</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span>
+<span class="line"><span style="color: #c9d1d9"></span></span></code></pre>
+<p>改造，因为async默认返回一个promise，用new Promise包裹一下即可</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">export function  exampleapi (params) {</span></span>
+<span class="line"><span style="color: #c9d1d9">    return  new Promise(()=>{</span></span>
+<span class="line"><span style="color: #c9d1d9">        request({</span></span>
+<span class="line"><span style="color: #c9d1d9">            url: `admin`,</span></span>
+<span class="line"><span style="color: #c9d1d9">            method: "GET",</span></span>
+<span class="line"><span style="color: #c9d1d9">            params</span></span>
+<span class="line"><span style="color: #c9d1d9">        });</span></span>
+<span class="line"><span style="color: #c9d1d9">    })</span></span>
+<span class="line"><span style="color: #c9d1d9">}</span></span></code></pre>
+<h3 id="10为什么有人吐槽vue30没有vue20好用">10为什么有人吐槽vue3.0没有vue2.0好用</h3>
+<h4 id="一完全抛弃options-api的作风改用composition-api的写法">一、完全抛弃options api的作风，改用composition api的写法</h4>
+<p>了解vue2.0的都知道vue2.0是基于配置参数的风格去开发的，所有的代码都会已配置为入口，如data, method, computed, filter,watch这样的操作都是需要配置入口的</p>
+<p>但是vue3.0完全抛弃这样的做法。采用了类似react的hooks的作风，如reactive, coumputed这个的hooks.</p>
+<p>为什么使用了hook，在vue3中
+发现options api在一些情况下会造成问题，当项目庞大时，无法做代码的抽离和调度，虽然在vue2.0中提供了mixins这样的options
+但是大量的mixins的使用会造成代码的混乱和难以维护性，</p>
+<p>因此尤雨溪还是才做用了类似react的composition api的作风</p>
+  </section>
+  <nav class="block sm:hidden astro-J75B3YUS">
+    <h2 class="heading astro-BYIKQF6W">More</h2>
+<ul class="astro-BYIKQF6W">
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a class="edit-on-github astro-BYIKQF6W" href="https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master/src/content/docs/en/08vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/002vue3%E4%BD%BF%E7%94%A8%E6%B1%87%E6%80%BB%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%882.md" target="_blank">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Edit this page</span>
+				</a>
+			</li>
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a href="https://astro.build/chat" target="_blank" class="astro-BYIKQF6W">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Join our community</span>
+				</a>
+			</li>
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-BYIKQF6W">
+	<script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(!!t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));</script><astro-island uid="Ofjlz" component-url="/_astro/ThemeToggleButton.7f5d5bf2.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;class&quot;:[0,&quot;astro-BYIKQF6W&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+</div>
+  </nav>
+</article>
+<script>
+  console.log(window.location.href);
+  let currentRoute = decodeURIComponent(window.location.href).split("/")[
+    decodeURIComponent(window.location.href).split("/").length - 2
+  ];
+  const menuData = {
+    "0个人前端项目实战记录和链接": 0,
+    "0经典脚手架持续迭代": 1,
+    "01react课程学习和问题笔记": 2,
+    "02极客时间vue课程学习和问题笔记": 3,
+    "03掘金算法课程学习和问题笔记": 4,
+    "04小程序专题": 5,
+    "05leetcode刷题记录每周": 6,
+    "06node全栈记录": 7,
+    "07react学习常见问题和笔记记录": 8,
+    "08vue常见问题和学习记录": 9,
+    "09book前端进阶知识学习图书笔记": 10,
+    "10book前端开发设计模式和开发实战笔记": 11,
+    "11elementplus经典源码和实战学习和问题笔记": 12,
+    "12前端开发经典库学习记录": 13,
+    "13koa和express框架学习记录": 14,
+    "14前端图形化学习": 15,
+    "15工具和项目配置工程化问题记录": 16,
+    "16前端拓展知识学习": 17,
+    "17低代码学习和总结": 18,
+    "18经验亮点汇总汇总": 19,
+    "19项目复盘汇总": 20,
+    其他常见问题: 21,
+  };
+
+  window.addEventListener("DOMContentLoaded", () => {
+    var target = document.querySelector('[aria-current="page"]');
+    if (target && target.offsetTop > window.innerHeight - 100) {
+      document.querySelector(".nav-groups").scrollTop = target.offsetTop;
+    }
+  });
+  debugger;
+  // TODO:根据当前的选中的路由的名称，反转成路由菜单
+  console.log("%s 当前的值💡 ");
+  console.log(
+    "%c💡 当前的最新打印，用完删除",
+    "background-color:blue;color:#fff"
+  );
+  let testDiv = document.getElementsByClassName("nav-group astro-KQNE5HRN")[0];
+  testDiv.getElementsByTagName("ul")[0].children[menuData[currentRoute]].style =
+    "color: rgb(56,149,255);font-weight:700;background:rgb(225,239,255)";
+</script>
+      </div>
+      <aside id="grid-right" class="grid-sidebar astro-OUAMJN2I" title="Table of Contents">
+        <nav class="sidebar-nav astro-ROIVMLUZ" aria-labelledby="grid-right">
+	<div class="sidebar-nav-inner astro-ROIVMLUZ">
+		<astro-island uid="d8OJE" component-url="/_astro/TableOfContents.3058fe45.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;看不懂的ts项目tsc编译文件多次看\&quot;],\&quot;text\&quot;:[0,\&quot;看不懂的ts项目，tsc编译文件多次看\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;好用的小功能vue3好用的地方\&quot;],\&quot;text\&quot;:[0,\&quot;好用的小功能，vue3好用的地方\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;1script增加setup后导入模块后不需要再注册\&quot;],\&quot;text\&quot;:[0,\&quot;1.script增加setup后，导入模块后，不需要再注册\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;2process在vite中移除\&quot;],\&quot;text\&quot;:[0,\&quot;2.process在vite中移除\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;3components配置是对象\&quot;],\&quot;text\&quot;:[0,\&quot;3.components配置是对象\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;4子组件修改父组件\&quot;],\&quot;text\&quot;:[0,\&quot;4.子组件修改父组件\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;5provide和inject\&quot;],\&quot;text\&quot;:[0,\&quot;5.provide和inject\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;6vue3时代你应该全面拥抱依赖注入\&quot;],\&quot;text\&quot;:[0,\&quot;6.Vue3时代，你应该全面拥抱依赖注入\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vue3的全局状态管理抛弃vuex使用自己定义的嗯转实现\&quot;],\&quot;text\&quot;:[0,\&quot;vue3的全局状态管理，抛弃vuex，使用自己定义的嗯转实现\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;父子件通信\&quot;],\&quot;text\&quot;:[0,\&quot;父子件通信\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vue3搭建事件总线机制\&quot;],\&quot;text\&quot;:[0,\&quot;vue3搭建事件总线机制\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;使用方法\&quot;],\&quot;text\&quot;:[0,\&quot;使用方法\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;总结通信说明\&quot;],\&quot;text\&quot;:[0,\&quot;总结通信说明\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;8对于aixos请求封装后的使用\&quot;],\&quot;text\&quot;:[0,\&quot;8.对于aixos请求封装后的使用\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;vue2和vue3的api的区别\&quot;],\&quot;text\&quot;:[0,\&quot;vue2和vue3的api的区别\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;vue3中没有this怎么办\&quot;],\&quot;text\&quot;:[0,\&quot;vue3中没有this怎么办\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;怎样自定义派发事件\&quot;],\&quot;text\&quot;:[0,\&quot;怎样自定义派发事件\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;如何选择我该如何在reactive和ref之间做选择\&quot;],\&quot;text\&quot;:[0,\&quot;如何选择我该如何在reactive和ref之间做选择？\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;单个值时用reactive显得比较多余使用ref但是记住修改值加上value\&quot;],\&quot;text\&quot;:[0,\&quot;单个值时用reactive()显得比较多余,使用ref,但是记住修改值，加上value\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;多个值使用reacive返回值增加torefs增加响应式\&quot;],\&quot;text\&quot;:[0,\&quot;多个值，使用reacive,返回值增加toRefs增加响应式\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;watcheffect和watch有啥不同\&quot;],\&quot;text\&quot;:[0,\&quot;watchEffect和watch有啥不同？\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;关于多个生命周期钩子\&quot;],\&quot;text\&quot;:[0,\&quot;关于多个生命周期钩子\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;可以拆分到独立函数中去执行不同的钩子\&quot;],\&quot;text\&quot;:[0,\&quot;可以拆分到独立函数中，去执行不同的钩子\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;watch的使用这里注意需要监听的ref响应式的值\&quot;],\&quot;text\&quot;:[0,\&quot;watch的使用：这里注意，需要监听的ref响应式的值\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;watcheffect监听的经典使用oninvalidate做一些事件销毁移除\&quot;],\&quot;text\&quot;:[0,\&quot;watchEffect监听的经典使用，onInvalidate做一些事件销毁移除\&quot;]}],[0,{\&quot;depth\&quot;:[0,6],\&quot;slug\&quot;:[0,\&quot;vue3如何全局绑定方法或是属性\&quot;],\&quot;text\&quot;:[0,\&quot;vue3如何全局绑定方法或是属性\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;9如何快速将接口改造成async和await\&quot;],\&quot;text\&quot;:[0,\&quot;9.如何快速将接口改造成async和await\&quot;]}],[0,{\&quot;depth\&quot;:[0,3],\&quot;slug\&quot;:[0,\&quot;10为什么有人吐槽vue30没有vue20好用\&quot;],\&quot;text\&quot;:[0,\&quot;10为什么有人吐槽vue3.0没有vue2.0好用\&quot;]}],[0,{\&quot;depth\&quot;:[0,4],\&quot;slug\&quot;:[0,\&quot;一完全抛弃options-api的作风改用composition-api的写法\&quot;],\&quot;text\&quot;:[0,\&quot;一、完全抛弃options api的作风，改用composition api的写法\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-ROIVMLUZ&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(min-width: 50em)&quot;}" await-children=""><h2 id="on-this-page-heading" class="heading">目录</h2><ul><li class="header-link depth-3"><a href="#看不懂的ts项目tsc编译文件多次看">看不懂的ts项目，tsc编译文件多次看</a></li><li class="header-link depth-3"><a href="#好用的小功能vue3好用的地方">好用的小功能，vue3好用的地方</a></li><li class="header-link depth-3"><a href="#1script增加setup后导入模块后不需要再注册">1.script增加setup后，导入模块后，不需要再注册</a></li><li class="header-link depth-3"><a href="#2process在vite中移除">2.process在vite中移除</a></li><li class="header-link depth-3"><a href="#3components配置是对象">3.components配置是对象</a></li><li class="header-link depth-3"><a href="#4子组件修改父组件">4.子组件修改父组件</a></li><li class="header-link depth-3"><a href="#5provide和inject">5.provide和inject</a></li><li class="header-link depth-3"><a href="#6vue3时代你应该全面拥抱依赖注入">6.Vue3时代，你应该全面拥抱依赖注入</a></li><li class="header-link depth-3"><a href="#父子件通信">父子件通信</a></li><li class="header-link depth-3"><a href="#8对于aixos请求封装后的使用">8.对于aixos请求封装后的使用</a></li><li class="header-link depth-3"><a href="#vue2和vue3的api的区别">vue2和vue3的api的区别</a></li><li class="header-link depth-3"><a href="#9如何快速将接口改造成async和await">9.如何快速将接口改造成async和await</a></li><li class="header-link depth-3"><a href="#10为什么有人吐槽vue30没有vue20好用">10为什么有人吐槽vue3.0没有vue2.0好用</a></li></ul></astro-island>
+		<h2 class="heading astro-BYIKQF6W">More</h2>
+<ul class="astro-BYIKQF6W">
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a class="edit-on-github astro-BYIKQF6W" href="https://github.com/nyhxiaoning/nyhxiaoning.github.io/blob/master/src/content/docs/en/08vue%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/002vue3%E4%BD%BF%E7%94%A8%E6%B1%87%E6%80%BB%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%882.md" target="_blank">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Edit this page</span>
+				</a>
+			</li>
+	<li class="header-link depth-2 astro-BYIKQF6W">
+				<a href="https://astro.build/chat" target="_blank" class="astro-BYIKQF6W">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16 astro-BYIKQF6W" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+						<path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z" class="astro-BYIKQF6W"></path>
+					</svg>
+					<span class="astro-BYIKQF6W">Join our community</span>
+				</a>
+			</li>
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-BYIKQF6W">
+	<astro-island uid="Ofjlz" component-url="/_astro/ThemeToggleButton.7f5d5bf2.js" component-export="default" renderer-url="/_astro/client.2b526cb2.js" props="{&quot;class&quot;:[0,&quot;astro-BYIKQF6W&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+</div>
+	</div>
+</nav>
+      </aside>
+    </main>
+    <!-- <footer> --><!-- <AvatarList path={path} /> --><!-- </footer> -->
+  </body></html>
