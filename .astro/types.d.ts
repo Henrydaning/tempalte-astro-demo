@@ -321,30 +321,30 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/08vue常见问题和学习记录/002vue3使用汇总问题记录和解决方案(2).md": {
-  id: "en/08vue常见问题和学习记录/002vue3使用汇总问题记录和解决方案(2).md",
+"en/08vue常见问题和学习记录/002vue3使用汇总问题记录和解决方案2.md": {
+  id: "en/08vue常见问题和学习记录/002vue3使用汇总问题记录和解决方案2.md",
   slug: "en/08vue常见问题和学习记录/002vue3使用汇总问题记录和解决方案2",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/08vue常见问题和学习记录/003vue3使用汇总问题记录和解决方案(3).md": {
-  id: "en/08vue常见问题和学习记录/003vue3使用汇总问题记录和解决方案(3).md",
+"en/08vue常见问题和学习记录/003vue3使用汇总问题记录和解决方案3.md": {
+  id: "en/08vue常见问题和学习记录/003vue3使用汇总问题记录和解决方案3.md",
   slug: "en/08vue常见问题和学习记录/003vue3使用汇总问题记录和解决方案3",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/08vue常见问题和学习记录/004vue3每周使用总结案例（01）.md": {
-  id: "en/08vue常见问题和学习记录/004vue3每周使用总结案例（01）.md",
-  slug: "en/08vue常见问题和学习记录/004vue3每周使用总结案例01",
+"en/08vue常见问题和学习记录/004vue3每周使用总结案例1.md": {
+  id: "en/08vue常见问题和学习记录/004vue3每周使用总结案例1.md",
+  slug: "en/08vue常见问题和学习记录/004vue3每周使用总结案例1",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/08vue常见问题和学习记录/005vue3经典开发总结案例（02）.md": {
-  id: "en/08vue常见问题和学习记录/005vue3经典开发总结案例（02）.md",
-  slug: "en/08vue常见问题和学习记录/005vue3经典开发总结案例02",
+"en/08vue常见问题和学习记录/005vue3经典开发总结案例2.md": {
+  id: "en/08vue常见问题和学习记录/005vue3经典开发总结案例2.md",
+  slug: "en/08vue常见问题和学习记录/005vue3经典开发总结案例2",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
