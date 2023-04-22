@@ -300,6 +300,69 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
+"en/07react学习常见问题和笔记记录/000README.md": {
+  id: "en/07react学习常见问题和笔记记录/000README.md",
+  slug: "en/07react学习常见问题和笔记记录/000readme",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/07react学习常见问题和笔记记录/001react版本升级和功能说明.md": {
+  id: "en/07react学习常见问题和笔记记录/001react版本升级和功能说明.md",
+  slug: "en/07react学习常见问题和笔记记录/001react版本升级和功能说明",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/07react学习常见问题和笔记记录/001入门面试题react笔记汇总记录.md": {
+  id: "en/07react学习常见问题和笔记记录/001入门面试题react笔记汇总记录.md",
+  slug: "en/07react学习常见问题和笔记记录/001入门面试题react笔记汇总记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/07react学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录.md": {
+  id: "en/07react学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录.md",
+  slug: "en/07react学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/07react学习常见问题和笔记记录/002相关项目安装react问题排查.md": {
+  id: "en/07react学习常见问题和笔记记录/002相关项目安装react问题排查.md",
+  slug: "en/07react学习常见问题和笔记记录/002相关项目安装react问题排查",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/07react学习常见问题和笔记记录/003react路由和其他核心插件的相关升级问题记录.md": {
+  id: "en/07react学习常见问题和笔记记录/003react路由和其他核心插件的相关升级问题记录.md",
+  slug: "en/07react学习常见问题和笔记记录/003react路由和其他核心插件的相关升级问题记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/07react学习常见问题和笔记记录/004react生命周期以及hook和性能优化的问题记录.md": {
+  id: "en/07react学习常见问题和笔记记录/004react生命周期以及hook和性能优化的问题记录.md",
+  slug: "en/07react学习常见问题和笔记记录/004react生命周期以及hook和性能优化的问题记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/07react学习常见问题和笔记记录/006react脚手架创建和配置使用记录.md": {
+  id: "en/07react学习常见问题和笔记记录/006react脚手架创建和配置使用记录.md",
+  slug: "en/07react学习常见问题和笔记记录/006react脚手架创建和配置使用记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/07react学习常见问题和笔记记录/007react配置webpack项目说明记录.md": {
+  id: "en/07react学习常见问题和笔记记录/007react配置webpack项目说明记录.md",
+  slug: "en/07react学习常见问题和笔记记录/007react配置webpack项目说明记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
 "en/08vue常见问题和学习记录/000vue2升级vue3的api变化.md": {
   id: "en/08vue常见问题和学习记录/000vue2升级vue3的api变化.md",
   slug: "en/08vue常见问题和学习记录/000vue2升级vue3的api变化",
@@ -650,8 +713,8 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/14前端图形化学习/003antvX6.md": {
-  id: "en/14前端图形化学习/003antvX6.md",
+"en/14前端图形化学习/003antvx6.md": {
+  id: "en/14前端图形化学习/003antvx6.md",
   slug: "en/14前端图形化学习/003antvx6",
   body: string,
   collection: "docs",
