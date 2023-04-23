@@ -238,3 +238,7 @@ plasmo build --target=chrome-mv3-dev
 
 
 ```
+
+
+#### sharp问题。plasmo安装报错。
+[sharp安装问题解决方案](https://app.yinxiang.com/shard/s37/nl/24388549/f81d9392-1995-49b0-a03c-85e539015551)
