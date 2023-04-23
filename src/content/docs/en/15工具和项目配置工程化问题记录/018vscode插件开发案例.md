@@ -54,7 +54,8 @@ vsce --help				查看所有可用的vsce命令
 在这里插入图片描述
 
 ls：列出会实际发布的文件列表
-package：打包
+    "build:vs": "vsce package --no-dependencies"
+package：打包()
 publish：发布
 unpublish：插件下架
 list：列出某个发布者所有发布的
