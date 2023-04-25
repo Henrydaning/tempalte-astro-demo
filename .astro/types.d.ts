@@ -195,6 +195,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
+"en/05leetcode刷题记录每周/0解题模板.md": {
+  id: "en/05leetcode刷题记录每周/0解题模板.md",
+  slug: "en/05leetcode刷题记录每周/0解题模板",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
 "en/06node全栈记录/001第二章极客时间koaexpress说明对比笔记readme.md": {
   id: "en/06node全栈记录/001第二章极客时间koaexpress说明对比笔记readme.md",
   slug: "en/06node全栈记录/001第二章极客时间koaexpress说明对比笔记readme",
