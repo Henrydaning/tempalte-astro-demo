@@ -32,13 +32,34 @@ https://app.yinxiang.com/shard/s37/nl/24388549/689040c6-7de0-4ba0-9262-4dddcd08c
 
 - [个人练习面试题目汇总](D:\works\interviewFold\leetcode-javascript)
 
+
+### 000记录webcomponets规范
+[000记录webcomponets规范](./16%E5%89%8D%E7%AB%AF%E6%8B%93%E5%B1%95%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/000%E8%AE%B0%E5%BD%95webcomponets%E8%A7%84%E8%8C%83)
+
+### 000前端架构师体系化学习
+[000前端架构师体系化学习](./16%E5%89%8D%E7%AB%AF%E6%8B%93%E5%B1%95%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/000%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84%E5%B8%88%E4%BD%93%E7%B3%BB%E5%8C%96%E5%AD%A6%E4%B9%A0)
+
+### 000如何高效使用一台服务器
+[000如何高效使用一台服务器](./16%E5%89%8D%E7%AB%AF%E6%8B%93%E5%B1%95%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/000%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E4%BD%BF%E7%94%A8%E4%B8%80%E5%8F%B0%E6%9C%8D%E5%8A%A1%E5%99%A8)
+
+### 000软件使用个人经验汇总学习
+[000软件使用个人经验汇总学习](./16%E5%89%8D%E7%AB%AF%E6%8B%93%E5%B1%95%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/000%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C%E6%B1%87%E6%80%BB%E5%AD%A6%E4%B9%A0)
+
+
+### 000000学以致用用程序员的思路思考和解决现实问题
+[000000学以致用用程序员的思路思考和解决现实问题](./16%E5%89%8D%E7%AB%AF%E6%8B%93%E5%B1%95%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/000000%E5%AD%A6%E4%BB%A5%E8%87%B4%E7%94%A8%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%80%9D%E8%B7%AF%E6%80%9D%E8%80%83%E5%92%8C%E8%A7%A3%E5%86%B3%E7%8E%B0%E5%AE%9E%E9%97%AE%E9%A2%98)
+
+
+### 001编译器编译过程总结
+[001编译器编译过程总结](./16%E5%89%8D%E7%AB%AF%E6%8B%93%E5%B1%95%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/001%E7%BC%96%E8%AF%91%E5%99%A8%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E6%80%BB%E7%BB%93)
+
 ### 001 最新 ECMA 标准 js 学习
 
 [001 最新 ECMA 标准 js 学习](/en/16前端拓展知识学习/001%E6%9C%80%E6%96%B0ECMA%E6%A0%87%E5%87%86js%E5%AD%A6%E4%B9%A0)
 
 ### 002typeScirpt 标准补充学习
 
-[002typeScirpt 标准补充学习](/en/16前端拓展知识学习/002typeScirpt%E6%A0%87%E5%87%86%E8%A1%A5%E5%85%85%E5%AD%A6%E4%B9%A0)
+[002typeScirpt 标准补充学习](/en/16前端拓展知识学习/002typescirpt%E6%A0%87%E5%87%86%E8%A1%A5%E5%85%85%E5%AD%A6%E4%B9%A0)
 
 ### 003vue 项目中常用 ts 方式汇总 01
 
@@ -46,7 +67,7 @@ https://app.yinxiang.com/shard/s37/nl/24388549/689040c6-7de0-4ba0-9262-4dddcd08c
 
 ### 004React 项目中常见 ts 方式汇总 01
 
-[004React 项目中常见 ts 方式汇总 01](/en/16前端拓展知识学习/004React%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%B8%B8%E8%A7%81ts%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB01)
+[004React 项目中常见 ts 方式汇总 01](/en/16前端拓展知识学习/004react%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%B8%B8%E8%A7%81ts%E6%96%B9%E5%BC%8F%E6%B1%87%E6%80%BB01)
 
 ### 005ts 常见问题汇总记录
 
