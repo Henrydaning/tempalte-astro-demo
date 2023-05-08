@@ -128,3 +128,48 @@ python版本命令使用了，但是python的执行器没有改变。
 
 
 
+### 4.pycharm软件破解安装教程。
+- 首先下载好百度云位置的两个软件。
+在学习-003软件87G-编程开发-Pycharm破解
+这里一个软件内容：展示内容：下载好之后
+
+- 接着修改一下配置
+找到自定义安装位置下的文件：64位
+\bin\pycharm64.exe.vmoptions
+放入新破解的软件包位置：-javaagent:D:\PyCharm 2017.1\bin\JetbrainsCrack-2.6.2.jar
+注意修改的是64位。
+
+- 然后保存后，启动软件
+出现破解，输入下面的内容
+关于licenseeName和assigneeEmail修改一下即可。
+~~~
+
+{
+    "licenseId": "ThisCrackLicenseId",
+    "licenseeName": "henry",
+    "assigneeName": "",
+    "assigneeEmail": "xxxxxx修改一下@163.com",
+    "licenseRestriction": "For This Crack, Only Test! Please support genuine!!!",
+    "checkConcurrentUse": false,
+    "products": [
+        { "code": "II", "paidUpTo": "2099-12-31" },
+        { "code": "DM", "paidUpTo": "2099-12-31" },
+        { "code": "AC", "paidUpTo": "2099-12-31" },
+        { "code": "RS0", "paidUpTo": "2099-12-31" },
+        { "code": "WS", "paidUpTo": "2099-12-31" },
+        { "code": "DPN", "paidUpTo": "2099-12-31" },
+        { "code": "RC", "paidUpTo": "2099-12-31" },
+        { "code": "PS", "paidUpTo": "2099-12-31" },
+        { "code": "DC", "paidUpTo": "2099-12-31" },
+        { "code": "RM", "paidUpTo": "2099-12-31" },
+        { "code": "CL", "paidUpTo": "2099-12-31" },
+        { "code": "PC", "paidUpTo": "2099-12-31" }
+    ],
+    "hash": "2911276/0",
+    "gracePeriodDays": 7,
+    "autoProlongated": false
+}
+
+
+
+~~~

@@ -46,3 +46,35 @@ nvm use v11.11.0
 
 
 ```
+
+
+## 3.zsh中增加插件。
+注意插件下载在
+~~~
+第一步：下载好zsh
+
+第二步：进入zsh目录
+cd ~/.zsh
+
+第三步：下载插件
+git clone https://github.com/zsh-users/zsh-autosuggestions
+
+第四步：然后配置文件：zshrc
+vim ~/.zshrc
+
+加入一行
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+这里source ~/.zshrc
+
+
+第五步：如果有其他的插件：
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+
+配置内容：
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+
+~~~
