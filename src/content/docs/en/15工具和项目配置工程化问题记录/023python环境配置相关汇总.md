@@ -79,6 +79,19 @@ eg: pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pyenv install 3.8.1
 
+#### 但是注意：安装非常的慢。
+（1）打开 Python 官网 然后进入 Python Dowloads 的 Source code 页面，也就是源码页面，下 .tar.xz 的压缩包：
+这里的更多是linux系统下的加速方法。
+pyenv-win没有那些配置文件。
+
+
+（2）而且这个pyenv尽量使用mac或是linux
+Pyenv不正式支持Windows，也不在Linux的Windows子系统之外的Windows中工作。此外，即使在那里，它安装的Python也不是原生的Windows版本，而是通过兼容层运行的Linux版本——所以你不会获得特定于Windows的功能。
+但是上面的pyenv-win是修改版本，可能会慢一点，多等等，应该可以安装成功。
+
+
+
+
 - 设置特定python版本全局使用
 
 pyenv global 3.7.4
