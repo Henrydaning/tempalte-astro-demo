@@ -531,16 +531,65 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/11elementplus经典源码和实战学习和问题笔记/001每周开发问题和总结汇总01.md": {
-  id: "en/11elementplus经典源码和实战学习和问题笔记/001每周开发问题和总结汇总01.md",
-  slug: "en/11elementplus经典源码和实战学习和问题笔记/001每周开发问题和总结汇总01",
+"en/11经典源码和实战学习和问题笔记/001antdesign每周开发问题和总结汇总001.md": {
+  id: "en/11经典源码和实战学习和问题笔记/001antdesign每周开发问题和总结汇总001.md",
+  slug: "en/11经典源码和实战学习和问题笔记/001antdesign每周开发问题和总结汇总001",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/11elementplus经典源码和实战学习和问题笔记/001组件经典案例使用说明.md": {
-  id: "en/11elementplus经典源码和实战学习和问题笔记/001组件经典案例使用说明.md",
-  slug: "en/11elementplus经典源码和实战学习和问题笔记/001组件经典案例使用说明",
+"en/11经典源码和实战学习和问题笔记/001element每周开发问题和总结汇总001.md": {
+  id: "en/11经典源码和实战学习和问题笔记/001element每周开发问题和总结汇总001.md",
+  slug: "en/11经典源码和实战学习和问题笔记/001element每周开发问题和总结汇总001",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/11经典源码和实战学习和问题笔记/001组件经典案例使用说明.md": {
+  id: "en/11经典源码和实战学习和问题笔记/001组件经典案例使用说明.md",
+  slug: "en/11经典源码和实战学习和问题笔记/001组件经典案例使用说明",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/11经典源码和实战学习和问题笔记/002react源码案例系列001.md": {
+  id: "en/11经典源码和实战学习和问题笔记/002react源码案例系列001.md",
+  slug: "en/11经典源码和实战学习和问题笔记/002react源码案例系列001",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/11经典源码和实战学习和问题笔记/002react源码案例系列002.md": {
+  id: "en/11经典源码和实战学习和问题笔记/002react源码案例系列002.md",
+  slug: "en/11经典源码和实战学习和问题笔记/002react源码案例系列002",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/11经典源码和实战学习和问题笔记/002react源码案例系列003.md": {
+  id: "en/11经典源码和实战学习和问题笔记/002react源码案例系列003.md",
+  slug: "en/11经典源码和实战学习和问题笔记/002react源码案例系列003",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/11经典源码和实战学习和问题笔记/002vue源码案例系列001.md": {
+  id: "en/11经典源码和实战学习和问题笔记/002vue源码案例系列001.md",
+  slug: "en/11经典源码和实战学习和问题笔记/002vue源码案例系列001",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/11经典源码和实战学习和问题笔记/002vue源码案例系列002.md": {
+  id: "en/11经典源码和实战学习和问题笔记/002vue源码案例系列002.md",
+  slug: "en/11经典源码和实战学习和问题笔记/002vue源码案例系列002",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/11经典源码和实战学习和问题笔记/002vue源码案例系列003.md": {
+  id: "en/11经典源码和实战学习和问题笔记/002vue源码案例系列003.md",
+  slug: "en/11经典源码和实战学习和问题笔记/002vue源码案例系列003",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
