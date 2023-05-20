@@ -650,37 +650,44 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13koa和express框架学习记录/000README.md": {
-  id: "en/13koa和express框架学习记录/000README.md",
-  slug: "en/13koa和express框架学习记录/000readme",
+"en/13koa和express框架nuxt和next及其他全栈框架学习记录/000readme.md": {
+  id: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/000readme.md",
+  slug: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/000readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13koa和express框架学习记录/001PM2进程相关汇总记录.md": {
-  id: "en/13koa和express框架学习记录/001PM2进程相关汇总记录.md",
-  slug: "en/13koa和express框架学习记录/001pm2进程相关汇总记录",
+"en/13koa和express框架nuxt和next及其他全栈框架学习记录/001pm2进程相关汇总记录.md": {
+  id: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/001pm2进程相关汇总记录.md",
+  slug: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/001pm2进程相关汇总记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13koa和express框架学习记录/003Nuxt开发使用说明和案例记录.md": {
-  id: "en/13koa和express框架学习记录/003Nuxt开发使用说明和案例记录.md",
-  slug: "en/13koa和express框架学习记录/003nuxt开发使用说明和案例记录",
+"en/13koa和express框架nuxt和next及其他全栈框架学习记录/002nuxt开发使用说明和案例记录001.md": {
+  id: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/002nuxt开发使用说明和案例记录001.md",
+  slug: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/002nuxt开发使用说明和案例记录001",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13koa和express框架学习记录/004Koa开发使用说明和案例记录.md": {
-  id: "en/13koa和express框架学习记录/004Koa开发使用说明和案例记录.md",
-  slug: "en/13koa和express框架学习记录/004koa开发使用说明和案例记录",
+"en/13koa和express框架nuxt和next及其他全栈框架学习记录/003next开发使用说明和案例记录001.md": {
+  id: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/003next开发使用说明和案例记录001.md",
+  slug: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/003next开发使用说明和案例记录001",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13koa和express框架学习记录/006vitesse汇总记录.md": {
-  id: "en/13koa和express框架学习记录/006vitesse汇总记录.md",
-  slug: "en/13koa和express框架学习记录/006vitesse汇总记录",
+"en/13koa和express框架nuxt和next及其他全栈框架学习记录/004koa开发使用说明和案例记录001.md": {
+  id: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/004koa开发使用说明和案例记录001.md",
+  slug: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/004koa开发使用说明和案例记录001",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/13koa和express框架nuxt和next及其他全栈框架学习记录/006vitesse汇总记录.md": {
+  id: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/006vitesse汇总记录.md",
+  slug: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/006vitesse汇总记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
