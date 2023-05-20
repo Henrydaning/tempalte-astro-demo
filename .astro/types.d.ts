@@ -538,9 +538,9 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/11经典源码和实战学习和问题笔记/001element每周开发问题和总结汇总001.md": {
-  id: "en/11经典源码和实战学习和问题笔记/001element每周开发问题和总结汇总001.md",
-  slug: "en/11经典源码和实战学习和问题笔记/001element每周开发问题和总结汇总001",
+"en/11经典源码和实战学习和问题笔记/001element每周开发问题和总结汇总01.md": {
+  id: "en/11经典源码和实战学习和问题笔记/001element每周开发问题和总结汇总01.md",
+  slug: "en/11经典源码和实战学习和问题笔记/001element每周开发问题和总结汇总01",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">

@@ -1,6 +1,15 @@
 ![成长](/images/home.png)
 
+## 项目链接地址：
+[leetcode-blog](https://astro-leetcode-blog-template.vercel.app/)
 
+
+
+### 0解题模板
+[0解题模板](/en/05leetcode刷题记录每周/0解题模板)
+
+### 001优秀算法思路的记录:最好写清楚，是属于算法中的哪一种思路（检验上面的成果）
+[001优秀算法思路的记录](/en/05leetcode刷题记录每周/001优秀算法思路的记录)
 
 ### 个人整理架构内容
 [processOn000---前端数据结构与算法（掘金）](https://www.processon.com/mindmap/613c15e20e3e747075a5696e)
@@ -23,4 +32,5 @@
 
 
 ### 记录leetcode刷题记录突破和提交
+
 
