@@ -76,29 +76,29 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"docs": {
-"en/01react课程学习和问题笔记/000README.md": {
-  id: "en/01react课程学习和问题笔记/000README.md",
+"en/01React课程学习和问题笔记/000README.md": {
+  id: "en/01React课程学习和问题笔记/000README.md",
   slug: "en/01react课程学习和问题笔记/000readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/01react课程学习和问题笔记/000reackhook掘金课程.md": {
-  id: "en/01react课程学习和问题笔记/000reackhook掘金课程.md",
+"en/01React课程学习和问题笔记/000ReackHook掘金课程.md": {
+  id: "en/01React课程学习和问题笔记/000ReackHook掘金课程.md",
   slug: "en/01react课程学习和问题笔记/000reackhook掘金课程",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/01react课程学习和问题笔记/001umijs学习记录.md": {
-  id: "en/01react课程学习和问题笔记/001umijs学习记录.md",
+"en/01React课程学习和问题笔记/001UmiJS学习记录.md": {
+  id: "en/01React课程学习和问题笔记/001UmiJS学习记录.md",
   slug: "en/01react课程学习和问题笔记/001umijs学习记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/01react课程学习和问题笔记/002react-ssr.md": {
-  id: "en/01react课程学习和问题笔记/002react-ssr.md",
+"en/01React课程学习和问题笔记/002react-ssr.md": {
+  id: "en/01React课程学习和问题笔记/002react-ssr.md",
   slug: "en/01react课程学习和问题笔记/002react-ssr",
   body: string,
   collection: "docs",
@@ -202,106 +202,106 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06node全栈记录/001第二章极客时间koaexpress说明对比笔记readme.md": {
-  id: "en/06node全栈记录/001第二章极客时间koaexpress说明对比笔记readme.md",
+"en/06Node全栈记录/001第二章极客时间koaexpress说明对比笔记readme.md": {
+  id: "en/06Node全栈记录/001第二章极客时间koaexpress说明对比笔记readme.md",
   slug: "en/06node全栈记录/001第二章极客时间koaexpress说明对比笔记readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06node全栈记录/002第三章极客时间nodejs学习笔记readme.md": {
-  id: "en/06node全栈记录/002第三章极客时间nodejs学习笔记readme.md",
+"en/06Node全栈记录/002第三章极客时间nodejs学习笔记readme.md": {
+  id: "en/06Node全栈记录/002第三章极客时间nodejs学习笔记readme.md",
   slug: "en/06node全栈记录/002第三章极客时间nodejs学习笔记readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06node全栈记录/003第四章极客时间笔记node优化性能.md": {
-  id: "en/06node全栈记录/003第四章极客时间笔记node优化性能.md",
+"en/06Node全栈记录/003第四章极客时间笔记node优化性能.md": {
+  id: "en/06Node全栈记录/003第四章极客时间笔记node优化性能.md",
   slug: "en/06node全栈记录/003第四章极客时间笔记node优化性能",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06node全栈记录/004第五章jksj总结学习事件循环记录整理.md": {
-  id: "en/06node全栈记录/004第五章jksj总结学习事件循环记录整理.md",
+"en/06Node全栈记录/004第五章jksj总结学习事件循环记录整理.md": {
+  id: "en/06Node全栈记录/004第五章jksj总结学习事件循环记录整理.md",
   slug: "en/06node全栈记录/004第五章jksj总结学习事件循环记录整理",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06node全栈记录/006node相关学习补充.md": {
-  id: "en/06node全栈记录/006node相关学习补充.md",
+"en/06Node全栈记录/006Node相关学习补充.md": {
+  id: "en/06Node全栈记录/006Node相关学习补充.md",
   slug: "en/06node全栈记录/006node相关学习补充",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/06node全栈记录/008websocket的开发使用记录.md": {
-  id: "en/06node全栈记录/008websocket的开发使用记录.md",
+"en/06Node全栈记录/008webSocket的开发使用记录.md": {
+  id: "en/06Node全栈记录/008webSocket的开发使用记录.md",
   slug: "en/06node全栈记录/008websocket的开发使用记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/07react学习常见问题和笔记记录/000README.md": {
-  id: "en/07react学习常见问题和笔记记录/000README.md",
+"en/07React学习常见问题和笔记记录/000README.md": {
+  id: "en/07React学习常见问题和笔记记录/000README.md",
   slug: "en/07react学习常见问题和笔记记录/000readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/07react学习常见问题和笔记记录/001react版本升级和功能说明.md": {
-  id: "en/07react学习常见问题和笔记记录/001react版本升级和功能说明.md",
+"en/07React学习常见问题和笔记记录/001React版本升级和功能说明.md": {
+  id: "en/07React学习常见问题和笔记记录/001React版本升级和功能说明.md",
   slug: "en/07react学习常见问题和笔记记录/001react版本升级和功能说明",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/07react学习常见问题和笔记记录/001入门面试题react笔记汇总记录.md": {
-  id: "en/07react学习常见问题和笔记记录/001入门面试题react笔记汇总记录.md",
+"en/07React学习常见问题和笔记记录/001入门面试题react笔记汇总记录.md": {
+  id: "en/07React学习常见问题和笔记记录/001入门面试题react笔记汇总记录.md",
   slug: "en/07react学习常见问题和笔记记录/001入门面试题react笔记汇总记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/07react学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录.md": {
-  id: "en/07react学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录.md",
+"en/07React学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录.md": {
+  id: "en/07React学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录.md",
   slug: "en/07react学习常见问题和笔记记录/001基础react笔记问题学习学习笔记记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/07react学习常见问题和笔记记录/002相关项目安装react问题排查.md": {
-  id: "en/07react学习常见问题和笔记记录/002相关项目安装react问题排查.md",
+"en/07React学习常见问题和笔记记录/002相关项目安装React问题排查.md": {
+  id: "en/07React学习常见问题和笔记记录/002相关项目安装React问题排查.md",
   slug: "en/07react学习常见问题和笔记记录/002相关项目安装react问题排查",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/07react学习常见问题和笔记记录/003react路由和其他核心插件的相关升级问题记录.md": {
-  id: "en/07react学习常见问题和笔记记录/003react路由和其他核心插件的相关升级问题记录.md",
+"en/07React学习常见问题和笔记记录/003React路由和其他核心插件的相关升级问题记录.md": {
+  id: "en/07React学习常见问题和笔记记录/003React路由和其他核心插件的相关升级问题记录.md",
   slug: "en/07react学习常见问题和笔记记录/003react路由和其他核心插件的相关升级问题记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/07react学习常见问题和笔记记录/004react生命周期以及hook和性能优化的问题记录.md": {
-  id: "en/07react学习常见问题和笔记记录/004react生命周期以及hook和性能优化的问题记录.md",
+"en/07React学习常见问题和笔记记录/004React生命周期以及hook和性能优化的问题记录.md": {
+  id: "en/07React学习常见问题和笔记记录/004React生命周期以及hook和性能优化的问题记录.md",
   slug: "en/07react学习常见问题和笔记记录/004react生命周期以及hook和性能优化的问题记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/07react学习常见问题和笔记记录/006react脚手架创建和配置使用记录.md": {
-  id: "en/07react学习常见问题和笔记记录/006react脚手架创建和配置使用记录.md",
+"en/07React学习常见问题和笔记记录/006React脚手架创建和配置使用记录.md": {
+  id: "en/07React学习常见问题和笔记记录/006React脚手架创建和配置使用记录.md",
   slug: "en/07react学习常见问题和笔记记录/006react脚手架创建和配置使用记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/07react学习常见问题和笔记记录/007react配置webpack项目说明记录.md": {
-  id: "en/07react学习常见问题和笔记记录/007react配置webpack项目说明记录.md",
+"en/07React学习常见问题和笔记记录/007React配置Webpack项目说明记录.md": {
+  id: "en/07React学习常见问题和笔记记录/007React配置Webpack项目说明记录.md",
   slug: "en/07react学习常见问题和笔记记录/007react配置webpack项目说明记录",
   body: string,
   collection: "docs",
@@ -601,36 +601,36 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13koa和express框架学习记录/000README.md": {
-  id: "en/13koa和express框架学习记录/000README.md",
+"en/13Koa和express框架学习记录/000README.md": {
+  id: "en/13Koa和express框架学习记录/000README.md",
   slug: "en/13koa和express框架学习记录/000readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13koa和express框架学习记录/001PM2进程相关汇总记录.md": {
-  id: "en/13koa和express框架学习记录/001PM2进程相关汇总记录.md",
+"en/13Koa和express框架学习记录/001PM2进程相关汇总记录.md": {
+  id: "en/13Koa和express框架学习记录/001PM2进程相关汇总记录.md",
   slug: "en/13koa和express框架学习记录/001pm2进程相关汇总记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13koa和express框架学习记录/003Nuxt开发使用说明和案例记录.md": {
-  id: "en/13koa和express框架学习记录/003Nuxt开发使用说明和案例记录.md",
+"en/13Koa和express框架学习记录/003Nuxt开发使用说明和案例记录.md": {
+  id: "en/13Koa和express框架学习记录/003Nuxt开发使用说明和案例记录.md",
   slug: "en/13koa和express框架学习记录/003nuxt开发使用说明和案例记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13koa和express框架学习记录/004Koa开发使用说明和案例记录.md": {
-  id: "en/13koa和express框架学习记录/004Koa开发使用说明和案例记录.md",
+"en/13Koa和express框架学习记录/004Koa开发使用说明和案例记录.md": {
+  id: "en/13Koa和express框架学习记录/004Koa开发使用说明和案例记录.md",
   slug: "en/13koa和express框架学习记录/004koa开发使用说明和案例记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/13koa和express框架学习记录/006vitesse汇总记录.md": {
-  id: "en/13koa和express框架学习记录/006vitesse汇总记录.md",
+"en/13Koa和express框架学习记录/006vitesse汇总记录.md": {
+  id: "en/13Koa和express框架学习记录/006vitesse汇总记录.md",
   slug: "en/13koa和express框架学习记录/006vitesse汇总记录",
   body: string,
   collection: "docs",
@@ -657,8 +657,8 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/14前端图形化学习/003antvx6.md": {
-  id: "en/14前端图形化学习/003antvx6.md",
+"en/14前端图形化学习/003antvX6.md": {
+  id: "en/14前端图形化学习/003antvX6.md",
   slug: "en/14前端图形化学习/003antvx6",
   body: string,
   collection: "docs",
@@ -1014,8 +1014,8 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/16前端拓展知识学习/002typescirpt标准补充学习.md": {
-  id: "en/16前端拓展知识学习/002typescirpt标准补充学习.md",
+"en/16前端拓展知识学习/002typeScirpt标准补充学习.md": {
+  id: "en/16前端拓展知识学习/002typeScirpt标准补充学习.md",
   slug: "en/16前端拓展知识学习/002typescirpt标准补充学习",
   body: string,
   collection: "docs",
@@ -1028,8 +1028,8 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/16前端拓展知识学习/004react项目中常见ts方式汇总01.md": {
-  id: "en/16前端拓展知识学习/004react项目中常见ts方式汇总01.md",
+"en/16前端拓展知识学习/004React项目中常见ts方式汇总01.md": {
+  id: "en/16前端拓展知识学习/004React项目中常见ts方式汇总01.md",
   slug: "en/16前端拓展知识学习/004react项目中常见ts方式汇总01",
   body: string,
   collection: "docs",
@@ -1147,6 +1147,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
+"en/16前端拓展知识学习/026远程桌面使用.md": {
+  id: "en/16前端拓展知识学习/026远程桌面使用.md",
+  slug: "en/16前端拓展知识学习/026远程桌面使用",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
 "en/17低代码学习和总结/000从零开发可视化搭建项目jj.md": {
   id: "en/17低代码学习和总结/000从零开发可视化搭建项目jj.md",
   slug: "en/17低代码学习和总结/000从零开发可视化搭建项目jj",
@@ -1203,8 +1210,8 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/17低代码学习和总结/009dsl说明学习记录.md": {
-  id: "en/17低代码学习和总结/009dsl说明学习记录.md",
+"en/17低代码学习和总结/009DSL说明学习记录.md": {
+  id: "en/17低代码学习和总结/009DSL说明学习记录.md",
   slug: "en/17低代码学习和总结/009dsl说明学习记录",
   body: string,
   collection: "docs",
@@ -1259,22 +1266,22 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/18经验亮点汇总汇总/007webrtc开发记录和其他音视频开发记录.md": {
-  id: "en/18经验亮点汇总汇总/007webrtc开发记录和其他音视频开发记录.md",
+"en/18经验亮点汇总汇总/007WebRTC开发记录和其他音视频开发记录.md": {
+  id: "en/18经验亮点汇总汇总/007WebRTC开发记录和其他音视频开发记录.md",
   slug: "en/18经验亮点汇总汇总/007webrtc开发记录和其他音视频开发记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/18经验亮点汇总汇总/008node开发调用后端c语言.md": {
-  id: "en/18经验亮点汇总汇总/008node开发调用后端c语言.md",
+"en/18经验亮点汇总汇总/008Node开发调用后端c语言.md": {
+  id: "en/18经验亮点汇总汇总/008Node开发调用后端c语言.md",
   slug: "en/18经验亮点汇总汇总/008node开发调用后端c语言",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/18经验亮点汇总汇总/009vite和webpack在项目中同时配置.md": {
-  id: "en/18经验亮点汇总汇总/009vite和webpack在项目中同时配置.md",
+"en/18经验亮点汇总汇总/009Vite和Webpack在项目中同时配置.md": {
+  id: "en/18经验亮点汇总汇总/009Vite和Webpack在项目中同时配置.md",
   slug: "en/18经验亮点汇总汇总/009vite和webpack在项目中同时配置",
   body: string,
   collection: "docs",

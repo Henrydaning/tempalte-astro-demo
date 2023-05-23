@@ -40,6 +40,23 @@ vue create cli-vue2  // 创建cli-vue2项目  ，注意项目名称不能为驼�
 然后vue init webpack mytestwebpack
 ~~~
 
+
+#### 增加一个vue的脚手架的汇总的命令行：create-vue
+注意:create-vue命令行的Node版本：16.18.0
+create-vue
+~~~
+npm create vue@2
+或是
+npm create vue@3
+
+
+
+~~~
+
+#### 相关的react脚手架汇总的在飞书上。（已整理完成，待迁移）
+[react项目脚手架汇总](https://hrll1lipzw.feishu.cn/docx/HBeQdpXYNo6AMWxas6ecHbKBnzc)
+
+
 ### （000）资料汇总
 - [vueUse常用的库](https://vueuse.org/)
 
@@ -47,6 +64,9 @@ vue create cli-vue2  // 创建cli-vue2项目  ，注意项目名称不能为驼�
 ### 000vue2升级vue3的api变化
 [000vue2升级vue3的api变化](/en/08vue常见问题和学习记录/000vue2%E5%8D%87%E7%BA%A7vue3%E7%9A%84api%E5%8F%98%E5%8C%96)
 
+[升级后的一个仓库参考,暂时升级到2.7可以支持](https://gitee.com/zkwq/h5-appDebug-Platform.git):特别说明分支在：webpack-and-vite
+
+[一个vue2.7案例汇总vite-cli](https://gitee.com/classic-case-project/vue2.7-vite-cli.git)
 
 ### 001vue3升级后个人使用汇总案例
 [001vue3升级后个人使用汇总案例](/en/08vue常见问题和学习记录/001vue3%E5%8D%87%E7%BA%A7%E5%90%8E%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E6%B1%87%E6%80%BB%E6%A1%88%E4%BE%8B)
