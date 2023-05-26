@@ -1,5 +1,11 @@
-### 007 脚手架工具开发计划：vite 开发一个库
+### 007 脚手架工具开发计划：vite或是webpack 开发一个vue库
 
+
+- 案例代码1：vue3
+[vitevue3](https://github.com/nyhxiaoning/th-component.git)
+
+- 案例代码3：webpack
+[webpackvue2](https://gitee.com/nyhxiaoning/h5-my-libcomponent-vuecli.git)
 #### vite 打包一个第三方 lib
 
 ```
