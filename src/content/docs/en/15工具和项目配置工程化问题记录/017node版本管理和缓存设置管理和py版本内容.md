@@ -1,4 +1,5 @@
 ### 1.volta切换node环境，彻底解决nvm切换node版本
+但是目前看，不是很靠谱，偶尔出现高版本的兼容性或是内容问题
 - 有时候出现.无法识别，切换后重新删除一些依赖
 - 有时候出现：yarn和全局依赖不在一个磁盘
 - 有时候出现npm ERR! code MODULE_NOT_FOUND，npm ERR! Cannot find module 'libnpmfund'
