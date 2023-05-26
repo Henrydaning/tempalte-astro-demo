@@ -1,3 +1,6 @@
+### nvm的版本node管理
+[node的nvm管理机制](https://app.yinxiang.com/shard/s37/nl/24388549/8e8311f5-a8b9-4dfc-b123-92ab18da00be)
+
 ### 1.volta切换node环境，彻底解决nvm切换node版本
 但是目前看，不是很靠谱，偶尔出现高版本的兼容性或是内容问题
 - 有时候出现.无法识别，切换后重新删除一些依赖
@@ -37,3 +40,6 @@ prefix = "D:\\nodeNVM\\node_global"发现都是这种转义
 
 
 ~~~
+
+### 4.经典案例：从一个包的sharp安装，看当前的npm缓存机制
+[sharp包看npm的缓存机制](https://app.yinxiang.com/shard/s37/nl/24388549/f81d9392-1995-49b0-a03c-85e539015551)
