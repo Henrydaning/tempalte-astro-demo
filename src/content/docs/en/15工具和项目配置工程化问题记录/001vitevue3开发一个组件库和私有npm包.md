@@ -110,7 +110,10 @@ npm ERR! This operation requires a one-time password from your authenticator.
 
 npm publish 后，发现错误说，你不能发布名为 lib 的包，意思是重名了。
 
-### 私有化部署 npm 服务支持
+### npm工具包开发流程
+[npmRollupLibStandrad工具包](https://gitee.com/front-end-tool-development/npmRollupLibStandrad)
+npm工具包开发流程。
+
 
 ### 创建 npm 私有服务器，公司内部访问
 
