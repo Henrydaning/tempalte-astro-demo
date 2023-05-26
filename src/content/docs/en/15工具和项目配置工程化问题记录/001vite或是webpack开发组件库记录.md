@@ -35,3 +35,60 @@
   },
 
 ```
+
+
+
+
+## 单纯一个项目引入vite组件调试流程。
+
+
+### 第一步：安装相关的插件。
+vue3项目中。
+~~~
+    "vite": "^4.3.8",
+    "vue": "^3.0.0",
+    "vue-jest": "^5.0.0-0",
+    "vue-tsc": "^1.6.5"
+
+~~~
+
+
+### 第二步：配置文件使用vite.config.ts
+~~~
+import vue from '@vitejs/plugin-vue';
+import { fileURLToPath, URL } from 'node:url';
+import { defineConfig } from 'vite';
+
+// https://vitejs.dev/config/
+export default defineConfig({
+    css: {
+        modules: {
+            localsConvention: 'camelCaseOnly',
+        },
+        preprocessorOptions: {
+            less: {
+                javascriptEnabled: true,
+            },
+        },
+    },
+    plugins: [vue()],
+    resolve: {
+        alias: {
+            '@': fileURLToPath(new URL('./src', import.meta.url)),
+        },
+    },
+    server: {
+        host: true,
+    },
+});
+
+
+
+~~~
+
+
+### 第三步：增加一个命令行
+~~~
+
+    "dev": "vite",
+~~~
