@@ -1,4 +1,6 @@
-# 如何部署[#](https://jianmu-docs.assets.dghub.cn/jianmu-docs/2.5.4/guide/how-to-deploy.html#如何部署)
+## 如何部署[#](https://jianmu-docs.assets.dghub.cn/jianmu-docs/2.5.4/guide/how-to-deploy.html#如何部署)
+
+- 不建议玩这个先的内容本身步入自己实现一个docker-compose和Node的配置实现一条版本管理。
 
 目前支持两种方式安装部署建木，大家根据需要任选其一即可
 

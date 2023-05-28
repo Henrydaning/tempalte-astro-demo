@@ -1,5 +1,8 @@
 ### vite 框架打包库文件模式实现
 
+代码案例参考代码架子
+[vite-vue3 脚手架案例使用](https://github.com/nyhxiaoning/th-component.git)
+
 #### 第一步：创建 index
 
 ```
@@ -88,7 +91,41 @@ import '../lib/style.css'
 
 ```
 
-#### 第五步：发布 npm
+#### 第五步：测试使用 npm link
+
+开发完成当前的包之后，先执行 npm link 然后默认会安装到全局，然后，可以在本机的任意位置，通过 npm link packag-name 进行安装。
+
+```
+- 第一步
+找到一个vue项目
+- 第二步
+项目根路径下面进行npm link package-name
+比如这里package-name是th-bricks-demo
+那么给当前的记录
+
+- 第三步
+项目中使用
+import { createApp } from 'vue'
+import App from './App.vue'
+import thBricks from 'th-bricks'
+import 'th-bricks/dist/bundle.css'
+import router from './router'
+import store from './store'
+createApp(App)
+.use(store)
+.use(router)
+.use(thBricks)
+.mount('#app')
+
+- 第四步测试完成npm发布
+（1）发布npm
+（2）首先查看是否登录 npm whami
+（3）如果已经登录就直接跳过，否则使用npm login进行登录，没有npm账号的就需要注册一个了
+（4）发布npm publish
+
+```
+
+#### 第六步：发布 npm
 
 ```
 private 值为 false，组件库不能私有；
@@ -110,7 +147,10 @@ npm ERR! This operation requires a one-time password from your authenticator.
 
 npm publish 后，发现错误说，你不能发布名为 lib 的包，意思是重名了。
 
-### 私有化部署 npm 服务支持
+### npm 工具包开发流程
+
+[npmRollupLibStandrad 工具包](https://gitee.com/front-end-tool-development/npmRollupLibStandrad)
+npm 工具包开发流程。
 
 ### 创建 npm 私有服务器，公司内部访问
 
@@ -219,6 +259,7 @@ https://cdn.jsdelivr.net/npm/vue@3.2.0
 https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js
 
 #### （3）esm 方式：通过网络访问某一个包的另一种方式
+
 https://www.jsdelivr.com/esm
 
 比如 d3 包
