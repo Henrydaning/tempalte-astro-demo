@@ -76,13 +76,6 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"docs": {
-"en/01react课程学习和问题笔记/000README.md": {
-  id: "en/01react课程学习和问题笔记/000README.md",
-  slug: "en/01react课程学习和问题笔记/000readme",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] },
 "en/01react课程学习和问题笔记/000reackhook掘金课程.md": {
   id: "en/01react课程学习和问题笔记/000reackhook掘金课程.md",
   slug: "en/01react课程学习和问题笔记/000reackhook掘金课程",
@@ -391,6 +384,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
+"en/08vue常见问题和学习记录/010动态切换cdn实现线上的cdn自动的支持.md": {
+  id: "en/08vue常见问题和学习记录/010动态切换cdn实现线上的cdn自动的支持.md",
+  slug: "en/08vue常见问题和学习记录/010动态切换cdn实现线上的cdn自动的支持",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
 "en/09book前端进阶知识学习图书笔记/001高级css常用使用技巧汇总01.md": {
   id: "en/09book前端进阶知识学习图书笔记/001高级css常用使用技巧汇总01.md",
   slug: "en/09book前端进阶知识学习图书笔记/001高级css常用使用技巧汇总01",
@@ -692,6 +692,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
+"en/13koa和express框架nuxt和next及其他全栈框架学习记录/007关于node项目一些报错记录.md": {
+  id: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/007关于node项目一些报错记录.md",
+  slug: "en/13koa和express框架nuxt和next及其他全栈框架学习记录/007关于node项目一些报错记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
 "en/14前端图形化学习/000README.md": {
   id: "en/14前端图形化学习/000README.md",
   slug: "en/14前端图形化学习/000readme",
@@ -769,6 +776,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
+"en/15工具和项目配置工程化问题记录/000webpack和vite开发插件和loader记录.md": {
+  id: "en/15工具和项目配置工程化问题记录/000webpack和vite开发插件和loader记录.md",
+  slug: "en/15工具和项目配置工程化问题记录/000webpack和vite开发插件和loader记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
 "en/15工具和项目配置工程化问题记录/000webpack工程化问题记录.md": {
   id: "en/15工具和项目配置工程化问题记录/000webpack工程化问题记录.md",
   slug: "en/15工具和项目配置工程化问题记录/000webpack工程化问题记录",
@@ -800,6 +814,13 @@ declare module 'astro:content' {
 "en/15工具和项目配置工程化问题记录/001vitevue3开发一个组件库和私有npm包.md": {
   id: "en/15工具和项目配置工程化问题记录/001vitevue3开发一个组件库和私有npm包.md",
   slug: "en/15工具和项目配置工程化问题记录/001vitevue3开发一个组件库和私有npm包",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/15工具和项目配置工程化问题记录/001vite或是webpack开发组件库记录.md": {
+  id: "en/15工具和项目配置工程化问题记录/001vite或是webpack开发组件库记录.md",
+  slug: "en/15工具和项目配置工程化问题记录/001vite或是webpack开发组件库记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
@@ -930,9 +951,9 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/15工具和项目配置工程化问题记录/017node版本和py版本内容.md": {
-  id: "en/15工具和项目配置工程化问题记录/017node版本和py版本内容.md",
-  slug: "en/15工具和项目配置工程化问题记录/017node版本和py版本内容",
+"en/15工具和项目配置工程化问题记录/017node版本管理和缓存设置管理和py版本内容.md": {
+  id: "en/15工具和项目配置工程化问题记录/017node版本管理和缓存设置管理和py版本内容.md",
+  slug: "en/15工具和项目配置工程化问题记录/017node版本管理和缓存设置管理和py版本内容",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
@@ -1203,6 +1224,27 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
+"en/16前端拓展知识学习/026远程桌面使用.md": {
+  id: "en/16前端拓展知识学习/026远程桌面使用.md",
+  slug: "en/16前端拓展知识学习/026远程桌面使用",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/16前端拓展知识学习/027ubuntu开发常见问题.md": {
+  id: "en/16前端拓展知识学习/027ubuntu开发常见问题.md",
+  slug: "en/16前端拓展知识学习/027ubuntu开发常见问题",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/16前端拓展知识学习/028svelte和solid.md": {
+  id: "en/16前端拓展知识学习/028svelte和solid.md",
+  slug: "en/16前端拓展知识学习/028svelte和solid",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
 "en/17低代码学习和总结/000从零开发可视化搭建项目jj.md": {
   id: "en/17低代码学习和总结/000从零开发可视化搭建项目jj.md",
   slug: "en/17低代码学习和总结/000从零开发可视化搭建项目jj",
@@ -1322,8 +1364,8 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/18经验亮点汇总汇总/008node开发调用后端c语言.md": {
-  id: "en/18经验亮点汇总汇总/008node开发调用后端c语言.md",
+"en/18经验亮点汇总汇总/008Node开发调用后端c语言.md": {
+  id: "en/18经验亮点汇总汇总/008Node开发调用后端c语言.md",
   slug: "en/18经验亮点汇总汇总/008node开发调用后端c语言",
   body: string,
   collection: "docs",
@@ -1332,6 +1374,13 @@ declare module 'astro:content' {
 "en/18经验亮点汇总汇总/009vite和webpack在项目中同时配置.md": {
   id: "en/18经验亮点汇总汇总/009vite和webpack在项目中同时配置.md",
   slug: "en/18经验亮点汇总汇总/009vite和webpack在项目中同时配置",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] },
+"en/18经验亮点汇总汇总/010组件库开发方案.md": {
+  id: "en/18经验亮点汇总汇总/010组件库开发方案.md",
+  slug: "en/18经验亮点汇总汇总/010组件库开发方案",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
