@@ -125,8 +125,8 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] },
-"en/03掘金算法课程学习和问题笔记/000README.md": {
-  id: "en/03掘金算法课程学习和问题笔记/000README.md",
+"en/03掘金算法课程学习和问题笔记/000readme.md": {
+  id: "en/03掘金算法课程学习和问题笔记/000readme.md",
   slug: "en/03掘金算法课程学习和问题笔记/000readme",
   body: string,
   collection: "docs",
