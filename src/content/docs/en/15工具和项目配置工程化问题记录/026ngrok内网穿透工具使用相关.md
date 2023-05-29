@@ -30,3 +30,10 @@ https://xxx.ngrok.io -> http://localhost:8899
 - 那么我们的地址就是外网看
 https://xxx.ngrok.io/test地址即可。
 ~~~
+
+
+## 7.关于vpn和clash区别
+vpn是一个虚拟专用网，比如每一个公司有自己的vpn通道。
+VPN 是什么. VPN 意为"虚拟专用网",专门给通向某一个地址的设置设置一个专用通道。
+clash: 是一个代理软件，可以将你的请求通过他代理出去。
+
