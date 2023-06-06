@@ -131,3 +131,6 @@ https://app.yinxiang.com/shard/s37/nl/24388549/689040c6-7de0-4ba0-9262-4dddcd08c
 
 ### 028svelte和solid
 [028svelte和solid](/en/16前端拓展知识学习/028svelte和solid)
+
+### 029mac和windows软件默认装机使用和快捷键汇总
+[029mac和windows软件默认装机使用和快捷键汇总](/en/16前端拓展知识学习/029mac和windows软件默认装机使用和快捷键汇总)
