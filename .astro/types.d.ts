@@ -175,6 +175,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
+"en/05leetcode刷题记录每周/002leetcode的刷题辅助调试debug.md": {
+  id: "en/05leetcode刷题记录每周/002leetcode的刷题辅助调试debug.md",
+  slug: "en/05leetcode刷题记录每周/002leetcode的刷题辅助调试debug",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
 "en/05leetcode刷题记录每周/0解题模板.md": {
   id: "en/05leetcode刷题记录每周/0解题模板.md",
   slug: "en/05leetcode刷题记录每周/0解题模板",
@@ -787,6 +794,13 @@ declare module 'astro:content' {
 "en/15工具和项目配置工程化问题记录/000代码校验统一格式化.md": {
   id: "en/15工具和项目配置工程化问题记录/000代码校验统一格式化.md",
   slug: "en/15工具和项目配置工程化问题记录/000代码校验统一格式化",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
+"en/15工具和项目配置工程化问题记录/000前端多环境配置工具隔离方法.md": {
+  id: "en/15工具和项目配置工程化问题记录/000前端多环境配置工具隔离方法.md",
+  slug: "en/15工具和项目配置工程化问题记录/000前端多环境配置工具隔离方法",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
