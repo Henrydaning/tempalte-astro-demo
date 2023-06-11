@@ -1,7 +1,7 @@
 {
   "name": "@example/docs",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -10,10 +10,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "__comment":"npm run git -- 'commit-msg' so you can push and update by a auto way",
-    "git":"npm run build && git add . && git commit -m 'update a version' && git push",
-    "postgit":"npm version patch && git push --all"
-
+    "__comment": "npm run git -- 'commit-msg' so you can push and update by a auto way",
+    "git": "npm run build && git add . && git commit -m 'update a version' && git push",
+    "postgit": "npm version patch && git push --all"
   },
   "dependencies": {
     "astro": "^2.0.1",
