@@ -39,3 +39,10 @@ ORM框架是连接数据库的桥梁，只要提供了持久化类与表的映�
 ### 缺点
 - 自动化进行关系数据库的映射需要消耗系统性能，其实这里的性能消耗还好，可以忽略。
 - 在处理多表联查，where条件复杂之类的查询，ORM语法会变得复杂。
+
+
+## 5.使用方法ORM
+Sequelize 是一个基于 promise 的 Node.js ORM, 目前支持 Postgres, MySQL, MariaDB, SQLite 以及 Microsoft SQL Server. 它具有强大的事务支持, 关联关系, 预读和延迟加载,读取复制等功能。
+
+Sequelize 遵从 语义版本控制。 支持 Node v10 及更高版本以便使用 ES6 功能。
+
