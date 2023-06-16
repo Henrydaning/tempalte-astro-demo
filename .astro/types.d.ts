@@ -231,6 +231,20 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
+"en/06node全栈记录/009sequelize.md": {
+  id: "en/06node全栈记录/009sequelize.md",
+  slug: "en/06node全栈记录/009sequelize",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
+"en/06node全栈记录/010nginxproxymanager可视化nginx管理平台.md": {
+  id: "en/06node全栈记录/010nginxproxymanager可视化nginx管理平台.md",
+  slug: "en/06node全栈记录/010nginxproxymanager可视化nginx管理平台",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
 "en/07react学习常见问题和笔记记录/000readme.md": {
   id: "en/07react学习常见问题和笔记记录/000readme.md",
   slug: "en/07react学习常见问题和笔记记录/000readme",
@@ -1256,6 +1270,13 @@ declare module 'astro:content' {
 "en/16前端拓展知识学习/029mac和windows软件默认装机使用和快捷键汇总.md": {
   id: "en/16前端拓展知识学习/029mac和windows软件默认装机使用和快捷键汇总.md",
   slug: "en/16前端拓展知识学习/029mac和windows软件默认装机使用和快捷键汇总",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
+"en/16前端拓展知识学习/030中文排版指北.md": {
+  id: "en/16前端拓展知识学习/030中文排版指北.md",
+  slug: "en/16前端拓展知识学习/030中文排版指北",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
