@@ -252,6 +252,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
+"en/06node全栈记录/11前端需要了解的meta标签.md": {
+  id: "en/06node全栈记录/11前端需要了解的meta标签.md",
+  slug: "en/06node全栈记录/11前端需要了解的meta标签",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
 "en/07react学习常见问题和笔记记录/000readme.md": {
   id: "en/07react学习常见问题和笔记记录/000readme.md",
   slug: "en/07react学习常见问题和笔记记录/000readme",

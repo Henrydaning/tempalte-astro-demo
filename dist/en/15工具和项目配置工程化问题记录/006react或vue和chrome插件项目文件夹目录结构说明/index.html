@@ -236,6 +236,12 @@
     
           
 	<h3 id="1chrome-相关开发记录插件">1.Chrome 相关开发记录插件</h3>
+<pre is:raw="" class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">深入了解插件开发前先我们先来理清一些基本的概念。</span></span>
+<span class="line"><span style="color: #e1e4e8">首先是background.js 定义了插件注册安装到浏览器时自动执行的一些操作，比如根据当前环境来判断该插件是否启用（icon高亮/置灰）。</span></span>
+<span class="line"><span style="color: #e1e4e8">popup.html就是我们在点击插件时的弹窗，popup.js是拥有其执行上下问的脚本文件。</span></span>
+<span class="line"><span style="color: #e1e4e8">contentscript.js 注入了我们打开一个网页时的context，它与前述的脚本环境隔离，通过postMessage的形式来互相通信。</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span></code></pre>
 <h4 id="1ajax-插件拦截器">（1）ajax 插件拦截器</h4>
 <p>参考一下网上正确的内容：
 <a href="https://gitee.com/front-end-tool-development/ajax-interceptor-chrome-plugins.git">ajax-chrome-extensions</a></p>
