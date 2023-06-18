@@ -1,7 +1,9 @@
 
 ## 前端用数据库不会写sql怎么办？
 使用Sequelize
+(英文翻译是续集，其实是一个ORM框架，就是用来解决对象与关系数据库的操作的方便的问题。)
 
+[Node中使用ORM的案例](https://cloud.tencent.com/developer/article/1551653)
 ## 1.ORM框架介绍——什么是ORM框架？
 ### (1).什么是ORM?
 对象关系映射（Object Relational Mapping,简称ORM）模式是一种为了解决面向对象与关系数据库存在的互不匹配的现象的技术。
@@ -45,4 +47,8 @@ ORM框架是连接数据库的桥梁，只要提供了持久化类与表的映�
 Sequelize 是一个基于 promise 的 Node.js ORM, 目前支持 Postgres, MySQL, MariaDB, SQLite 以及 Microsoft SQL Server. 它具有强大的事务支持, 关联关系, 预读和延迟加载,读取复制等功能。
 
 Sequelize 遵从 语义版本控制。 支持 Node v10 及更高版本以便使用 ES6 功能。
+
+
+## 6.利用NestJS集成使用项目案例待补充
+
 

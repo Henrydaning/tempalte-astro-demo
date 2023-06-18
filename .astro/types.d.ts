@@ -539,13 +539,6 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/0个人前端项目实战记录和链接/README.md": {
-  id: "en/0个人前端项目实战记录和链接/README.md",
-  slug: "en/0个人前端项目实战记录和链接/readme",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-},
 "en/0经典脚手架持续迭代/000readme.md": {
   id: "en/0经典脚手架持续迭代/000readme.md",
   slug: "en/0经典脚手架持续迭代/000readme",
