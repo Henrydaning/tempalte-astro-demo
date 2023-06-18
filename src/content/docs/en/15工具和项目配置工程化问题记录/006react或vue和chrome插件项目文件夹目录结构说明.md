@@ -3,14 +3,10 @@
 ### 1.Chrome 相关开发记录插件
 
 #### （1）ajax 插件拦截器
+参考一下网上正确的内容：
+[ajax-chrome-extensions](https://gitee.com/front-end-tool-development/ajax-interceptor-chrome-plugins.git)
 
-###### 项目架构
-
-#### （2）
-
-######
-
-### React 和 Chrome 插件项目文件夹目录结构
+### 0.React 和 Chrome 插件项目文件夹目录结构
 
 ```
 
@@ -192,7 +188,7 @@
 }
 ```
 
-### plasmo 版本
+### 1.plasmo 版本
 
 Plasmo v0.42.0
 
@@ -211,9 +207,9 @@ plasmo0.42.0
 
 ```
 
-### vue 框架开发 chrome 插件的结构
+### 2.vue 框架开发 chrome 插件的结构
 
-[vueChrome 代码记录](https://gitee.com/nyhxiaoning/chrome-tools-vue-create-plugins-cli.git)
+[vueChrome 代码记录](https://gitee.com/front-end-tool-development/chrome-tools-vue-create-plugins-cli.git)
 
 ### 3.plasmo 插件 react 项目插件开发
 
@@ -242,3 +238,7 @@ plasmo build --target=chrome-mv3-dev
 
 #### sharp问题。plasmo安装报错。
 [sharp安装问题解决方案](https://app.yinxiang.com/shard/s37/nl/24388549/f81d9392-1995-49b0-a03c-85e539015551)
+
+
+
+

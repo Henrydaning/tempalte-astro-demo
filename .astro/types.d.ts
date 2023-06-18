@@ -889,9 +889,9 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/15工具和项目配置工程化问题记录/006react和chrome插件项目文件夹目录结构说明.md": {
-  id: "en/15工具和项目配置工程化问题记录/006react和chrome插件项目文件夹目录结构说明.md",
-  slug: "en/15工具和项目配置工程化问题记录/006react和chrome插件项目文件夹目录结构说明",
+"en/15工具和项目配置工程化问题记录/006react或vue和chrome插件项目文件夹目录结构说明.md": {
+  id: "en/15工具和项目配置工程化问题记录/006react或vue和chrome插件项目文件夹目录结构说明.md",
+  slug: "en/15工具和项目配置工程化问题记录/006react或vue和chrome插件项目文件夹目录结构说明",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
