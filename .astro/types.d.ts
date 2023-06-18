@@ -217,6 +217,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
+"en/06node全栈记录/005nodereact实战记账本掘金课程.md": {
+  id: "en/06node全栈记录/005nodereact实战记账本掘金课程.md",
+  slug: "en/06node全栈记录/005nodereact实战记账本掘金课程",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
 "en/06node全栈记录/006node相关学习补充.md": {
   id: "en/06node全栈记录/006node相关学习补充.md",
   slug: "en/06node全栈记录/006node相关学习补充",
@@ -231,16 +238,16 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/06node全栈记录/009sequelize.md": {
-  id: "en/06node全栈记录/009sequelize.md",
-  slug: "en/06node全栈记录/009sequelize",
+"en/06node全栈记录/009sequelize和orm.md": {
+  id: "en/06node全栈记录/009sequelize和orm.md",
+  slug: "en/06node全栈记录/009sequelize和orm",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/06node全栈记录/010nginxproxymanager可视化nginx管理平台.md": {
-  id: "en/06node全栈记录/010nginxproxymanager可视化nginx管理平台.md",
-  slug: "en/06node全栈记录/010nginxproxymanager可视化nginx管理平台",
+"en/06node全栈记录/010nginx的proxymanager可视化nginx管理平台.md": {
+  id: "en/06node全栈记录/010nginx的proxymanager可视化nginx管理平台.md",
+  slug: "en/06node全栈记录/010nginx的proxymanager可视化nginx管理平台",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
