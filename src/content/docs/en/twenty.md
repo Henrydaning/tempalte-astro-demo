@@ -6,3 +6,8 @@
 淘宝联盟：[淘宝联盟 (alimama.com)](https://pub.alimama.com/portal/v2/pages/promo/goods/index.htm)
 
 
+## 2.代码谋生的内容
+[开源项目如何赚钱的思考](https://app.yinxiang.com/shard/s37/nl/24388549/c58f8220-e026-429f-982d-af418bf079cd/)
+
+
+## 3.远程工作相关
