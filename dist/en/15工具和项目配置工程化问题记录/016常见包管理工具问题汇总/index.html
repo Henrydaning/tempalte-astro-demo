@@ -387,6 +387,11 @@ corepack  hydrate F:/corepack/cache.tgz  —activate</p>
 <p>因为Corepack是包增强工具，好处不用下载yarn和pnpm，搭配packageManager还能避免包管理混用。
 但是有时候只用一个包管理器不能保证你的包可以完全下载成功，所以我们辅助工具ni上面已经说过，可以帮忙我们自动配置修改一下工具。</p>
 <p>(corepack prepare pnpm@6.32.23 —activate 用于管理当前的pnpm和yarn版本)</p>
+<p>记得使用王者组合的三个命令组合：</p>
+<pre is:raw="" class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">1.corepack enable。</span></span>
+<span class="line"><span style="color: #e1e4e8">2.corepack enable npm。</span></span>
+<span class="line"><span style="color: #e1e4e8">3.安装 ni</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span></code></pre>
 
         
   </section>
