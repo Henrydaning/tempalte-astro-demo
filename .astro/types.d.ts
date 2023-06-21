@@ -84,6 +84,27 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
+"en/01react课程学习和问题笔记/003react记录api问题汇总归档01.md": {
+  id: "en/01react课程学习和问题笔记/003react记录api问题汇总归档01.md",
+  slug: "en/01react课程学习和问题笔记/003react记录api问题汇总归档01",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
+"en/01react课程学习和问题笔记/004react记录配置环境问题汇总归档02.md": {
+  id: "en/01react课程学习和问题笔记/004react记录配置环境问题汇总归档02.md",
+  slug: "en/01react课程学习和问题笔记/004react记录配置环境问题汇总归档02",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
+"en/01react课程学习和问题笔记/005react记录ui库问题汇总归档03.md": {
+  id: "en/01react课程学习和问题笔记/005react记录ui库问题汇总归档03.md",
+  slug: "en/01react课程学习和问题笔记/005react记录ui库问题汇总归档03",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
 "en/02极客时间vue课程学习和问题笔记/000readme.md": {
   id: "en/02极客时间vue课程学习和问题笔记/000readme.md",
   slug: "en/02极客时间vue课程学习和问题笔记/000readme",
@@ -448,13 +469,6 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/09book前端进阶知识学习图书笔记/006前端底层基础工具各个版本API的更新情况汇总.md": {
-  id: "en/09book前端进阶知识学习图书笔记/006前端底层基础工具各个版本API的更新情况汇总.md",
-  slug: "en/09book前端进阶知识学习图书笔记/006前端底层基础工具各个版本api的更新情况汇总",
-  body: string,
-  collection: "docs",
-  data: InferEntrySchema<"docs">
-},
 "en/09book前端进阶知识学习图书笔记/007less和sass汇总常用说明.md": {
   id: "en/09book前端进阶知识学习图书笔记/007less和sass汇总常用说明.md",
   slug: "en/09book前端进阶知识学习图书笔记/007less和sass汇总常用说明",
@@ -616,58 +630,65 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/12前端开发经典库学习记录/000readme.md": {
-  id: "en/12前端开发经典库学习记录/000readme.md",
-  slug: "en/12前端开发经典库学习记录/000readme",
+"en/12前端开发高级拓展知识学习记录/000readme.md": {
+  id: "en/12前端开发高级拓展知识学习记录/000readme.md",
+  slug: "en/12前端开发高级拓展知识学习记录/000readme",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/12前端开发经典库学习记录/001你不知道的JavaScript学习知识点汇总.md": {
-  id: "en/12前端开发经典库学习记录/001你不知道的JavaScript学习知识点汇总.md",
-  slug: "en/12前端开发经典库学习记录/001你不知道的javascript学习知识点汇总",
+"en/12前端开发高级拓展知识学习记录/001你不知道的JavaScript学习知识点汇总.md": {
+  id: "en/12前端开发高级拓展知识学习记录/001你不知道的JavaScript学习知识点汇总.md",
+  slug: "en/12前端开发高级拓展知识学习记录/001你不知道的javascript学习知识点汇总",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/12前端开发经典库学习记录/002axios.md": {
-  id: "en/12前端开发经典库学习记录/002axios.md",
-  slug: "en/12前端开发经典库学习记录/002axios",
+"en/12前端开发高级拓展知识学习记录/002axios.md": {
+  id: "en/12前端开发高级拓展知识学习记录/002axios.md",
+  slug: "en/12前端开发高级拓展知识学习记录/002axios",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/12前端开发经典库学习记录/002vue中一些常用经典库使用.md": {
-  id: "en/12前端开发经典库学习记录/002vue中一些常用经典库使用.md",
-  slug: "en/12前端开发经典库学习记录/002vue中一些常用经典库使用",
+"en/12前端开发高级拓展知识学习记录/002vue中一些常用经典库使用.md": {
+  id: "en/12前端开发高级拓展知识学习记录/002vue中一些常用经典库使用.md",
+  slug: "en/12前端开发高级拓展知识学习记录/002vue中一些常用经典库使用",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/12前端开发经典库学习记录/003前端开发进阶技术.md": {
-  id: "en/12前端开发经典库学习记录/003前端开发进阶技术.md",
-  slug: "en/12前端开发经典库学习记录/003前端开发进阶技术",
+"en/12前端开发高级拓展知识学习记录/003前端开发进阶技术.md": {
+  id: "en/12前端开发高级拓展知识学习记录/003前端开发进阶技术.md",
+  slug: "en/12前端开发高级拓展知识学习记录/003前端开发进阶技术",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/12前端开发经典库学习记录/004glob语法库使用.md": {
-  id: "en/12前端开发经典库学习记录/004glob语法库使用.md",
-  slug: "en/12前端开发经典库学习记录/004glob语法库使用",
+"en/12前端开发高级拓展知识学习记录/004glob语法库使用.md": {
+  id: "en/12前端开发高级拓展知识学习记录/004glob语法库使用.md",
+  slug: "en/12前端开发高级拓展知识学习记录/004glob语法库使用",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/12前端开发经典库学习记录/005经典库canvas画excel组件记录.md": {
-  id: "en/12前端开发经典库学习记录/005经典库canvas画excel组件记录.md",
-  slug: "en/12前端开发经典库学习记录/005经典库canvas画excel组件记录",
+"en/12前端开发高级拓展知识学习记录/005经典库canvas画excel组件记录.md": {
+  id: "en/12前端开发高级拓展知识学习记录/005经典库canvas画excel组件记录.md",
+  slug: "en/12前端开发高级拓展知识学习记录/005经典库canvas画excel组件记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/12前端开发经典库学习记录/010经典js问题内容.md": {
-  id: "en/12前端开发经典库学习记录/010经典js问题内容.md",
-  slug: "en/12前端开发经典库学习记录/010经典js问题内容",
+"en/12前端开发高级拓展知识学习记录/006前端底层基础工具各个版本API的更新情况汇总.md": {
+  id: "en/12前端开发高级拓展知识学习记录/006前端底层基础工具各个版本API的更新情况汇总.md",
+  slug: "en/12前端开发高级拓展知识学习记录/006前端底层基础工具各个版本api的更新情况汇总",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
+"en/12前端开发高级拓展知识学习记录/010经典js问题内容.md": {
+  id: "en/12前端开发高级拓展知识学习记录/010经典js问题内容.md",
+  slug: "en/12前端开发高级拓展知识学习记录/010经典js问题内容",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
