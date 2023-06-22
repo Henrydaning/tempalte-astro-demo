@@ -1085,6 +1085,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
+"en/15工具和项目配置工程化问题记录/028mac上面的各种配置环境相关记录.md": {
+  id: "en/15工具和项目配置工程化问题记录/028mac上面的各种配置环境相关记录.md",
+  slug: "en/15工具和项目配置工程化问题记录/028mac上面的各种配置环境相关记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
 "en/16前端拓展知识学习/000000学以致用用程序员的思路思考和解决现实问题.md": {
   id: "en/16前端拓展知识学习/000000学以致用用程序员的思路思考和解决现实问题.md",
   slug: "en/16前端拓展知识学习/000000学以致用用程序员的思路思考和解决现实问题",
