@@ -1379,9 +1379,9 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/17低代码学习和总结/009DSL说明学习记录.md": {
-  id: "en/17低代码学习和总结/009DSL说明学习记录.md",
-  slug: "en/17低代码学习和总结/009dsl说明学习记录",
+"en/17低代码学习和总结/008dsl说明学习记录.md": {
+  id: "en/17低代码学习和总结/008dsl说明学习记录.md",
+  slug: "en/17低代码学习和总结/008dsl说明学习记录",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">

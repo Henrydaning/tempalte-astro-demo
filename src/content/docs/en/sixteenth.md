@@ -138,3 +138,6 @@ https://app.yinxiang.com/shard/s37/nl/24388549/689040c6-7de0-4ba0-9262-4dddcd08c
 ### 030mac和windows软件默认装机使用和快捷键汇总
 [030中文排版指北](/en/16前端拓展知识学习/030中文排版指北)
 
+### 031mac和windows系统备份
+[031mac和windows系统备份](/en/16前端拓展知识学习/031mac和windows系统备份)
+
