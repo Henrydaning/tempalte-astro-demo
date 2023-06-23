@@ -1316,6 +1316,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
+"en/16前端拓展知识学习/031mac和windows系统备份.md": {
+  id: "en/16前端拓展知识学习/031mac和windows系统备份.md",
+  slug: "en/16前端拓展知识学习/031mac和windows系统备份",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
 "en/17低代码学习和总结/000从零开发可视化搭建项目jj.md": {
   id: "en/17低代码学习和总结/000从零开发可视化搭建项目jj.md",
   slug: "en/17低代码学习和总结/000从零开发可视化搭建项目jj",
