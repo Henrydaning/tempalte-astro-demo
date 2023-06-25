@@ -1463,6 +1463,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
+"en/18经验亮点汇总汇总/011git的一些奇怪的问题记录.md": {
+  id: "en/18经验亮点汇总汇总/011git的一些奇怪的问题记录.md",
+  slug: "en/18经验亮点汇总汇总/011git的一些奇怪的问题记录",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
 "en/eighteen.md": {
   id: "en/eighteen.md",
   slug: "en/eighteen",
