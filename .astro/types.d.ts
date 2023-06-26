@@ -1449,9 +1449,9 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
-"en/18经验亮点汇总汇总/009Vite和Webpack在项目中同时配置.md": {
-  id: "en/18经验亮点汇总汇总/009Vite和Webpack在项目中同时配置.md",
-  slug: "en/18经验亮点汇总汇总/009vite和webpack在项目中同时配置",
+"en/18经验亮点汇总汇总/009vite以及webpack在项目中同时配置.md": {
+  id: "en/18经验亮点汇总汇总/009vite以及webpack在项目中同时配置.md",
+  slug: "en/18经验亮点汇总汇总/009vite以及webpack在项目中同时配置",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
