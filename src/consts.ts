@@ -48,32 +48,20 @@ export type Sidebar = Record<
  */
 export const SIDEBAR: Sidebar = {
 	en: {
-		'记录是学习的开始': [
-			{ text: '全栈学习', link: 'en/introduction' },
-			{ text: '0 个人前端项目实战记录和链接', link: 'en/zero' },
-			{ text: '01 React 课程学习和问题笔记', link: 'en/first' },
-			{ text: '02 极客时间Vue课程学习和问题笔记', link: 'en/second' },
-			{ text: '03 掘金算法课程学习和问题笔记', link: 'en/third' },
-			{ text: '04 掘金 Uniapp 课程和Taro或原生小程序学习笔记', link: 'en/fourth' },
-			{ text: '05 leetcode 刷题记录每周', link: 'en/fifth' },
-			{ text: '06 极客时间 Node 全栈记录', link: 'en/sixth' },
-			{ text: '07 React 学习常见问题和笔记记录', link: 'en/seventh' },
-			{ text: '08 vue 常见问题和学习记录', link: 'en/eighth' },
-			{ text: '09 book 前端进阶知识学习图书笔记', link: 'en/ninth' },
-			{ text: '10 book 前端开发设计模式和开发实战笔记', link: 'en/tenth' },
-			{ text: '11 经典源码和实战学习和问题笔记', link: 'en/eleventh' },
-			{ text: '12 前端开发经典库学习记录', link: 'en/twelfth' },
-			{ text: '13 Koa和express 框架学习记录', link: 'en/thirteenth' },
-			{ text: '14 前端图形化学习', link: 'en/fourteenth' },
-			{ text: '15工具和项目配置工程化问题记录', link: 'en/fifteenth' },
-			{ text: '16 前端拓展知识学习', link: 'en/sixteenth' },
-			{ text: '17 低代码学习和总结', link: 'en/seventeenth' },
-			{ text: '18 经验亮点汇总( 迁移中 )', link: 'en/eighteen' },
-			{ text: '19 项目复盘汇总( 迁移中 )', link: 'en/ninghteen' },
-			{ text: '20 生活相关的小攻略', link: 'en/twenty' },
-			{ text: '其他常见问题', link: 'en/others' },
-			{ text: '常用符号', link: 'en/notices' }
+		'程序员学习路线': [
+			{ text: '求知若渴，虚心若虚', link: 'en/introduction' },
+			{ text: '前端学习路线', link: 'en/全栈学习路线/前端学习路线' },
+			{ text: 'java学习路线', link: 'en/java学习路线/java学习路线' },
+			{ text: 'linux学习路线', link: 'en/linux学习路线/linux学习路线' },
+			{ text: 'python学习路线', link: 'en/python学习路线/python学习路线' },
+			{ text: '程序员通用技能', link: 'en/five' },
 		],
-		'其他说明': [{ text: '自定义', link: 'en/page-4' }]
+		'多级目录版本点击进入': [
+			{ text: '前端学习路线', link: 'en/one' },
+			{ text: 'java学习路线', link: 'en/two' },
+			{ text: 'linux学习路线', link: 'en/three' },
+			{ text: 'python学习路线', link: 'en/four' },
+			{ text: '程序员通用技能', link: 'en/five' },
+		]
 	},
 };

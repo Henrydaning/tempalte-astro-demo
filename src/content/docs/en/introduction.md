@@ -1,151 +1,19 @@
 ![成长](/images/home.png)
 
 
-# 全栈学习之旅: 记录知识学习的开始。
+# 学习之旅: 记录知识学习的开始。
+迪伦所说，如果你不忙着求生，你就在忙着求死 (If you're not busy being born, you're busy dying)。
+
+
+至少我尽了最大的努力 (If I try my best and fail, well, I tried my best)。结果最坏又能坏到什么样呢？
+
+Stay hungry. Stay foolish.不惧外界，保持追求。
+
+
+## 学习资料来源
+- 来自鱼皮程序员
+- 来自大圣花果山
+- 来自其他的个人积累内容
 
 (oneNote 笔记，有道云笔记，印象笔记，飞书笔记转移中。。。。。。。。。)
 （先记录新的内容，旧的笔记按照关系进行对应整理）
-
-### 模块化梳理体系情况梳理:
-
-进行中：红绿黄，红未开始:red_square: ，黄进行中:yellow_square: ，绿完成:green_square:
-
-:yellow_square: ─ 00 个人前端项目实战记录和链接（:five::zero:%）
-
-:yellow_square: ─ 01React 课程学习和问题笔记（:seven::zero:%）
-
-:white_check_mark: ─ 02 极客时间 Vue 课程学习和问题笔记（:seven::zero:%）
-
-:yellow_square: ─ 03 掘金算法课程学习和问题笔记（:eight::zero:%）
-
-:white_check_mark: ─ 04 掘金 Uniapp 课程学习笔记（:five::zero:%）
-
-:yellow_square: ─ 05leetcode 刷题记录每周（:four::zero:%）
-
-:white_check_mark: ─ 06 极客时间 Node 全栈记录（:five::zero:%）
-
-:yellow_square: ─ 07React 学习常见问题和笔记记录（:two::zero:%）
-
-:yellow_square: ─ 07React 常见问题和学习记录（:two::zero:%）
-
-:white_check_mark: ─ 08vue 常见问题和学习记录（:five::zero:%）
-
-:yellow_square: ─ 09book 前端进阶知识学习图书笔记（:five::zero:%）
-
-:yellow_square: ─ 10book 前端开发设计模式和开发实战笔记（:three::zero:%）
-
-:yellow_square: ─ 11elementplus 经典源码和实战学习和问题笔记（:six::zero:%）
-
-:yellow_square: ─ 12 前端开发经典库学习记录（:eight::zero:%）
-
-:white_check_mark: ─ 13Koa 和 express 框架学习记录
-
-:yellow_square: ─ 14 前端图形化学习（:four::zero:%）
-
-:white_check_mark: ─ 15 工具和项目配置工程化问题记录（:eight::zero:%）
-
-:yellow_square: ─ 16 前端拓展知识学习（:five::zero:%）
-
-:yellow_square: ─ 17 低代码学习和总结（:six::zero:%）
-
-### 指导方针政策
-
-- 整理汇总知识，力求片段的内容系统化
-  将之前的 oneNote,印象笔记，有道云私有化的内容整理
-
-- 课程为本，指导方向。
-  关注一些前端技术课程和一些最佳实践
-  经典课程做成一个目录，作为一个核心知识的知识库索引，将课程作为学习指导。
-  其余的文件夹部分作为一个拓展学习，比如自己 uniapp 学习完成后，那么直接使用
-  避免方向乱
-- 最新的通用知识每周做一个记录和升级
-
-- 功能组件和使用功能的汇总
-
-- 历史项目和经验总结汇总文档，力求有文有图
-
-
-### 其他常用
-
-#### 打包指定文件夹
-
-[各种指定参数参考学习地址](https://cli.vuejs.org/zh/guide/cli-service.html#vue-cli-service-build)
-
-```
-指定为根项目的文件夹
- npm run docs:build  -- --dest=dist
-
- 修改为
-     "buildDoc": "npm run docs:build  --  --dest=dist",
-     这里地址默认dest后面dist是相对于当前的根目录，
-
-使用dest参数修改输出路径，可以结合该命令实现自动化，自动化见下文
-
-npm run build:prod -- --dest=dist
-路径可以为相对路径，也可以为绝对路径
-
-
-
-如果没有指定，当前项目配置后，会将文件输出到vuepress下
-
-```
-
-#### 偶尔 vuepress 打包 npm i 安装出现问题
-
-使用 yarn 安装就可以了或是看看 node 版本是不是 16.5 以上。
-
-```
-
-（dev运行正常的前提下）
-偶尔build失败，总是提示：Error: Could not load D:/vuepressNoteNet/docs/.vuepress/.temp/internal/clientAppEnhances
-这种问题，删除node_modules看node是否正常，然后重新安装后，打包。
-
-
-```
-
-###### 电脑打包环境配置
-
-```
-npm源总是报错。切换yarn
-node版本14.17.1
-yarn版本：1.22.19
-vuepress版本：2.0.0-beta.46
-
-```
-
-记住每一次完成 md 修改，马上进行
-npm run buildDoc 避免修改太多无法定位问题。
-
-######### 突然打包失败
-
-```
-确定不是md文件的解析问题。
-那么node14.18.0和yarn版本：1.22.19
-之后，删除node_module包后，然后清除缓存和yarn cache clean -f
-后
-
-重新yarn安装
-
-
-
-```
-
-### 常用符号
-
-:heavy_check_mark:
-:x:
-
-:white_check_mark:
-:negative_squared_cross_mark:
-
-进度：
-:zero:
-:one:
-:three:
-:four:
-:five:
-:six:
-:seven:
-:eight:
-:nine:
-:keycap_ten:
