@@ -2,8 +2,8 @@
  * 修改站点题目头
  */
 export const SITE = {
-	title: '全栈记录之旅',
-	description: '成长依旧，步履不停',
+	title: 'The road to technical architects',
+	description: 'Stay hungry. Stay foolish',
 	defaultLanguage: 'en-us',
 } as const;
 /**
@@ -48,20 +48,20 @@ export type Sidebar = Record<
  */
 export const SIDEBAR: Sidebar = {
 	en: {
-		'程序员学习路线': [
-			{ text: '求知若渴，虚心若虚', link: 'en/introduction' },
-			{ text: '前端学习路线', link: 'en/全栈学习路线/前端学习路线' },
-			{ text: 'java学习路线', link: 'en/java学习路线/java学习路线' },
-			{ text: 'linux学习路线', link: 'en/linux学习路线/linux学习路线' },
-			{ text: 'python学习路线', link: 'en/python学习路线/python学习路线' },
-			{ text: '程序员通用技能', link: 'en/five' },
+		'The road to technical architects': [
+			{ text: 'Stay hungry. Stay foolish', link: 'en/introduction' },
+			{ text: 'The Full Stack learning', link: 'en/全栈学习路线/前端学习路线' },
+			{ text: 'The Road to Java Learning', link: 'en/java学习路线/java学习路线' },
+			{ text: 'The Road to Linux Learning', link: 'en/linux学习路线/linux学习路线' },
+			{ text: 'The Road to Python Learning', link: 'en/python学习路线/python学习路线' },
+			{ text: 'Programmer General Skills', link: 'en/five' },
 		],
-		'多级目录版本点击进入': [
-			{ text: '前端学习路线', link: 'en/one' },
-			{ text: 'java学习路线', link: 'en/two' },
-			{ text: 'linux学习路线', link: 'en/three' },
-			{ text: 'python学习路线', link: 'en/four' },
-			{ text: '程序员通用技能', link: 'en/five' },
+		'Click to enter the multi-level directory version': [
+			{ text: 'The Full Stack learning', link: 'en/one' },
+			{ text: 'The Road to Java Learning', link: 'en/two' },
+			{ text: 'The Road to Linux Learning', link: 'en/three' },
+			{ text: 'The Road to Python Learning', link: 'en/four' },
+			{ text: 'Programmer General Skills', link: 'en/five' },
 		]
 	},
 };
