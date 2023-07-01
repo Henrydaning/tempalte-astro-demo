@@ -91,6 +91,13 @@ declare module 'astro:content' {
   collection: "docs",
   data: InferEntrySchema<"docs">
 },
+"en/java学习路线/java资源汇总.md": {
+  id: "en/java学习路线/java资源汇总.md",
+  slug: "en/java学习路线/java资源汇总",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
 "en/linux学习路线/linux学习路线.md": {
   id: "en/linux学习路线/linux学习路线.md",
   slug: "en/linux学习路线/linux学习路线",
@@ -108,6 +115,13 @@ declare module 'astro:content' {
 "en/python学习路线/python学习路线.md": {
   id: "en/python学习路线/python学习路线.md",
   slug: "en/python学习路线/python学习路线",
+  body: string,
+  collection: "docs",
+  data: InferEntrySchema<"docs">
+},
+"en/python学习路线/python资源汇总.md": {
+  id: "en/python学习路线/python资源汇总.md",
+  slug: "en/python学习路线/python资源汇总",
   body: string,
   collection: "docs",
   data: InferEntrySchema<"docs">
